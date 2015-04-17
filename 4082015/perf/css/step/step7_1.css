@@ -1,0 +1,29 @@
+@charset "shift_jis";
+
+#webCameraNotice{
+font-weight:bold;
+color:#B54156;
+font-size:15px;
+text-align:center;
+margin:20px 0 15px 0;}
+
+#phoneNumber{
+text-align:center;}
+
+#webCameraTextMain{
+width:501px;
+margin:30px auto 30px auto;}
+
+#webCameraText{
+width:479px;
+border-left:1px #C46678 solid;
+border-right:1px #C46678 solid;
+line-height:1.7em;
+padding:0 10px 0 10px;
+}
+
+#webCameraText p{
+text-align:center;
+padding:0 0 5px 0;
+}
+

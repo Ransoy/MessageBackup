@@ -1,0 +1,87 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	macherie
+	NAME:	ƒ}ƒVƒFƒŠƒoƒŒƒ“ƒ^ƒCƒ“
+	BUILD:	2007/02/02
+	AUTHOR:	S.takaya
+							 	  	 
+_______________________________________*/
+
+
+/*	Universal
+=======================================*/
+
+*{
+	background:transparent;
+	margin:0;
+	padding:0;
+}
+
+/*	Structure
+=======================================*/
+
+body{
+	/*text-align:center;*/
+	font-size:12px;
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN","Osaka",sans-serif;
+	color:#464646;
+	/*background:url(../images/bg.gif) #fff;*/
+}
+
+/*	HyperText
+=======================================*/
+/*
+a{
+	color:#ff6400;
+	text-decoration:none;
+}
+a:link{
+	color:#ff6400;
+}
+a:visited{
+	color:#ff6400;
+}
+a:hover {
+	color:#ff3030;
+	text-decoration:underline;
+}
+
+*/
+/*	FORM
+=======================================*/
+input,
+textarea {
+	font-family: Arial, Helvetica, "ƒqƒ‰ƒMƒmŠpƒS Pro W3",  sans-serif;
+	border: none;
+	border: 1px solid #a8a8a8;
+	padding: 0.1em 5px;
+	background:#fff;
+}
+
+textarea {
+	height:6em;
+	padding: 0.4em 8px;
+}
+input.submit {
+	border:0px;
+}
+input.radio {
+	background-color: transparent;
+	border: none;
+}
+/*	Table
+=======================================*/
+
+td,th {
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka";
+	font-size:12px;	
+}
+
+/*	Image
+=======================================*/
+
+img{
+	vertical-align:bottom;
+	border:0;
+}

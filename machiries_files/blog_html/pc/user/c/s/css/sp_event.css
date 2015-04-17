@@ -1,0 +1,317 @@
+@charset "Shift_JIS";
+
+
+/*	マシェリイベント関連
+---------------------------------------*/
+
+/*	巳年第一弾
+---------------------------------------*/
+
+#snake_bunner_area{
+	height:80px;
+	background:url(/c/m/images/top/hebi_1_3000yen_b_bg.jpg);
+	background-repeat:repeat-x;	
+}
+
+.snake_bunner{
+	height:80px;
+	background:url(/c/m/images/top/hebi_1_3000yen_b.jpg) no-repeat;
+}
+
+.snake_bunner:hover {
+    background: url('/c/m/images/top/hebi_1_3000yen_b_ov.jpg') no-repeat;
+}
+
+/*	マシェバライベント関連
+---------------------------------------*/
+
+/*	EXアイドル
+---------------------------------------*/
+
+.queen_tickets {
+	height:140px;
+	width: 224px;
+	background:url(/images/queen2012/tickets.jpg) no-repeat;
+}
+
+.queen_tickets:hover {
+	background:url(/images/queen2012/tickets_ov.jpg) no-repeat;
+}
+
+.queen_skyp {
+	height:140px;
+	width: 224px;
+	background:url(/images/queen2012/sukapa02.jpg) no-repeat;
+}
+
+.queen_skyp:hover {
+	background:url(/images/queen2012/sukapa02_ov.jpg) no-repeat;
+}
+
+/*	真夜中のおバカ騒ぎ
+---------------------------------------*/
+
+.mayobaka_View,.mayobaka_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.mayobaka_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.mayobaka_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.mayobaka_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/mayobaka/header_bg.gif) repeat-x ;
+}
+
+.mayobaka_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/mayobaka/ticket.jpg) no-repeat;
+}
+
+.mayobaka_tickets:hover {
+	background:url(/images/mayobaka/ticket_ov.jpg) no-repeat;
+}
+
+/*	カスタムバーニング
+---------------------------------------*/
+
+.burning_View,.burning_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.burning_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.burning_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.burning_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/burning/header_bg.gif) repeat-x ;
+}
+
+.burning_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/burning/ticket.jpg) no-repeat;
+}
+
+.burning_tickets:hover {
+	background:url(/images/burning/ticket_ov.jpg) no-repeat;
+}
+
+/*	真夜中のおバカ騒ぎ番組出演チャレンジシート争奪バトル
+---------------------------------------*/
+
+.mayobakach_View,.mayobakach_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.mayobakach_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.mayobakach_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.mayobakach_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/mayobakach/header_bg.gif) repeat-x ;
+}
+
+.mayobakach_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/mayobakach/ticket.jpg) no-repeat;
+}
+
+.mayobakach_tickets:hover {
+	background:url(/images/mayobakach/ticket_ov.jpg) no-repeat;
+}
+
+/*	水着グラビアDVDリリース争奪オーディション
+---------------------------------------*/
+
+.ripdvd_View,.mayobaka_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.ripdvd_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.ripdvd_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.ripdvd_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/ripdvd/header_bg.gif) repeat-x ;
+}
+
+.ripdvd_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/ripdvd/ticket.jpg) no-repeat;
+}
+
+.ripdvd_tickets:hover {
+	background:url(/images/ripdvd/ticket_ov.jpg) no-repeat;
+}
+
+
+/*	水着グラビアDVDリリース争奪オーディション#2
+---------------------------------------*/
+
+.ripdvd2nd_View,.mayobaka_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.ripdvd2nd_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.ripdvd2nd_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.ripdvd2nd_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/ripdvd2nd/header_bg.gif) repeat-x ;
+}
+
+.ripdvd2nd_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/ripdvd2nd/ticket.jpg) no-repeat;
+}
+
+.ripdvd2nd_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	レインボータウンFMパーソナリティ争奪オーディション
+---------------------------------------*/
+
+.rainbow_View,.mayobaka_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.rainbow_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.rainbow_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.rainbow_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/rainbow/header_bg.gif) repeat-x ;
+}
+
+.rainbow_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/rainbow/ticket.jpg) no-repeat;
+}
+
+.rainbow_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+

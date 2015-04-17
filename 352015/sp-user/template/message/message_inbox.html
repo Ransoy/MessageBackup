@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shift-JIS">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>スマホでライブチャットマシェリ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="/sp/css/jquery.sidr.dark.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/reset.css">
+<link rel="stylesheet" href="/sp/css/common.css">
+<link rel="stylesheet" href="/sp/css/menu_open.css">
+<link rel="stylesheet" href="/sp/css/font-awesome.min.css">
+<link rel="stylesheet" href="/sp/css/margin.css">
+<link rel="stylesheet" href="/sp/css/message.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script src="/sp/js/jquery-1.11.0.js"></script>
+</head>
+
+<body class="bd_message bd_message_inbox">
+<div id="main">
+		%right_menu%
+<div class="contents">
+    <div class="message_wrap cf">
+
+		<div class="message_header message_header--inbox">
+			<div class="col_left">
+				<a href="./inbox_edit.php">編集</a>
+			</div>
+			<div class="col_center">
+				<h3 class="icon icon--message_list">メールボックス</h3>
+			</div>
+			<div class="col_right">
+                <a href="javascript:void(0);" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+			</div>
+			<div>
+				<div>
+					<div class="panel_menu" id="panel_menu">
+						<ul>
+							<li><a class="btn_message_list" href="inbox.php">メールボックス</a></li>
+							<li><a class="btn_contact_list" href="./contact_list.php">連絡先</a></li>
+							<li><a class="btn_block_list" href="./block_list_edit.php">拒否リスト</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+        <!-- old version link  need to set this-->
+        <a class="link_old_mailbox" href="/sp/mail.php">旧メールボックスへ ></a>
+        <!-- old version link -->
+
+        <div class="message_search_area d_table">
+        		<div class="d_cell">
+        			<form action="" method="get">
+	            		<input type="text" id="keyword" name="keyword" value="%keyword%" placeholder="名前で検索..." />
+	            		<input type="hidden" id="tab"  name="tab" value="%tab%"/>
+	            		<input type="hidden" id="page" name="page" value="%page%"/>
+            		 </form>
+	            </div>
+	            <div class="d_cell">
+	            	<button class="ui_btn ui_btn--bg_gray" id="search">検索</button>
+	        	</div>
+        </div>
+
+        <div class="message_sort_menu cf" id="message_sort_menu">
+            <ul>
+                <li class="all %all%"><a href="javascript:void(0);">全て表示</a></li>
+                <li class="unread %unread%"><a href="javascript:void(0);">未読のみ表示</a></li>
+            </ul>
+        </div>
+
+        <div class="message_list cf">
+
+            <!-- tmpl:ifdef %no_mail% -->
+            <div class="ui_msg_area ui_msg_area--not_exist">
+                <p class="msg">%no_mail%</p>
+            </div>
+            <!-- tmpl:endif -->
+            <!-- tmpl:loop %loop_admin_set% -->
+			<div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="./detail.php?is_admin=1&id=%hash%"><img src="/sp/image/spacer.gif" style="background-image: url('%img%')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                       	<p class="user_name">%name%%count%</p>
+                        <p class="desc %sender%" style="white-space: nowrap; overflow: hidden;"><a href="./detail.php?is_admin=1&from=inbox">%body%</a></p>
+                        <p class="posttime">%date%</p>
+                        <p class="trun_message">...</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item" href="delete_message.php?id=%id%&type=1">削除</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- tmpl:endloop -->
+			<!--  tmpl:loop %loop_set% -->
+	         <div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="./detail.php?id=%hash%"><img src="/sp/image/spacer.gif" style="background-image: url('%img%')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                       	%status%
+                        <p class="user_name">%name%%count%</p>
+                        <p class="desc %sender%" style="white-space: nowrap; overflow: hidden;"><a href="./detail.php?id=%hash%&from=inbox">%body%</a></p>
+                        <p class="posttime">%date%</p>
+                        <p class="trun_message">...</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item" href="delete_message.php?id=%id%&type=1">削除</span></li>
+					</ul>
+				</div>
+			</div>
+			<!--  tmpl:endloop -->
+        </div><!-- // .message_list -->
+        <!-- tmpl:ifdef %show_pages% -->
+		<div class="message_pager">
+			<div class="cell--left">
+				<a class="prev %prev%" href="inbox.php?page=%prev_val%">前へ</a>
+			</div>
+            <div class="cell--center">
+            	<ul>
+                	<!-- tmpl:ifdef %first_page%  -->
+                    <li>
+                   		<a href="inbox.php?page=%first_page%%get_keyword%">%first_page%</a>
+					</li>
+					<!-- tmpl:endif -->
+					<!-- tmpl:ifdef %first_page_dot% -->
+                    <li> 
+                    	<span>%first_page_dot%</span>
+                    </li>
+                    <!-- tmpl:endif -->
+                            	
+                    <!-- tmpl:loop %pagination% -->
+		            	<!-- tmpl:ifdef %current% -->
+		                <li class='current'>
+		                	<span>%current%</span>
+	                    </li>
+		                <!-- tmpl:endif -->
+		                <!-- tmpl:ifdef %page% -->
+		                <li>
+	                    	<a href="inbox.php?page=%page%%get_keyword%">%page%</a>
+                        </li>
+		                <!-- tmpl:endif -->
+					<!-- tmpl:endloop -->
+					<!-- tmpl:ifdef %last_page_dot% -->
+					<li>
+						<span>%last_page_dot%</span>
+					</li>
+					<!-- tmpl:endif -->
+					<!-- tmpl:ifdef %last_page%  -->
+					<li>
+						<a href="inbox.php?page=%last_page%%get_keyword%">%last_page%</a>
+					</li>
+					<!-- tmpl:endif -->
+				</ul>
+			</div>
+			<!-- tmpl:ifdef %next_val% -->
+			<div class="cell--right">
+				<a class="next %next%" href="inbox.php?page=%next_val%">次へ</a>
+			</div>
+			<!-- tmpl:endif -->
+		</div>
+		<!-- tmpl:endif -->
+	</div><!-- // message_wrap -->
+</div><!-- // .contents -->
+%footer%
+<article>
+	<section id="menu_close_area">
+		<ul class="menu_close_button"><a class="menu_close_box_bg_a" id="simple-menu-close" href="#sidr"><li class="menu_close_box_bg"></li></a></ul>
+	</section>
+</article>
+<a id="scroll_top" href="#header"><img src="/sp/image/icon/btn_pagetop.png" /></a>
+</div><!-- // #main -->
+
+<script src="/sp/js/jquery.sidr.min.js"></script>
+<script src="/sp/js/smoothScroll.js"></script>
+<script src="/sp/js/jquery.biggerlink.js"></script>
+<script src="/sp/js/jquery.touchSwipe.min.js"></script>
+<script src="/sp/js/common.js"></script>
+<script src="/sp/js/message.js"></script>
+<script type="text/javascript">
+$(function(){
+	var searched=%searched%;
+   var old_keyword = '%old_keyword%';
+	
+	$('.b_link').biggerlink();
+
+	// swipe list
+	$('.swipe_panel').swipe({
+		swipeLeft: function(event, direction, distance, duration, fingerCount){
+			$(this).animate({ marginLeft: '-10rem' }, 200);
+		},
+		swipeRight: function(event, direction, distance, duration, fingerCount){
+			$(this).animate({ marginLeft: '0rem' }, 200);
+		}
+	});
+
+	/**
+	tabs
+	*/
+	$('#message_sort_menu ul > li').click(function() {
+		keyword = $('#keyword').val();
+		if ( $(this).hasClass('all')) {
+			$(this).addClass('on');
+			$('.unread').removeClass('on');
+			$('#tab').val('all');
+		}
+		else {
+			$(this).addClass('on');
+			$('.all').removeClass('on');
+			$('#tab').val('unread');
+		}
+		$('#page').val(1);
+		/*if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}*/
+		$('.message_search_area > div > form').submit();
+	});
+	
+	/**
+	search contact
+	 */
+	$('#search').click(function() {
+		$('#page').val(1);
+		$('.message_search_area > div > form').submit();
+	});
+
+	/**
+	page next / prev click
+	*/
+	$('.message_pager > div > a').click(function() {
+		if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}
+		var currentPage = $('#page');
+			if ($(this).hasClass('prev')) {
+				currentPage.val(+currentPage.val() - 1);
+			} 
+			else if($(this).hasClass('next')) {
+				currentPage.val(+currentPage.val() + 1);
+			}
+		$('.message_search_area > div > form').submit();
+	});
+
+	/**
+	page number click
+	*/ 
+	$('.message_pager > div > ul > li > a').click(function() {
+		if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}
+		var page = $(this).html();
+		$('#page').val(page);
+		$('.message_search_area > div > form').submit();
+	});
+	
+	$('.message_search_area > div > form > input#keyword').keydown(function(e){
+		if (e.keyCode == 13) {
+			$('#page').val(1);
+		}
+	}); 
+});
+</script>
+<script type='text/javascript'>
+$(document).ready(function() {
+	
+	setTimeout(function() {
+		truncateMessage();
+	}, 2000);
+	
+});
+
+$(window).on('resize', function(){
+	truncateMessage();
+});
+function truncateMessage() {
+	var ctr = 1;
+	$('.message_data .desc').each(function() {
+		var inbox  = $(this);
+		if (inbox[0].scrollWidth > inbox.innerWidth()) {
+			inbox.siblings('.trun_message').show();
+			console.log('naa' + ctr);
+		} else {
+			inbox.siblings('.trun_message').hide();
+			console.log('wala' + ctr +':'+inbox.innerWidth());
+		}
+		ctr++;
+	});
+}
+</script>
+</body>
+</html>

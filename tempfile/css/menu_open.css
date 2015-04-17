@@ -1,0 +1,176 @@
+@charset "Shift_JIS";
+
+/*メニューオープン*/
+
+#person_info {
+	padding: 4% 0% 4% 4%;
+	width: 98%;
+	height: 70px;
+	/*display:block;*/
+	display: table;
+}
+
+#person_info .personal_image {
+	/*float: left;*/
+	width: 25%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#person_info .personal_image img {
+	width: 100%;
+}
+
+#person_info .personal_status {
+	/*width: 72%;*/
+	/*float: left;*/
+	/*margin-left: 1%;*/
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#person_info .name_point {
+	/*padding-bottom: 1%;*/
+	/*border-bottom: 1px solid #000;*/
+	/*margin-left: 2%;*/
+	/*height: 15pt;*/
+	/*padding-top:3px;*/
+	padding: 0 2rem 0 1rem;
+}
+
+#person_info .name_point .name {
+	font-size: 10pt;
+	float: left;
+	font-weight: bold;
+	width:;
+	margin: 0;
+}
+
+#person_info .name_point .point_pt {
+	float: right !important;
+}
+
+#person_info .name_point p.point {
+	font-weight: bold;
+	border:0 !important;
+	/*box-shadow:0 0 0 0 none!important;*/
+	border-radius:0;
+	background:none !important;
+	padding:0 !important;
+	margin:0 !important;
+	float:left !important;
+	color:#ffffff !important;
+	box-shadow: none;
+	font-size:1.3rem;
+}
+
+#person_info .name_point p.pt {
+	padding:0 !important;
+	margin:0 !important;
+	float:right !important;
+}
+
+/*
+
+
+#person_info .name_point .point {
+	float: left;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#person_info .name_point .pt {
+	float: left;
+	font-size: 8pt;
+	padding-left: 4px;
+}
+*/
+
+#person_info .image_change {
+	padding: 4% 2% 2%;
+	border-top: 1px solid #555;
+	margin-left: 2%;
+	height:35px;
+	display:block;
+}
+
+#person_info .image_change .icon_pen {
+	float: left;
+	width: 6%;
+	padding-top: 4%;
+}
+
+#person_info .image_change .text_change {
+	float: left;
+	font-size: 11px;
+	padding-top: 3%;
+	padding-left: 2px;
+	text-align: -webkit-match-parent;
+}
+
+@media screen and (min-width: 400px){
+	#person_info .image_change .icon_pen {
+		padding-top: 1%;
+	}
+
+	#person_info .image_change .text_change {
+	padding-left: 10px;
+	}
+
+}
+
+#person_info .image_change .icon_arrow {
+	float: right;
+	width: 6%;
+	padding-top: 3%;
+}
+
+#sidr .move_list .list {
+	position: relative;
+}
+#sidr .move_list .list a,
+#sidr .move_list .list a:link,
+#sidr .move_list .list a:hover,
+#sidr .move_list .list a:visited
+{
+	color:#fff !important;
+}
+
+#sidr .move_list .icon_left {
+	width: 6%;
+	margin-left: 3%;
+	margin-right: 3%;
+	vertical-align: -3px;
+}
+
+#sidr .move_list .icon_right {
+	width: 4%;
+	position: absolute;
+	right: 3%;
+	top: 36%;
+}
+
+#sidr .logout .logout_button {
+	text-align: center;
+	background: #777;
+}
+
+#sidr footer.menu_footer {
+	border: none !important;
+}
+
+
+
+#sidr a,
+/*#sidr a:link{ color:#FFFFFF !important; font-weight:normal;}*/
+
+
+
+
+
+
+
+
+
+
+

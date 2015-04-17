@@ -1,0 +1,87 @@
+<header id="header" class="cf">
+	<h1 id="header_logo">
+		<img src="/sp/image/header_logo.png" class="hmenu">
+	</h1>
+	<div id="icon_menu">
+		<a id="simple-menu" href="#sidr">
+			<img src="/sp/image/icon/menu_off.png" class="h_menu">
+		</a>
+	</div>
+</header>
+
+<div id="sidr">
+	<header id="login">
+		<h2>
+			メニュー
+		</h2>
+	</header>
+	<section id="person_info">
+		<div class="personal_image">
+			<img src="/member_get_photo.php">
+		</div>
+		<div class="personal_status">
+			<div class="name_point">
+				<p class="name">
+					%my_nick_name%
+				</p>
+				<div class="point_pt">
+					<p class="point">
+						%my_point%
+					</p>
+					<p class="pt">
+						pt
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<ul class="move_list">
+		<!--<li class="list">
+			<a href="javascript:document.fpb2.submit();" data-tor-smoothScroll="noSmooth">
+				<img src="/sp/image/icon/right_point.png" class="icon_left">[お得]ポイントをもらう<img src="/sp/image/icon/right_arrow.png" class="icon_right">
+			</a>
+		</li>-->
+		<li class="list">
+			<a href="/sp/settlement.php" data-tor-smoothScroll="noSmooth">
+				<img src="/sp/image/icon/right_point.png" class="icon_left">ポイント購入<img src="/sp/image/icon/right_arrow.png" class="icon_right">
+			</a>
+		</li>
+		<li class="list">
+			<a href="/sp/mail.php" data-tor-smoothScroll="noSmooth">
+				<img src="/sp/image/icon/right_mail.png" class="icon_left">メール<img src="/sp/image/icon/right_arrow.png" class="icon_right">
+			</a>
+		</li>
+		<li class="list">
+			<a href="/sp/favorite.php" data-tor-smoothScroll="noSmooth">
+				<img src="/sp/image/icon/right_heart.png" class="icon_left">お気に入りパフォーマー<img src="/sp/image/icon/right_arrow.png" class="icon_right">
+			</a>
+		</li>
+		<li class="list">
+			<a href="/sp/list.php" data-tor-smoothScroll="noSmooth">
+				<img src="/sp/image/icon/right_searvh.png" class="icon_left">パフォーマー検索<img src="/sp/image/icon/right_arrow.png" class="icon_right">
+			</a>
+		</li>
+		<li class="list">
+			<a href="/sp/profile.php" data-tor-smoothScroll="noSmooth">
+				<img src="/sp/image/icon/right_user.png" class="icon_left">プロフィール・登録情報<img src="/sp/image/icon/right_arrow.png" class="icon_right">
+			</a>
+		</li>
+	</ul>
+
+	<ul class="logout">
+		<a href="/sp/logout.php" style="color:#FFFFFF; text-decoration:none;">
+			<li class="logout_button" id="logout">
+				ログアウト
+			</li>
+		</a>
+	</ul>
+
+	<footer class="menu_footer">
+		<p><small>&copy; MACHERIE</small></p>
+	</footer>
+</div>
+<form action="http://l-charge.net/index_smt_ca.php" method="POST" name="fpb2">
+<input type="hidden" name="s" value="37510">
+<input type="hidden" name="u" value="%my_user_id%">
+</form>

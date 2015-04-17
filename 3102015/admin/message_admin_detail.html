@@ -1,0 +1,81 @@
+
+ <!-- tmpl:loop %message% -->
+	  <tr id="%id%">
+		<td class="act_col">
+		     <input type="checkbox" class="chck_s" name="chck_btn" value="%id%">
+       	</td>
+        <td class="%sender_bg%">%sender%</td>
+        <td class="%receiver_bg%">%receiver%</td>
+        <td class="title_col">
+        	%date%
+        </td>
+		<!-- tmpl:ifdef %body% -->
+		<td><p class="message-col">%body%</p></td>
+		<!-- tmpl:endif -->
+		<!-- tmpl:ifdef %image% -->
+		<td><img class="message-image" src="/imgs/message/%image%"></td>
+		<!-- tmpl:endif -->
+		<!-- tmpl:ifdef %fullbody% -->
+		<td>
+			<p class="message-col">%fullbody%</p>
+		</td>
+		<!-- tmpl:endif -->
+		<td style='width:180px;'>
+			<!--<input type="submit" class="chk_btn" name="chk_btn" value="CHECKED"/>-->
+			<!-- tmpl:ifdef %enable_checked% -->
+			<button type="button" class="btn_style chk_btn" value = "%id%">チェック</button>
+			<!-- tmpl:endif -->
+			<button type="button" class="btn_style del_btn" value= "%id%">削除</button>
+
+		</td>
+	</tr>
+<!-- tmpl:endloop -->
+<tr>
+<td colspan="6">	
+<div class="blog_pager">
+	<!-- tmpl:ifdef %prev_page% -->
+	<button class="prev %prev_page%">前へ</button>
+	<!-- tmpl:endif -->
+	<ul>
+		<!-- tmpl:ifdef %first_page% -->
+		<li> <a class="page" href="javascript:;">%first_page%</a> </li>
+		<!-- tmpl:ifdef %first_page_dot% -->
+		<li> <span>...</span> </li>
+		<!-- tmpl:endif -->
+		<!-- tmpl:endif -->
+		
+		<!-- tmpl:loop %pagination% -->
+		
+		<!-- tmpl:ifdef %current% -->
+		<li class="current"> <span>%current%</span> </li>
+		<!-- tmpl:endif -->
+		
+		<!-- tmpl:ifdef %page% -->
+		<li> <a class="page" href="javascript:;">%page%</a> </li>
+		<!-- tmpl:endif -->
+		
+		<!-- tmpl:endloop -->
+		
+		<!-- tmpl:ifdef %last_page_dot% -->
+		<li> <span>...</span> </li>
+		<!-- tmpl:endif -->
+		<!-- tmpl:ifdef %last_page% -->
+		<li> <a class='page' href="javascript:;">%last_page%</a> </li>
+		<!-- tmpl:endif -->
+		
+	</ul> 
+	<!-- tmpl:ifdef %next_page% -->
+	<button class="next %next_page%">次へ</button>
+	<!-- tmpl:endif -->
+	
+	<!-- tmpl:ifdef %is_not_found% -->
+	<p style='overflow:visible!important;'>
+		結果なし検索しましたが何も見つかりません。
+		<br/>
+		<br/>
+	</p>
+	
+	<!-- tmpl:endif -->
+</div>
+</td>
+</tr>

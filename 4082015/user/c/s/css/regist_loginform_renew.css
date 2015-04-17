@@ -1,0 +1,471 @@
+
+/****
+* V‹K–³—¿“o˜^
+********************************/
+
+#regist-hajimetenokatahe {
+	width: 658px;
+	text-align: left;
+	margin: 5px 0 0 0;
+	background-color: #ffffff;
+}
+
+#forget {
+    position:relative;
+	width:658px;
+	height: 100%;
+	margin: 0 0 20px 0;
+}
+
+#forget_right{
+	width: 270px;
+	height: 100%;
+	color:#000000;
+	float:right;
+}
+
+#syouryaku {
+    position:relative;
+	width:658px;
+	height: 100%;
+	margin: 0 0 20px 0;
+}
+
+#syouryaku_right{
+	width: 270px;
+	height: 100%;
+	color:#000000;
+	float:right;
+}
+
+.step1{
+	width: 658px;
+	text-align: left;
+	margin:0px 0px 0px 0px;
+}
+
+#title_gazou{
+	width: 658px;
+	text-align: center;
+	margin: 20px 0px 25px 0px;
+}
+
+
+.font_style_10p_form{
+	width: 399px;
+	color:#333333;
+	min-width:1000px;
+	text-align: left;
+	height: 100%;
+	padding: 40px 0 0 12px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 10pt;
+}
+
+.forget_pass{
+	width: 658px;
+	text-align: right;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+
+}
+
+.mail_icon{
+    padding: 0px 0px 11px 15px;
+    background: url(http://c.macherie.tv/c/m/images/renewimages/login_icon3.png) left top no-repeat;
+}
+
+#error_text{
+	width: 658px;
+	height: 100%;
+	text-align: left;
+}
+
+.keikoku{
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 10pt;
+}
+
+/****
+* Šy“VŠÖ˜A
+********************************/
+
+#rakuten {
+    position:relative;
+	width: 658px;
+	height: 80px;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#rakuten_login_left{
+    position:absolute;
+	width:300px;
+	height: 58px;
+	text-align: left;
+	left: 20px;
+	top: 15px;
+}
+
+.rakuten_text{
+	color:#3F4FFF;
+	text-align: left;
+	margin-top: 10px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 9pt;
+}
+
+#rakuten_login_right{
+    position:absolute;
+	width: 270px;
+	height: 58px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/rakuten_haikei01.png);
+	background-repeat: no-repeat;
+	padding: 2px 9px 0 0;
+	margin: 0 auto;
+	text-align: center;
+	right: 0;
+	top: 15px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 10pt;
+}
+
+.font_style_10p_rakuten{
+    position:absolute;
+	height: 100%;
+	width: 252px;
+	top:0;
+    right:0;
+	color:#000000;
+	min-width:1000px;
+	text-align: right;
+	padding: 2px 9px 0 0;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 10pt;
+}
+
+/****
+* clear fix
+********************************/
+
+.clearfix:after { /*float‚Ì‰ğœA‚±‚±‚ªƒ|ƒCƒ“ƒg*/
+	display:block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	content:".";
+}
+.clearfix {
+	min-height: 1px; /*IE6A7‘Îô*/
+}
+
+* html .clearfix {
+	height: 1px;
+	/*\*//*/ /*MAC IE5.x‘Îô*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+/*****
+* table_board
+****************************/
+
+#regist-form-board-tbl {
+	width: 658px;
+	height: 100%;
+	margin-top: 3px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/login_blue_haikei1.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 5px;
+}
+
+#regist-form-board-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/login_blue_haikei2.png);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 658px;
+	height: 100%;
+}
+
+#regist-form-board-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/login_blue_haikei3.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 0px;
+	width: 658px;
+	height: 100%;
+}
+
+#table_board{
+	width:648px;
+	margin:0px 0px 5px 0px;
+	border-style:none;
+	height: 50px;
+}
+
+
+
+#table_board {
+	display:inline-block;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_board_left{
+	width:140px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/login_blue_haikei01.png);
+	color:#80655e;
+	float:left;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_board_center{
+	width:450px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/login_blue_haikei02.png);
+	float:left;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_board_right{
+	width:58px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/login_blue_haikei03.png);
+	float:right;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_board2{
+	width:648px;
+	margin:0px 0px 5px 0px;
+	border-style:none;
+	height: 50px;
+}
+
+#table_board2 {
+	display:inline-block;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_board2_left{
+	width:140px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/login_blue_haikei01.png);
+	color:#80655e;
+	float:left;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_board2_center{
+	width:450px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/login_blue_haikei02.png);
+	float:left;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_board2_right{
+	width:58px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/login_blue_haikei03.png);
+	float:right;
+	vertical-align: middle;
+	height: 50px;
+}
+
+input.hoge {
+	width: 410px;
+	height: 27	px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+/***** ÀŒ±table_test ‚±‚±‚Ü‚Å *****/
+
+
+/*****
+* V‹K“o˜^@‚±‚±‚©‚ç
+****************************/
+
+#orange {
+    position:relative;
+	width: 658px;
+	height: 80px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/orange_bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#orange_left{
+    position:absolute;
+	width:400px;
+	height: 80px;
+	text-align: left;
+	left: 20px;
+	top: 15px;
+}
+
+.orange_text{
+	text-align: left;
+	margin-top: 10px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 10pt;
+}
+
+#orange_right{
+    position:absolute;
+	width: 270px;
+	height: 80px;
+	padding-top: 2px;
+	margin: 0 auto;
+	text-align: center;
+	right: 0;
+	top: 15px;
+}
+
+/***** V‹K“o˜^ ‚±‚±‚Ü‚Å *****/
+
+
+/*****
+*ƒƒOƒCƒ“ƒ{ƒ^ƒ“@‚±‚±‚©‚ç
+****************************/
+
+#vote_rank2 {
+	width: 648px;
+	margin:0 auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#vote_rank2 table{
+	border-collapse: collapse;
+	width: 284px;
+	margin:0 auto;
+	display: block;
+}
+
+/***** ƒƒOƒCƒ“ƒ{ƒ^ƒ“ ‚±‚±‚Ü‚Å *****/
+
+
+
+/*****
+* text_ƒtƒHƒ“ƒgŒn
+****************************/
+
+a.link4:link {
+	color: #0031FF
+}
+a.link4:visited {
+	color: #0068FF;
+	text-decoration: underline
+}
+a.link4:active {
+	color: #0031FF;
+}
+a.link4:hover {
+	color: #001D96;
+	text-decoration: underline
+}
+
+.font_style_15p{
+	color:#000000;
+	min-width:1000px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 15pt;
+}
+
+.font_style_14p{
+	color:#000000;
+	min-width:1000px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 14pt;
+}
+
+.font_style_13p{
+	color:#000000;
+	min-width:1000px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 13pt;
+}
+
+.font_style_12p{
+	color:#000000;
+	min-width:1000px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 12pt;
+}
+
+.font_style_11p{
+	color:#000000;
+	min-width:1000px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 11pt;
+}
+
+.font_style_10p{
+	color:#000000;
+	min-width:1000px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 10pt;
+}
+
+.font_style_9p{
+	color:#000000;
+	min-width:1000px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 9pt;
+}
+
+.font_style_8p{
+	color:#000000;
+	min-width:1000px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 8pt;
+}
+
+.font_style_7.5p{
+	color:#000000;
+	min-width:1000px;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	font-size: 7.5pt;
+}
+
+/***** text_ƒtƒHƒ“ƒgŒn ‚±‚±‚Ü‚Å *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

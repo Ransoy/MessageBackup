@@ -1,0 +1,109 @@
+@charset "shift_jis";
+
+#titleArea{
+text-align:center;
+margin:25px auto 0 auto;}
+
+strong.purple{
+color:#B74056;
+position:relative;
+top:-5px;
+left:5px;}
+
+.areaStep{
+padding:15px; 0 0 20px;}
+
+#step1Area{
+padding:0 0 0 25px;
+}
+
+#step1Area p{
+color:#B74056;
+font-size:11px;
+margin:8px 0 0 0;
+}
+
+#step1Area span{
+font-size:15px;
+}
+
+#step2Area{
+background:url(../../images/fresh_step/P7_checkArea.jpg) no-repeat;
+width:500px;
+height:71px;
+position:relative;
+margin:0 0 0 25px;}
+
+#step2Area input{
+position:relative;
+top:2px;}
+
+p.area1{
+position:absolute;
+top:6px;
+left:22px;}
+
+p.area2{
+position:absolute;
+top:6px;
+left:144px;}
+
+p.area3{
+position:absolute;
+top:6px;
+left:259px;}
+
+p.area4{
+position:absolute;
+top:6px;
+left:371px;}
+
+span.small{
+color:#666664;
+font-size:11px;
+position:relative;
+top:4px;}
+
+
+#areaStepTitle{
+padding:0 0 0 15px;}
+
+#areaStepTitle img{
+vertical-align:top;
+padding:20px 0 0 0;}
+
+#areaFreeDial{
+text-align:center;
+margin:10px 0 0 0;}
+
+#noticeAreaTitle{
+color:#FF0000;
+font-size:15px;
+font-weight:bold;
+text-align:center;
+border-top:1px #E1B2BC dashed;
+margin:20px 5px 0 5px;
+padding:10px 0 10px 0;}
+
+#noticeAreaText{
+padding:0 10px 0 10px;
+line-height:1.7em;}
+
+#noticeAreaLink{
+text-align:center;
+margin:15px 0 0 0;}
+
+#noticeAreaLink a,#noticeAreaLink a:hover{
+color:#FF0000;
+font-weight:bold;}
+
+#noticeAreaMonitor{
+text-align:center;
+border-top:1px #E1B2BC dashed;
+padding:20px 0 30px 0;
+line-height:1.7em;
+margin:20px 5px 0 5px;}
+
+#noticeAreaMonitor a,#noticeAreaMonitor a:hover{
+color:#FF0000;
+font-weight:bold;}

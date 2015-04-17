@@ -1,0 +1,160 @@
+table#inquiryForm {
+	margin-bottom:30px;
+	width:90%;
+	margin:auto;
+}
+table#inquiryForm td, table#inquiryForm th {
+	border-bottom:2px solid #FFFFFF;
+	padding:12px;
+}
+table#inquiryForm th {
+	background:#E1E1E1 url(../images/support/formaccent.gif) repeat-y scroll left center;
+	font-weight:bold;
+	width:30%;
+	text-align:left;
+
+}
+table#inquiryForm td {
+	background:#F0F0F0 none repeat scroll 0%;
+	width:60%;
+	text-align:left;
+}
+table#inquiryForm td textarea {
+	height:10em;
+	margin:10px 0pt 0pt;
+	width:220px;
+}
+table#inquiryForm td.submit {
+	background:transparent none repeat scroll 0%;
+	text-align:center;
+}
+table#inquiryForm td button {
+	border: 0px none ; background-color: white;
+}
+
+
+div.mainheader{
+	width:602px;
+	margin :10px auto ;
+	border:1px solid gray;
+	background-color:white;
+}
+div.mainheader img{
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:0px;
+	padding-right:0px;
+}
+div.category{
+	color: #787878;
+	font-size:14px;
+	text-align:left;
+	font-weight:bold;
+	margin-top:18px;
+	margin-left:20px;
+}
+div.hot_faq{
+	color: #666699;
+	font-size:14px;
+	text-align:left;
+	font-weight:bold;
+	margin-top:18px;
+	margin-left:auto;
+	margin-right:auto;
+	width:500px;
+}
+div.faq{
+	color: #003278;
+	font-weight:normal;
+	font-size:14px;
+	line-height: 1.5em;
+	margin-left:30px;
+}
+div.faq a{
+	cursor: pointer;
+	color:#003278;
+}
+div.faq2{
+	color: #003278;
+	font-weight:normal;
+	font-size:14px;
+	line-height: 1.5em;
+	margin-left:auto;
+	margin-right:auto;
+	width:500px;
+}
+div.faq2 a{
+	cursor: pointer;
+	color:#003278;
+	text-decoration:underline;
+}
+div.faq_box {
+	margin-left:20px;
+	display:none;
+}
+div.faq_box img{
+	border:none;
+	margin:0;
+	padding:0;
+}
+div.faq_text_box {
+	background:url(../images/support/answer_bg.gif) repeat-y top left;
+	border:none;
+	margin:0;
+	padding:0;
+}
+div.faq_answer {
+	font-family: Arial;
+	font-weight: bold;
+	color:#FF7F00;
+	margin-left:16px;
+	width:400px;
+	border-bottom:1px solid #FF7F00;
+}
+div.faq_text{
+	line-height: 1.5em;
+	font-size:12px;
+	width:400px;
+	margin-left:16px;
+}
+
+div.search_header{
+	padding:5px;
+	font-size:14px;
+	text-align :center;
+	margin-bottom:15px;
+}
+div.search_header p{
+	padding:10px;
+	font-size:12px;
+}
+div.search_header div{
+	margin-left :25px;
+	margin-right:25px;
+	padding-top:15px;
+	padding-bottom:15px;
+	background-color:#F0F0F0;
+	font-size:16px;
+}
+div.search_body{
+	text-align:left;
+}
+div.search_body p{
+	margin-left : 40px;
+	margin-right : 10px;
+	padding:5px;
+	border: 1px dotted silver;
+}
+div#menu_block{
+	padding:10px 5px 5px 5px;
+	background-color:#00BEE0;
+	width:590px;
+	color:white;
+	line-height:1.5em;
+	text-align:center;
+	font-weight:bold;
+}
+div#menu_block a{
+	color:white;
+	text-decoration:underline;
+}

@@ -1,0 +1,62 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Macherie
+	BUILD:	2007/4/11
+	AUTHOR:	Macherie
+_______________________________________*/
+
+/*	Layout
+---------------------------------------*/
+#wrapper{
+	width:100%;
+}
+#header{
+	text-align:left;
+	padding:5px 0;
+	border-bottom:1px solid #ccc;
+}
+#left{
+	margin:10px 0 0 10px;
+	width:210px;
+	float:left;
+}
+#main{
+	margin-top:10px;
+}
+#content{
+	text-align:center;
+}
+#footer{
+	clear:both;
+}
+#footer address{
+	font-style:normal;
+	letter-spacing:2px;
+	font-size:10px;
+}
+/* comp
+--------------------------------------*/
+.left{
+	float:left;
+	margin-top:10px;
+}
+.right{
+	float:right;
+}
+/*	Clearfix
+---------------------------------------*/
+div#header:after{
+  height:0;
+  visibility:hidden;
+  content:".";
+  display:block;
+  clear:both;
+}
+* html div#header{height:1%;}
+*:first-child+html div#header {height:1%;}
+/*	Content
+---------------------------------------*/
+#content table{
+	width:680px;
+}

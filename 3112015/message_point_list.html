@@ -1,0 +1,56 @@
+		  <div class="nav" align="center">
+			<ul class="pagenate">
+				<!-- tmpl:ifdef %prev% -->
+				  <li><a href="javascript:;" data-val="%prev%" class='prev_num'><<</a></li>
+				<!-- tmpl:endif -->
+				<!-- tmpl:ifdef %first_page% -->
+					<li><a href="javascript:;" class="page_num"  data-val="%first_page%">%first_page%</a></li>
+					<li><span>...</span></li>
+				<!-- tmpl:endif -->
+				<!-- tmpl:loop %paginate% -->
+					<li>%page%</li>
+					<!-- tmpl:ifdef %last_page% -->
+					<li><span>...</span></li>
+					<li><a href="javascript:;" class="page_num" data-val="%last_page%" >%last_page%</a></li>
+					<!-- tmpl:endif -->
+				<!-- tmpl:endloop -->
+				
+				<!-- tmpl:ifdef %next% -->
+					<li><a href="javascript:;" data-val="%next%" class="next_num">>></a></li>
+				<!-- tmpl:endif -->
+			</ul>
+	</div>	
+	<!-- tmpl:ifdef %dis_data% -->
+	<table width="60%" border="1" align="center">
+		  <tbody>
+		  	<tr bgcolor="#CCCCCC"> 
+				<td><div align="center"><font size="-1">会員ＩＤ</font></div></td>
+				<td><div align="center"><font size="-1">更新後ポイント</font></div></td>
+				<td><div align="center"><font size="-1">更新前ポイント</font></div></td>
+				<td><div align="center"><font size="-1">作成日時</font></div></td>
+				<td><div align="center"><font size="-1">作成者</font></div></td>
+				<td><div align="center"><font size="-1">作成ＩＰ</font></div></td>
+			</tr>
+
+				<!-- tmpl:loop %result_search% -->
+				<tr>
+					<td nowrap=""><font size="-1">%user_id%　</font></td>
+					<td nowrap=""><font size="-1">%current_point%　</font></td>
+					<td nowrap=""><font size="-1">%prev_point%　</font></td>
+					<td nowrap=""><font size="-1">%date_create%　</font></td>
+					<td nowrap=""><font size="-1">%performer_id%　</font></td>
+					<td nowrap=""><font size="-1">%id_addrss%　</font></td>
+				</tr>
+				<!-- tmpl:endloop -->
+				<!-- tmpl:ifdef %no-result% -->
+				<tr>
+					<td colspan="6">
+						<p align="center">	
+							%no-result%
+						</p>
+					</td>
+				</tr>
+				<!-- tmpl:endif -->
+		</tbody>
+	</table>
+	<!-- tmpl:endif -->	

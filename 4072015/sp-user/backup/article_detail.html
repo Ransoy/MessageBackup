@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="keywords" content="とは？,ライブ,ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="" />
+<title>%blog_title%　-%performer_name%-/大人気ライブチャットマシェリブログ</title>
+<link rel="home" href="http://www.macherie.tv/" title="ライブチャットマシェリ" />
+<link rel="canonical" href="http://www.macherie.tv/about.php" />
+
+<link href="/c/s/css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/template.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/sp_event.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/blog.css" rel="stylesheet" type="text/css"	media="all" />
+<link href="/c/s/css/header.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/scroll.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/footer2.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+
+	<!-- wrap -->
+	<div id="wrap">
+		%head_menu%
+
+		<div id="liquid">
+			<div id="conBlock">
+
+				<div class="blog_contents_wrap cf">
+
+					<div class="ttl_area ttl_area--icon ttl_area--no_desc">
+						<h2 class="ttl_top">%blog_title%</h2>
+					</div>
+
+					<div class="blog_contents_inner blog_contents_inner--narrow_padding_top">
+
+						<div class="article_max_width">
+
+							<a class="link_forward" href="article_list_performer.php?creator=%hash%&sort=newest">%performer_name%のブログリスト </a>
+
+							<div class="performer_info performer_info--style1 b_link cf">
+								<div class="performer_figure">
+									<img src="/images/blog/spacer.gif" style="background-image: url(%performer_pic%)" />
+								</div>
+								<div class="performer_data">
+									%status%
+									<p class="performer_name"><a class="%offline%" %chat_shicho% href="javascript:void(0);" data-val="../chat/shicho.php?id=%hash%">%performer_name%</a></p>
+									<!-- mail link -->
+									<a class="btn_mail btn_mail--small nest_link" href="/webmail/write.php?id=%user_hash%" target="_blank">メールを送る</a>
+									<!-- mail link -->
+
+								</div>
+							</div>
+
+							<div class="article_detail_wrap">
+								<div class="article_ttl_area cf">
+									<!--<h3 class="article_ttl">%blog_title%</h3>-->
+									<p class="posttime">%created_date%</p>
+								</div>
+								<div class="article_detail_box">
+									<div class="article">
+										<div class="article_figure">
+											<span class="image_layer"></span>
+												<!-- tmpl:ifdef %blog_img% -->
+												<img src="%blog_img%"/>
+												<!-- tmpl:endif -->
+										</div>
+										<div class="article_data">
+											<div class="desc">%blog_body%</div>
+										</div>
+									</div>
+									<div class="article_bottom_area cf">
+
+										<!-- mail link -->
+										<a class="btn_mail" href="/webmail/write.php?id=%user_hash%" target="_blank">メールを送る</a>
+										<!-- mail link -->
+
+										<div class="counter cf">
+											<ul>
+												<!--<li class="cnt_post"><a href="./article_list_performer.html"><span class="cnt_ttl">投稿数</span><span class="cnt">0</span></a></li>-->
+												<li class="cnt_view"><a class="disable" href="javascript:void(0);"><span class="cnt_ttl">閲覧数</span><span class="cnt">%view%</span></a></li>
+												<li class="cnt_like"><a class="btn_like func_like %on%" href="javascript:void(0);"><span class="cnt_ttl">いいね</span><span class="cnt">%likes%</span></a></li>
+												<li class="cnt_comment"><a class="disable" href="javascript:void(0);"><span class="cnt_ttl">コメント</span><span class="cnt">%comments%</span></a></li>
+											</ul>
+										</div>
+									</div>
+
+
+									<!-- comment_area -->
+									<div class="comment_area cf" id="comment_area">
+										<!-- tmpl:ifdef %show_comment_form% -->
+										<div class="comment_item comment_item--input cf">
+											<form id="post_comment"  action=""  method="post">
+												<div class="comment_content cf">
+													<textarea name="msg" placeholder="コメントを入力してください"></textarea>
+													<button class="btn_style">投稿</button>
+												</div>
+										 </form>
+										</div>
+										<!-- tmpl:endif -->
+
+										<!--  tmpl:ifdef %no_comment_form% -->
+										<div class="comment_item  cf"> <p>※コメントをするにはログインが必要です。</p></div>
+										<!-- tmpl:endif -->
+										<div class="comment_list">
+											<div id="load_comment">
+												<!-- tmpl:loop %loop_comment% -->
+												<div class="comment_item cf">
+													<div class="comment_content cf">
+														<p class="comment_author_name">%nick_name%</p>
+														<p class="comment_datetime">%created%</p>
+														<p class="comment_text">%comment_body%</p>
+													</div>
+												</div><!-- // .comment_item -->
+												<!-- tmpl:endloop -->
+											</div>
+											<!-- tmpl:ifdef %page% -->
+											<div class="load_more">
+												<a  data-val="%page%" href="javascript:void(0);">もっと見る</a>
+												<input type="hidden" id="pages" value="%pages%"/>
+											</div>
+											<!-- tmpl:endif -->
+										</div><!-- // .comment_list -->
+									</div><!-- // .comment_area -->
+
+
+								</div><!-- // .article_detail_box -->
+							</div><!-- // .article_detail_wrap -->
+
+						</div><!-- // .article_max_width -->
+
+						<div class="blog_pager blog_pager--detail cf">
+							<a class="prev %prev_status%"  href="./article_detail.php?id=%prev%">前へ</a>
+							<a class="btn_style btn_style--large" href="./article_list_performer.php?creator=%user_hash%&sort=newest">この女の子のブログ一覧へ</a>
+							<a class="next %next_status%"  href="./article_detail.php?id=%next%">次へ</a>
+						</div>
+
+					</div><!-- // .blog_contents_inner -->
+
+					<div class="blog_pager blog_pager--detail cf">
+						<a class="prev prev--txt  %prev_statusIndex%" href="./article_detail.php?id=%prevIndex%">前のブログ</a>
+						<a class="btn_style btn_style--large btn_style--coral" href="./index.php">みんなのブログ一覧へ</a>
+						<a class="next next--txt %next_statusIndex%" href="./article_detail.php?id=%nextIndex%"  >次のブログ</a>
+					</div>
+
+					<!-- div class="btn_wrap cf">
+						<ul>
+							<li><a class="btn_style btn_style--large btn_style--coral" href="./index.php">みんなのブログ一覧へ</a></li>
+						</ul>
+					</div -->
+				</div><!-- // .blog_contents_wrap -->
+
+			</div><!-- // #conBlock -->
+		</div><!-- // #liquid -->
+
+		<!-- left-space -->
+		<div id="leftBlock" class="sideB">%left_menu%</div>
+		<!-- /left-space -->
+
+		<!-- right-space -->
+		<div id="rightBlock" class="sideB">%right_menu%</div>
+		<!-- /right-space -->
+	</div>
+	<!-- /wrap -->
+
+	%foot_menu%
+	<script type="text/javascript" src="/c/s/js/common.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/c/s/js/scroll.js"></script>
+	<script type="text/javascript" src="/c/s/js/jquery.biggerlink.js"></script>
+	<script type="text/javascript" src="/c/s/js/blog.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$('.b_link').biggerlink();
+
+		//add like
+		$('.cnt_like > a').click(function() {
+			likeFunction(%id%, '.cnt_like > a', '.cnt_like > a > span.cnt');
+		});
+
+		//add comment
+		$('.comment_item > form').submit(function(e){
+			var msg = $('.comment_item > form > div > textarea').val();
+			if (msg.trim().length == 0) {
+				e.preventDefault();
+			} else if ($('#FLOGIN').length > 0) {
+				alert('ログインをしてからご利用ください');
+				e.preventDefault();
+			}
+	  });
+
+		//load more
+		var click = 0;
+		$('.load_more > a').click(function(){
+			var page = $(this).data('val');
+			click+=1
+			if(click <= 1){
+				$.get('article_detail.php', {page:page,article_id:%id%}, function(data){
+					page++;
+					$('#load_comment').append(data);
+					$('.load_more > a').data('val',page);
+					click=0;
+					if(page == $('#pages').val()) $('.load_more').hide();
+				});
+			}
+		});
+
+		//font size
+		$( ".desc > font" ).each(function( i , v ) {
+			var attr = $(this).attr('size');
+			var sizeType = ['10','13','16','18','24','32','48'];
+			var size = attr;
+			var total;
+
+			if (typeof attr !== typeof undefined && attr !== false) { //if size attribute is set
+				size = size.replace(/[^0-9]/g, ''); //get the desire number size
+				if( size > 7){
+					total =  sizeType[6]+'px';
+				}else{
+					total = sizeType[parseInt(size) - 1]+'px';
+				}
+				$(this).css({
+					'font-size' : total
+				});
+			}
+		});
+	});
+	</script>
+
+	<!-- 非同期版をつかうこと -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-13149951-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</body>
+</html>

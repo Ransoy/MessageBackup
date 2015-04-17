@@ -1,0 +1,550 @@
+
+/*########################項目背景設定 start########################*/
+
+#wrapper{margin:0 auto; text-align:left;}
+
+.height_top{background:url(../images/top_news/bg_top.gif) repeat-x top; margin-bottom:10px;}
+.height_bottom{background:url(../images/top_news/bg_bottom.gif) repeat-x bottom;} 
+
+
+
+.top_left{background:url(../images/top_news/bg_top_left.gif) no-repeat top left;}
+.top_right{background:url(../images/top_news/bg_top_right.gif) no-repeat top right;}
+
+.bottom_left{background:url(../images/top_news/bg_bottom_left.gif) no-repeat bottom left;}
+.bottom_right{background:url(../images/top_news/bg_bottom_right.gif) no-repeat bottom right;}
+
+.bottom_right div{
+padding:30px;
+}
+
+
+
+.clearfix:after{
+content:".";
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+}
+
+.clearfix{
+min-height:1px;
+}
+
+* html .clearfix{height:1px;}
+
+/*########################項目背景設定 end########################*/
+
+/*########################項目背景設定（閉じた時） start########################*/
+
+#close_wrapper{margin:0 auto; text-align:left;}
+
+.close_height_top{background:url(../images/top_news/bg_close_top.gif) repeat-x top; margin-bottom:10px;}
+
+
+
+.close_top_left{background:url(../images/top_news/bg_close_top_left.gif) no-repeat top left;}
+.close_top_right{background:url(../images/top_news/bg_close_top_right.gif) no-repeat top right;}
+
+
+
+.close_clearfix:after{
+content:".";
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+}
+
+.close_clearfix{
+min-height:1px;
+}
+
+* html .close_clearfix{height:1px;}
+
+/*########################項目背景設定（閉じた時） end########################*
+
+/*########################イベントニュース start########################*/
+
+.event_news_area{
+	padding-top:20px;
+	padding-left:32px;
+	color:#003466;
+}
+
+.event_news_title{
+	margin-right:20px;
+	padding-bottom:5px;
+	font-size:14px;
+	border-bottom:2px solid #003466;
+}
+
+p.event_news_button{
+	text-align:right;
+	padding-right:20px;
+	position:relative;
+	top:-24px;
+}
+
+.event_news_link{
+	color:#000;
+	line-height:1.2em;
+	letter-spacing:0.1em;
+	font-size:12px;
+	padding-right:18px;
+}
+
+.event_news_link img{
+	margin-left:11px;
+	float:left;
+	margin-right:20px;
+	margin-top:10px;
+}
+
+.event_news_link a,
+.event_news_link a:link,
+.event_news_link a:visited,
+.event_news_link a:active{
+	background:url(../images/top_news/ivent_point.gif) no-repeat;
+	background-position:left 0;
+	padding-left:20px;
+	margin:0 0 0 12px;
+	text-decoration:underline;
+	color:#417DCB;
+	display:block;
+}
+
+.event_news_link a:hover{
+	background:url(../images/top_news/ivent_point_on.gif) no-repeat;
+	background-position:left 0;
+	padding-left:20px;
+	margin:0 0 0 12px;
+	text-decoration:underline;
+	color:#52DADA;
+	display:block;
+}
+
+.event_news_right{
+	text-align:right;
+	padding-right:20px;
+	padding-top:10px;
+	font-size:12px;
+}
+
+.event_news_right a,
+.event_news_right a:link,
+.event_news_right a:visited,
+.event_news_right a:active{
+	text-align:right;
+	padding-right:10px;
+	color:#417DCB;
+	text-decoration:underline;
+}
+
+.event_news_right a:hover{
+	text-align:right;
+	padding-right:10px;
+	color:#52DADA;
+}
+
+/*########################イベントニュース end########################*/
+
+/*########################イベントニュース詳細 start########################*/
+
+.event_open_title{
+	font-size:14px;
+	border-bottom:2px solid #003466;
+	margin-right:20px;
+	padding-bottom:5px;
+	margin-left:30px;
+	color:#003466;
+	padding-top:20px;
+}
+
+.event_open_button{
+	text-align:right;
+	padding-right:20px;
+	position:relative;
+	top:-24px;
+	height:14px;
+}
+
+div.event_open_link{
+	color:#000;
+	line-height:1.2em;
+	margin-left:10px;
+	letter-spacing:0.1em;
+	font-size:12px;
+	padding: 10px 0 18px 13px;
+	position:relative;
+	min-height:66px;
+	height: auto !important;
+	height: 66px;
+}
+div.event_open_link img{
+	float:left;
+	margin-left:11px;
+	margin-right:20px;
+	margin-top:10px;
+	_margin-left:6px;
+}
+
+.event_open_link a,
+.event_open_link a:link,
+.event_open_link a:visited,
+.event_open_link a:active{
+	background:url(../images/top_news/ivent_point.gif) no-repeat;
+	background-position:left 0px;
+	padding:0 18px 0 18px;
+	text-decoration:underline;
+	margin-left:10px;
+	color:#417DCB;
+	display:block;
+	position:relative;
+}
+
+.event_open_link a:hover{
+	background:url(../images/top_news/ivent_point_on.gif) no-repeat;
+	background-position:left 0px;
+	padding:0 18px 0 18px;
+	text-decoration:underline;
+	color:#52DADA;
+	display:block;
+	position:relative;
+}
+
+.event_open_right{
+	text-align:right;
+	padding-right:10px;
+	color:#52DADA;
+	font-size:12px;
+}
+
+.event_open_date{
+	text-align:center;
+	margin-right:20px;
+	padding-bottom:5px;
+	margin-left:30px;
+	padding-bottom:10px;
+	font-size:12px;
+}
+
+.event_open_date a,
+.event_open_date a:link,
+.event_open_date a:visited,
+.event_open_date a:active{
+	color:#003466;
+	text-decoration:none;
+	padding:4px;
+}
+.event_open_date a:hover{
+	color:#ffffff;
+	background:url(../images/top_news/ivent_year_bg.gif) no-repeat;
+	padding:4px;
+}
+.event_open_date a.select{
+	color:#ffffff !important;
+	background:url(../images/top_news/ivent_year_bg.gif) no-repeat;
+	padding:4px;
+	border:none;
+}
+
+
+.event_open_date2{
+	text-align:center;
+	border-bottom:2px solid #003466;
+	margin-right:20px;
+	margin-bottom:2px;
+	padding-bottom:5px;
+	margin-left:30px;
+	padding-bottom:13px;
+	font-size:12px;
+}
+.event_month_area a,
+.event_month_area a:link,
+.event_month_area a:visited,
+.event_month_area a:active{
+	color:#003466;
+	text-decoration:none;
+	padding:6px;
+
+	}
+.event_month_area a:hover{
+	color:#ffffff;
+	background:url(../images/top_news/ivent_month_bg.gif) no-repeat;
+	padding:6px;
+	}
+.event_month_area a.select{
+	color:#ffffff !important;
+	background:url(../images/top_news/ivent_month_bg.gif) no-repeat;
+	padding:6px;
+	border:none;
+}
+
+.event_month_area2 a,
+.event_month_area2 a:link,
+.event_month_area2 a:visited,
+.event_month_area2 a:active{
+	color:#003466;
+	text-decoration:none;
+	padding:6px;
+}
+.event_month_area2 a:hover{
+	color:#ffffff;
+	background:url(../images/top_news/ivent_month_bg2.gif) no-repeat;
+	padding:6px;
+}
+.event_month_area2 a.select{
+	color:#ffffff !important;
+	background:url(../images/top_news/ivent_month_bg2.gif) no-repeat;
+	padding:6px;
+	border:none;
+}
+
+
+.event_open_right a,
+.event_open_right a:link,
+.event_open_right a:visited,
+.event_open_right a:active{
+	text-align:right;
+	padding-right:10px;
+	color:#417DCB;
+	text-decoration:underline;
+}
+
+.event_open_right a:hover{
+	text-align:right;
+	padding-right:10px;
+	color:#52DADA;
+}
+
+/*########################イベントニュース詳細 end########################*/
+
+/*########################マシェリからのお知らせ start########################*/
+.info_area{
+	padding-top:20px;
+	padding-left:30px;
+	color:#003466;
+}
+
+.info_title{
+	font-size:14px;
+	border-bottom:2px solid #196768;
+	margin-right:20px;
+	padding-bottom:5px;
+	color:#196768;
+}
+
+.info_button{
+	text-align:right;
+	padding-right:20px;
+	position:relative;
+	top:-24px;
+}
+
+.info_link{
+	color:#000;
+	line-height:2.2em;
+	margin-left:10px;
+	letter-spacing:0.1em;
+	font-size:12px;
+	padding-right:18px;
+	/padding-left:2px;/*IE7以下*/
+}
+
+.info_link a,
+.info_link a:link,
+.info_link a:visited,
+.info_link a:active{
+	background:url(../images/top_news/info_point.gif) no-repeat;
+	padding-left:18px;
+	text-decoration:underline;
+	margin-left:10px;
+	color:#417DCB;
+}
+
+.info_link a:hover{
+	background:url(../images/top_news/info_point_on.gif) no-repeat;
+	padding-left:18px;
+	text-decoration:underline;
+	color:#52DADA;
+}
+
+.info_link_right{
+	text-align:right;
+	padding-right:20px;
+	padding-top:10px;
+	font-size:12px;
+}
+
+.info_link_right a,
+.info_link_right a:link,
+.info_link_right a:visited,
+.info_link_right a:active{
+	text-align:right;
+	padding-right:10px;
+	color:#417DCB;
+	text-decoration:underline;
+	}
+
+.info_link_right a:hover{
+	text-align:right;
+	padding-right:10px;
+	color:#52DADA;
+}
+
+/*########################マシェリからのお知らせ end########################*/
+
+
+/*########################マシェリからのお知らせ詳細 start########################*/
+
+.info_open_title{
+	font-size:14px;
+	border-bottom:2px solid #196768;
+	margin-right:20px;
+	padding-bottom:5px;
+	margin-left:30px;
+	color:#196768;
+	padding-top:20px;
+}
+
+.info_open_button{
+	text-align:right;
+	padding-right:20px;
+	position:relative;
+	top:-24px;
+	height:14px;
+}
+
+.info_open_link{
+	color:#000;
+	line-height:2em;
+	margin-left:10px;
+	letter-spacing:0.1em;
+	font-size:12px;
+}
+
+.info_open_link a,
+.info_open_link a:link,
+.info_open_link a:visited,
+.info_open_link a:active{
+	background:url(../images/top_news/info_point.gif) no-repeat;
+	padding-left:18px;
+	text-decoration:underline;
+	margin-left:10px;
+	color:#417DCB;
+}
+
+.info_open_link a:hover{
+	background:url(../images/top_news/info_point_on.gif) no-repeat;
+	padding-left:18px;
+	text-decoration:underline;
+	color:#52DADA;
+}
+
+.info_open_right{
+	text-align:right;
+	padding-right:10px;
+	color:#52DADA;
+	font-size:12px;
+}
+
+.info_open_date{
+	text-align:center;
+	margin-right:20px;
+	padding-bottom:5px;
+	margin-left:30px;
+	padding-bottom:10px;
+	font-size:12px;
+}
+
+.info_open_date a,
+.info_open_date a:link,
+.info_open_date a:visited,
+.info_open_date a:active{
+	color:#196768;
+	text-decoration:none;
+	padding:4px;
+}
+.info_open_date a:hover{
+	color:#ffffff;
+	background:url(../images/top_news/info_year_bg.gif) no-repeat;
+	padding:4px;
+}
+.info_open_date a.select{
+	color:#ffffff !important;
+	background:url(../images/top_news/info_year_bg.gif) no-repeat;
+	padding:4px;
+	border: none;
+}
+
+
+.info_open_date2{
+	text-align:center;
+	border-bottom:2px solid #196768;
+	margin-right:20px;
+	padding-bottom:5px;
+	margin-left:30px;
+	padding-bottom:13px;
+	font-size:12px;
+}
+.month_area a,
+.month_area a:link,
+.month_area a:visited,
+.month_area a:active{
+	color:#196768;
+	text-decoration:none;
+	padding:6px;
+
+	}
+.month_area a:hover{
+	color:#ffffff;
+	background:url(../images/top_news/info_month_bg.gif) no-repeat;
+	padding:6px;
+	}
+.month_area a.select{
+	color:#ffffff !important;
+	background:url(../images/top_news/info_month_bg.gif) no-repeat;
+	padding:6px;
+	border: none;
+	}
+
+.month_area2 a,
+.month_area2 a:link,
+.month_area2 a:visited,
+.month_area2 a:active{
+	color:#196768;
+	text-decoration:none;
+	padding:6px;
+}
+.month_area2 a:hover{
+	color:#ffffff;
+	background:url(../images/top_news/info_month_bg2.gif) no-repeat;
+	padding:6px;
+}
+.month_area2 a.select{
+	color:#ffffff !important;
+	background:url(../images/top_news/info_month_bg2.gif) no-repeat;
+	padding:6px;
+	border: none;
+}
+
+.info_open_right a,
+.info_open_right a:link,
+.info_open_right a:visited,
+.info_open_right a:active{
+	text-align:right;
+	padding-right:10px;
+	color:#417DCB;
+	text-decoration:underline;
+}
+
+.info_open_right a:hover{
+	text-align:right;
+	padding-right:10px;
+	color:#52DADA;
+}
+
+/*########################マシェリからのお知らせ詳細 end########################*/
+

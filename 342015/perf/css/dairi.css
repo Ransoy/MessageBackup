@@ -1,0 +1,74 @@
+@charset "Shift_JIS";
+
+#macherieNews div
+{
+	padding:8px 4px;
+	text-align:center;
+}
+#macherieNews div p
+{
+	text-align:left;
+	margin-bottom:4px;
+}
+
+#macherieNews div.faq
+{
+	border-bottom:1px dotted #ccc;
+}
+
+/* MobileRegist
+----------------------------------------------*/
+#mobileRegist
+{
+}
+#mobileRegist dl dd
+{
+	margin-top:10px;
+	padding-left:178px;
+	background:url(../images/mobi/qr.gif) no-repeat;
+	height:148px;
+	position:relative;
+}
+#mobileRegist dl dd p
+{
+	padding-top:40px;
+}
+#mobileRegist dl dd div.detail
+{
+	position:absolute;
+	top:77px;
+	left:409px;
+}
+
+#mobiForm
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	background:url(../images/mobi/form.gif) no-repeat;
+	height:68px;
+}
+#mobiForm form
+{
+	padding-top:34px;
+}
+#mobiForm form input,
+#mobiForm form select
+{
+	font-size:14px;
+}
+
+/* ProfileEdit
+----------------------------------------------*/
+
+#Profile table
+{
+
+}
+#Profile table th
+{
+	background:#ccc;
+}
+#Profile table td
+{
+
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<title>ライブチャットマシェリ %nick_name%ちゃんのお部屋</title>
+<link href="seeing.css" rel="stylesheet" type="text/css" />
+<SCRIPT TYPE="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function MM_Windowsize(size) {
+  url = "jenic_shicho.php?id=%female_id%&world=%world%";
+  location.href = url+size;
+}
+
+function func_rand() {
+  url = "jenic_shicho.php?id=%female_id%&rand_id&world=%world%";
+  location.href = url;
+}
+function func_back() {
+  url = "jenic_shicho.php?id=%female_id%&back=%back_id%&world=%world%";
+  location.href = url;
+}
+
+function disp_chat_shot(url){
+	location.href = url;
+}
+function disp_chat_party(url){
+	location.href = url;
+}
+function disp_chat_peep(url){
+	location.href = url;
+}
+// -->
+</SCRIPT> 
+<SCRIPT TYPE="text/javascript">
+<!--
+window.onbeforeunload = function(e) {
+	window.document.chat.SetVariable("cutConnection", "execute");
+}
+// -->
+</SCRIPT> 
+</head>
+
+<body onContextmenu="return false">
+
+<div id="container">
+
+<div id="topmenu">
+<ul>
+<li><img src="images2/logo_s.gif" alt="Macherie.tv" width="144" height="38" id="gap" /></li>
+<li style="width: 102px; height: 38px;">
+<img src="images2/macherie_top_s.gif" border="0" width="102" height="38" onmouseover="this.src='images2/macherie_top_s_over.gif'" onmouseout="this.src='images2/macherie_top_s.gif'" alt="Macherie.tvトップページ" id="gap"
+ onclick="window.open('../index.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" />
+</li>
+<li style="width: 104px; height: 38px;">
+<img src="images2/new_member_s.gif" border="0" width="104" height="38" onmouseover="this.src='images2/new_member_over_s.gif'" onmouseout="this.src='images2/new_member_s.gif'" alt="新規会員登録" id="gap"
+ onclick="window.open('../registration.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" />
+</li>
+<li style="width: 96px; height: 38px;">
+<img src="images2/point_purchase_s.gif" border="0" width="96" height="38" onmouseover="this.src='images2/point_purchase_s_over.gif'" onmouseout="this.src='images2/point_purchase_s.gif'" alt="ポイント購入" id="gap"
+ onclick="window.open('../settlement.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" />
+</li>
+<li style="width: 92px; height: 38px;">
+<img src="images2/mymenu_s.gif" border="0" width="92" height="38" onmouseover="this.src='images2/mymenu_s_over.gif'" onmouseout="this.src='images2/mymenu_s.gif'" alt="マイメニュー" id="gap"
+ onclick="window.open('../member.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" />
+</li>
+<li id="screen_size">
+<div id="size1">
+<ul>
+<li>
+<img src="images2/screen_small2.gif" border="0" onmouseover="this.src='images2/screen_small1.gif'" onmouseout="this.src='images2/screen_small2.gif'" alt="画面サイズ（小）" id="gap" onclick="MM_Windowsize('&small')" />
+</li>
+<li id="size_normal">
+<img src="images2/screen_normal2.gif" border="0" onmouseover="this.src='images2/screen_normal1.gif'" onmouseout="this.src='images2/screen_normal2.gif'" alt="画面サイズ（中）" id="gap" onclick="MM_Windowsize('&normal')" />
+</li>
+<li id="size_big">
+<img src="images2/screen_big1.gif" border="0" alt="画面サイズ（大）" id="gap" />
+</li>
+</ul>
+</div>
+</li>
+<li id="letter_size">
+<div id="size2">
+<ul>
+<li>
+<img src="images2/screen_small2.gif" border="0" alt="文字サイズ（小）" id="gap_s"
+ onclick="document.getElementById('big_prof_t').style.fontSize='11px';
+ document.getElementById('gap_s').src='images2/screen_small1.gif'; document.getElementById('gap_n').src='images2/screen_normal2.gif'; document.getElementById('gap_b').src='images2/screen_big2.gif';" />
+</li>
+<li id="size_normal">
+<img src="images2/screen_normal1.gif" border="0" alt="文字サイズ（中）" id="gap_n"
+ onclick="document.getElementById('big_prof_t').style.fontSize='12px';
+ document.getElementById('gap_s').src='images2/screen_small2.gif'; document.getElementById('gap_n').src='images2/screen_normal1.gif'; document.getElementById('gap_b').src='images2/screen_big2.gif';" />
+</li>
+<li id="size_big">
+<img src="images2/screen_big2.gif" border="0" alt="文字サイズ（大）" id="gap_b"
+ onclick="document.getElementById('big_prof_t').style.fontSize='13px';
+ document.getElementById('gap_s').src='images2/screen_small2.gif'; document.getElementById('gap_n').src='images2/screen_normal2.gif'; document.getElementById('gap_b').src='images2/screen_big1.gif';" />
+</li>
+</ul>
+</div>
+</li>
+<li>
+<img src="images2/come_back.gif" border="0" width="89" height="38" id="gap" style="filter:alpha(style=0,opacity=60);" />
+</li>
+<li>
+<img src="images2/advance_normal.gif" border="0" width="87" height="38" id="gap" style="filter:alpha(style=0,opacity=60);" />
+</li>
+</ul>
+</div><!-- topmenu -->
+
+<!-- main_space（左部ここから） -->
+<div id="main_space_big">
+
+<div id="screen_space_big">
+<div id="screen_posi_big">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="792" height="506" id="chat"  align="right">
+  <param name="allowScriptAccess" value="sameDomain" />
+  <param name="allowFullScreen" value="false" />
+  <param name="movie" value="flash/jenic_shicho_big.swf%param%" />
+  <param name="quality" value="high" />
+  <param name="bgcolor" value="#781400" />
+  <embed src="flash/jenic_shicho_big.swf%param%" quality="high" bgcolor="#781400" width="792" height="506" name="chat" align="right" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</div><!-- screen_posi_big -->
+</div><!-- screen_space -->
+<!-- main_space（左部ここから） -->
+
+<!-- main_space（右部ここから） -->
+<div id="right_big_space">
+
+<div id="right_big_top">
+
+<div id="bigprof_photo">
+<div id="bigprof_photo_posi"><img src="/imgs/op/80x60/%girl_img%" class="photo_border" id="gap" /></div>
+</div><!-- bigprof_photo -->
+
+<div align="center" id="photo_name">%nick_name%</div>
+<div id="font_posi"><img src="images2/book.gif" align="absmiddle" id="text_posi" />
+<a href="../favorite.php?sid=%female_id%" target="_blank">お気に入りに登録</a>
+</div>
+<div id="font_posi"><img src="images2/mail.gif" align="absmiddle" id="text_posi" />
+<a href="#" onclick="window.open('../webmail/write.php?sid=%female_id%','memberWebmail', 'titlebar=0,status=0,scrollbars=1,resizable=1');">メールを出す</a>
+</div>
+<div id="font_posi"><img src="images2/memo.gif" align="absmiddle" id="text_posi" />
+<a href="#" onclick="window.open('../memopad.php?sid=%female_id%','','width=450 height=250')">メモを書く</a>
+</div>
+
+<table width="118" border="0" cellspacing="0" cellpadding="0" id="big_prof_t">
+  <tr>
+    <td width="49" valign="top" align="right"><span id="red_font">年　齢 ：</span></td>
+    <td width="69" valign="top">%age%</td>
+  </tr>
+  <tr>
+    <td valign="top" align="right"><span id="red_font">地　域 ：</span></td>
+    <td valign="top">%area%</td>
+  </tr>
+  <tr>
+    <td valign="top" align="right"><span id="red_font">マイク ：</span></td>
+    <td valign="top">%mic%</td>
+  </tr>
+  <tr>
+    <td valign="top" align="right"><span id="red_font">職　業 ：</span></td>
+    <td valign="top">%job%</td>
+  </tr>
+</table>
+
+<div id="prof_look" align="right"><a href="#" onclick="window.open('../profile/profile.php?sid=%female_id%','Profile','width=714,height=536')">もっと見る >></a></div>
+
+</div><!-- right_big_top -->
+
+<div id="right_big_bottom">
+
+<div id="baner_up"><img src="images2/free_regi.gif" id="baner_posi1" onclick="window.open('../registration.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" /></div>
+<div id="baner_down"><img src="images2/buy_point.gif" alt="ポイント購入" id="baner_posi2" onclick="window.open('../settlement.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" /></div>
+</div><!-- right_big_bottom -->
+
+</div><!-- right_big_space -->
+<!-- main_space（右部ここまで） -->
+
+
+</div><!-- main_space -->
+
+</div><!-- container -->
+</body>
+</html>

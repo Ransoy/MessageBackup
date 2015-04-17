@@ -1,0 +1,339 @@
+
+/****
+* êVãKñ≥óøìoò^
+********************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	font-family : 'ÉÅÉCÉäÉI', 'Verdana', 'Helvetica', 'Arial', 'ÇlÇr ÇoÉSÉVÉbÉN', 'MS P Gothic', 'ÉqÉâÉMÉmäpÉS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+#regist-hajimetenokatahe {
+	width: 658px;
+	text-align: center;
+	margin: 20px 0 0 5px;
+	background-color: #ffffff;
+	font-size: 13pt;
+}
+
+.step1{
+	width: 658px;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+}
+
+.muryoutaiken{
+	width: 658px;
+	text-align: center;
+	margin:30px 0px 5px 0px;
+}
+
+.step2{
+	width: 658px;
+	text-align: center;
+	margin:0px 5px 0px 0px;
+}
+
+#title_gazou2{
+	width: 658px;
+	text-align: center;
+	margin: 20px 0px 25px 0px;
+}
+
+#title_gazou3{
+	width: 658px;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+}
+
+/*clear fix */
+
+.clearfix:after { /*floatÇÃâèúÅAÇ±Ç±Ç™É|ÉCÉìÉg*/
+	display:block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	content:".";
+}
+.clearfix {
+	min-height: 1px; /*IE6ÅA7ëŒçÙ*/
+}
+
+* html .clearfix {
+	height: 1px;
+	/*\*//*/ /*MAC IE5.xëŒçÙ*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+#akauntojyouhou-tbl {
+	width: 658px;
+	height: 100%;
+	margin-top: 0px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/kanryou_haikei_pink01_1.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 13px;
+}
+
+#akauntojyouhou-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/kanryou_haikei_pink03.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 13px;
+	width: 658px;
+	height: 100%;
+}
+
+#akauntojyouhou-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/kanryou_haikei_pink02.png);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 658px;
+	height: 100%;
+}
+
+
+#table_akauntojyouhou{
+	width:648px;
+	margin:0px 0px 0px 0px;
+	border-style:none;
+	border-color:#999;
+	border-width:0px;
+	height: 100%;
+}
+
+#table_akauntojyouhou{
+	display:inline-block;
+	vertical-align: middle;
+	height: 100%;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	margin: 0 auto;
+	line-height:200%;
+}
+
+#table_akauntojyouhou_left{
+	display:inline-block;
+	vertical-align: middle;
+	width:150px;
+	color:#333333;
+	float:left;
+	height: 100%;
+	margin: 0 auto;
+	text-align: right;
+}
+
+#table_akauntojyouhou_right{
+	display:inline-block;
+	vertical-align: middle;
+	width:450px;
+	color:#333333;
+	float:right;
+	text-align: left;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+
+/*****
+* ÉNÉåÉWÉbÉgîFèÿê‡ñæÅ@îwåi
+****************************/
+
+#credit_setsumei_haikei-tbl {
+	width: 655px;
+	height: 100%;
+	margin-top: 8px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/waku_creditninsyou_top.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 8px;
+	text-align: center;
+	z-index: 3;
+	position: relative;
+    right:0;
+}
+
+#credit_setsumei_haikei-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/waku_creditninsyou_bot.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin-bottom: 20px;
+	padding-bottom: 8px;
+	width: 655px;
+	height: 100%;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+    right:0;
+}
+
+#credit_setsumei_haikei-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/waku_creditninsyou_mid.png);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 655px;
+	height: 100%;
+	text-align: center;
+	z-index: 1;
+	position: relative;
+    right:0;
+}
+
+.credit_setsumei{
+	width: 647px;
+	text-align: left;
+	margin:0px 8px 0px 8px;
+	line-height:150%;
+	color:#000000;
+	font-size: 10pt;
+}
+
+#title001{
+	width: 655px;
+	height: 100%;
+	margin-bottom: 10px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/title_001.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding:0px 0px 5px 0px;
+	text-align: left;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	line-height:150%;
+}
+
+.arigatou_naiyou{
+	width: 655px;
+	font-size:10pt;
+	color:#000000;
+	text-align: center;
+	line-height:120%;
+	margin: 5px;
+}
+
+#akauntojyouhou_mongon{
+	height: 100%;
+	font-size:9pt;
+	color:#333333;
+	margin-bottom: 10px;
+	line-height:100%;
+	text-align: left;
+	padding: 0 0 5px 0;
+}
+
+#yoriissou-tbl {
+	width: 658px;
+	height: 100%;
+	margin-top: 0px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/yoriissou_title.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 69px;
+	text-align: left;
+}
+
+#yoriissou-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/yoriissou_bot.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 6px;
+	width: 658px;
+	height: 100%;
+}
+
+#yoriissou-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/yoriissou_mid.png);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 658px;
+	height: 100%;
+}
+
+
+#table_yoriissou{
+	width:658px;
+	margin:0px 0px 0px 0px;
+	border-style:none;
+	border-color:#999;
+	border-width:0px;
+	height: 100%;
+	text-align: left;
+}
+
+
+/*****
+* text_ÉtÉHÉìÉgån
+****************************/
+
+a.link4:link {
+	color: #0031FF
+}
+a.link4:visited {
+	color: #0068FF;
+	text-decoration: underline
+}
+a.link4:active {
+	color: #0031FF;
+}
+a.link4:hover {
+	color: #001D96;
+	text-decoration: underline
+}
+
+
+/***** text_ÉtÉHÉìÉgån Ç±Ç±Ç‹Ç≈ *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

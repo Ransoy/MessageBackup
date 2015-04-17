@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="Shift-JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="keywords" content="とは？,ライブ,ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content=""  />
+<title>メール | ライブチャットマシェリ / 芸能人も参加する超人気サイト</title>
+<link rel="home" href="http://www.macherie.tv/" title="ライブチャットマシェリ" />
+<link rel="canonical" href="http://www.macherie.tv/about.php" />
+<!--<script type="text/javascript" src="/js/prototype.js"></script>-->
+<script type="text/javascript" src="/js/common.js"></script>
+
+<link href="/c/s/css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/template.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/sp_event.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="/css/margin.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/message.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/footer2.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="/c/s/css/header.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link href="/c/s/css/scroll.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/c/s/js/scroll.js"></script>
+
+</head>
+<body>
+
+<!-- wrap -->
+<div id="wrap">
+	%head_menu%
+		<div id="liquid">
+			<div id="conBlock">
+
+				<div class="message_contents_wrap cf">
+
+					<h1>System Under Maintenance</h1>
+					
+				</div><!-- // .message_contents_wrap -->
+
+			</div><!-- // #conBlock -->
+		</div><!-- // #liquid -->
+
+
+<!-- left-space -->
+<div id="leftBlock" class="sideB">%left_menu%</div>
+<!-- /left-space -->
+
+
+<!-- right-space -->
+<div id="rightBlock" class="sideB">%right_menu%</div>
+<!-- /right-space -->
+
+
+</div>
+<!-- /wrap -->
+
+
+<!-- footer -->
+%foot_menu%
+<!-- /footer -->
+
+<script type="text/javascript" src="/c/s/js/jquery.biggerlink.js"></script>
+<script type="text/javascript" src="/c/s/js/message.js"></script>
+<script type="text/javascript">
+$(function(){
+	var searched=%searched%;
+	var old_keyword = '%old_keyword%';
+	$('.b_link').biggerlink();
+
+	/**
+	tabs
+	*/
+	$('#message_sort_menu ul > li').click(function() {
+		keyword = $('#keyword').val();
+		if ( $(this).hasClass('all')) {
+			$(this).addClass('on');
+			$('.unread').removeClass('on');
+			$('#tab').val('all');
+		}
+		else {
+			$(this).addClass('on');
+			$('.all').removeClass('on');
+			$('#tab').val('unread');
+		}
+		$('#page').val(1);
+		/*if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}*/
+		$('.message_search_area > form').submit();
+	});
+	
+	/**
+	search contact
+	 */
+	$('#search, #search_btn').click(function() {
+		$('#page').val(1);
+		$('.message_search_area > form').submit();
+	});
+
+	/**
+	page next / prev click
+	*/
+	/*$('.message_pager > a').click(function() {
+		if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}
+		var currentPage = $('#page');
+			if ($(this).hasClass('prev')) {
+				currentPage.val(+currentPage.val() - 1);
+			} 
+			else if($(this).hasClass('next')) {
+				currentPage.val(+currentPage.val() + 1);
+			}
+		$('.message_search_area > form').submit();
+	});*/
+
+	/**
+	page number click
+	*/ 
+	$('.message_pager > ul > li > a').click(function() {
+		if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}
+		var page = $(this).html();
+		$('#page').val(page);
+		$('.message_search_area > form').submit();
+	});
+	
+	$('.message_search_area > form > input#keyword').keydown(function(e){
+		if (e.keyCode == 13) {
+			$('#page').val(1);
+		}
+	}); 
+	truncateMessage();
+	$('.message_list_item .col_center .desc').find('img').load(function() {
+		var inbox = $(this).parent().parent('.desc');
+		if (inbox[0].scrollWidth > inbox.innerWidth()) {
+			inbox.siblings('.trun_message').show();
+		} else {
+			inbox.siblings('.trun_message').hide();
+		}
+	});
+});
+
+$(window).on('resize', function() {
+	truncateMessage();
+});
+
+function truncateMessage() {
+	var ctr = 1;
+	$('.message_list_item .col_center .desc').each(function() {
+		var inbox  = $(this);
+		if (inbox[0].scrollWidth > inbox.innerWidth()) {
+			inbox.siblings('.trun_message').show();
+		} else {
+			inbox.siblings('.trun_message').hide();
+		}
+		ctr++;
+	});
+}
+
+<!-- 非同期版をつかうこと -->
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-13149951-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+/************
+* メインテーブル
+***************************************/
+
+#main-tbl-top {
+	background-image: url(http://c.macherie.tv/c/m/images/common/male-support/header.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+	width: 810px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#main-tbl-top:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#main-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/common/male-support/bg.gif);
+	width: 810px;
+	margin: 0 auto;
+}
+
+#main-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/common/male-support/page_bottom.gif);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 810px;
+	margin: 0 auto;
+	padding-bottom: 24px;
+
+}
+
+
+/************
+* ロゴとパンくず
+***************************************/
+
+#main-tbl-top h2 {
+	float: left;
+}
+
+#pankuzu {
+	float: left;
+	padding-top: 40px;
+	padding-left: 5px;
+}
+
+#pankuzu:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#pankuzu ul {
+
+}
+
+#pankuzu li {
+	float: left;
+}
+
+
+/************
+* メインコンテンツ
+***************************************/
+
+#main-contents {
+	width: 740px;
+	margin: 0 auto;
+}
+
+
+
+
+/************
+* フッター
+***************************************/
+
+#foot-area {
+	clear: both;
+	color: #646464;
+	margin: 0 15px;
+	padding-top: 10px;
+	border-top: 1px solid #969696;
+	background: #f0f0f0;
+	line-height: 24px;
+}
+
+#foot-navi {
+
+}
+
+#foot-navi:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#foot-navi ul {
+
+}
+
+#foot-navi li {
+	display: inline;
+}
+
+#foot-area address {
+	margin-top: 20px;
+	font-family: Arial;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+
+/************
+* フォント
+***************************************/
+
+.font-p {
+	color: #ff77ff;
+}
+
+

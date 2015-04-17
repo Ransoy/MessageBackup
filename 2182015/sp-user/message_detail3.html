@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shift_JIS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>スマホでライブチャットマシェリ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="/sp/css/jquery.sidr.dark.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/reset.css">
+<link rel="stylesheet" href="/sp/css/common.css">
+<link rel="stylesheet" href="/sp/css/menu_open.css">
+<link rel="stylesheet" href="/sp/css/font-awesome.min.css">
+<link rel="stylesheet" href="/sp/css/margin.css">
+<link rel="stylesheet" href="/sp/css/message.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->	
+<script src="/sp/js/jquery-1.11.0.js"></script>
+</head>
+<body class="bd_message bd_message_detail">
+<div id="main">
+%right_menu%
+<div class="contents">
+	
+    <div class="message_wrap cf">
+
+        <!--<div class="box_inner">
+            <div class="ttl_area cf">
+                <h2 class="ttl_top">メッセージ詳細</h2>
+            </div>
+        </div>-->
+        
+		<input type='hidden' name='contact-id' id='contact-id' value="%contact_id%" />
+		<input type='hidden' name='from-id' id='from-id' value="%from_id%" />
+		<input type='hidden' name='to-id' id='to-id' value="%to_id%" />
+		<input type='hidden' name='from-type' id='from-type' value="%from_type%" />
+		<input type='hidden' name='to-type' id = 'to-type' value="%to_type%" />
+		<input type='hidden' name='image-profile' id='image-profile' value="%image%"/>
+		<input type='hidden' name='lastfulldate' id='lastfulldate' value="%last_full_date%">
+		<input type='hidden' name='current-date-time' id='current-date-time' value="%current_date_time%" />
+		<input type='hidden' name='can-send' id='can-send' value='%can_send%' />
+		<input type='hidden' name='hash' id='hash' value="%hash%" />
+        <div class="message_header message_header--detail">
+            <div class="col_left">
+                <a class="btn_back" href="%from_back%"><i class="fa fa-angle-left"></i></a>
+            </div>
+            <div class="col_center">
+            	<h3>%user_name%</h3>
+            </div>
+            
+            <div class="col_right">
+			<!-- tmpl:ifdef %is_not_admin% -->
+            	<a href="#" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+            <!-- tmpl:endif -->
+            </div>
+            <div>
+	            <div class="panel_menu" id="panel_menu">
+	                <ul>
+	                    <li><a class="btn_favorite %fave_on%" href="javascript:void(0)">お気に入り</a></li>
+		               	<li><a class="btn_profile" href="/chat/shicho.php?id=%hash%" target='_blank'>プロフィール</a></li>
+		                <li><a class="btn_block %block_on%" href="javascript:void(0)">拒否</a></li>
+	                </ul>
+	            </div>
+            </div>
+        </div>
+
+        <div class="message_detail_area cf" id="message_detail_area">
+           <!-- tmpl:ifdef %total_message% -->
+            	<a class="btn_more" href="javascript:void(0)">もっと見る</a>
+            	<input type='hidden' name='total' id='total' value="%total_message%"  />
+   			<!-- tmpl:endif -->
+
+            
+         
+            <div class='append-data'>
+            		 <input type='hidden' name='last-id' id='last-id' value="%last_id%" />
+            		   <input type='hidden' value="%last_date%" name = 'last-date' id='last-date' />
+            </div>
+            <!-- tmpl:loop %conversation% -->
+					<!-- tmpl:ifdef %date% -->
+					<div class="postdate_box post_date">
+						<span class="postdate" value="%date%" full="%full_date%">%date% </span>
+		            </div>
+		            <!-- tmpl:endif -->
+            
+            
+					<div message-id="%message_id%" class="cf message_detail_item %position%">
+		            		 <!-- tmpl:ifdef %image_profile% -->
+			                		<div class="thumb">
+			                          	<img src="/sp/image/spacer.gif" style="background-image: url('%image_profile%')" />
+			                      </div>
+                     		 <!-- tmpl:endif -->
+		                    <div class="bubble">
+		                        <p class="desc">%body%</p>
+		                    </div>
+		                   
+		                    <span class="posttime %not_read%">
+		                    		 <!-- tmpl:ifdef %read% -->
+		                    			<p>%read%</p>
+		                    			<br/>
+		                    		<!-- tmpl:endif -->
+		                    		%time_send%
+		                    </span>
+		            </div>
+            <!-- tmpl:endloop -->
+               
+
+        
+
+        </div><!-- // .message_detail_area -->
+        <div class="message_footer">
+        		<form id="form_message" method='POST'>
+	            <div class="message_input_area">
+	            	<!-- tmpl:ifdef %is_notify% -->
+	                <!-- ▼送信できない条件の場合 -->
+	                <div class="notice_msg">
+	                	<p>相手側の都合により、メール送信できません。</p>
+	                    <p>ポイントが足りません。ポイントを購入しますか？<a class="link_purchase" href="../settlement.php">ポイントを購入＞</a></p>
+	                </div>
+	                <!-- ▲送信できない条件の場合 -->
+					<!-- tmpl:endif -->
+					<!-- tmpl:ifdef %msg_error% -->
+					<div class="notice_msg">
+	                	<p>%msg_error%</p>
+	                </div>
+	                <!-- tmpl:endif -->
+	                <div class="notice_msg" id="pop-message" style="display:none">
+	                	<p></p>
+	                </div>
+	                <div class="col_left">
+	                    <span class="btn_attach btn_attach--emoji" id="btn_emoji"></span>
+	                    <span class="btn_attach btn_attach--photo" id="btn_photo"></span>
+	                </div>
+	                <div class="col_center">
+	
+	                    <!-- ▼送信できない条件の場合 -->
+	                    <!--<textarea id="message_textarea" disabled></textarea>-->
+	                    <!-- ▲送信できない条件の場合 -->
+	
+	                    <!-- ▼送信できる条件の場合 -->
+	                    <textarea id="message_textarea" placeholder="メッセージを入力..." name='message_body'></textarea>
+	                    <!-- ▲送信できる条件の場合 -->
+	
+	                </div>
+	                <div class="col_right">
+	
+	                    <!-- ▼送信できない条件の場合 -->
+	                    <!--<input type="submit" class="ui_btn ui_btn--small btn_submit_message" id="btn_submit_message" value="送信" disabled="disabled" />-->
+	                    <!-- ▲送信できない条件の場合 -->
+	
+	                    <!-- ▼送信できる条件の場合 -->
+	                    <input type="submit" class="ui_btn ui_btn--small btn_submit_message" id="btn_submit_message" value="送信" name='submit_message'/>
+	                    <!-- ▲送信できる条件の場合 -->
+	
+	                </div>
+	                <div class="col_right">
+	                    <input type="reset" value="&#x21bb" class="ui_btn ui_btn--small btn_submit_message" id="btn_refresh">
+	                </div>
+	             </div><!-- // .message_input_area -->
+            </form>
+
+            <!-- photo panel -->
+            <div class="photo_panel" id="photo_panel">
+                <div class="ui_btn_wrap ui_btn_wrap--half cf">
+                	<form method='post' id='form-image' enctype='multipart/form-data' autocomplete="off">
+                		<input id="file" style="opacity:0;" type="file" accept="image/x-png, image/gif, image/jpeg" name="imageFile">
+                		<input id="cam" style="opacity:0;" type="file" accept="image/*" name="imageCam" capture="">
+                		<input type='hidden' name='formImage'>
+                	</form>
+                    <ul>
+                        <li>
+                        	<a id='sel_file' class="ui_btn ui_btn--max" href="javascript:void(0);">ファイルを選択</a>
+                        </li>
+                        <li><a id='sel_cam' class="ui_btn ui_btn--max" href="javascript:void(0);">撮影する</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // photo panel -->
+
+            <!-- emoji panel -->
+            <div class="emoji_panel" id="emoji_panel">
+                <div class="emoji_tab_menu cf">
+                    <ul>
+                        <li class="on" data-target="emoji_tab_1"><a href="#">マーク</a></li>
+                        <li data-target="emoji_tab_2"><a href="#">表情<br>動物</a></li>
+                        <li data-target="emoji_tab_3"><a href="#">食べ物<br>乗り物</a></li>
+                        <li data-target="emoji_tab_4"><a href="#">天気<br>季節</a></li>
+                        <li data-target="emoji_tab_5"><a href="#">その他</a></li>
+                    </ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_1">
+                    <ul>
+	                    <li><a href="001"><img src="/imgs/emoji/001.gif" /></a></li>
+						<li><a href="002"><img src="/imgs/emoji/002.gif" /></a></li>
+						<li><a href="003"><img src="/imgs/emoji/003.gif" /></a></li>
+						<li><a href="004"><img src="/imgs/emoji/004.gif" /></a></li>
+						<li><a href="005"><img src="/imgs/emoji/005.gif" /></a></li>
+						<li><a href="006"><img src="/imgs/emoji/006.gif" /></a></li>
+						<li><a href="007"><img src="/imgs/emoji/007.gif" /></a></li>
+						<li><a href="008"><img src="/imgs/emoji/008.gif" /></a></li>
+						<li><a href="009"><img src="/imgs/emoji/009.gif" /></a></li>
+						<li><a href="010"><img src="/imgs/emoji/010.gif" /></a></li>
+						<li><a href="011"><img src="/imgs/emoji/011.gif" /></a></li>
+						<li><a href="012"><img src="/imgs/emoji/012.gif" /></a></li>
+						<li><a href="013"><img src="/imgs/emoji/013.gif" /></a></li>
+						<li><a href="014"><img src="/imgs/emoji/014.gif" /></a></li>
+						<li><a href="015"><img src="/imgs/emoji/015.gif" /></a></li>
+						<li><a href="016"><img src="/imgs/emoji/016.gif" /></a></li>
+						<li><a href="017"><img src="/imgs/emoji/017.gif" /></a></li>
+						<li><a href="018"><img src="/imgs/emoji/018.gif" /></a></li>
+				    </ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_2">
+                    <ul>
+                        <li><a href="019"><img src="/imgs/emoji/019.gif" /></a></li>
+						<li><a href="020"><img src="/imgs/emoji/020.gif" /></a></li>
+						<li><a href="021"><img src="/imgs/emoji/021.gif" /></a></li>
+						<li><a href="022"><img src="/imgs/emoji/022.gif" /></a></li>
+						<li><a href="023"><img src="/imgs/emoji/023.gif" /></a></li>
+						<li><a href="024"><img src="/imgs/emoji/024.gif" /></a></li>
+						<li><a href="025"><img src="/imgs/emoji/025.gif" /></a></li>
+						<li><a href="026"><img src="/imgs/emoji/026.gif" /></a></li>
+						<li><a href="027"><img src="/imgs/emoji/027.gif" /></a></li>
+						<li><a href="028"><img src="/imgs/emoji/028.gif" /></a></li>
+						<li><a href="029"><img src="/imgs/emoji/029.gif" /></a></li>
+						<li><a href="030"><img src="/imgs/emoji/030.gif" /></a></li>
+						<li><a href="031"><img src="/imgs/emoji/031.gif" /></a></li>
+						<li><a href="032"><img src="/imgs/emoji/032.gif" /></a></li>
+						<li><a href="033"><img src="/imgs/emoji/033.gif" /></a></li>
+						<li><a href="034"><img src="/imgs/emoji/034.gif" /></a></li>
+						<li><a href="035"><img src="/imgs/emoji/035.gif" /></a></li>
+						<li><a href="036"><img src="/imgs/emoji/036.gif" /></a></li>
+						<li><a href="037"><img src="/imgs/emoji/037.gif" /></a></li>
+						<li><a href="038"><img src="/imgs/emoji/038.gif" /></a></li>
+						<li><a href="039"><img src="/imgs/emoji/039.gif" /></a></li>
+						<li><a href="040"><img src="/imgs/emoji/040.gif" /></a></li>
+						<li><a href="041"><img src="/imgs/emoji/041.gif" /></a></li>
+						<li><a href="042"><img src="/imgs/emoji/042.gif" /></a></li>
+						<li><a href="043"><img src="/imgs/emoji/043.gif" /></a></li>
+						<li><a href="044"><img src="/imgs/emoji/044.gif" /></a></li>
+	                </ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_3">
+                    <ul>
+                    	<li><a href="045"><img src="/imgs/emoji/045.gif" /></a></li>
+						<li><a href="046"><img src="/imgs/emoji/046.gif" /></a></li>
+						<li><a href="047"><img src="/imgs/emoji/047.gif" /></a></li>
+						<li><a href="048"><img src="/imgs/emoji/048.gif" /></a></li>
+						<li><a href="049"><img src="/imgs/emoji/049.gif" /></a></li>
+						<li><a href="050"><img src="/imgs/emoji/050.gif" /></a></li>
+						<li><a href="051"><img src="/imgs/emoji/051.gif" /></a></li>
+						<li><a href="052"><img src="/imgs/emoji/052.gif" /></a></li>
+						<li><a href="053"><img src="/imgs/emoji/053.gif" /></a></li>
+						<li><a href="054"><img src="/imgs/emoji/054.gif" /></a></li>
+						<li><a href="055"><img src="/imgs/emoji/055.gif" /></a></li>
+						<li><a href="056"><img src="/imgs/emoji/056.gif" /></a></li>
+						<li><a href="057"><img src="/imgs/emoji/057.gif" /></a></li>
+						<li><a href="058"><img src="/imgs/emoji/058.gif" /></a></li>
+						<li><a href="059"><img src="/imgs/emoji/059.gif" /></a></li>
+						<li><a href="060"><img src="/imgs/emoji/060.gif" /></a></li>
+						<li><a href="061"><img src="/imgs/emoji/061.gif" /></a></li>
+						<li><a href="062"><img src="/imgs/emoji/062.gif" /></a></li>
+						<li><a href="063"><img src="/imgs/emoji/063.gif" /></a></li>
+						<li><a href="064"><img src="/imgs/emoji/064.gif" /></a></li>
+						<li><a href="065"><img src="/imgs/emoji/065.gif" /></a></li>
+						<li><a href="066"><img src="/imgs/emoji/066.gif" /></a></li>
+						<li><a href="067"><img src="/imgs/emoji/067.gif" /></a></li>
+						<li><a href="068"><img src="/imgs/emoji/068.gif" /></a></li>
+						<li><a href="069"><img src="/imgs/emoji/069.gif" /></a></li>
+						<li><a href="070"><img src="/imgs/emoji/070.gif" /></a></li>
+						<li><a href="071"><img src="/imgs/emoji/071.gif" /></a></li>
+						<li><a href="072"><img src="/imgs/emoji/072.gif" /></a></li>
+						<li><a href="073"><img src="/imgs/emoji/073.gif" /></a></li>
+						<li><a href="074"><img src="/imgs/emoji/074.gif" /></a></li>
+					
+                   	</ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_4">
+                    <ul>
+	                   	<li><a href="075"><img src="/imgs/emoji/075.gif" /></a></li>
+						<li><a href="076"><img src="/imgs/emoji/076.gif" /></a></li>
+						<li><a href="077"><img src="/imgs/emoji/077.gif" /></a></li>
+						<li><a href="078"><img src="/imgs/emoji/078.gif" /></a></li>
+						<li><a href="079"><img src="/imgs/emoji/079.gif" /></a></li>
+						<li><a href="080"><img src="/imgs/emoji/080.gif" /></a></li>
+						<li><a href="081"><img src="/imgs/emoji/081.gif" /></a></li>
+						<li><a href="082"><img src="/imgs/emoji/082.gif" /></a></li>
+						<li><a href="083"><img src="/imgs/emoji/083.gif" /></a></li>
+						<li><a href="084"><img src="/imgs/emoji/084.gif" /></a></li>
+						<li><a href="085"><img src="/imgs/emoji/085.gif" /></a></li>
+						<li><a href="086"><img src="/imgs/emoji/086.gif" /></a></li>
+						<li><a href="087"><img src="/imgs/emoji/087.gif" /></a></li>
+						<li><a href="088"><img src="/imgs/emoji/088.gif" /></a></li>
+						<li><a href="089"><img src="/imgs/emoji/089.gif" /></a></li>
+						<li><a href="090"><img src="/imgs/emoji/090.gif" /></a></li>
+						<li><a href="091"><img src="/imgs/emoji/091.gif" /></a></li>
+						<li><a href="092"><img src="/imgs/emoji/092.gif" /></a></li>
+						<li><a href="093"><img src="/imgs/emoji/093.gif" /></a></li>
+						<li><a href="094"><img src="/imgs/emoji/094.gif" /></a></li>
+						<li><a href="095"><img src="/imgs/emoji/095.gif" /></a></li>
+					</ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_5">
+                    <ul>
+                    	<li><a href="096"><img src="/imgs/emoji/096.gif" /></a></li>
+						<li><a href="097"><img src="/imgs/emoji/097.gif" /></a></li>
+						<li><a href="098"><img src="/imgs/emoji/098.gif" /></a></li>
+						<li><a href="099"><img src="/imgs/emoji/099.gif" /></a></li>
+						<li><a href="100"><img src="/imgs/emoji/100.gif" /></a></li>
+						<li><a href="101"><img src="/imgs/emoji/101.gif" /></a></li>
+						<li><a href="102"><img src="/imgs/emoji/102.gif" /></a></li>
+						<li><a href="103"><img src="/imgs/emoji/103.gif" /></a></li>
+						<li><a href="104"><img src="/imgs/emoji/104.gif" /></a></li>
+						<li><a href="105"><img src="/imgs/emoji/105.gif" /></a></li>
+						<li><a href="106"><img src="/imgs/emoji/106.gif" /></a></li>
+						<li><a href="107"><img src="/imgs/emoji/107.gif" /></a></li>
+						<li><a href="108"><img src="/imgs/emoji/108.gif" /></a></li>
+						<li><a href="109"><img src="/imgs/emoji/109.gif" /></a></li>
+						<li><a href="110"><img src="/imgs/emoji/110.gif" /></a></li>
+					
+                    </ul>
+                </div>
+            </div><!-- // .emoji_panel -->
+
+        </div><!-- // .message_footer -->
+
+
+
+
+    </div><!-- // message_wrap -->
+</div><!-- // .contents -->
+<!-- Loading Spinner -->
+<div class="spinner-loading" style="display:none;">
+	<div class="fade-container"></div>
+	<div class="spinner">
+		<div class="bounce1"></div>
+		<div class="bounce2"></div>
+		<div class="bounce3"></div>
+		<p>メッセジーを送信している。</p>
+	</div>
+</div>
+%footer%
+
+<!--<a id="scroll_top" href="#header"><img src="image/icon/btn_pagetop.png" /></a>-->
+</div><!-- // #main -->
+
+<script src="/sp/js/jquery.sidr.min.js"></script>
+<script src="/sp/js/smoothScroll.js"></script>
+<script src="/sp/js/jquery.biggerlink.js"></script>
+<script src="/sp/js/jquery.touchSwipe.min.js"></script>
+<script src="/sp/js/common.js"></script>
+<script src="/sp/js/message.js"></script>
+<script src="/sp/js/message_check.js"></script>
+<script src="/sp/js/jquery.selection.min.js"></script>
+<script src="/sp/js/modernizr.js"></script>
+<script type="text/javascript" charset="EUC-JP">
+$(function(){
+	
+	$('.b_link').biggerlink();
+	$('#message_textarea').on('input', function(e){
+        if($(this).val().indexOf("\n") > 0 || $(this).val().indexOf("\r") > 0 || $(this).val().indexOf("\r\n") > 0){
+            $(this).animate({ 'height': '4rem' }, 200);
+        }else{
+            $(this).animate({ 'height': '2.5rem' }, 200);
+        }
+    });
+
+    // reset message detail area
+    function msgAreaReset(){
+        var msg_area = $('#message_detail_area');
+        var scroll_h = msg_area.get(0).scrollHeight;
+        var win_h = $(window).height();
+
+        if(scroll_h > win_h){
+            $('html, body').scrollTop(scroll_h);
+        }
+    }
+    
+    // init message detail area
+    setTimeout(function(){
+        msgAreaReset();
+    }, 100);
+    
+    
+
+    
+    
+});
+</script>
+</body>
+</html>

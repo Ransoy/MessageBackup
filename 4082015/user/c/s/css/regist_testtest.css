@@ -1,0 +1,524 @@
+
+/****
+* V‹K–³—¿“o˜^
+********************************/
+
+.focus {
+	background: #ccccff;
+}
+
+#regist-newman {
+	width: 658px;
+	text-align: left;
+	margin: 10px 0 0 0;
+	background-color: #ffffff;
+}
+
+.step1{
+	width: 658px;
+	text-align: center;
+	margin:15px 0px 5px 0px;
+}
+
+#title_gazou{
+	width: 658px;
+	text-align: center;
+	margin: 20px 0px 25px 0px;
+}
+
+#rakuten {
+    position:relative;
+	width:658px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#rakuten_login_left{
+	width:300px;
+	height: 100%;
+	background-color:#ffffff;
+	color:#000000;
+	float:left;
+	text-align: left;
+}
+
+.font_style_9p_form{
+	width: 300px;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+	color:#FF691F;
+	min-width:1000px;
+	text-align: left;
+	height: 100%;
+	padding-top: 40px;
+}
+
+#rakuten_login_right{
+	width: 270px;
+	height: 60px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/rakuten_haikei01.png);
+	color:#000000;
+	float:right;
+}
+
+.font_style_10p_rakuten{
+    position:absolute;
+	top:0%;
+	width: 252px;
+    right:0;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#000000;
+	min-width:1000px;
+	text-align: right;
+	height: 100%;
+	padding: 2px 9px 0 0;
+}
+
+/*clear fix */
+
+.clearfix:after { /*float‚Ì‰ğœA‚±‚±‚ªƒ|ƒCƒ“ƒg*/
+	display:block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	content:".";
+}
+.clearfix {
+	min-height: 1px; /*IE6A7‘Îô*/
+}
+
+* html .clearfix {
+	height: 1px;
+	/*\*//*/ /*MAC IE5.x‘Îô*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+/*****
+* ÀŒ±table_test
+****************************/
+
+#regist-form-test-tbl {
+	width: 658px;
+	height: 100%;
+	margin-top: 8px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/haikei_top02.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 5px;
+}
+
+#regist-form-test-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/renew_form_back_mid.jpg);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 658px;
+	height: 100%;
+}
+
+#regist-form-test-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/renew_form_back_bot.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 0px;
+	width: 658px;
+	height: 100%;
+}
+
+#table_test{
+	width:648px;
+	margin:0px 0px 5px 0px;
+	border-style:none;
+	height: 50px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/renew_form_back_siro01.jpg);
+}
+
+
+
+#table_test {
+	display:inline-block;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_test_left{
+	width:140px;
+	background-color:#e5ded7;
+	color:#80655e;
+	float:left;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_test_center{
+	width:450px;
+	float:left;
+	background-color:#ffffff;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_test_right{
+	width:58px;
+	color:#3d6e14;
+	float:right;
+	vertical-align: middle;
+	height: 50px;
+}
+
+input.hoge {
+	width: 410px;
+	height: 27	px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+/***** ÀŒ±table_test ‚±‚±‚Ü‚Å *****/
+
+/*****
+* ÀŒ±form-pink_test
+****************************/
+
+#regist-form-pink-test-tbl {
+	width: 658px;
+	height: 100%;
+	margin-top: 2px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/renew_form_back_pinktop.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 5px;
+}
+
+#regist-form-pink-test-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/renew_form_back_pinkmid.jpg);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 658px;
+	height: 100%;
+}
+
+#regist-form-pink-test-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/renew_form_back_pinkbot.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 0px;
+	width: 658px;
+	height: 100%;
+}
+
+
+#table_test-pink{
+	width:648px;
+	margin:0px 0px 5px 0px;
+	border-style:none;
+	border-color:#999;
+	border-width:0px;
+	height: 50px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/renew_form_back_siro02.jpg);
+}
+
+#table_test-pink {
+	display:inline-block;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_test-pink_left{
+	width:140px;
+	background-color:#e5ded7;
+	color:#80655e;
+	float:left;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_test-pink_center{
+	width:450px;
+	float:left;
+	background-color:#ffffff;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#table_test-pink_right{
+	width:58px;
+	color:#3d6e14;
+	float:right;
+	vertical-align: middle;
+	height: 50px;
+}
+
+/***** ÀŒ±table_test-pink ‚±‚±‚Ü‚Å *****/
+
+
+
+/*****
+*—˜—p‹K–ñƒ{ƒ^ƒ“@‚±‚±‚©‚ç
+****************************/
+
+#vote_rank2 {
+	width: 648px;
+	margin:0 auto;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+#vote_rank2 table{
+	border-collapse: collapse;
+	width: 284px;
+	margin:0 auto;
+	display: block;
+}
+
+/***** —˜—p‹K–ñƒ{ƒ^ƒ“ ‚±‚±‚Ü‚Å *****/
+
+
+/*****
+* —˜—p‹K–ñ“à—e
+****************************/
+
+#kiyaku {
+	width: 658px;
+	height: 100%;
+	margin-top: 10px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/kiyaku_01.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 5px;
+}
+
+#kiyaku iframe {
+	width: 635px;
+	margin: 5px auto 0 auto;
+	border: 1px solid #323232;
+	src : url(http://www.macherie.tv/agreement_renew.php);
+	height : 250px;
+	name : —˜—p‹K–ñG
+
+	scrolling : yesG
+
+	frameborder : 1G
+	marginwidth : 5px;
+	marginheight : 5px;
+}
+
+#kiyaku-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/kiyaku_02.jpg);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 658px;
+	height: 100%;
+}
+
+#kiyaku-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/kiyaku_03.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 0px;
+	width: 658px;
+	height: 100%;
+}
+
+
+#table_kiyaku{
+	width:648px;
+	margin:0px 0px 0px 0px;
+	border-style:none;
+	height: 100%;
+	padding:0px 0px 0px 0px;
+
+}
+
+#table_kiyaku {
+	display:inline-block;
+	vertical-align: middle;
+	height: 100%;
+	padding:0px 5px 10px 12px;
+}
+
+#table_kiyaku_01{
+	width:648px;
+	color:#80655e;
+	float:left;
+	vertical-align: middle;
+	height: 100%;
+	margin: 0 auto;
+	padding:0px 0px 0px 0px;
+}
+
+#table_kiyaku_02{
+	width:648px;
+	color:#3d6e14;
+	float:left;
+	vertical-align: middle;
+	height: 100%;
+	margin: 0 auto;	
+	background-repeat: no-repeat;
+	background-position: top;
+	padding:0px 0px 0px 0px;
+	vertical-align: left;
+}
+
+
+#regist-setsumei p {
+	width: 648px;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 5px;
+	font-size: 8.5pt;
+	padding:0px 0px 0px 0px;
+	height: 100%;
+	color:#000000;
+}
+
+#verisign-setsumei p {
+	width: 450px;
+	color:#000000;
+	float:left;
+	text-align: left;
+	margin-top: 0px;
+	font-size: 10pt;
+	padding:15px 0px 0px 0px;
+	height: 100%;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+}
+
+#gazou-verisign {
+	width: 160px;
+	color:#000000;
+	float:right;
+	text-align: left;
+	margin-top: 0px;
+	font-size: 10pt;
+	padding:13px 8px 0px 0px;
+	height: 100%;
+}
+
+
+
+
+
+
+
+/*****
+* text_ƒtƒHƒ“ƒgŒn
+****************************/
+
+a.link4:link {
+	color: #0031FF
+}
+a.link4:visited {
+	color: #0068FF;
+	text-decoration: underline
+}
+a.link4:active {
+	color: #0031FF;
+}
+a.link4:hover {
+	color: #001D96;
+	text-decoration: underline
+}
+
+.font_style_15p{
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:15pt;
+	color:#000000;
+	min-width:1000px;
+}
+
+.font_style_14p{
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:14pt;
+	color:#000000;
+	min-width:1000px;
+}
+
+.font_style_13p{
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:13pt;
+	color:#000000;
+	min-width:1000px;
+}
+
+.font_style_12p{
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:12pt;
+	color:#000000;
+	min-width:1000px;
+}
+
+.font_style_11p{
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:11pt;
+	color:#000000;
+	min-width:1000px;
+}
+
+.font_style_10p{
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#000000;
+	min-width:1000px;
+}
+
+.font_style_9p{
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+	color:#000000;
+	min-width:1000px;
+}
+
+.font_style_8p{
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:8pt;
+	color:#000000;
+	min-width:1000px;
+}
+
+.font_style_7.5p{
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:7.5pt;
+	color:#000000;
+	min-width:1000px;
+}
+
+/***** text_ƒtƒHƒ“ƒgŒn ‚±‚±‚Ü‚Å *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

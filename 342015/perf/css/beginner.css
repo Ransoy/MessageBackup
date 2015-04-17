@@ -1,0 +1,197 @@
+@charset "Shift_JIS";
+
+/*共通項目*/
+
+#Beginner3step
+{
+	position:relative;
+	z-index:2;
+}
+.set_size{
+	font-size:12px;
+	line-height:1.3em;
+}
+
+.set_size img{
+	border-style:none;
+}
+
+.beginner_h{
+	position:relative;
+	background:#2993C1;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+	margin:0 0 0 8px;
+	width:708px;
+	font-size:12px;
+}
+
+.beginner_h img{
+	position:absolute;
+	top:4px;
+	right:5px;
+	border-style:none;
+}
+
+.pre_btn{
+	position:absolute;
+	bottom:0;
+	left:0px;
+}
+
+.next_btn{
+	position:absolute;
+	bottom:0;
+	right:0px;
+}
+
+.common_bg{
+	width:708px;
+	height:280px;
+	position:relative;
+}
+
+.common_bg strong{
+	font-weight:normal;
+	color:#ff0000;
+}
+
+.bottom_link{
+	position:absolute;
+	bottom:9px;
+	left:56px;
+	width:600px;
+	font-size:10px;
+}
+
+#page2,#page3,#page4,#page5,#page6{
+	display:none;
+	}
+
+
+/*1ページ目*/
+.beginner_m1{background:url(../images/firstPageRight/bg_01.jpg) center 10px no-repeat;}
+
+.beginner_m1 .common{
+	width:156px;
+	position:absolute;
+	top:130px;
+}
+
+.beginner_m1 .area1{left:13px;}
+.beginner_m1 .area2{left:188px;}
+.beginner_m1 .area3{left:362px;}
+.beginner_m1 .area4{left:538px;}
+
+.beginner_m1 img.button{
+	position:absolute;
+	top:238px;
+	left:280px;
+}
+
+/*2ページ目*/
+.beginner_m2{background:url(../images/firstPageRight/bg_02.jpg) no-repeat;}
+
+.beginner_m2 .area1{
+	position:absolute;
+	top:134px;
+	left:144px;
+	width:144px;
+}
+
+.beginner_m2 .area2{
+	position:absolute;
+	top:186px;
+	left:296px;
+	width:199px;
+}
+
+.beginner_m2 .area3{
+	position:absolute;
+	top:186px;
+	left:514px;
+	width:185px;
+}
+
+/*3ページ目*/
+.beginner_m3{background:url(../images/firstPageRight/bg_03.jpg) no-repeat;}
+
+.beginner_m3 .area1{
+	position:absolute;
+	top:46px;
+	left:233px;
+	width:153px;
+}
+
+.beginner_m3 .area2{
+	left:380px;
+	position:absolute;
+	top:148px;
+	width:305px;
+}
+
+/*4ページ目*/
+.beginner_m4{background:url(../images/firstPageRight/bg_04.jpg) no-repeat;}
+
+.beginner_m4 .area1{
+	left:30px;
+	position:absolute;
+	top:77px;
+	width:172px;
+}
+
+.beginner_m4 .area2{
+	left:370px;
+	position:absolute;
+	top:30px;
+	width:188px;
+}
+
+/*5ページ目*/
+.beginner_m5{background:url(../images/firstPageRight/bg_05.jpg) no-repeat;}
+
+.beginner_m5 .area1{
+	left:140px;
+	position:absolute;
+	top:43px;
+	width:220px;
+}
+
+.beginner_m5 .area2{
+	left:210px;
+	position:absolute;
+	top:154px;
+	width:310px;
+}
+
+.beginner_m5 .area3{
+	left:526px;
+	position:absolute;
+	top:152px;
+	width:169px;
+}
+
+/*6ページ目*/
+.beginner_m6{background:url(../images/firstPageRight/bg_06.jpg) no-repeat;}
+
+.beginner_m6 .area1{
+	left:152px;
+	position:absolute;
+	top:28px;
+	width:210px;
+}
+
+.beginner_m6 .area2{
+	left:154px;
+	position:absolute;
+	top:108px;
+	width:290px;
+}
+
+.beginner_m6 .area3{
+	left:459px;
+	position:absolute;
+	top:28px;
+	width:240px;
+}

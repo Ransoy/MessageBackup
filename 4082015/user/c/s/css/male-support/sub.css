@@ -1,0 +1,119 @@
+
+#main-contents h3 {
+	padding-top: 10px;
+}
+
+#inq-main-disc {
+	width: 720px;
+	margin: 0 auto;
+	line-height: 26px;
+}
+
+#inq-main-disc p {
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.inq-cls-tbl {
+	width: 740px;
+	height: 40px;
+	background-image: url(http://c.macherie.tv/c/m/images/common/male-support/tag_bg.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 15px;
+}
+
+.inq-cls-tbl h4 {
+	text-align: left;
+	padding-left: 35px;
+	padding-top: 12px;
+	font-size: 14px;
+}
+
+.inq-cls-disc {
+	width: 710px;
+	margin: 0 auto;
+	line-height: 2.0em;
+	padding-bottom: 10px;
+}
+
+.inq-cls-detail {
+	width: 710px;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+.inq-cls-detail:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.inq-cls-detail-l {
+	float: left;
+	width: 270px;
+}
+
+.inq-cls-detail-r {
+	float: right;
+	width: 440px;
+}
+
+
+#inq-caution {
+	width: 720px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	text-align: left;
+}
+
+#inq-form-tbl {
+	width: 710px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+#inq-form-tbl table {
+	font-size: 12px;
+	margin: 0 auto;
+	width: 680px;
+
+}
+
+#inq-form-tbl th {
+	border-bottom: 3px solid #ffffff;
+	padding: 12px;
+	background-color: #E1E1E1;
+	background-image: url(http://c.macherie.tv/c/m/images/support/formaccent.gif);
+	background-repeat: repeat-y;
+	font-weight: bold;
+	text-align: left;
+	color: #000000;
+	padding: 10px;
+	width: 30%;
+}
+
+#inq-form-tbl td {
+	background-color: #f0f0f0;;
+	/* text-align: left; */
+	padding: 12px;
+	padding: 10px;
+
+}
+
+#inq-form-tbl button {
+	border: 0;
+	margin: 15px 0 0 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+#inq-form-tbl td textarea {
+	margin: 10px 0 0;
+	width: 420px;
+	height: 10em;
+}
+
+

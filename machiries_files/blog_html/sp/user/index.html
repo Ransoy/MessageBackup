@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>ライブチャットマシェリ</title>
+<meta name="description" content="ライブチャットが初めての人でも女性登録数日本一のマシェリならお気に入りの女性が見つかります♪webカメラやチャットで会話を楽しんで素敵な時間をお過ごしください。">
+<meta name="keywords" content="ライブチャット">
+
+<link rel="stylesheet" href="css/common.css?07">
+<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+<link rel="apple-touch-icon" href="http://macherie.tv/sp/image/icon/book.png" />
+<!--
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+-->
+<!-- tmpl:ifdef %no_login_disp% -->
+<link rel="stylesheet" href="css/html5reset.css">
+<!-- tmpl:endif -->
+<link rel="stylesheet" href="css/menu_open.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script src="js/jquery-1.11.0.js"></script>
+<script type="text/javascript">window._pt_lt = new Date().getTime();</script>
+</head>
+<body class="bd_index">
+<div id="main">
+
+<header id="header" class="cf">
+	<h1 id="header_logo"><a href="./"><img src="image/header_logo.png" class="hmenu"></a></h1>
+	<div id="icon_login"><a id="simple-menu" href="#sidr"><img src="image/icon/login_off.png" class="h_menu"></a></div>
+</header>
+
+<!-- 右サイドメニュー開く -->
+<div id="sidr">
+	<header id="login">
+		<h2>ログイン</h2>
+	</header>
+
+	<section id="normal_login">
+
+		<form action="" method="POST">
+			<input type="text" name="id" value="" placeholder="ID" autofocus >
+		</form>
+
+		<form action="" method="POST">
+			<input type="text" name="pass" value="" placeholder="パスワード" autofocus >
+		</form>
+
+		<p class="cheack_area">
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox">次回から入力を省略</lable>
+		</p>
+
+		<div id="login_button_area">
+
+			<ul class="button">
+				<li class="login_box">
+					<a href="#">ログイン</a>
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="regist_box">
+					<a href="#">新規無料登録はこちら</a>
+				</li>
+			</ul>
+		</div>
+
+		<p class="login_text_link"><a href="#">>パスワードを忘れた方</a></p>
+
+	</section>
+
+	<section id="foreign_login">
+
+		<h3>他サービスのIDを利用してログイン</h3>
+
+		<div id="login_button_area">
+
+			<ul class="button">
+				<li class="yahoo_box">
+					<a href="#">Yahoo!</a>
+					<img src="image/icon/foreign_yahoo.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="rakuten_box">
+					<a href="#">楽天</a>
+					<img src="image/icon/foreign_rakuten.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="biglobe_box">
+					<a href="#">BIGLOBE</a>
+					<img src="image/icon/foreign_biglobe.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="google_box">
+					<a href="#">Google</a>
+					<img src="image/icon/foreign_google.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="twitter_box">
+					<a href="#">Twitter</a>
+					<img src="image/icon/foreign_twitter.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="facebook_box">
+					<a href="#">Facebook</a>
+					<img src="image/icon/foreign_facebook.png">
+				</li>
+			</ul>
+
+		</div>
+
+	</section>
+
+	<footer>
+		<p><small>&copy; MACHERIE</small></p>
+	</footer>
+
+</div>
+ 
+		<div class="contents">
+			<div class="index_wrap">
+				<article class="event_slider">
+					<div>
+						<a href="registrationfree.php">
+							<img src="image/banner/newjoin.png" width="100%" style="margin-bottom:2rem;">
+						</a>
+					</div>
+				</article>
+				<article>
+					<div class="icon">
+						<ul class="koshin">
+							<li id="btn_search">
+								<a href="./list.php">
+									<img src="image/icon/btn_search.png" class="koshin_btn">
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					<section>
+						<ul class="tabmenu" id="tabmenu_pf">
+							<li id="tabmenu_list">
+								<img src="image/icon/view_detail_off.png" class="btn_off">
+								<img src="image/icon/view_detail_on.png" class="btn_on">
+							</li>
+							<li id="tabmenu_tile" class="active">
+								<img src="image/icon/view_big_off.png" class="btn_off">
+								<img src="image/icon/view_big_on.png" class="btn_on">
+							</li>
+						</ul>
+						<div class="content">
+							<div class="tabbox" id="tabbox_pf">
+                                <ul id="pafo_big">
+                                    <li class="pafo_big_img">
+                                        <div class="image_area">
+                                            <img src="image/performer/performer_01.jpg">
+                                            <div class="online"><img src="image/icon/performer_online.png"></div>
+                                        </div>
+                                        <div class="debut"><img src="image/icon/performer_debut.png"></div>
+                                        <p class="area"><em>北海道東北</em></p><p class="age"><em>35歳～</em></p>
+                                        <div class="mike"><img src="image/icon/performer_mike.png"></div>
+                                    </li>
+                                    <li class="pafo_big_img">
+                                        <div class="image_area">
+                                            <img src="image/performer/performer_02.jpg">
+                                            <div class="twoshot"><img src="image/icon/performer_2shot.png"></div>
+                                        </div>
+                                        <p class="area"><em>東京</em></p><p class="age"><em>25歳</em></p>
+                                        <div class="mike"><img src="image/icon/performer_mike.png"></div>
+                                    </li>
+                                    <li class="pafo_big_img last">
+                                        <div class="image_area">
+                                            <img src="image/performer/performer_03.jpg">
+                                            <div class="twoshot"><img src="image/icon/performer_2shot.png"></div>
+                                        </div>
+                                        <div class="debut"><img src="image/icon/performer_debut.png"></div>
+                                        <p class="area"><em>大阪</em></p><p class="age"><em>21歳</em></p>
+                                        <div class="mike"><img src="image/icon/performer_mike.png"></div>
+                                    </li>
+                                
+                                    <li class="pafo_big_img">
+                                        <div class="image_area">
+                                            <img src="image/performer/performer_04.jpg">
+                                            <div class="online"><img src="image/icon/performer_online.png"></div>
+                                        </div>
+                                        <p class="area"><em>神奈川</em></p><p class="age"><em>24歳</em></p>
+                                        <div class="mike"><img src="image/icon/performer_mike.png"></div>
+                                    </li>
+                                    <li class="pafo_big_img">
+                                        <div class="image_area">
+                                            <img src="image/performer/performer_05.jpg">
+                                            <div class="online"><img src="image/icon/performer_online.png"></div>
+                                        </div>
+                                        <div class="debut"><img src="image/icon/performer_debut.png"></div>
+                                        <p class="area"><em>兵庫</em></p><p class="age"><em>20歳</em></p>
+                                        <div class="mike"><img src="image/icon/performer_mike.png"></div>
+                                    </li>
+                                    <li class="pafo_big_img last">
+                                        <div class="image_area">
+                                            <img src="image/performer/performer_06.jpg">
+                                            <div class="twoshot"><img src="image/icon/performer_2shot.png"></div>
+                                        </div>
+                                        <p class="area"><em>岩手</em></p><p class="age"><em>29歳</em></p>
+                                        <div class="mike"><img src="image/icon/performer_mike.png"></div>
+                                    </li>
+                                
+                                    <li class="pafo_big_img">
+                                        <div class="image_area">
+                                            <img src="image/performer/performer_07.jpg">
+                                            <div class="twoshot"><img src="image/icon/performer_2shot.png"></div>
+                                        </div>
+                                        <div class="debut"><img src="image/icon/performer_debut.png"></div>
+                                        <p class="area"><em>栃木</em></p><p class="age"><em>26歳</em></p>
+                                        <div class="mike"><img src="image/icon/performer_mike.png"></div>
+                                    </li>
+                                    <li class="pafo_big_img">
+                                        <div class="image_area">
+                                            <img src="image/performer/performer_08.jpg">
+                                            <div class="online"><img src="image/icon/performer_online.png"></div>
+                                        </div>
+                                        <p class="area"><em>群馬</em></p><p class="age"><em>31歳</em></p>
+                                        <div class="mike"><img src="image/icon/performer_mike.png"></div>
+                                    </li>
+                                    <li class="pafo_big_img last">
+                                        <div class="image_area">
+                                            <img src="image/performer/performer_09.jpg">
+                                            <div class="online"><img src="image/icon/performer_online.png"></div>
+                                        </div>
+                                        <div class="debut"><img src="image/icon/performer_debut.png"></div>
+                                        <p class="area"><em>関西</em></p><p class="age"><em>22歳</em></p>
+                                        <div class="mike"><img src="image/icon/performer_mike.png"></div>
+                                    </li>
+                                </ul>
+							</div>
+							<div id="loding" style="display:none; clear:both;">
+								<span class="loading on" style="margin-left:45%"><img src="image/icon/loader.gif" class="loader" style="width:40px;"></span>
+							</div>
+							<div style="width: 100%;overflow: hidden;margin: 0 auto;">
+								<button name="more_view" id="more_view" style="display: none;width: 92%;  margin: 2rem auto;  text-align: center;  padding: 0.7rem 1.5rem;  background: #f5f5f5; color: #000;  border: 2px solid #bbb;  font-size: 1.6rem; box-sizing: border-box;">▼ もっと見る</button>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+		</div>
+
+<article>
+	<section id="menu_close_area">
+		<ul class="menu_close_button"><a class="menu_close_box_bg_a" id="simple-menu-close" href="#sidr"><li class="menu_close_box_bg"></li></a></ul>
+	</section>
+</article>
+
+<a id="scroll_top" href="#header"><img src="image/icon/btn_pagetop.png" /></a>
+
+</div><!-- // #main -->
+
+
+<footer class="footer_bottom" id="footer">
+	<div class="nav_main">
+		<ul>
+			<li class="top">
+				<a href="./" data-tor-smoothScroll="noSmooth">
+					<span>トップページ</span>
+				</a>
+			</li>
+			<li class="app_download">
+				<a href="app_download.php" data-tor-smoothScroll="noSmooth">
+					<span>チャットアプリのダウンロード方法</span>
+				</a>
+			</li>
+			<li class="guide">
+				<a href="guide.php" data-tor-smoothScroll="noSmooth">
+					<span>遊び方・料金説明</span>
+				</a>
+			</li>
+			<li class="faq">
+				<a href="http://faqs.jp/?site_domain=macherie" target="_blank">
+					<span>FAQ・よくある質問</span>
+				</a>
+			</li>
+			<li class="cs_support">
+				<a href="cs_support.php" data-tor-smoothScroll="noSmooth">
+					<span>お問い合わせ</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="nav_sub">
+		<ul>
+			<li>
+				<a href="agreement.php" data-tor-smoothScroll="noSmooth">利用規約</a>
+			</li>
+			<li>
+				<a href="privacy.php" data-tor-smoothScroll="noSmooth">プライバシーポリシー</a>
+			</li>
+			<li>
+				<a href="notice.php" data-tor-smoothScroll="noSmooth">特定商取引</a>
+			</li>
+		</ul>
+	</div>
+	<p class="pc_change"><a href="javascript:void(0);" onClick="pc_disp();">PC版表示に切り替える</a></p>
+	
+    <!-- blog link -->
+    <div class="btn_wrap_center margin_top_20 margin_bottom_20">
+    	<ul>
+    		<li><a class="btn coral" href="./blog_index.html">ブログ一覧へ</a></li>
+		</ul>
+    </div>
+    <!-- // .blog_link -->
+    
+    <p><a href="http://www.mache.tv/m/"class="mache_bunner" target="_blank"><img src="image/banner/mache_bunner.jpg"></a></p>
+	<p style="text-align:center;margin:2.2rem 0;font-size:1.4rem;"><a href="http://blue-b.com/cp/" rel="nofollow" target="_blank"><img src="image/banner/live_banner.jpg" style="width:96%;"></a></p>
+	<small class="copyright">&copy;MACHERIE</small>
+</footer>
+
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function(){
+	/*------------------------------------*/
+	/* メインスライダー
+	/*------------------------------------*/
+	$('#slider').bxSlider({
+		  auto: true,
+		  pager: true,
+	});
+});
+</script>
+</body>
+</html>

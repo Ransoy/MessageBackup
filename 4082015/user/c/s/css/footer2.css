@@ -1,0 +1,137 @@
+.footer {
+	background: url(/img/dotted.jpg);
+	clear: both;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.footer-contents {
+	width: 972px;
+	margin: 30px auto 0;
+	padding: 53px 0 0 0;
+}
+.footer-contents-right {
+	float: left;
+}
+.footer-contents-right a {
+	color: #444444;
+}
+.footer-contents-right a:hover {
+	color: #e43b0b;
+}
+.footer-contents-left {
+	float: left;
+	margin: 0 30px 0 0;
+	font-size: 14px;
+}
+.footer-contents-left li {
+	margin: 0 0 15px 0;
+	text-align: center;
+}
+.footer-contents-left li a {
+	color: #ffffff;
+	padding: 14px 20px;
+	display: block;
+}
+.footer-contents-left li a:hover {
+	opacity:0.8;
+    -moz-opacity:0.8;
+    filter:alpha(opacity = 80);
+}
+.footer-contents-left .new-member a {
+	background: #4cb832;
+}
+.footer-contents-left .member a {
+	background: #02b4c8;
+}
+.footer-contents-left .performer a {
+	background: #f65f8f;
+}
+
+.footer-info {
+	float: left;
+	margin: 0 30px 0 0;
+	width: 350px;
+}
+.footer-info dt{
+	width: 300px;
+}
+.footer-group {
+	float: left;
+	width: 350px;
+}
+.mache-explain-wrapper {
+	clear: both;
+	float: left;
+	margin: 32px 0 35px;
+}
+.mache-explain-wrapper img {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.mache-explain {
+	float: left;
+	width: 760px;
+	margin: 0 0 0 20px;
+}
+.footer-list {
+	clear: both;
+	background: #000000;
+	padding: 17px 0;
+}
+.footer-list li {
+	display: inline-block;
+}
+
+.footer-contents-right dl {
+
+}
+
+.footer-contents-right dt {
+	font-size: 16px;
+	border-bottom: 1px dashed #000000;
+	padding: 0 0 13px 0;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+.footer-contents-right dd {
+	font-size: 14px;
+	padding: 5px 0;
+	list-style-type: disc;
+	display: list-item;
+	margin: 0 0 0 18px;
+}
+.footer-contents-right span {
+	color: #acacac;
+}
+
+.dl-left {
+	width: 280px;
+	float: left;
+}
+.dl-right {
+	float: left;
+	width: 184px;
+	margin: 0 0 0 25px;
+}
+.footer-list ul {
+	width: 945px;
+	text-align: center;
+	margin: 0 auto;
+}
+.footer-list ul li {
+	color: #e43b0b;
+	padding: 0 21px 0 0;
+}
+.footer-list ul a {
+	color: #ffffff;
+}
+.footer-list ul a:hover {
+	color: #e43b0b;
+}
+.add {
+	background: #000000;
+	margin: 10px 0 0 0;
+	color: #696969;
+}
+.add a {
+	color: #696969;
+}

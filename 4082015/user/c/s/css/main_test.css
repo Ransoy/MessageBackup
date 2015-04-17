@@ -1,0 +1,121 @@
+
+* html body #wrap {
+/*	border-right: 800px solid #ddd; */
+	float: left;
+	position: relative;
+	margin-right: -800px;
+}
+
+#main-space {
+	width:100%;
+	float:left;
+}
+
+
+/****** 三カラム ******/
+
+#center-space {
+	margin: 0 185px;
+	min-width: 625px;
+	padding-bottom:10px;
+	display: block;
+	text-align: center;
+}
+
+#left-space {
+	float: left;
+	width: 185px;
+	margin-left:-100%;
+	text-align: center;
+	padding-bottom:10px;
+	display: block;
+}
+
+#right-space {
+	float:left;
+	width: 185px;
+	margin-left:-185px;
+	text-align: center;
+	padding-bottom:10px;
+	display: block;
+}
+
+#credit_cr {
+	width: 658px;
+	height: 178px;
+	margin-top: 0px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/credit_regist_bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 0px;
+	text-align: center;
+	position: relative;
+    right:0;
+}
+
+#credit_cr_left {
+	width: 294px;
+	height: 70px;
+	position: absolute;
+	top: 98px;
+    left: 20px;
+}
+
+#credit_cr_right {
+	width: 294px;
+	height: 70px;
+	position: absolute;
+	top: 98px;
+    right: 20px;
+}
+
+
+/****** 三カラムここまで ******/
+
+/****** 2カラム ******/
+#dobule #wrap{
+	width:1000px;
+	margin:0 auto;
+}
+#dobule #center-space {
+	margin: 0 0 0 185px;
+}
+/****** サブコンテンツフレーム ******/
+
+#sub-temp {
+	width: 600px;
+	margin: 10px auto;
+	color: #323232;
+/*	border: 1px solid #787878; */
+	background: url(http://c.macherie.tv/c/m/images/common/bg2.gif);
+}
+
+#sub-temp h3 {
+
+}
+
+#sub-temp-a {
+	width: 600px;
+	margin: 8px auto;
+	color: #323232;
+	margin-bottom:10px;
+/*	border: 1px solid #787878; */
+}
+#dobule #wrap #sub-temp,#dobule #wrap #sub-temp-a{
+	width:100%;
+}
+#sub-temp h3 {
+
+}
+
+#error-temp {
+	background-image: url(http://c.macherie.tv/c/m/images/free/top_error_img.gif);
+	width: 598px;
+	height: 190px;
+	margin: 10px auto;
+	color: #323232;
+}
+
+
+
+/****** サブコンテンツフレームここまで ******/

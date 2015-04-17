@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<title>ライブストリーミングUGCマシェリ </title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="./css_search/import.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../js/tpl.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function func_addressbook(hash){
+	document.F1.mode.value = "add_address";
+	document.F1.hash.value = hash;
+	document.F1.action="/performer/mail/address_add.php";
+	document.F1.target="_blank";
+	document.F1.submit();
+}
+function MM_openBrWindow(theURL,winName,features) {
+  window.open(theURL,winName,features);
+}
+
+//-->
+</script>
+</head>
+<body>
+	<div id="prof">
+
+	<form id="maleProfile" action="" method="post" name="F1">
+		<img src="./images/search/prof_top.gif" alt="会員プロフィール" />
+			<dl id="leftBlock">
+				<dt><img src="%image%" oncontextmenu="return false" style="max-width:100%; max-height:95%;"/></dt>
+				<dd class="mail">
+					<a href="message/detail.php?id=%hash%" target="_blank">メールを送る</a>
+				</dd>
+				<dd class="memo">
+					<a href="javascript:MM_openBrWindow('/performer/memopad.php?sid=%hash%','memberMemo', 'width=500,height=270,titlebar=0,status=0,scrollbars=no,resizable=no');">メモ張を開く</a>
+				</dd>
+				<dd class="address">
+					<a href="javascript:func_addressbook('%hash%');">アドレス帳に登録</a>
+				</dd>
+				<dd style="width:170px;padding:3px 0;">
+					■好みのパフォーマーのタイプ
+				</dd>
+				<dd style="width:170px;padding:3px 0;">
+					　☆カテゴリ：%category%
+				</dd>
+				<dd style="width:170px;padding:3px 0;">
+					　☆好きな体系：%f_body_type%
+				</dd>
+				<dd style="width:170px;padding:3px 0;">
+					　☆好きな芸能人：%like_genojin%
+				</dd>
+				<dd style="width:170px;padding:3px 0;">
+					　☆チャット内の希望の雰囲気
+				</dd>
+				<dd style="width:165px;padding:3px 0;">
+					　%funiki%
+				</dd>
+				<dd style="width:165px;padding:3px 0;">
+					%msg%
+				</dd>
+				<!-- tmpl:ifdef %llimg% -->
+				<dd style="padding: 10px 0pt; width: 165px;">
+				<p style="font-weight:bold;">最終ログイン</p>
+				<div align="left">
+				%llimg%
+				</dd>
+				<!-- tmpl:endif -->
+			</dl>
+			<div id="rightBlock">
+				<table>
+					<tr>
+						<th>チャットネーム</th>
+						<td>%nick_name%</td>
+						<th>身長</th>
+						<td>%height%</td>
+					</tr>
+					<tr>
+						<th>地域</th>
+						<td>%area%</td>
+						<th>体型</th>
+						<td>%body_type%</td>
+					</tr>
+					<tr>
+						<th>職業</th>
+						<td>%job%</td>
+						<th>血液型</th>
+						<td>%blood_type%</td>
+					</tr>
+					<tr>
+						<th>年齢</th>
+						<td>%age%</td>
+						<th>誕生日</th>
+						<td>%birthday%</td>
+					</tr>
+					<tr>
+						<th>休日</th>
+						<td>%holiday%</td>
+						<th>寝る時間</th>
+						<td>%sleep_time%</td>
+					</tr>
+					<!-- tmpl:ifdef %myblog% -->
+					<tr>
+						<th>マイブログ</th>
+						<td colspan="3"><a href="%myblog%" target="_blank">%myblog%</a></td>
+					</tr>
+					<!-- tmpl:endif -->
+				</table>
+				<dl>
+					<dt>マイキーワード</dt>
+					<dt style="background:#ffffff">
+					%my_keyword1%%my_keyword2%%my_keyword3%
+					</dt>
+				</dl>
+				<dl>
+					<dt>コメント</dt>
+					<dd style="height:10em;overflow:auto;">
+					<pre><div style="width: 345px;">%comment%</div></pre>
+					</dd>
+				</dl>
+			</div>
+		<img src="./images/search/prof_bottom.gif" />
+
+	<input type="hidden" name="mode">
+	<input type="hidden" name="hash">
+	</form>
+
+	</div>
+</body>
+</html>

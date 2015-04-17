@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<title>視聴画面メモ帳</title>
+<link href="./chat/tab.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="tab_space">
+<div id="tab_menu">
+<ul>
+<li id="menu1">
+<a href="chat/gallery_main.php?id=%hash%"><img src="./chat/images2/gallery_close.gif" border="0" onmouseover="this.src='./chat/images2/gallery_open.gif'" onmouseout="this.src='./chat/images2/gallery_close.gif'" alt="ギャラリー" id="gap" /></a>
+</li>
+<li id="menu2">
+<a href="./chat/mail.php?sid=%hash%&chat"><img src="./chat/images2/mail_close.gif" border="0" onmouseover="this.src='./chat/images2/mail_open.gif'" onmouseout="this.src='./chat/images2/mail_close.gif'" alt="メール" id="gap" /></a>
+</li>
+<li id="menu2">
+<img src="./chat/images2/memo_open.gif" alt="メモ" id="gap" />
+</li>
+</ul>
+</div><!-- tab_menu -->
+
+<div id="tab_main">
+<form method="post" name="F1" action="">
+
+		<table width="100%" border="0" cellpadding="6" cellspacing="1">
+			<tr>
+				<td align="center">%msg%</td>
+			</tr>
+			<tr>
+				<td align="center" height="80"><textarea name="memo" rows="12" style="width: 280px;">%memo%</textarea></td>
+			</tr>
+			<tr>
+				<td height="50" align="center"><input type="submit" value="　保存　"></td>
+			</tr>
+			<input type="hidden" name="hash" value="%hash%">
+			<input type="hidden" name="mode" value="upd_memo">
+			<input type="hidden" name="dummy" value="京美乳">
+		</table>
+</div><!-- tab_main -->
+</form>
+
+</div><!-- tab_space -->
+
+</div>
+
+</body>
+</html>

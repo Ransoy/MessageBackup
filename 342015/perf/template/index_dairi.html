@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="./css/default.css" />
+<link rel="stylesheet" type="text/css" href="./css/common.css" />
+<link rel="stylesheet" type="text/css" href="./css/top.css" />
+<link rel="stylesheet" type="text/css" href="./css/beginner.css" />
+<link rel="stylesheet" type="text/css" href="./css/dairi.css" />
+
+<script type="text/javascript">
+function agent_campaign(id){
+	document.form3.campaign_hash.value=id;
+	document.form3.submit();
+}
+</script>
+</head>
+
+<body id="index">
+
+<div id="wrapper">
+
+	%header%
+
+	<div id="Contens" class="clearfix">
+
+		<div id="MainBlock" class="clearfix">
+
+			<!-- tmpl:ifdef %test_female_disp% -->
+			<div  class="cmnSection">
+				<div style="padding: 20px 20px;">
+
+					<img src="./images/notw.jpg" alt="重要なお知らせ" /><br /><br />
+
+					<p style="font-size:13px;">
+						【会員様とのトラブル】または【マシェリ禁止事項に触れる行為】があった為、現在、お仕事ができない状態となります。
+						オーナー様・担当者様まで確認を行って頂き、改善後、担当者様経由でマシェリまでご連絡を下さい。
+						マシェリ側で確認が取れましたらお仕事再開となります。御手数ですがご協力の程宜しくお願い致します。<br />
+					</p>
+				</div>
+			</div>
+			<!-- tmpl:endif -->
+
+			<!--
+			<div id="Beginner3step" class="cmnSection">
+				<h2 class="clearfix">
+					<span class="title">★ 初心者の方へ - チャットレディ初心者 講座 ★</span>
+					<span id="open_btn" class="btn">OPEN</span>
+					<span id="close_btn" class="btn">CLOSE</span>
+				</h2>
+
+				<div class="set_size">
+
+					<div id="contain">
+
+						<div class="beginner_m1 common_bg" id="page1">
+							<div class="area1 common" onclick="pageChange(2)">
+								待機開始後、お客様の画面にあなたが表示され、お客様からのアクセス待ちになります。早速【2ショット接続】から待機を開始しましょう！<br />
+								<a href="#">&gt;&gt;待機の始め方-1</a>
+							</div>
+							<div class="area2 common" onclick="pageChange(4)">
+								お仕事に慣れて頂くまでに、初心者の方には様々な特典をお付けしております。是非報酬獲得にお役立てください。<br />
+								<a href="#">&gt;&gt;新人期間のメリット</a>
+							</div>
+							<div class="area3 common" onclick="pageChange(5)">
+							報酬は5000円以上から清算が可能です。可能金額(5000円)ならいつでも清算が可能です。【清算システム】より清算しよう！<br />
+							<a href="#">&gt;&gt;お支払いについて</a>
+							</div>
+							<div class="area4 common" onclick="pageChange(6)">
+							未経験で始める方も多いでしょう。効率的に稼ぐにはどうしたらいいのでしょうか？売れている方はこうして稼いでいる！！<br />
+							<a href="#">&gt;&gt;稼げるアドバイス</a>
+							</div>
+							<a href="#" onclick="pageChange(2)"><img src="images/firstPageRight/startbtn_01.jpg" onmouseover="this.src='images/firstPageRight/startbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/startbtn_01.jpg'" width="165" height="30" alt="open" class="button" alt="ガイドをスタート" /></a>
+						</div>
+
+						<div class="beginner_m2 common_bg" id="page2">
+							<div class="area1">
+								管理画面の左メニューにある【2ショット接続】ボタンをクリック！<br />
+								※モバイル同時待機未設定の方は<a href="#" onclick="pageChange(3)">待機の始め方-2</a>へお進みください。
+							</div>
+							<div class="area2">
+								モバイル同時待機を設定した方は、赤い「はい」ボタンを押しモバイル同時待機をします。
+							</div>
+							<div class="area3">
+								Flash Playerの設定アラートが表示されたら、「許可」をクリックしてください。いよいよ待機が始まります。
+							</div>
+
+							<a href="#" onclick="pageChange(1)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(3)"><img src="images/firstPageRight/forwardbtn_01.jpg" onmouseover="this.src='images/firstPageRight/forwardbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/forwardbtn_01.jpg'" width="40" height="40" alt="次へ" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								&gt;待機の始め方-1&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(3)">&gt;待機の始め方-2</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(4)">&gt;新人期間のメリット</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(5)">&gt;お支払いについて</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(6)">&gt;稼げるアドバイス</a>
+							</div>
+						</div>
+
+						<div class="beginner_m3 common_bg" id="page3">
+							<div class="area1">
+								待機が始まりましたら、待機中コメントを画面内に書きましょう。記入したら右の「更新」ボタンを押します。
+							</div>
+
+							<div class="area2">
+								待機をする際には、飲食喫煙・寝そべり待機・携帯いじりなどは印象を悪くします。油断して寝っころがっていると、お客様があなたのroomを覗いた時「だらしない子だな」とスルーされてしまいます。せっかくのチャンスを逃さない様、いつでもお客様を向かい入れられる態度で待機しましょう！
+							</div>
+
+							<a href="#" onclick="pageChange(2)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(4)"><img src="images/firstPageRight/forwardbtn_01.jpg" onmouseover="this.src='images/firstPageRight/forwardbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/forwardbtn_01.jpg'" width="40" height="40" alt="次へ" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(2)">&gt;待機の始め方-1</a>&nbsp;&nbsp;
+								&gt;待機の始め方-2&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(4)">&gt;新人期間のメリット</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(5)">&gt;お支払いについて</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(6)">&gt;稼げるアドバイス</a>
+							</div>
+						</div>
+
+						<div class="beginner_m4 common_bg" id="page4">
+							<div class="area1">
+								50pt獲得または14日の間デビューマークが表示されます。デビューマークが付いているパフォーマーさんとのチャットが5分間無料なので、お客様からのアクセス率が高い期間です！！もちろん<strong>お客様が5分間無料でもあなたへの報酬は通常通り。</strong>この期間を有効に使ってマシェリでのお仕事に慣れましょう！
+							</div>
+
+							<div class="area2">
+								1週間で1000ｐｔ獲得（通常1分＝1ｐｔ）されますと、なんと1万円プレゼント！！また1週間で獲得できなくても、10日以内で【3,000円】 2週間以内で【1,000円】と、忙しい皆さんでも十分にボーナスのチャンスがあります♪是非獲得目指して頑張ってください！！
+							</div>
+
+							<a href="#" onclick="pageChange(3)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(5)"><img src="images/firstPageRight/forwardbtn_01.jpg" onmouseover="this.src='images/firstPageRight/forwardbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/forwardbtn_01.jpg'" width="40" height="40" alt="次へ" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(2)">&gt;待機の始め方-1</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(3)">&gt;待機の始め方-2</a>&nbsp;&nbsp;
+								&gt;新人期間のメリット&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(5)">&gt;お支払いについて</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(6)">&gt;稼げるアドバイス</a>
+							</div>
+						</div>
+
+						<div class="beginner_m5 common_bg" id="page5">
+							<div class="area1">
+								報酬は5000円以上から清算が可能です。可能金額(5000円)ならいつでも清算が可能です。左メニューの【清算システム】より清算しよう！毎月末その月の報酬は翌月５日に自動精算されます。
+							</div>
+
+							<div class="area2">
+								銀行営業日（土日祝を除く）の11：00AMまでに精算した報酬は、銀行により振込み日が異なります。<br />
+
+								<strong>ジャパンネット銀行・楽天銀行⇒当日の15：00</strong><br />
+								<strong>その他銀行⇒翌銀行営業日（土日祝を除く）の15：00</strong><br />
+								※途中精算一発検索より振込み予定日の確認が出来ます。
+							</div>
+
+							<div class="area3">
+								その他必要に応じて途中精算を行いたい際には、獲得報酬一覧下部にご登録時のパスワードを入力して精算を行って下さい。
+							</div>
+
+							<a href="#" onclick="pageChange(4)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(6)"><img src="images/firstPageRight/forwardbtn_01.jpg" onmouseover="this.src='images/firstPageRight/forwardbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/forwardbtn_01.jpg'" width="40" height="40" alt="次へ" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(2)">&gt;待機の始め方-1</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(3)">&gt;待機の始め方-2</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(4)">&gt;新人期間のメリット</a>&nbsp;&nbsp;
+								&gt;お支払いについて&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(6)">&gt;稼げるアドバイス</a>
+							</div>
+						</div>
+
+						<div class="beginner_m6 common_bg" id="page6">
+							<div class="area1">
+								ギャラリーに載せる写真は大きめのサイズのものを沢山載せましょう。
+							</div>
+
+							<div class="area2">
+								お礼、挨拶ができる人はお客様から見て好印象です。女性から誘われて嬉しくないお客様はいませんので、お誘いメールも積極的に送るといいでしょう。
+							</div>
+
+							<div class="area3">
+								内容は自由ですが、趣味や好きな事などを詳しく掘り下げた内容を書くと良いでしょう。情報量が多ければ、あなたがどういう人なのかお客様に伝わりやすくなります。会話の糸口を作る意味でも、できるだけ詳しく書き、定期的に更新すると良いでしょう。
+							</div>
+
+							<a href="#" onclick="pageChange(5)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(1)"><img src="images/firstPageRight/topbtn_01.jpg" onmouseover="this.src='images/firstPageRight/topbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/topbtn_01.jpg'" width="40" height="40" alt="TOP" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(2)">&gt;待機の始め方-1</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(3)">&gt;待機の始め方-2</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(4)">&gt;新人期間のメリット</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(5)">&gt;お支払いについて</a>&nbsp;&nbsp;
+								&gt;稼げるアドバイス
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			-->
+
+			<div id="centerBlock">
+			<!-- tmpl:loop %agent_campaign% -->
+			<!-- tmpl:ifdef %camp_std% -->
+			<div  class="cmnSection">
+				<a href="./">[更新]</a>
+				<div  class="cmnSection_bonus_t">
+				%campaign_tag%
+				</div>
+				<div  class="cmnSection_bonus_t3">
+				<div  class="cmnSection_bonus_time" style="float:left;">
+				<div  class="cmnSection_bonus_time_l"><img src="./images/standby_time.jpg"></div>
+				<div  class="cmnSection_bonus_time_r">
+					<div style="margin: 10px 10px 0px 10px;">
+						<span style="font-size: 15px;">残り</span>
+						<span style="font-size: 26px;">%work_time_nokori%</span>
+						<span style="font-size: 15px;">分</span>
+					</div>
+				</div>
+				</div>
+				<div  class="cmnSection_bonus_time" style="float:right;">
+				<div  class="cmnSection_bonus_time_l"><img src="./images/chat_time.jpg"></div>
+				<div  class="cmnSection_bonus_time_r">
+					<div style="margin: 10px 10px 0px 10px;">
+						<span style="font-size: 15px;">残り</span>
+						<span style="font-size: 26px;">%chat_time_nokori%</span>
+						<span style="font-size: 15px;">分</span>
+					</div>
+				</div>
+				</div>
+				<br style="clear: both;">
+				</div>
+			</div>
+			<!-- tmpl:endif -->
+
+			<!-- tmpl:ifdef %camp_report% -->
+			<div  class="cmnSection">
+				<div  class="cmnSection_bonus_t">
+				%campaign_tag%
+				</div>
+				<div  class="cmnSection_bonus_t2">
+				<span style="font-size: 22px;">★ボーナス達成おめでとう★</span> <a onClick="agent_campaign('%campaign_hash%')" style="cursor:pointer;"><img src="./img/banner/btn_declaration.png"></a>
+				</div>
+			</div>
+			<!-- tmpl:endif -->
+
+			<!-- tmpl:ifdef %camp_comp% -->
+			<div  class="cmnSection">
+				<div  class="cmnSection_bonus_t">
+				%campaign_tag%
+				</div>
+				<div  class="cmnSection_bonus_t2">
+				<span style="font-size: 22px;">ボーナス申告が完了致しました。</span>
+				</div>
+			</div>
+			<!-- tmpl:endif -->
+			<!-- tmpl:endloop -->
+				<form acrion="" method="post" name="form3">
+					<input type="hidden" name="campaign_hash" value="">
+					<input type="hidden" name="mode" value="agent_campaign_regist">
+				</form>
+				<div id="multipleInformation" class="cmnSection">
+
+					<ul class="clearfix">
+						<li class="ivent"><a href="#tabNews">ニュース</a></li>
+						<li class="PersonInCharge"><a href="#tabDirector">代理店からのコメント</a></li>
+					</ul>
+
+					<div id="tabNews">
+						<iframe id="afemaleNews" src="./news_agent.php?type=%news_type%" frameborder="0" width="100%" height="705" scrolling="yes"></iframe>
+					</div>
+
+					<div id="tabDirector">
+						<iframe class="autoHeight" src="dairiten_comment.php?sid=%hash_main%" frameborder="0" width="100%" scrolling="no"></iframe>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div id="rightBlock">
+
+				<!-- tmpl:ifdef %onair_log_tmc% -->
+				<!-- オンタイム情報 -->
+				<!--
+				<div id="dairiOntime" class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">めざせ%crear_point%Ptで報酬アップ</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/ontime_log.php" height="84" width="220" scrolling="no" frameborder="0"></iframe>
+					</div>
+				</div>
+				-->
+				<!-- tmpl:endif -->
+
+				<div id="macherieNews" class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">お仕事アドバイス</span>
+					</h2>
+
+					<div class="faq">
+						<p>
+							■お仕事アドバイス【メール編】<br>
+							■お仕事アドバイス【TOP写真編】<br>
+							■管理画面の使い方について<br>
+							■チャット画面の機能について<br>
+							■アダルトの対応方法について<br>
+						</p>
+						<a href="./support/faq_agent.php"><img src="./images/mobi/btn_check.gif" alt="チェックしよう" /></a>
+					</div>
+
+				</div>
+				<div>
+					<a href="./support/calendar_agent.php"><img src="./images/calendar.jpg" alt="カレンダー" /></a><br><br>
+					<a href="./movie/" target="_blank"><img src="./img/banner/moviemanual_btn2.gif" /></a>
+				</div>
+
+				<!--
+				<div id="bannerBlock" class="cmnSection">
+					<a href="./movie/" target="_blank"><img src="./dairiten/images/douga.jpg" /></a>
+				</div>
+				-->
+			</div>
+
+		</div>
+
+		<div id="UtilitiesBlock">
+
+			%utilities%
+
+		</div>
+
+	</div>
+
+	%footer%
+
+</body>
+</html>

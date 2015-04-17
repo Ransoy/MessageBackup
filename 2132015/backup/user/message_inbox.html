@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="Shift-JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="keywords" content="とは？,ライブ,ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content=""  />
+<title>メール | ライブチャットマシェリ / 芸能人も参加する超人気サイト</title>
+<link rel="home" href="http://www.macherie.tv/" title="ライブチャットマシェリ" />
+<link rel="canonical" href="http://www.macherie.tv/about.php" />
+<!--<script type="text/javascript" src="/js/prototype.js"></script>-->
+<script type="text/javascript" src="/js/common.js"></script>
+
+<link href="/c/s/css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/template.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/sp_event.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="/css/margin.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/message.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/footer2.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="/c/s/css/header.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link href="/c/s/css/scroll.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/c/s/js/scroll.js"></script>
+
+</head>
+<body>
+
+<!-- wrap -->
+<div id="wrap">
+	%head_menu%
+		<div id="liquid">
+			<div id="conBlock">
+
+				<div class="message_contents_wrap cf">
+
+					<div class="ttl_area icon icon--message_list">
+						<h2 class="ttl_top">メールボックス</h2>
+                        <p class="ttl_area_desc">女の子からのメール一覧です。気になる子とやりとりして待ち合わせしたり、チャットに誘ってみよう♪</p>
+                        <!-- old version link -->
+                        <a class="link_old_mailbox" href="../../webmail/">旧メールボックスへ ></a>
+                        <!-- old version link -->
+					</div>
+
+					<div class="message_contents_inner message_contents_inner--narrow_padding_top">
+
+                        <div class="tab_menu cf">
+                            <ul>
+                                <li class="on">
+                                    <a href="javascript:void(0);">メールボックス</a>
+                                </li>
+                                <li>
+                                    <a href="./contact_list.php">連絡先</a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+                            <div class="panel_menu" id="panel_menu">
+                                <ul>
+                                    <li><a class="btn_message_list" href="./inbox_edit.php">メール削除</a></li>
+                                    <li><a class="btn_contact_list" href="./contact_list_edit.php">連絡先編集</a></li>
+                                    <li><a class="btn_block_list" href="./block_list_edit.php">拒否リスト</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="message_sort_menu cf" id="message_sort_menu">
+                            <ul>
+                                <li class="all %all%"><a href="javascript:void(0);">全て表示</a></li>
+                                <li class="unread %unread%"><a href="javascript:void(0);">未読のみ表示</a></li>
+                            </ul>
+                            <div class="message_search_area">
+                            	<form action="" method="get">
+	                                <input type="text" id="keyword" placeholder="名前で検索..." name="keyword" value="%keyword%"/>
+	                                <input type="hidden" id="tab"  name="tab" value="%tab%"/>
+	            					<input type="hidden" id="page" name="page" value="%page%"/>
+	                                <button class="btn_style">検索</button>
+	                             </form>
+                            </div>
+                        </div>
+
+                        <div class="message_list cf">
+
+                            <!-- tmpl:ifdef %no_mail% -->
+                            <div class="ui_msg_area ui_msg_area--not_exist">
+                                <p class="msg">まだメール送受信履歴がありません。</p>
+                            </div>
+                            <!-- tmpl:endif -->
+							
+							<table style="table-layout:fixed;">
+								<!-- tmpl:loop %loop_admin_set% -->
+								<tr class="message_list_item">
+									<td class="col_left">
+										<div class="thumb">
+                                    		<a href="./detail.php?is_admin=1&id=%hash%"><img src="/img/spacer.gif" style="background-image: url('%img%')" /></a>
+										</div>
+									</td> 
+									<td class="col_center b_link">
+										<p class="user_name">%name%
+                                        <!-- tmpl:ifdef %count% -->
+                                        <span class="cnt_unread">%count%</span></p>
+                                        <!--  tmpl:endif -->
+                                        <p class="desc t_truncate %sender%"><a href="./detail.php?is_admin=1&id=%hash%">%body%</a></p>
+                                        <p class="posttime">%date%</p>
+									</td>
+								</tr>
+								<!-- tmpl:endloop -->
+								<!-- tmpl:loop %loop_set% -->
+								<tr class="message_list_item">
+									<td class="col_left">
+										<div class="thumb">
+                                    		<a href="./detail.php?id=%hash%"><img src="/img/spacer.gif" style="background-image: url('%img%')" /></a>
+										</div>
+									</td>
+									<td class="col_center b_link">
+										%status%
+                                        <p class="user_name">%name%
+                                        <!-- tmpl:ifdef %count% -->
+                                        <span class="cnt_unread">%count%</span></p>
+                                        <!--  tmpl:endif -->
+                                        <p class="desc t_truncate %sender%"><a href="./detail.php?id=%hash%">%body%</a></p>
+                                        <p class="posttime">%date%</p>
+									</td>
+								</tr>
+								<!-- tmpl:endloop -->
+							</table>
+
+                        </div><!-- // .message_list -->
+					   <!-- tmpl:ifdef %show_pages% -->
+                        <div class="message_pager border_top">
+                            <a class="prev %prev%" href="?page=%prev_val%">前へ</a>
+                            <ul>
+                            	<!-- tmpl:ifdef %first_page%  -->
+                            		<li>
+                            			<a href="?page=%first_page%%get_keyword%">%first_page%</a>
+                            		</li>
+                            		<!-- tmpl:ifdef %first_page_dot% -->
+                            		<li>
+                            			<span>%first_page_dot%</span>
+                            		</li>
+                            		<!-- tmpl:endif -->
+                            	<!-- tmpl:endif -->
+                            	
+                            	<!-- tmpl:loop %pagination% -->
+		                           
+		                          	<!-- tmpl:ifdef %current% -->
+		                          	<li class='current'>
+		                          		<span>%current%</span>
+	                          		</li>
+		                          	<!-- tmpl:endif -->
+		                          	<!-- tmpl:ifdef %page% -->
+		                          	<li>
+	                          			<a href="?page=%page%%get_keyword%">%page%</a>
+                          		 	</li>
+		                          	<!-- tmpl:endif -->
+		                        <!-- tmpl:endloop -->
+		                        <!-- tmpl:ifdef %last_page_dot% -->
+	                          		<li>
+                            			<span>%last_page_dot%</span>
+                            		</li>
+                            	<!-- tmpl:endif -->
+		                        <!-- tmpl:ifdef %last_page%  -->
+                            		<li>
+                            			<a href="?page=%last_page%%get_keyword%">%last_page%</a>
+                            		</li>
+                            	<!-- tmpl:endif -->
+                            </ul>
+	                        <!-- tmpl:ifdef %next_val% -->  
+                            <a class="next %next%" href="?page=%next_val%">次へ</a>
+                            <!-- tmpl:endif -->
+                        </div>
+					<!-- tmpl:endif -->
+					</div><!-- // .message_contents_inner -->
+
+				</div><!-- // .message_contents_wrap -->
+
+			</div><!-- // #conBlock -->
+		</div><!-- // #liquid -->
+
+
+<!-- left-space -->
+<div id="leftBlock" class="sideB">%left_menu%</div>
+<!-- /left-space -->
+
+
+<!-- right-space -->
+<div id="rightBlock" class="sideB">%right_menu%</div>
+<!-- /right-space -->
+
+
+</div>
+<!-- /wrap -->
+
+
+<!-- footer -->
+%foot_menu%
+<!-- /footer -->
+
+<script type="text/javascript" src="/c/s/js/jquery.biggerlink.js"></script>
+<script type="text/javascript" src="/c/s/js/message.js"></script>
+<script type="text/javascript">
+$(function(){
+	var searched=%searched%;
+	var old_keyword = '%old_keyword%';
+	$('.b_link').biggerlink();
+
+	/**
+	tabs
+	*/
+	$('#message_sort_menu ul > li').click(function() {
+		keyword = $('#keyword').val();
+		if ( $(this).hasClass('all')) {
+			$(this).addClass('on');
+			$('.unread').removeClass('on');
+			$('#tab').val('all');
+		}
+		else {
+			$(this).addClass('on');
+			$('.all').removeClass('on');
+			$('#tab').val('unread');
+		}
+		$('#page').val(1);
+		/*if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}*/
+		$('.message_search_area > form').submit();
+	});
+	
+	/**
+	search contact
+	 */
+	$('#search').click(function() {
+		$('#page').val(1);
+		$('.message_search_area > form').submit();
+	});
+
+	/**
+	page next / prev click
+	*/
+	/*$('.message_pager > a').click(function() {
+		if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}
+		var currentPage = $('#page');
+			if ($(this).hasClass('prev')) {
+				currentPage.val(+currentPage.val() - 1);
+			} 
+			else if($(this).hasClass('next')) {
+				currentPage.val(+currentPage.val() + 1);
+			}
+		$('.message_search_area > form').submit();
+	});*/
+
+	/**
+	page number click
+	*/ 
+	$('.message_pager > ul > li > a').click(function() {
+		if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}
+		var page = $(this).html();
+		$('#page').val(page);
+		$('.message_search_area > form').submit();
+	});
+	
+	$('.message_search_area > form > input#keyword').keydown(function(e){
+		if (e.keyCode == 13) {
+			$('#page').val(1);
+		}
+	}); 
+	
+});
+</script>
+
+<!-- 非同期版をつかうこと -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-13149951-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

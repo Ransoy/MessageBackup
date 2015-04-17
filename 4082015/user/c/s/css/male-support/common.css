@@ -1,0 +1,158 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Macheri Mobile
+	BUILD:	2007/9/21
+	AUTHOR:	S.takaya
+_______________________________________*/
+
+/*	General
+---------------------------------------*/
+.objR{
+	text-align:right;
+}
+.objL{
+	text-align:left;
+}
+.objC{
+	text-align:center;
+}
+.attention{
+	font-weight:normal;
+	color:red;
+}
+.emp{
+	font-size:18px;
+	font-weight:bold;
+	padding:0 2px;
+}
+/*	Layout
+---------------------------------------*/
+#wrapper{
+	width:810px;
+	margin:0 auto;
+	background:url(../images/bg.gif) repeat-y center #fff;
+}
+#main{
+	clear:both;
+	padding:10px 35px;
+}
+/*	HEAD
+---------------------------------------*/
+/*
+h1{
+	width:152px;
+	height:54px;
+	float: left;
+}
+*/
+#header{
+	width:658px;
+	height:54px;
+	background:url(../images/header.gif) no-repeat;
+	float:right;
+	text-align:left;
+}
+#header p{
+	padding:40px 10px;
+}
+/*	MAIN
+---------------------------------------*/
+#mainText,.subStr{
+	text-align:left;
+	line-height: 26px;
+	padding: 8px 0 8px 24px;
+}
+/*
+h2{
+	width:740px;
+	height:40px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align:left;
+	line-height:30px;
+	padding: 6px 0 0 34px;
+	letter-spacing: 2px;
+	background:url(../images/tag_bg.gif) no-repeat;
+
+}
+*/
+table#information td,
+table#information th{
+	padding:8px;
+	vertical-align:top;
+}
+table#inquiryForm{
+	margin-bottom:30px;
+	width:90%;
+}
+table#inquiryForm td,
+table#inquiryForm th{
+	border-bottom:4px solid #fff;
+	padding:12px;
+}
+table#inquiryForm th{
+	background:url(../images/formaccent.gif) left repeat-y #e1e1e1;
+	font-weight:bold;
+	width:30%;
+}
+table#inquiryForm td{
+	background:#f0f0f0;
+	width:60%;
+}
+table#inquiryForm td textarea{
+	margin:10px 0 0;
+	width:420px;
+	height:10em;
+}
+table#inquiryForm td.submit{
+	background:transparent;
+	text-align:center;
+}
+table#inquiryForm span.cs_support_required{
+	background-color: #FF6B6B;
+	color: #FFF;
+	padding: 1% 2%;
+	border-radius: 2px;
+	display: inline-block;
+	margin: 2px 0px 0px;
+}
+table#mailstop td,
+table#mailstop th{
+	background-color:#FFFFFF;
+	line-height:2em;
+	padding-right:10px;
+	padding-left:10px;
+}
+table#mailstop td div{
+	text-align:left;
+}
+#tdimg {
+	text-align:center;
+	padding-bottom:15px;
+}
+#pquestion {
+	background-color:#CCFFFF;
+	height:100px;
+	padding:15px;
+	text-align:center;
+}
+/*	FOOT
+---------------------------------------*/
+#footer{
+	clear:both;
+	color:#646464;
+	margin:0 15px;
+	padding-top:10px;
+	border-top:1px solid #969696;
+	background:#f0f0f0;
+	line-height:24px;
+	text-align:center;
+}
+#footer address{
+	margin-top:20px;
+	font-family: Arial;
+	font-size:10px;
+	font-style:normal;
+	letter-spacing:1px;
+}

@@ -1,0 +1,684 @@
+
+/****************
+* header‰º@‚±‚±‚©‚ç
+********************************/
+
+#title{
+	width: 828px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+#title_gazou{
+    position:relative;
+	width: 828px;
+	height: 26px;
+	top: 0px;
+	left: 0;
+	background-image: url(/c/m/images/schedule_calendar/title-bg-ive_sche.png);
+}
+
+.ivent_schedule-title{
+    position:absolute;
+	top: 1px;
+	left: 0;
+	width: 370px;
+	height: 21px;
+	text-align: left;
+	padding: 0;
+}
+
+#y_m{
+	width: 828px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+#year_month{
+    position:relative;
+	width: 828px;
+	height: 30px;
+	top: 0px;
+	left: 0;
+	margin : 0 auto;
+	text-align : center;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	color: #444444;
+}
+
+.back{
+    position:absolute;
+	top: 14px;
+	left: 0px;
+	width: 68px;
+	font-size:12pt;
+	text-align: left;
+	padding: 0;
+}
+
+.icon_back{
+	width: 17px;
+	height: 18px;
+    padding: 0;
+    background: url(/c/m/images/schedule_calendar/icon_back.png) left top no-repeat;
+	text-align: left;
+}
+
+.back_text{
+    padding: 0 0 0 20px;
+	text-align: left;
+	
+}
+
+.force_text{
+    padding: 0 20px 0 0;
+	text-align: right;
+}
+
+.icon_force{
+	width: 68px;
+	height: 18px;
+    padding: 0;
+    background: url(/c/m/images/schedule_calendar/icon_force.png) left top no-repeat;
+	text-align: right;
+}
+
+.force{
+    position:absolute;
+	top: 14px;
+	right: 0px;
+	width: 68px;
+	font-size:12pt;
+	text-align: right;
+	padding: 0;
+}
+
+.y_and_m{
+    position:absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 30px;
+	font-size:21pt;
+	text-align: center;
+	padding: 0;
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+
+#title_bot{
+	width: 828px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+#title_bottom{
+    position:relative;
+	width: 828px;
+	height: 40px;
+	top: 0px;
+	left: 0px;
+}
+
+.pulldown_list {  
+    width: 239px;
+	height: 20px;
+    margin-bottom: 2px;
+	margin-right: 0px;
+}
+
+.title_bottom-classification_color{
+    position:absolute;
+	top: 3px;
+	right: 1px;
+	width: 236px;
+	height: 40px;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#000000;
+	text-align: left;
+	padding: 0;
+}
+
+/****************
+* header‰º@‚±‚±‚Ü‚Å
+********************************/
+
+/****************
+* ƒJƒŒƒ“ƒ_[ƒGƒŠƒA@‚±‚±‚©‚ç
+********************************/
+
+
+#calender_area {
+	width: 828px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+
+#calender_area-week {
+	width: 828px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 0px;
+}
+
+.week{
+	width: 114px;
+	height: 20px;
+	margin: 0 auto;
+	padding: 0 1px 0 0;
+}
+
+.sunday{
+	width: 114px;
+	height: 20px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#day_area {
+	width: 833px;
+	margin: 0 auto;
+	padding-top: 10px;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:8pt;
+}
+
+#day_area-1 {
+	width: 833px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 0px;
+	overflow: hidden;
+}
+
+#day_area-2 {
+	width: 833px;
+	height: auto;
+	margin: 10px auto 0px auto;
+	padding-top: 0px;
+	overflow: hidden;
+}
+
+#day_area-3 {
+	width: 833px;
+	height: auto;
+	margin: 10px auto 0px auto;
+	padding-top: 0px;
+	overflow: hidden;
+}
+
+#day_area-4 {
+	width: 833px;
+	height: auto;
+	margin: 10px auto 0px auto;
+	padding-top: 0px;
+	overflow: hidden;
+}
+
+#day_area-5 {
+	width: 833px;
+	height: auto;
+	margin: 10px auto 0px auto;
+	padding-top: 0px;
+	overflow: hidden;
+}
+
+#day_area-6 {
+	width: 833px;
+	height: auto;
+	margin: 10px auto 0px auto;
+	padding-top: 0px;
+	overflow: hidden;
+}
+
+.no_day-img  {  
+    width: 56px;  
+	height: 32px;
+    padding: 10px 0 0 10px;
+}
+
+ul{
+margin: 0px auto;
+padding: 0;
+list-style-type: none;
+text-decoration: none;
+display: block;
+}
+
+li {
+margin: 0;
+padding: 0;
+}
+
+/*clear fix */
+
+.clearfix:after { /*float‚Ì‰ğœA‚±‚±‚ªƒ|ƒCƒ“ƒg*/
+	display:block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	content:".";
+}
+.clearfix {
+	min-height: 1px; /*IE6A7‘Îô*/
+}
+
+* html .clearfix {
+	height: 1px;
+	/*\*//*/ /*MAC IE5.x‘Îô*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+/****************
+* ƒ|ƒbƒvƒAƒbƒv@‚±‚±‚©‚ç
+********************************/
+
+a.link4:link {
+	color: #000000
+}
+a.link4:visited {
+	color: #000000;
+	text-decoration: underline
+}
+a.link4:active {
+	color: #999999;
+}
+a.link4:hover {
+	color: #777777;
+	text-decoration: underline
+}
+
+.days{
+	width: 114px;
+	margin-right: 5px;
+	padding: 0;
+	float: left;
+	font-size:15pt;
+	font-weight: bold;
+	padding-bottom: 32767px; 
+	margin-bottom: -32767px;
+}
+
+.days-head {  
+	height: 28px;
+	margin-bottom: 5px;
+    background-color: #ffffff;
+	border: 1px solid #cccccc;
+}
+
+.days-head_text {
+	text-align: center;
+	margin: 0 auto 0 18px;
+}
+
+.days-head-icon {  
+    width: 13px;  
+    padding: 9px 5px 0 0;
+	float: right;
+}
+
+div.clear{
+	clear: both;
+	margin: 0 0 10px 0;
+}
+
+.days-bot {  
+	width: 114px;
+	margin: 0 auto;
+	padding: 0;
+	font-size:15pt;
+	font-weight: normal;
+}
+
+.days-bottom {  
+	width: 114px;
+	height: 100%;
+	margin-bottom: 5px;
+	text-align: center;
+	padding: 3px auto 7px auto;
+}
+
+li.days-bottom_macherie-bg {  
+    width: 114px;
+	height: 36px;
+    background-color: #d5e8d4;
+	padding: 0px;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:8pt;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+li.days-bottom_variety-bg {  
+    width: 114px;
+	height: 36px;
+    background-color: #f9ebab;
+	padding: 0px;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:8pt;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+li.days-bottom_mysc-bg {  
+    width: 114px;
+	height: 36px;
+    background-color: #c8e4ff;
+	padding: 0px;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:8pt;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+ul.genre{
+margin: 0px auto;
+padding: 0 0 7px 0;
+list-style-type: none;
+text-decoration: none;
+display: block;
+}
+
+.no_days {
+	width: 114px;
+	height: 198px;
+    background-color: #f9f9f9;
+	border: 1px solid #f0f0f0;
+    margin-bottom: 0px;
+	margin-right: 5px;
+}
+
+.no_days2 {
+	width: 114px;
+	height: 156px;
+    background-color: #f9f9f9;
+	border: 1px solid #f0f0f0;
+    margin-bottom: 0px;
+	margin-right: 5px;
+}
+
+a.linklink{
+    color:0086FF;
+    font-style:normal;
+    text-decoration:underline;
+}
+a.linklink:link {
+    color:0086FF;
+    font-style:normal;
+    text-decoration:underline;
+}
+a.linklink:visited {
+    color:#319DFF;
+    text-decoration:underline;
+}
+a.linklink:hover {
+    color:#0800AD;
+    font-style:normal;
+    text-decoration:underline;
+}
+a.linklink:active {
+    text-decoration:none;
+}
+
+
+/****************
+* ƒ|ƒbƒvƒAƒbƒv ƒ}ƒVƒFƒŠ@‚±‚±‚©‚ç
+********************************/
+
+.popup-macherie {
+	padding: 0;
+	background: url(/c/m/images/schedule_calendar/popup/macherie_bg.png) no-repeat;
+	width: 414px;
+	height: 300px;
+	position: absolute;
+	display: none;
+	z-index: 9999;
+}
+
+.popup-macherie-title {
+	cursor: move;
+	width: 414px;
+	height: 38px;
+    position:relative;
+}
+
+.popup-macherie-title_text {
+    position:absolute;
+	top: 12px;
+	left: 17px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:12pt;
+}
+
+.popup-macherie-title_day {
+    position:absolute;
+	top: 19px;
+	left: 322px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:7pt;
+}
+
+.popup-macherie-title_close {
+	cursor: pointer;
+    position:absolute;
+	top: 13px;
+	right: 15px;
+}
+
+.popup-macherie-title_textarea {
+    position:absolute;
+	top: 47px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-macherie-title_textarea_colon {
+    position:absolute;
+	top: 47px;
+	left: 71px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-macherie-title_textarea_time {
+	width: 315px;
+    position:absolute;
+	top: 47px;
+	left: 81px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-macherie-title_comentarea {
+    position:absolute;
+	top: 72px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-macherie-title_comentarea_colon {
+    position:absolute;
+	top: 72px;
+	left: 71px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-macherie-title_comentarea_time {
+	width: 315px;
+	height:180px;
+    position:absolute;
+	top: 72px;
+	left: 81px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+	overflow-y:scroll;
+}
+
+.popup-macherie-title_detailslink {
+    position:absolute;
+	bottom: 20px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-macherie-title_closebt {
+    position:absolute;
+	bottom: 20px;
+	left: 157px;
+	text-align: left;
+}
+
+
+/****************
+* ƒ|ƒbƒvƒAƒbƒv ƒ}ƒVƒFƒŠ@‚±‚±‚©‚ç
+********************************/
+
+.popup-variety {
+	padding: 0;
+	background: url(/c/m/images/schedule_calendar/popup/variety_bg.png) no-repeat;
+	width: 414px;
+	height: 300px;
+	position: absolute;
+	display: none;
+	z-index: 9999;
+}
+
+.popup-variety-title {
+	cursor: move;
+	width: 414px;
+	height: 38px;
+    position:relative;
+}
+
+.popup-variety-title_text {
+    position:absolute;
+	top: 12px;
+	left: 17px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:12pt;
+}
+
+.popup-variety-title_day {
+    position:absolute;
+	top: 19px;
+	left: 322px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:7pt;
+}
+
+.popup-variety-title_close {
+	cursor: pointer;
+    position:absolute;
+	top: 13px;
+	right: 15px;
+}
+
+.popup-variety-title_textarea {
+    position:absolute;
+	top: 47px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-variety-title_textarea_colon {
+    position:absolute;
+	top: 47px;
+	left: 71px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-variety-title_textarea_time {
+	width: 315px;
+    position:absolute;
+	top: 47px;
+	left: 81px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-variety-title_comentarea {
+    position:absolute;
+	top: 72px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-variety-title_comentarea_colon {
+    position:absolute;
+	top: 72px;
+	left: 71px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-variety-title_comentarea_time {
+	width: 315px;
+	height:180px;
+    position:absolute;
+	top: 72px;
+	left: 81px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+	overflow-y:scroll;
+}
+
+.popup-variety-title_detailslink {
+    position:absolute;
+	bottom: 20px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-variety-title_closebt {
+    position:absolute;
+	bottom: 20px;
+	left: 157px;
+	text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

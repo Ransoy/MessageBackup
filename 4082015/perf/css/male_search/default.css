@@ -1,0 +1,93 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	macherie
+	BUILD:	2008/3/10
+	AUTHOR:	S.takaya
+_______________________________________*/
+
+/*  Universal
+---------------------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+}
+	
+/*  Structure
+---------------------------------------*/
+
+body{
+	font-family:"£Í£Ó £Ð¥´¥·¥Ã¥¯", Osaka;
+	font-size:12px;
+	text-align:left;
+	color:#333;
+}
+
+/*  Hypertext
+---------------------------------------*/
+
+a {text-decoration: none;}
+a:link{color:#14003d;}
+a:visited {color:#35215e;}
+a:hover{color: #f05a0e;}
+
+/*	Forms
+---------------------------------------*/
+
+form {
+	clear:both;
+}
+input,
+textarea {
+	font-family: Arial, Helvetica, "¥Ò¥é¥®¥Î³Ñ¥´ Pro W3",  sans-serif;
+	border: none;
+	border: 1px solid #a8a8a8;
+	font-size:12px;
+	background:#fff;
+}
+
+textarea{
+	line-height:2em;
+}
+p input {
+	margin-right: 8px;
+}
+
+input.radio {
+	background-color: transparent;
+	border: none;
+}
+.submit{
+	text-align:center;
+}
+.submit input{
+	border:0px;
+}
+
+input.submit:hover {
+	color:black;
+	background-color:white;
+}
+/*	Tables
+---------------------------------------*/
+table {
+}
+td,
+th {
+	font-size:12px;
+	line-height:1.5em;
+	text-align:left;
+}
+th {
+	white-space:nowrap;
+}
+td {
+	color:#2d3b4e;
+}
+/*	Image
+---------------------------------------*/
+img {
+	vertical-align:bottom;
+	border:0;
+}

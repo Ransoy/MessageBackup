@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<title>視聴画面メール送信</title>
+<link href="../chat/tab.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var go_enter;
+go_enter = false;
+
+function send_mail(){
+<!-- tmpl:ifdef %init_disp1% -->
+	if(document.form02.to_user.selectedIndex == 0){
+		alert("宛先を選択してください");
+		return;
+		}
+<!-- tmpl:endif -->
+//	if(document.form02.subject.value.length <= 0){
+//		alert("件名が未入力です");
+//		return;
+//		}
+	if(document.form02.body.value.length <= 0){
+		alert("本文が未入力です");
+		return;
+		}
+	go_enter = true;
+	document.form02.submit();
+}
+
+//-->
+</script>
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="tab_space">
+<div id="tab_menu">
+<ul>
+<li id="menu1">
+<a href="../chat/gallery_main.php?id=%hash%"><img src="../chat/images2/gallery_close.gif" border="0" onmouseover="this.src='../chat/images2/gallery_open.gif'" onmouseout="this.src='../chat/images2/gallery_close.gif'" alt="ギャラリー" id="gap" /></a>
+</li>
+<li id="menu2">
+<img src="../chat/images2/mail_open.gif" alt="メール" id="gap" />
+</li>
+<li id="menu2">
+<a href="../memopad.php?sid=%hash%&chat"><img src="../chat/images2/memo_close.gif" border="0" onmouseover="this.src='../chat/images2/memo_open.gif'" onmouseout="this.src='../chat/images2/memo_close.gif'" alt="メモ" id="gap" /></a>
+</li>
+</ul>
+</div><!-- tab_menu -->
+
+<div id="tab_main">
+<div align="center">
+<br /><br /><br /><br /><br /><br /><br />
+%msg%
+<form action="" name="form02" method="post" onSubmit="return go_enter">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr><td>
+	<table width="100%" border="0" cellpadding="6" cellspacing="1">
+	<tr>
+		<td>宛先</td>
+		<td align="left">
+		<!-- tmpl:ifdef %init_disp1% -->
+			<select name="to_user">
+				<option value="" selected> 選択してください。</option>
+				<!-- tmpl:loop %mail_address% -->
+				<option value="%id_1%">%nick_name%</option>
+				<!-- tmpl:endloop -->
+			</select>
+		<!-- tmpl:endif -->
+		<!-- tmpl:ifdef %init_disp2% -->
+			%nick_name%
+			<input type="hidden" name="id_2" value="%id_2%">
+		<!-- tmpl:endif -->
+		</td>
+	</tr>
+	<tr>
+		<td>件名</td>
+		<td align="left"><input type="text" style="width:195px;" MAXLENGTH="32" name="subject" value="%subject%"></td>
+	</tr>
+	<tr>
+		<td>本文</td>
+		<td align="left">
+			<textarea name="body" style="width:99%; height:150px;">%body%</textarea>
+		</td>
+	</tr>
+	</table>
+</td></tr>
+<tr><td align="center">
+	<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="190">　</td>
+		<td><input type="button" value="メール送信" onClick="send_mail();" style="font-size:12px;"></td>
+	</tr>
+	</table>
+</td></tr>
+<input type="hidden" name="mode" value="mail_send">
+<input type="hidden" name="dummy" value="京美乳">
+</table>
+</form>
+</div>
+</div><!-- tab_main -->
+
+</div><!-- tab_space -->
+
+</div>
+
+</body>
+</html>

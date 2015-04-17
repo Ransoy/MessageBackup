@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="./css/default.css" />
+<link rel="stylesheet" type="text/css" href="./css/common.css" />
+<link rel="stylesheet" type="text/css" href="./css/top.css" />
+<link rel="stylesheet" type="text/css" href="./css/beginner.css" />
+<link rel="stylesheet" type="text/css" href="./css/bulletin.css" />
+<link rel="stylesheet" type="text/css" href="/css/campaign.css" />
+</head>
+
+<body id="index">
+
+<div id="wrapper">
+
+  %header%
+
+  %navi_contents%
+
+  <div id="Contens" class="clearfix" style="clear: both">
+
+    <div id="MainBlock" class="clearfix">
+
+      <!-- tmpl:ifdef %test_female_disp% -->
+      <div  class="cmnSection">
+        <div style="padding: 20px 20px;">
+
+          <img src="./images/notw.jpg" alt="重要なお知らせ" /><br />
+
+          <p style="font-size:13px;">
+            本日もログイン誠にありがとうございます。現在、お仕事ができない状態になっております。<br />
+            お仕事上の環境トラブルや、サポートスタッフによる確認事項がある等、様々な理由が考えられます。<br />
+            お手数ですが、次回〔2ショットで接続〕時にサポートスタッフが入室させていただきます。<br />
+            また、お電話にて対応も可能ですので、ご希望の際はフリーダイヤル（0120-50-2581）までお電話頂けましたら幸いです。<br />
+            お仕事の再開が問題ないと判断させていただいた時点で、再開可能となりますのでよろしくお願いいたします。<br />
+          </p>
+        </div>
+      </div>
+      <!-- tmpl:endif -->
+
+
+
+      <div id="centerBlock" style="width:100%;">
+        <!-- パフォーマおすすめ時間バナー -->
+        <div class="pafo_time">
+          <p style="width:710px;margin-bottom:0px;">
+            <a href="./blog/about.php" target="_blank"><img src="/performer/img/banner/banner_blog_how_to_use.png"></a>
+            <a href="/campaign/p_time" target="_blank"><img src="/performer/img/banner/banner_2200_2600.png"></a>
+          </p>
+        </div>
+        <!-- tmpl:ifdef %select_bonus% -->
+          <div id="selectBonus">
+            <a href="./campaign/select_bonus/" target="_blank"><img src="images/pafo_select_bonus.jpg" /></a>
+          </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %taiki_bonus% -->
+        <div id="standbyBonus">
+          <a href="./campaign/taiki_bonus/" target="_blank"><img src="%banner_img%" alt="ボーナス" /></a>
+          <span>あと%min%分のログイン時間（待機＋%point%分チャット）で%bonus%円ゲット！</span>
+        </div>
+        <!-- tmpl:endif -->
+
+        <div class="tabs" style="margin-top:10px;">
+          <ul>
+            <li class="sub_t_1"><a href='#tab1'>すべて</a></li>
+            <li class="sub_t_2"><a href='#tab2'>パフォーマーさん向け</a></li>
+            <li class="sub_t_3"><a href='#tab3'>会員様向け</a></li>
+            <li class="sub_t_4"><a href='#tab4'>お知らせ</a></li>
+          </ul>
+
+          <!--start クレジット決済-->
+          <div id='tab1' class="tab_1"></div>
+          <!--start tab2-->
+          <div id='tab2' class="tab_2"></div>
+          <!--start tab3-->
+          <div id='tab3' class="tab_3"></div>
+          <!--start tab 4-->
+          <div id='tab4' class="tab_4"></div>
+        </div>
+
+        <!-- パフォーマおすすめ時間バナー -->
+        <div class="pafo_time" style="margin:-30px 0 20px 0;">
+          <p style="width:710px;margin-bottom:0px;">
+            <a href="http://bit.ly/1tBEf4t" target="_blank"><img src="/performer/img/banner/banner_pr_native_camp.png"></a>
+            <a href="/performer/campaign/jambo/" target="_blank" style="float:right;"><img src="/performer/img/banner/banner_pr_jambo.png"></a>
+          </p>
+        </div>
+
+        <div class="cmnSection" id="campaign_news" style="border:none;">
+          <iframe src="./campaign_news.html" frameborder="0" width="100%" height="490px" scrolling="no"></iframe>
+        </div>
+
+
+      </div>
+
+      <div id="rightBlock">
+
+        <!-- 130724追加 ランキング誘導 ここから -->
+
+        <!--<div class="point_ranking_right">
+          <div class="point_ranking_right_new">
+            <img src="images/ranking/ranking_point_right_new.png" />
+          </div>
+          <a href="/performer/ranking/" target="_blank">獲得ポイントランキング</a>
+        </div>
+        <div class="point_ranking_right_bot">
+          <a href="/performer/ranking/" target="_blank">毎日更新！確認はこちら＞＞</a>
+        </div>-->
+
+        <!-- 130724追加 ランキング誘導 ここまで -->
+
+
+        <!-- tmpl:ifdef %debut_special% -->
+
+        <!--<table  border="0" cellspacing="1" style="background-color:#ffffff">
+        <tr>
+          <td bgcolor="#ffffff" style="padding: 4px 1px 4px 1px; text-align:center;font-size:12px;">
+
+            <a href="/performer/campaign/debut_mark/" target="_blank"><img src="/images/operator/debut_btn2.jpg" onmouseover="this.src='/images/operator/debut_btn2_on.jpg';" onmouseout="this.src='/images/operator/debut_btn2.jpg'"></a>
+          </td>
+        </tr>
+        </table>-->
+
+        <!-- tmpl:endif -->
+
+
+      </div>
+
+    </div>
+
+    <div id="UtilitiesBlock">
+
+      %utilities%
+
+      <div id="ShiftedRightBlock">
+
+        <!-- tmpl:ifdef %newgirls_bonus% -->
+        <!-- 新人特別ボーナス 面接済ｸA群週間 -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">新人応援・特別ボーナス</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/newgirls_bonus.php" height="140" width="100%" scrolling="no" frameborder="0" id="iframe_newgirls_bonus"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %reward_up% -->
+        <!-- 報酬アップカウンター -->
+        <div id="CrearPoint" class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">めざせ%crear_point%Ptで報酬アップ</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/flv_1000.php" frameborder="0" width="100%" height="180" scrolling="no"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %taiki_bonus% -->
+        <!-- シークレットボーナス申告 -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">スペシャルボーナス</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/taiki_bonus.php" height="248" width="100%" scrolling="no" frameborder="0" id="iframe_taikibonus"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %special_week_counter% -->
+        <!-- スペシャルウィークカウンター -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">ｽﾍﾟｼｬﾙWEEK獲得ﾎﾟｲﾝﾄ</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/special_week.php" height="107" width="100%" scrolling="no" frameborder="0" id="iframe_special_week"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %macheriecoin% -->
+        <!-- マシェ男ボーナステスト -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">マシェ男くんボーナス</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/macheriecoin.php" height="248" width="100%" scrolling="no" frameborder="0" id="iframe_macheriecoin"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %secret_bonus% -->
+        <!-- シークレット７０円・応募フォーム -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">シークレット７０円・応募フォーム</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/secretbonusm.php" height="248" width="100%" scrolling="no" frameborder="0" id="iframe_secretbonusm"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %secret_bonus_tukawanai% -->
+        <!-- 旧シークレットボーナス申告 -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">シークレットボーナス申告</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/secret_bonus.php" height="107" width="100%" scrolling="no" frameborder="0" id="iframe_secret_bonus"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+      <!-- tmpl:ifdef %gc% -->
+        <!-- ギャラリー＆コメント ボーナス -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">2点プロフ充実で300円ボーナス</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/gc.php" height="110" width="100%" scrolling="no" frameborder="0"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <div id="TopicSection" class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">更新トピックス</span>
+          </h2>
+
+          <dl>
+            <!-- tmpl:loop %loop_faq% -->
+            <dd>
+              <ul>
+                <a href="/performer/manual/faq/?M=detail&qid=%qid%" target="_blank" >
+                <li class="Question">【%title%】</li>
+                <li class="Anwer">%question%</li>
+                </a>
+              </ul>
+            </dd>
+            <!-- tmpl:endloop -->
+            <dd style="text-align:center;padding:20px 0;">
+              <a href="./manual/faq/">＞＞　よくある質問　＜＜ </a>
+            </dd>
+          </dl>
+        </div>
+
+        <!-- tmpl:ifdef %stepup_bonus% -->
+        <!-- ステップアップボーナス -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">ステップアップボーナス</span>
+          </h2>
+          <div>
+            <iframe src="../stepup/" height="242" width="100%" scrolling="no" frameborder="0" id="iframe_stepup"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %present_point% -->
+        <!-- お客様優待券 -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">お客様・優待権</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/present_point.php" height="320" width="100%" scrolling="no" frameborder="0" id="iframe_present_point"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %xmas_img_kako% -->
+        <!-- クリスマス優待券 -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">クリスマス優待券</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/xmas_img_kako.php" height="320" width="100%" scrolling="no" frameborder="0" id="iframe_xmas_img_kako"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %jewelry_bonus3% -->
+        <!-- ジュエリーボーナス第三部用 -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">ジュエリーボーナス</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/jewelry_bonus3.php" height="242" width="100%" scrolling="no" frameborder="0" id="iframe_jewelry_bonus3"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %jewelry_bonus2% -->
+        <!-- ジュエリーボーナス第二部用 -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">ジュエリーボーナス</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/jewelry_bonus2.php" height="242" width="100%" scrolling="no" frameborder="0" id="iframe_jewelry_bonus2"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %jewelry_bonus% -->
+        <!-- ジュエリーボーナス第一部用 -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">ジュエリーボーナス</span>
+          </h2>
+          <div>
+            <iframe src="./right_topico/jewelry_bonus.php" height="242" width="100%" scrolling="no" frameborder="0" id="iframe_jewelry_bonus"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+        <!-- tmpl:ifdef %objective% -->
+        <!-- 目標報酬 -->
+        <div class="cmnSection">
+          <h2 class="clearfix">
+            <span class="title">目標報酬</span>
+          </h2>
+          <div>
+            <iframe src="../summer_fes/check.php" height="220" width="100%" scrolling="no" frameborder="0"></iframe>
+          </div>
+        </div>
+        <!-- tmpl:endif -->
+
+      </div>
+    </div>
+
+  </div>
+
+  %footer%
+  <script type="text/javascript" src="./js/bulletin.js"></script>
+  <script type="text/javascript">     
+    $(function() {
+    	setInterval("pIconUpdatePerSec()", 10000);
+    });
+  
+  </script>
+</body>
+</html>

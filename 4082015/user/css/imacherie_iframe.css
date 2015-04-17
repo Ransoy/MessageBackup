@@ -1,0 +1,79 @@
+/*
+*{
+	font-size:12px;
+	color:#444444;
+}
+*/
+.icon{
+	width:16px;
+	height:16px;
+	border:none;
+}
+table.profile td .chat{
+	background-color:yellow;
+}
+table.profile td .online{
+	background-color:#E0FCFF;
+}
+table.profile td .offline{
+	background-color:white;
+}
+table.profile td a{
+	font-size:11px;
+	text-decoration:none;
+}
+
+.myrankingtop3_profimg img {
+	width:120px;
+	height:90px;
+	border:thin solid black;
+}
+
+.myrankingtop3_member{
+	border-collapse:collapse;
+	height:92px;
+	width:130px;
+}
+.myrankingtop3_member td,table.myrankingtop3_member th{
+	border:1px solid #D0ECFF;
+	text-align:center;
+}
+
+.ranking_icon td{
+	border:none;
+	text-align:left;
+}
+
+table.profile td.chat_profimg{
+	width:60px;
+}
+table.profile td.chat_profimg img {
+	width:60px;
+	height:45px;
+	border:thin solid black;
+}
+table.profile td .chat_member{
+	border-collapse:collapse;
+	height:45px;
+	width:190px;
+}
+.chat_member td,.chat_member th{
+	border:1px solid #D0ECFF;
+	text-align:center;
+}
+.chat_member td.date{
+	width:45px;
+}
+.chat_member th.date{
+	width:45px;
+	background-color:#E0EEEE;
+	color:white;
+}
+
+.footer{
+	height:20px;
+	float:right;
+}
+.footer div.anchor a{
+	color:#FA7800;
+}

@@ -1,0 +1,107 @@
+@charset "Shift_JIS";
+
+/*------------------------------------------*/
+/* í ïÒÉyÅ[ÉW
+/* report
+/*------------------------------------------*/
+/*--------------------------------*/
+/* add reset
+/*--------------------------------*/
+.report_wrap button{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: inherit;
+	margin: 0;
+}
+.report_wrap dl,
+.report_wrap dt,
+.report_wrap dd{
+	margin: 0;
+}
+.report_wrap textarea{
+	font: inherit;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.1) inset;
+}
+/*--------------------------------*/
+/* add notice message
+/*--------------------------------*/
+.report_wrap .ui_notice_wrap{
+	background: #fff;
+	border: #999 3px dotted;
+	border-radius: 8px;
+	padding: 0.7rem;
+}
+.report_wrap .ui_notice_wrap .ui_notice_msg{
+	color: #999;
+	line-height: 1.7;
+}
+.report_wrap .ui_notice_wrap--error{
+	background: #fff;
+	border: #FF2872 3px dotted;
+}
+.report_wrap .ui_notice_wrap--error .ui_notice_msg{
+	color: #FF2872;
+}
+
+/*--------------------------------*/
+/* report index page
+/*--------------------------------*/
+.report_wrap{
+	padding: 1.5rem 2% 3rem;
+}
+.report_wrap .report_ttl{
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+.report_wrap .report_desc{
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+}
+.report_wrap .report_form_wrap{
+	font-size: 1.3rem;
+}
+.report_wrap .report_form_wrap dl dt{
+	font-weight: bold;
+	color: #999;
+	margin-bottom: 1rem;
+	border-top: #eee solid 1px;
+	padding-top: 1.5rem;
+}
+.report_wrap .report_form_wrap dl dd{
+	font-weight: normal;
+	color: #444;
+	margin-bottom: 2rem;
+}
+.report_wrap .report_form_wrap dl dd:last-child{
+	margin-bottom: 0;
+}
+.report_wrap .report_form_wrap .report_reason_list li{
+	margin-bottom: 1rem;
+}
+.report_wrap .report_form_wrap .report_reason_list li:last-child{
+	margin-bottom: 0;
+}
+.report_wrap .report_comment_ttl span{
+	font-weight: normal;
+}
+.report_wrap .require{
+	color: #f00;
+}
+.report_wrap .report_form_wrap .btn{
+	margin: 0.5rem 0 1.5rem;
+}
+.report_wrap .report_form_wrap .note{
+	color: #999;
+	font-size:  1.2rem;
+}
+
+/*--------------------------------*/
+/* report complete page
+/*--------------------------------*/
+.report_wrap--complete .btn{
+	margin: 0.5rem 0 1.5rem;
+}
+

@@ -1,0 +1,87 @@
+
+body {
+	font-family: ",l,r ,ofSfVfbfN", Osaka;
+	font-size: 12px;
+	text-align: center;
+	color: #333;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+h2,h3,h4,h5 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #0050be;
+}
+
+a:visited {
+	color: #0050be;
+}
+
+a:hover {
+	color: #f05a0e;
+}
+
+img {
+	vertical-align: bottom;
+	border: 0;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 10px auto;
+	font-size: 12px;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+td {
+	color: #2d3b4e;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+address {
+	font-style: normal;
+}
+
+input,textarea {
+	font-family: Arial, Helvetica, "fqfÅÒfMfmS(pfS Pro W3",  sans-serif;
+	border: none;
+	border: 1px solid #a8a8a8;
+	font-size: 14px;
+	background: #fff;
+	padding: 2px 4px;
+}
+
+
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>スマホでライブチャットマシェリ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="/sp/css/jquery.sidr.dark.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/reset.css">
+<link rel="stylesheet" href="/sp/css/common.css">
+<link rel="stylesheet" href="/sp/css/menu_open.css">
+<link rel="stylesheet" href="/sp/css/font-awesome.min.css">
+<link rel="stylesheet" href="/sp/css/margin.css">
+<link rel="stylesheet" href="/sp/css/message.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script src="/sp/js/jquery-1.11.0.js"></script>
+</head>
+
+<body class="bd_message bd_message_inbox">
+<div id="main">
+%right_menu%
+<div class="contents">
+    <div class="message_wrap message_wrap--search cf">
+
+		<div class="message_header message_header--inbox">
+			<div class="col_left">
+			    <!-- <a class="btn_back" href="./contact_list.php"><i class="fa fa-angle-left"></i></a> -->
+			</div>
+			<div class="col_center">
+				<h3 class="icon icon--block_list">受信拒否リスト</h3>
+			</div>
+			<div class="col_right">    
+				<a href="javascript:void(0);" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+				<div class="panel_menu" id="panel_menu">
+					<ul>
+						<li><a class="btn_message_list" href="./inbox.php">メール削除</a></li>
+						<li><a class="btn_contact_list" href="./contact_list.php">連絡先編集</a></li>
+						<li><a class="btn_search_performer" href="./search_performer.php">新規作成</a></li>
+						<li><a class="btn_block_list" href="./block_list_edit.php">拒否リスト</a></li>
+					</ul>
+				</div>            
+			</div>			
+		</div>
+
+        <!-- old version link -->
+        <span class="link_old_mailbox">マシェリからのお知らせ <a href="/sp/mail.php">%old_unread%件</a></span>
+        <!-- old version link -->
+
+        <div class="message_list message_list--edit contact_list cf">
+            <form class="message_list_form" action="block_list_edit.php" method="post">
+                <!-- tmpl:ifdef %result% -->
+                <div class="ui_msg_area ui_msg_area--not_exist">
+                    <p class="msg">受信拒否設定のパフォーマーがいません。</p>
+                </div>
+                <!-- tmpl:endif --> 
+                <!-- tmpl:loop %all_set% -->
+                <div class="message_list_item">
+    				<div class="message_inner">
+                        <div class="col_left">
+                            <label><input type="checkbox" name="contact_ids[]" value="%contactId%"></label>
+                        </div>
+                        <div class="thumb">
+                            <img src="/sp/image/spacer.gif" style="background-image: url('%image%')" />
+                        </div>
+                        <div class="message_data">
+                            <p class="user_name">%name%</p>
+                        </div>
+                    </div>
+    			</div>
+    			<!-- tmpl:endloop -->
+			</form>            
+        </div><!-- // .message_list -->
+
+       <div class="box_inner">
+           <div class="ui_btn_wrap ui_btn_wrap--center cf">
+                <ul>
+                    <li><a class="ui_btn ui_btn--max ui_btn--bg_gray_deep disable" href="#" id="exe_cancel_block_list">拒否解除する</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="message_pager">
+        	<!-- tmpl:ifdef %prev-href% -->
+        	<div class="cell--left">
+        		<a class='prev %prev-disable%' href='block_list_edit.php?page=%prev-href%'>前へ</a>
+        	</div>
+        	<!-- tmpl:endif -->
+        			<!-- tmpl:ifdef %nav% -->
+        				%nav%
+        			<!-- tmpl:endif -->
+        	<!-- tmpl:ifdef %next-href% -->
+			<div class="cell--right">
+        		<a class='next %next-disable%' href='block_list_edit.php?page=%next-href%'>次へ</a>
+        	</div>
+        	<!-- tmpl:endif -->
+        </div>
+
+	</div><!-- // message_wrap -->
+</div><!-- // .contents -->
+%footer%
+<article>
+	<section id="menu_close_area">
+		<ul class="menu_close_button"><a class="menu_close_box_bg_a" id="simple-menu-close" href="#sidr"><li class="menu_close_box_bg"></li></a></ul>
+	</section>
+</article>
+<a id="scroll_top" href="#header"><img src="/sp/image/icon/btn_pagetop.png" /></a>
+</div><!-- // #main -->
+
+<script src="/sp/js/jquery.sidr.min.js"></script>
+<script src="/sp/js/smoothScroll.js"></script>
+<script src="/sp/js/jquery.biggerlink.js"></script>
+<script src="/sp/js/jquery.touchSwipe.min.js"></script>
+<script src="/sp/js/common.js"></script>
+<script src="/sp/js/message.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.b_link').biggerlink();
+
+	// swipe list
+	$('.swipe_panel').swipe({
+		swipeLeft: function(event, direction, distance, duration, fingerCount){
+			$(this).animate({ marginLeft: '-10rem' }, 200);
+		},
+		swipeRight: function(event, direction, distance, duration, fingerCount){
+			$(this).animate({ marginLeft: '0rem' }, 200);
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+@charset "Shift_JIS";
+
+/*	edit_info common
+---------------------------------------*/
+#setting .message div
+{
+	margin:10px;
+	padding:15px;
+	color:red;
+	background:#f9e8eb;
+	border:1px solid #ccc;
+}
+#setting h2
+{
+	margin-bottom:10px;
+}
+
+#setting #linkArea
+{
+	padding:0 10px 10px;
+	margin-bottom:10px;
+}
+#setting #menu
+{
+	padding:0 10px;
+	text-align:right;
+}
+#setting form
+{
+	padding:0 10px 30px;
+	text-align:center;
+}
+#setting h3
+{
+	background:#666;
+	color:#fff;
+	font-size:120%;
+	text-indent:0.5em;
+	text-align:left;
+	line-height:1.8;
+	margin-bottom:12px;
+	letter-spacing:1px;
+}
+#setting h4
+{
+	font-weight:normal;
+}
+
+#setting form p
+{
+	text-align:left;
+	padding:10px;
+	background:#f3f3f3;
+	border:1px solid #ccc;
+	margin-bottom:20px;
+}
+#setting form p span
+{
+	color:#d50242;
+	font-weight:bold;
+}
+#setting form table
+{
+	/* margin:0 auto 20px; */
+}
+
+#setting form th,
+#setting form td
+{
+	padding:10px 5px;
+}
+#setting form td
+{
+	vertical-align:top;
+}
+/*
+#setting form td img
+{
+	border:2px solid #000;
+}
+*/
+
+.outline
+{
+	border:2px solid #000;
+}
+
+.pager
+{
+	padding:15px;
+	text-align:center;
+}
+.pager span
+{
+	border:1px solid #ccc;
+	padding:1px 4px;
+}
+.pager a
+{
+	border:1px solid #ccc;
+	background:#efefef;
+	padding:1px 4px;
+}
+
+#gallery
+{
+	width:500px;
+}
+#gallery td
+{
+	text-align:center;
+	background:#efefef;
+	border:1px solid #ccc;
+}
+#gallery td img
+{
+	margin-bottom:10px;
+}
+#setting form dl
+{
+	text-align:left;
+	background:#f3f3f3;
+	border:1px solid #ccc;
+	padding:20px 10px 0;
+}
+#setting form dl dt
+{
+	font-weight:bold;
+	margin-bottom:10px;
+}
+#setting form dl dd
+{
+	margin-bottom:30px;
+	padding-left:20px;
+}
+#setting form dl dd span
+{
+	color:red;
+	font-weight:bold;
+}
+#setting form dl dd ol
+{
+	list-style:decimal;
+	padding-left:20px;
+}
+#setting form dl dd ul li
+{
+	float:left;
+	width:180px;
+	text-align:center;
+}
+#setting table th
+{
+	padding:0px 10px;
+	background:#efefef;
+}
+
+#setting table td input#tel{width:200px;}
+#setting table td input#handy{width:300px;}
+#setting table td input#mail{width:300px;}
+#setting table td input#zip{width:200px;}
+#setting table td input#address{width:500px;}
+
+/*	memo
+---------------------------------------*/
+#memo
+{
+	border-collapse:collapse;
+}
+
+#setting #memo th
+{
+	padding:6px 10px;
+}
+#memo td
+{
+	border-bottom:1px solid #ccc;
+}
+
+/*	WISYWIG
+---------------------------------------*/
+#setting #wisywig
+{
+	text-align:center;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+#setting #wisywig li
+{
+	float:left;
+	width:24px;
+}
+#setting #wisywig li a
+{
+	border:0;
+	color:#FFFFFF;
+}
+#setting #wisywig li img
+{
+	border:0;
+	color:#FFFFFF;
+}
+#setting #wisywig li.sl{
+	float:left;
+	width:6em;
+}
+
+/* MobileRegist
+----------------------------------------------*/
+#mobileRegist
+{
+}
+#mobileRegist dl dd.first
+{
+	margin-top:10px;
+	padding-left:178px;
+	background:url(../images/mobi/qr.gif) no-repeat;
+	height:148px;
+	position:relative;
+}
+#mobileRegist dl dd.first p
+{
+	padding-top:40px;
+}
+#mobileRegist dl dd.second
+{
+	margin-top:88px;
+	position:relative;
+}
+#mobileRegist dl dd div.detail
+{
+	position:absolute;
+	top:77px;
+	left:409px;
+}
+
+#mobiForm
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	background:url(../images/mobi/form.gif) no-repeat;
+	height:68px;
+}
+#mobiForm form
+{
+	padding-top:34px;
+}
+#mobiForm form input,
+#mobiForm form select
+{
+	font-size:14px;
+}
+
+dl.calender_list{
+	border:none;
+	width:700px;
+}
+
+dl.calender_list dt{
+	display: block;
+	width:700px;
+	padding:5px 0 0 0;
+	margin: 5px 0;
+	font-weight: bold;
+	clear:both;
+	color: #003399;
+}
+
+dl.calender_list dt span{
+	font-weight: bold;
+	background-color: #efefef;
+	padding:5px 10px;
+	margin: 10px 10px 10px 0;
+	color: #484848;
+}
+
+dl.calender_list dd{
+	display: block;
+	width:700px;
+	padding:5px;
+	margin: 0 0 15px 0;
+	border-bottom: 1px dashed #ddd;
+}
+

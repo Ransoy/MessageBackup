@@ -1,0 +1,91 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Macherie
+	BUILD:	2007/4/11
+	AUTHOR:	S.takaya
+_______________________________________*/
+
+/*  Universal
+---------------------------------------*/
+*{
+	margin:0;
+	padding:0;
+}
+/*  Structure
+---------------------------------------*/
+body{
+	font-family:"‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size:12px;
+	background: #fff;
+	color:#444;
+	padding:10px;
+	line-height:100%;
+}
+/*  Hypertext
+---------------------------------------*/
+a {
+	color:#3532ff;
+}
+/*	LIST
+---------------------------------------*/
+ul{
+	list-style:none;
+}
+/*	Forms
+---------------------------------------*/
+input,
+textarea {
+	font-family: Arial, Helvetica, "ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+	border:none;
+	border:1px solid #a8a8a8;
+	background:#fff;
+}
+textarea {
+	height:4em;
+	padding:0.4em 8px;
+}
+p input {
+	margin-right:8px;
+}
+input.radio {
+	background-color:transparent;
+	border:none;
+}
+input.submit {
+	border:0;
+}
+input.button {
+	font-family:Tahoma, Verdana, sans-serif;
+	font-size:12px;
+	font-weight: bold;
+	color:#6c737a;
+	border-width:1px;
+	border-style:solid;
+	border-color:#c2c2c2 #8f8f8f #8f8f8f #c2c2c2;
+	padding:1px 0.3em;
+}
+/*	Tables
+---------------------------------------*/
+td,
+th {
+	font-size:12px;
+	color:#666;
+}
+th {
+	font-family:"‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	white-space:nowrap;
+	color:#000;
+	font-weight:normal;
+}
+td {
+	color:#2d3b4e;
+	padding:3px;
+	text-align:center;
+}
+/*	Image
+---------------------------------------*/
+img {
+	vertical-align:bottom;
+	border:0;
+}

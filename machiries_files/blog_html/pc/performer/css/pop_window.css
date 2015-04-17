@@ -1,0 +1,26 @@
+@charset "Shift_JIS";
+
+/* マイク注意のポップアップ
+----------------------------------------*/
+.popWindow{
+	overflow:hidden;
+	position:absolute;
+	width:408px;
+	display:none;  /* 非表示にする工夫 */
+	z-index:8;
+}
+.popWindow a.popClose{
+	background-color: white;
+	opacity: 0.0;
+	display:block;
+	width:48px;
+	height:48px;
+	right:0;
+	position:absolute;
+}
+
+.popWindow .popBody{
+	height:auto;
+	padding:4px 18px;
+	text-align:left;
+}

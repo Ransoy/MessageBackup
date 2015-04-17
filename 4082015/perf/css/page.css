@@ -1,0 +1,19 @@
+@charset "Shift_JIS";
+
+/*	cameraCheck
+---------------------------------------*/
+#webCamera h2
+{
+	margin-bottom:20px;
+}
+#webCamera object
+{
+	margin:30px auto;
+	border:10px solid #ccc;
+}
+#webCamera div
+{
+	text-align:center;
+}
+
+

@@ -1,0 +1,90 @@
+@charset "Shift_JIS";
+.tag{
+	font-size: 10px;
+	letter-spacing: normal;
+	line-height: normal;
+	font-family:  Verdana, Arial, "‚l‚r ‚oƒSƒVƒbƒN", Osaka, sans-serif;
+	color: #0988b7;
+}
+.tag-ans{
+	margin-top: 10px;
+	font-size: 10px;
+	letter-spacing: normal;
+	line-height: normal;
+	font-family:  Verdana, Arial, "‚l‚r ‚oƒSƒVƒbƒN", Osaka, sans-serif;
+	color: #0988b7;
+}
+.navi{
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #0988b7;
+}
+.navi a:link{color: #ffffff; font-weight: bold; text-decoration: none;}
+.navi a:visited {color: #ffffff; font-weight: bold; text-decoration: none;}
+.navi a:active {color: #ffffff; font-weight: bold; text-decoration: none;}
+.navi a:hover {color: #ffffff; font-weight: bold; text-decoration: underline;}
+.waku{
+	padding: 10px;
+	border: 1px solid #0988b7;
+}
+#faq #mainBlock form
+{
+	padding:0 10px 30px;
+	text-align:center;
+}
+#faq form table#faqTable
+{
+	width:688px;
+}
+
+#faq h2
+{
+	margin-bottom:20px;
+}
+
+
+#faq h3
+{
+	background:#666;
+	color:#fff;
+	font-size:120%;
+	text-indent:0.5em;
+	text-align:left;
+	line-height:1.8;
+	margin-bottom:12px;
+	letter-spacing:1px;
+}
+#faq h4
+{
+	font-weight:normal;
+}
+
+#faq form p
+{
+	text-align:left;
+	padding:10px;
+	background:#f3f3f3;
+	border:1px solid #ccc;
+	margin-bottom:20px;
+}
+#faq form p span
+{
+	color:#d50242;
+	font-weight:bold;
+}
+#faq form table
+{
+	margin:0 auto 20px;
+}
+#faq form table td p
+{
+	margin:10px 0;
+}
+#faq .waku .title,
+#faq .waku .title a
+{
+	font-weight:bold;
+	font-size:14px;
+	color:#ff0096;
+}
+

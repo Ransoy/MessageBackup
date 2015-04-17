@@ -1,0 +1,121 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Macherie
+	BUILD:	2012/8/10
+	AUTHOR:	fujimaki
+_______________________________________*/
+
+
+/*	main_contents_sct
+---------------------------------------*/
+
+#main_contents_privacy {
+	text-align: center;
+	margin: 10px auto;
+	color: #333333;
+	border: none;
+	background: #ffffff;
+}
+
+#center_privacy {
+	text-align: center;
+	margin: 0 auto;
+	min-width: 625px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+#privacy {
+	width: 625px;
+	text-align: center;
+	margin: 10px auto;
+	color: #333333;
+}
+
+
+/*	title
+---------------------------------------*/
+
+#title_privacy {
+	width: 628px;
+	text-align: left;
+	margin: 30px auto;
+	border-bottom:4px dotted #c3c3c3;
+	padding-bottom: 6px;
+}
+
+#text_area_privacy {
+	width: 625px;
+	text-align: left;
+	margin: 0 auto;
+	font-family:'ÉÅÉCÉäÉI',Meiryo,'ÉqÉâÉMÉmäpÉS Pro W3','Hiragino Kaku Gothic Pro','ÇlÇr ÇoÉSÉVÉbÉN',sans-serif;
+	font-size: 15px;
+}
+
+.text_area_title_privacy {
+	width: 612px;
+	height:30px;
+	text-align: left;
+	margin: 30px auto 15px 0;
+	padding: 6px 0 0 13px;
+	background:url(/c/m/images/table2/agreement_title_bg_2.png);
+	font-size: 16px;
+	font-weight: bold;
+}
+
+* html .text_area_title_privacy{
+	height: 37px;
+}
+
+.text_contents_privacy{
+	width: 605px;
+	text-align: left;
+	margin: 0 auto;
+	font-family:'ÉÅÉCÉäÉI',Meiryo,'ÉqÉâÉMÉmäpÉS Pro W3','Hiragino Kaku Gothic Pro','ÇlÇr ÇoÉSÉVÉbÉN',sans-serif;
+	font-size: 14px;
+	padding: 0 10px;
+}
+
+.text_contents_round_bracket{
+	width: 595px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 14px;
+	padding: 0 15px;
+}
+
+.move_top{
+	text-align: right;
+	margin-top: 45px;
+	font-size: 12px;
+	padding: 0 15px;
+}
+
+.move_top a{
+color: #0078E5;
+text-decoration: underline;
+}
+
+.move_top a:hover{
+color: #cf4b4b;
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

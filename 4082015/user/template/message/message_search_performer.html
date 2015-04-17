@@ -1,0 +1,189 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="keywords" content="とは？,ライブ,ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content=""  />
+<title>メール | ライブチャットマシェリ / 芸能人も参加する超人気サイト</title>
+<link rel="home" href="http://www.macherie.tv/" title="ライブチャットマシェリ" />
+<link rel="canonical" href="http://www.macherie.tv/about.php" />
+<!--<script type="text/javascript" src="./c/s/js/prototype.js"></script>-->
+<script type="text/javascript" src="/c/s/js/common.js"></script>
+
+<link href="/c/s/css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/template.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/sp_event.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="/css/margin.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/message.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/footer2.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<link href="/c/s/css/header.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link href="/c/s/css/scroll.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/c/s/js/scroll.js"></script>
+
+</head>
+<body>
+
+<!-- wrap -->
+	%head_menu%
+		<div id="liquid">
+			<div id="conBlock">
+
+				<div class="message_contents_wrap cf">
+
+					<div class="ttl_area icon icon--contact_list">
+						<h2 class="ttl_top">連絡先</h2>
+                        <p class="ttl_area_desc">あなたとチャットやメールのやりとりのあった子や、お気に入りの女の子一覧です。</p>
+                        <!-- old version link -->
+                        <span class='ttl_right'>マシェリからのお知らせ <a class="link_old_mailbox" href="../../webmail/mailbox_receive.php?midoku" target="_blank">%old_unread%件</a></span>
+                        <!-- old version link -->
+					</div>
+
+					<div class="message_contents_inner message_contents_inner--narrow_padding_top">
+
+                        <div class="tab_menu cf">
+                            <ul>
+                                <li>
+                                    <a href="./inbox.php">メールボックス</a>
+                                </li>
+                                <li class="on">
+                                    <a href="./contact_list.php">連絡先</a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+                            <div class="panel_menu" id="panel_menu">
+                                <ul>
+                                    <li><a class="btn_message_list" href="./inbox_edit.php">メール削除</a></li>
+                                    <li><a class="btn_contact_list" href="./contact_list_edit.php">連絡先編集</a></li>
+                                    <li><a class="btn_block_list" href="./block_list_edit.php">拒否リスト</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="message_sort_menu cf" id="message_sort_menu">
+                            <ul>
+                                <li class="%all%"><a view='all' href="javascript:;">全て表示</a></li>
+                                <li class="%fave%"><a view='fave' href="javascript:;">ピックアップ</a></li>
+                                <li class="%chat%"><a view='chat' href="javascript:;">チャット入室あり</a></li>
+                            </ul>
+                            <form action="contact_list.php" method="get" id="contact-form">
+	                            <div class="message_search_area">
+	                            	<input type="hidden" name="v" value="%v%" id='view-tab'/>
+	                                <input type="text" placeholder="名前で検索..." name="q" value='%searchVal%'/>
+	                                <button class="btn_style">検索</button>
+	                            </div>
+                            </form>
+                        </div>
+
+                        <div class="message_list contact_list cf">
+
+                             <!-- tmpl:ifdef %result% -->
+                            <div class="ui_msg_area ui_msg_area--not_exist">
+                                <p class="msg">まだ連絡先に表示する女の子がいません。</p>
+                            </div>
+                            <!-- tmpl:endif -->
+
+							<table>
+								<!-- tmpl:loop %all_set% -->
+								<tr class="message_list_item">
+									<td class="col_left">
+										<div class="thumb">
+                                    		<a href="/chat/shicho.php?id=%id%" target="_blank"><img src="/img/spacer.gif" style="background-image: url('%image%')" /></a>
+										</div>
+									</td>
+									<td class="col_center b_link">
+                                         <!-- tmpl:ifdef %status% -->
+				                        	%status%
+				                        <!-- tmpl:endif -->
+                                        <p class="user_name"><a href="./detail.php?id=%id%&from=contact_list&page=%from_page%">%name%</a></p>
+									</td>
+								</tr>
+								<!-- tmpl:endloop -->	
+							</table>
+
+                        </div><!-- // .message_list -->
+
+                        <div class="message_pager border_top">
+                           <!-- tmpl:ifdef %prev-href% -->
+				        	<div class="cell--left">
+				        		<a class='prev %prev-disable%' href='contact_list.php?page=%prev-href%'>前へ</a>
+				        	</div>
+				        	<!-- tmpl:endif -->
+				        			<!-- tmpl:ifdef %nav% -->
+				        				%nav%
+				        			<!-- tmpl:endif -->
+				        	<!-- tmpl:ifdef %next-href% -->
+							<div class="cell--right">
+				        		<a class='next %next-disable%' href='contact_list.php?page=%next-href%'>次へ</a>
+				        	</div>
+				        	<!-- tmpl:endif -->
+                        </div>
+
+					</div><!-- // .message_contents_inner -->
+
+				</div><!-- // .message_contents_wrap -->
+
+			</div><!-- // #conBlock -->
+		</div><!-- // #liquid -->
+
+
+<!-- left-space -->
+<div id="leftBlock" class="sideB">
+%left_menu%
+</div>
+<!-- /left-space -->
+
+
+<!-- right-space -->
+<div id="rightBlock" class="sideB">
+%right_menu%
+</div>
+<!-- /right-space -->
+
+
+</div>
+<!-- /wrap -->
+
+
+<!-- footer -->
+%foot_menu%
+<!-- /footer -->
+
+<script type="text/javascript" src="/c/s/js/jquery.biggerlink.js"></script>
+<script type="text/javascript" src="/c/s/js/message.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.b_link').biggerlink();
+
+	$('#message_sort_menu').find('a').click(function() {
+		view = $(this).attr('view');
+		$('#view-tab').val(view);
+		$('#contact-form').submit();
+	});
+	
+});
+</script>
+
+<!-- 非同期版をつかうこと -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-13149951-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

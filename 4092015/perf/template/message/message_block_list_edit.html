@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="Shift-JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS" />
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="/performer/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/margin.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/message.css" />
+<style>
+	.on {
+		background:none;
+	}
+</style>
+</head>
+<body id="message_page">
+
+<div id="wrapper">
+		%header%
+		%navi_contents%
+
+	<div id="Contens" class="clearfix" style="clear: both">
+
+		<div id="MainBlock">
+
+			<div class="cmnSection">
+
+                <div class="breadcrumbs cf">
+                    <ol>
+                        <li>メール</li>
+                        <li>拒否リスト</li>
+                    </ol>
+                    <!-- old version link -->
+                    <span class='ttl_right'>マシェリからのお知らせ  <a class="link_old_mailbox" href="../../performer/mail/mailbox_receive.php?midoku" target="_blank">%old_unread%件</a></span>
+                    <!-- old version link -->
+                </div><!-- // .breadcrumbs -->
+
+                <div class="cmnSection_inner">
+
+                    <div class="tab_menu cf">
+                        <ul>
+                            <li>
+                                <a href="./inbox.php">メールボックス</a>
+                            </li>
+                            <li>
+                                <a href="./contact_list.php">連絡先</a>
+                            </li>
+                        </ul>
+
+                        <a href="javascript:void(0);" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+                        <div class="panel_menu" id="panel_menu">
+                            <ul>
+                                <li><a class="btn_message_list" href="./inbox_edit.php">メール削除</a></li>
+                                <li><a class="btn_contact_list" href="./contact_list_edit.php">連絡先編集</a></li>
+                                <li><a class="btn_block_list" href="./block_list_edit.php">拒否リスト</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="message_list_wrap cf">
+                       <form class="message_list_form" action="" method="post">
+	                    <div class="message_list message_list--edit contact_list cf">
+						<!--  tmpl:ifdef %result% -->
+                            <!-- ▼データがない場合▼ -->
+                            <div class="ui_msg_area ui_msg_area--not_exist">
+                                <p class="msg">拒否設定のユーザーがいません。</p>
+                            </div>
+                            <!-- ▲データがない場合▲ -->
+						<!-- tmpl:endif -->
+							<table>
+							<!-- tmpl:loop %all_set% -->
+								<tr class="message_list_item">
+									<td class="col_check">
+										<label><input type="checkbox" name="contact_ids[]" value="%contactId%:%performerId%"></label>
+									</td>
+									<td class="col_left">
+										<div class="thumb">
+                                    		<a href="javascript:void(0);"><img src="/img/spacer.gif" style="background-image: url('%image%')" /></a>
+										</div>
+									</td>
+									<td class="col_center">
+                                        <p class="user_name">%name%</p>
+									</td>
+								</tr>
+							<!-- tmpl:endloop -->
+							</table>
+                        </div><!-- // .message_list -->
+                        </form>
+					</div><!-- // .message_list_wrap -->
+
+                    <div class="btn_wrap mt_20 mb_25 cf">
+                        <ul>
+                            <li><a class="btn_style btn_style--large disable" href="javascript:void(0);" id="exe_cancel_block_list">拒否解除する</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="message_pager border_top">
+                    <!-- tmpl:ifdef %prev-href% -->
+                        <a class="prev %prev-disable%" href="block_list_edit.php?page=%prev-href%">前へ</a>
+                    <!-- tmpl:endif -->
+                     	<!-- tmpl:ifdef %nav% -->
+                     		%nav%
+                     	<!-- tmpl:endif -->
+                    <!-- tmpl:ifdef %next-href% -->
+                        <a class="next %next-disable%" href="block_list_edit.php?page=%next-href%">次へ</a>
+                   <!-- tmpl:endif -->
+                    </div>
+
+				</div><!-- // .cmnSection_inner -->
+			</div><!-- // .cmnSection -->
+
+		</div><!-- // #MainBlock -->
+
+	<div id="UtilitiesBlock">
+				%utilities%
+		</div>
+
+	</div>
+		%footer%
+		
+			<script type="text/javascript" src="/performer/js/message.js"></script>
+			<script type="text/javascript" src="/performer/js/jquery.biggerlink.js"></script>
+            <script type="text/javascript" src="/performer/js/jquery.leanModal.min.js"></script>
+			<script type="text/javascript">
+		    $(function(){
+				$('.b_link').biggerlink();
+				
+            });
+            </script>
+
+			<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-13149951-1']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			</script>
+
+<form action="https://secure.okbiz.okwave.jp/faqs/end_user_login" method="post" target="_blank" name="tofaq" accept-charset="UTF-8" onsubmit="return false;">
+
+  <input id="_username" name="$username" value="performer" type="hidden">
+  <input id="_password" name="$password" value="machelogin" type="hidden">
+  
+  <input id="_http_method" name="$http_method" value="post" type="hidden">
+  <input id="site_domain" name="site_domain" value="performer" type="hidden">
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,1109 @@
+@charset "Shift_JIS";
+
+
+/*	マシェリイベント関連
+---------------------------------------*/
+
+/*	巳年第一弾
+---------------------------------------*/
+
+#snake_bunner_area{
+	height:80px;
+	background:url(/c/m/images/top/hebi_1_3000yen_b_bg.jpg);
+	background-repeat:repeat-x;	
+}
+
+.snake_bunner{
+	height:80px;
+	background:url(/c/m/images/top/hebi_1_3000yen_b.jpg) no-repeat;
+}
+
+.snake_bunner:hover {
+    background: url('/c/m/images/top/hebi_1_3000yen_b_ov.jpg') no-repeat;
+}
+
+/*	マシェバライベント関連
+---------------------------------------*/
+
+/*	EXアイドル
+---------------------------------------*/
+
+.queen_tickets {
+	height:140px;
+	width: 224px;
+	background:url(/images/queen2012/tickets.jpg) no-repeat;
+}
+
+.queen_tickets:hover {
+	background:url(/images/queen2012/tickets_ov.jpg) no-repeat;
+}
+
+.queen_skyp {
+	height:140px;
+	width: 224px;
+	background:url(/images/queen2012/sukapa02.jpg) no-repeat;
+}
+
+.queen_skyp:hover {
+	background:url(/images/queen2012/sukapa02_ov.jpg) no-repeat;
+}
+
+/*	真夜中のおバカ騒ぎ
+---------------------------------------*/
+
+.mayobaka_View,.mayobaka_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.mayobaka_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.mayobaka_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.mayobaka_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/mayobaka/header_bg.gif) repeat-x ;
+}
+
+.mayobaka_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/mayobaka/ticket.jpg) no-repeat;
+}
+
+.mayobaka_tickets:hover {
+	background:url(/images/mayobaka/ticket_ov.jpg) no-repeat;
+}
+
+/*	カスタムバーニング
+---------------------------------------*/
+
+.burning_View,.burning_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.burning_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.burning_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.burning_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/burning/header_bg.gif) repeat-x ;
+}
+
+.burning_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/burning/ticket.jpg) no-repeat;
+}
+
+.burning_tickets:hover {
+	background:url(/images/burning/ticket_ov.jpg) no-repeat;
+}
+
+/*	真夜中のおバカ騒ぎ番組出演チャレンジシート争奪バトル
+---------------------------------------*/
+
+.mayobakach_View,.mayobakach_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.mayobakach_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.mayobakach_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.mayobakach_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/mayobakach/header_bg.gif) repeat-x ;
+}
+
+.mayobakach_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/mayobakach/ticket.jpg) no-repeat;
+}
+
+.mayobakach_tickets:hover {
+	background:url(/images/mayobakach/ticket_ov.jpg) no-repeat;
+}
+
+/*	水着グラビアDVDリリース争奪オーディション
+---------------------------------------*/
+
+.ripdvd_View,.mayobaka_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.ripdvd_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.ripdvd_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.ripdvd_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/ripdvd/header_bg.gif) repeat-x ;
+}
+
+.ripdvd_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/ripdvd/ticket.jpg) no-repeat;
+}
+
+.ripdvd_tickets:hover {
+	background:url(/images/ripdvd/ticket_ov.jpg) no-repeat;
+}
+
+
+/*	水着グラビアDVDリリース争奪オーディション#2
+---------------------------------------*/
+
+.ripdvd2nd_View,.mayobaka_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.ripdvd2nd_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.ripdvd2nd_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.ripdvd2nd_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/ripdvd2nd/header_bg.gif) repeat-x ;
+}
+
+.ripdvd2nd_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/ripdvd2nd/ticket.jpg) no-repeat;
+}
+
+.ripdvd2nd_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	レインボータウンFMパーソナリティ争奪オーディション
+---------------------------------------*/
+
+.rainbow_View,.mayobaka_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.rainbow_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.rainbow_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.rainbow_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/rainbow/header_bg.gif) repeat-x ;
+}
+
+.rainbow_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/rainbow/ticket.jpg) no-repeat;
+}
+
+.rainbow_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+
+/*	ミスflash2015
+---------------------------------------*/
+
+.flash2015_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.flash2015_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.flash2015_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.flash2015_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/2015flash/header_bg.gif) repeat-x ;
+}
+
+.flash2015_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/2015flash/ticket.jpg) no-repeat;
+}
+
+.flash2015_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	sabra
+---------------------------------------*/
+
+.sabra_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.sabra_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.sabra_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.sabra_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/sabra/header_bg.gif) repeat-x ;
+}
+
+.sabra_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/sabra/ticket.jpg) no-repeat;
+}
+
+.sabra_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	水着グラビアDVDリリース争奪オーディション#2
+---------------------------------------*/
+
+.ripdvd2nd_View,.ripdvd2nd_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.ripdvd2nd_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.ripdvd2nd_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.ripdvd2nd_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/ripdvd2nd/header_bg.gif) repeat-x ;
+}
+
+.ripdvd2nd_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/ripdvd2nd/ticket.jpg) no-repeat;
+}
+
+.ripdvd2nd_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	EXMAXインカメアイドル
+---------------------------------------*/
+
+.incame_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.incame_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.incame_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.incame_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/incame/header_bg.gif) repeat-x ;
+}
+
+.incame_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/incame/ticket.jpg) no-repeat;
+}
+
+.incame_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+.incame_tickets_120m {
+	height:140px;
+	width: 248px;
+	background:url(/images/incame/ticket_120.jpg) no-repeat;
+}
+
+.incame_tickets_120m:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	BLACKBOX 撮り下ろし争奪バトル
+---------------------------------------*/
+
+.bbgravure_View,.bbgravure_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.bbgravure_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.bbgravure_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.bbgravure_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/bbgravure/header_bg.gif) repeat-x ;
+}
+
+.bbgravure_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/bbgravure/ticket.jpg) no-repeat;
+}
+
+.bbgravure_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	ミスヤングチャンピオン2014ch
+---------------------------------------*/
+
+.yc2014ch_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.yc2014ch_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.yc2014ch_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.yc2014ch_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/yc2014ch/header_bg.gif) repeat-x ;
+}
+
+
+/*	月刊トレくるチャンネル
+---------------------------------------*/
+
+.trekuru_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.trekuru_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.trekuru_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.trekuru_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/trekuru/header_bg.gif) repeat-x ;
+}
+
+/*	ミス大衆ヴィーナス SEXY選考会
+---------------------------------------*/
+
+.missvenus_View,.missvenus_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.missvenus_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.missvenus_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.missvenus_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/missvenus/header_bg.gif) repeat-x ;
+}
+
+.missvenus_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/missvenus/ticket.jpg) no-repeat;
+}
+
+.missvenus_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+/*	水着グラビアDVDリリース争奪オーディション#3
+---------------------------------------*/
+
+.ripdvd3rd_View,.ripdvd3rd_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.ripdvd3rd_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.ripdvd3rd_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.ripdvd3rd_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/ripdvd3rd/header_bg.gif) repeat-x ;
+}
+
+.ripdvd3rd_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/ripdvd3rd/ticket.jpg) no-repeat;
+}
+
+.ripdvd3rd_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	フルーティーチャンネル みさたんのあっぷる～む
+---------------------------------------*/
+
+.fruity_View,.fruity_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.fruity_ph1{
+	background-color: #FFF;
+	padding: 4px 0px 0 1px;
+}
+
+.fruity_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.fruity_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../../images/fruity/header_bg.gif) repeat-x ;
+}
+
+/*	レインボータウンFMパーソナリティ争奪オーディション第2期
+---------------------------------------*/
+
+.rainbow2nd_View,.rainbow2nd_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.rainbow2nd_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.rainbow2nd_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.rainbow2nd_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/rainbow2nd/header_bg.gif) repeat-x ;
+}
+
+.rainbow2nd_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/rainbow2nd/ticket.jpg) no-repeat;
+}
+
+.rainbow2nd_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	マイスマバラエティ チャンネル
+---------------------------------------*/
+
+.mysma_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.mysma_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.mysma_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.mysma_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/mysma/header_bg.gif) repeat-x ;
+}
+
+.mysma_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/mysma/ticket.jpg) no-repeat;
+}
+
+.mysma_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+.mysma_tickets_120m {
+	height:140px;
+	width: 248px;
+	background:url(/images/mysma/ticket_120.jpg) no-repeat;
+}
+
+.mysma_tickets_120m:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	サンスポアイドルリポーター4期生オーディション
+---------------------------------------*/
+
+.sir4th_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.sir4th_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.sir4th_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.sir4th_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/sir4th/header_bg.gif) repeat-x ;
+}
+
+.sir4th_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/sir4th/ticket.jpg) no-repeat;
+}
+
+.sir4th_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+.sir4th_tickets_120m {
+	height:140px;
+	width: 248px;
+	background:url(/images/sir4th/ticket_120.jpg) no-repeat;
+}
+
+.sir4th_tickets_120m:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+
+/*	BOMEXガールズオーディション#3
+---------------------------------------*/
+
+.bomex_View,.bomex_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.bomex_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.bomex_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.bomex_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/bomex/header_bg.gif) repeat-x ;
+}
+
+.bomex_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/bomex/ticket.jpg) no-repeat;
+}
+
+.bomex_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+/*	次世代動画クイーン発掘！動画クラブ ～目指せ！Yahoo！映像トピックス&youtube　モンスター動画～
+---------------------------------------*/
+
+.videotopics_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.videotopics_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.videotopics_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.videotopics_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/videotopics/header_bg.gif) repeat-x ;
+}
+
+.videotopics_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/videotopics/ticket.jpg) no-repeat;
+}
+
+.videotopics_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+/*	西口向上委員会
+---------------------------------------*/
+
+.wgwf_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.wgwf_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.wgwf_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.wgwf_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/wgwf/header_bg.gif) repeat-x ;
+}
+
+.wgwf_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/wgwf/ticket.jpg) no-repeat;
+}
+
+.wgwf_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}
+
+/*	sabra2期
+---------------------------------------*/
+
+.sabra2nd_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.sabra2nd_ph1{
+	background-color: #FFF;
+	padding: 0px 0px 3px 1px;
+}
+
+.sabra2nd_ph1 a{
+	display: inline-block;
+	margin: 3px 0 0px 0;
+}
+
+.sabra2nd_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:50px;
+	clear:both;
+	background:url(../../../images/sabra2nd/header_bg.gif) repeat-x ;
+}
+
+.sabra2nd_tickets {
+	height:140px;
+	width: 248px;
+	background:url(/images/sabra2nd/ticket.jpg) no-repeat;
+}
+
+.sabra2nd_tickets:hover {
+	background-color: #fff;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+}

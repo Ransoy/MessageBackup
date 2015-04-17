@@ -1,0 +1,95 @@
+@charset "shift_jis";
+
+/* Universal
+//////////////////////////////////////////////////////////////////// */
+*{
+	margin:0;
+	padding:0;
+}
+
+/* Structure
+//////////////////////////////////////////////////////////////////// */
+html{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding:0 0 20px 0;
+}
+
+body{
+	font-family:"ÉÅÉCÉäÉI",Meiryo,"ÇlÇr ÇoÉSÉVÉbÉN","Hiragino Kaku Gothic Pro",Osaka,sans-serif;
+	font-size:12px;
+}
+
+/* Hypertext
+//////////////////////////////////////////////////////////////////// */
+a {
+	color:#02A0C7;
+	text-decoration:underline;
+}
+a:hover{
+	color:#02A0C7;
+	text-decoration:none;
+}
+
+/* Forms
+//////////////////////////////////////////////////////////////////// */
+
+form,input,textarea{
+	margin:0;
+	padding:0;
+}
+
+input.radio {
+	border:none;
+}
+input.submit {
+	border:0;
+}
+
+label{
+	cursor:pointer;
+}
+
+/* Tables
+//////////////////////////////////////////////////////////////////// */
+table,th,td{
+	border:0;
+	border-spacing:0;
+	border-collapse:collapse;
+	text-align:left;
+}
+
+/* Image
+//////////////////////////////////////////////////////////////////// */
+img {
+	border:0;
+}
+
+/* P
+//////////////////////////////////////////////////////////////////// */
+p{
+	margin:0;
+	padding:0;
+}
+
+
+/* clearfix
+//////////////////////////////////////////////////////////////////// */
+.clearfix{
+	overflow:hidden;
+}
+
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:1px;
+	overflow:hidden;
+}
+
+/*\*/
+* html .clearfix{
+	height:1em;
+	overflow:visible;
+}
+/**/

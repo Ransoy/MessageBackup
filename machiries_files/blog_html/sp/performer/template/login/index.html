@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat">
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。">
+<link rel="stylesheet" type="text/css" href="../../css/html5reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/login.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<body>
+<div class="page_wrap page_wrap--login">
+	<header class="header" id="header">
+		<div class="d_table">
+        	<div class="d_cell t_left v_middle">
+        		<h1 class="header__logo"><a href="#">ライブチャット | マシェリ</a></h1>
+			</div>
+        	<div class="d_cell t_right v_middle">
+        		<!--<a class="btn btn--logout" href="#">ログアウト</a>-->
+        	</div>
+        </div>
+	</header>
+
+	<div class="pagebody cf">
+		<div class="pagebody_inner">
+
+            <div class="page_ttl_area cf">
+                <h2 class="page_ttl">パフォーマーログイン</h2>
+            </div><!-- // .page_ttl_area -->
+
+            <section class="box--style_1 section--login cf">
+                <!--<h3 class="ttl--style_1">ログイン</h3>-->
+
+                <!-- msg_area -->
+                <div class="ui_msg_area ui_msg_area--error">
+                    <p class="msg">バリデーションエラーが入ります。</p>
+                </div>
+                <!-- // msg_area -->
+
+                <div class="form_wrap form_wrap--login">
+					<form novalidate>
+                    <dl>
+                        <dt>ログインID</dt>
+                        <dd><input class="size_max" type="email" /></dd>
+                        <dt>パスワード</dt>
+                        <dd><input class="size_max" type="password" /></dd>
+                        <dd class="t_center"><label><input type="checkbox" />※IDを保存する<label></dd>
+                    </dl>
+                    <div class="btn_wrap btn_wrap--center btn_wrap--border_top cf">
+                        <ul>
+                            <li><a class="btn btn--max btn--blue" href="../blog/index.html">ログイン</a></li>
+                        </ul>
+                    </div>
+                    </form>
+                </div><!-- // .form_wrap -->
+            </section>
+
+            <section class="box--style_1 section--forget_password cf">
+                <h3 class="ttl--style_1">ID・パスワードを忘れた方</h3>
+                <p>ID・パスワードを紛失された方はコチラより、登録メールアドレスを入力して再送ボタンを押してください。1～2分程度で登録メールアドレスの方にログインID・パスワードが記載されたメールが届きます。万一、メールが届かない場合は、<a href="http://www.macherie.tv/cs_support/" target="_blank">コチラ</a>よりお問い合わせください。</p>
+
+                <!-- msg_area -->
+                <div class="ui_msg_area ui_msg_area--success">
+                    <p class="msg">ご登録アドレス宛にIDとパスワードを送信しました。</p>
+                </div>
+                <!-- // msg_area -->
+
+                <!-- msg_area -->
+                <div class="ui_msg_area ui_msg_area--error">
+                    <p class="msg">バリデーションエラーが入ります。</p>
+                </div>
+                <!-- // msg_area -->
+                
+                <div class="form_wrap form_wrap--forget_password">
+                    <dl>
+                        <dt>登録メールアドレス</dt>
+                        <dd><input class="size_max" type="text" /></dd>
+                    </dl>
+                    <div class="btn_wrap btn_wrap--center btn_wrap--border_top cf">
+                        <ul>
+                            <li><a class="btn btn--max btn--blue" href="#">再送する</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .form_wrap -->
+            </section>
+
+		</div><!-- // .pagebody_inner -->
+	</div><!-- // .pagebody -->
+
+	<footer class="footer" id="footer">
+		<small class="footer__copyright">&copy; Macherie</small>
+	</fotter>
+</div><!-- ./page_wrap -->
+
+<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.biggerlink.js"></script>
+<script type="text/javascript" src="../../js/blog.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#btn_emoji').on('click', function(e){
+		e.preventDefault();
+		if($('#emoji_panel').is(':visible')){
+			$(this).removeClass('on');
+			$('#emoji_panel').hide();
+		}else{
+			$(this).addClass('on');
+			$('#emoji_panel').fadeIn(200);
+		}
+	});
+	
+	// emoji tab
+	$(document).on('click', '.emoji_tab_menu li', function(e){
+		e.preventDefault();
+		var target_tab = $('#' + $(this).attr('data-target'));
+		var tabs = $('.emoji_tab');
+		var tab_menu = $('.emoji_tab_menu li');
+		if(!target_tab.is(':visible')){
+			tab_menu.removeClass('on');
+			$(this).addClass('on');
+			tabs.hide();
+			target_tab.show();
+		}
+	});
+});
+</script>
+</body>
+</html>

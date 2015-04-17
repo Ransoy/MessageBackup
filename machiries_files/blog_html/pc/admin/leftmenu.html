@@ -1,0 +1,516 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<title>Content Management System</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="./css/import.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/Javascript">
+
+addEventListener_newType(window, 'load', initBody);
+
+function addEventListener_newType(target, type, listener) {
+		if (target.addEventListener) target.addEventListener(type, listener, false);
+		else if (target.attachEvent) target.attachEvent('on' + type, function() { listener.call(target, window.event); });
+		else target['on' + type] = function(e) { listener.call(target, e || window.event); };
+}
+function initBody(){
+	if(!document.getElementById('leftBlock')){
+		return false;
+	}
+	var leftBlock = document.getElementById('leftBlock').childNodes;
+	var leftBlockDT = new Array();
+	var count = 0;
+	for(i=0;i<leftBlock.length;i++){
+		for(j=0;j<leftBlock[i].childNodes.length;j++){
+			if(leftBlock[i].childNodes[j].tagName == "DT"){
+				addEventListener_newType(leftBlock[i].childNodes[j], 'click',function(){ondt(this);} );
+				leftBlock[i].childNodes[j].id = "dt_"+count;
+				leftBlockDT[count] = leftBlock[i].childNodes[j];
+				count++;
+				if(count > 100){
+					break;
+				}
+			}
+		}
+	}
+	var c = document.cookie;
+	for(i2=0;i2<leftBlockDT.length;i2++){
+		re = new RegExp(leftBlockDT[i2].id);
+		if(c.match(re)){
+			re = new RegExp(leftBlockDT[i2].id+"=disable;");
+			if(c.match(re)){
+				ondt(leftBlockDT[i2]);
+			}
+		}else{
+			if(i2 != 0){
+				ondt(leftBlockDT[i2]);
+			}
+		}
+	}
+}
+function ondt(dt){
+	var dd = null;
+	for(i=0;i<dt.parentNode.childNodes.length;i++){
+		if(dt.parentNode.childNodes[i].tagName == "DD"){
+			dd = dt.parentNode.childNodes[i];
+			if(dd.style.display == "none"){
+				document.cookie = dt.id+"=enable";
+				dd.style.display = "block";
+				dt.style.color = "#FFFFFF";
+				dt.style.backgroundColor = "#19657a";
+			}else{
+				document.cookie = dt.id+"=disable";
+				dd.style.display = "none"
+				dt.style.color = "#A0A0A0";
+				dt.style.backgroundColor = "#303030";
+			}
+		}
+	}
+}
+
+function onclickQuotation(){
+	//quotation_counter_noを設定
+	var selectedIndex = document.getElementById('counter_no_list').selectedIndex;
+	var selectedValue = document.getElementById('counter_no_list').options[selectedIndex].value;
+	document.getElementById('quotation_counter_no').value = selectedValue;
+	//submit
+	document.forms[0].submit();
+}
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="left">
+		<div id="leftBlock">
+	<dl>
+		<dt>マシェリ管理項目</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./marquee/">トップ流れる文字変更</a></li>
+				<li><a target="frame2" href="./ontime_flg/">オンタイム表示フラグ</a></li>
+				<li><a target="frame2" href="./fine/">高画質女性選択</a></li>
+				<li><a target="frame2" href="./event/">イベントルーム切り替え</a></li>
+				<li><a target="frame2" href="./redebut/">新人マーク付与システム</a></li>
+				<li><a target="frame2" href="./female_week_flg.php">ピックアップフラグ</a></li>
+				<li><a target="frame2" href="./poket_diary/">マシェリポケット日記</a></li>
+				<li><a target="frame2" href="./sfmente/">SalesForceメンテページ切替</a></li>
+				<li><a target="frame2" href="./t_search/">途中清算振込み日</a></li>
+				<li><a target="frame2" href="./credit_regist/">クレジット認証ポイント</a></li>
+				<li><a target="frame2" href="./camp_female_regist/">限定イベント参加パフォ登録</a></li>
+<!-- 				<li><a target="frame2" href="./list_search_log/">パフォーマー検索ログ</a></li> -->
+				<br>
+				<li><a target="frame2" href="./furikomierror/">振り込みエラー登録</a></li>
+				<li><a target="frame2" href="./prev_pay.php">前月売上確認</a></li>
+				<li><a target="frame2" href="./rakuten_login_ipdata/">楽天ログインIPデータ</a></li>
+				<li><a target="frame2" href="./twitter/">Twitterハッシュタグ</a></li>
+				<br>
+				<li><a target="frame2" href="./ddos/">ddos臨時ニュース表示</a></li>
+				<li><a target="frame2" href="./mail_point_nifty/">niftyポイントプレゼント</a></li>
+				<li><a target="frame2" href="./bokin/">東日本大震災募金データ一覧</a></li>
+				<!--
+				<br>
+				<li><a target="frame2" href="./xmas_chusen/">クリスマス大抽選</a></li>
+				<li><a target="frame2" href="./xmas_chusen/tosen.php">クリスマス大抽選住所登録</a></li>
+				<li><a target="frame2" href="./xmas_img_kako/">クリスマス画像加工100円</a></li>
+				-->
+				<li><a target="frame2" href="./valentine/">バレンタイン</a></li>
+				<br>
+				<li><a target="frame2" href="./agent_booth_ip/">エージェント求人IP</a></li>
+				<br>
+				<!--
+				<li><a target="frame2" href="./bigbonus2010/">パフォ2010年末感謝ボーナス</a></li>
+				<li><a target="frame2" href="./nenshi_bonus/">パフォ2010年始待機ボーナス</a></li>
+				<br>
+				<li><a target="frame2" href="./index_newtop/">新TOP</a></li>
+				-->
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>プレミアムフォトギャラリー</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./xmas_gallery/dump.php">フォトギャラリーダンプa></li>
+				<li><a target="frame2" href="./xmas_gallery/mail_txt.php">　メール文言編集</a></li>
+				<li><a target="frame2" href="./xmas_gallery/pointlog.php">男性購入履歴</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>メール送信関係</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./new_girls_mail/">女性新人メール送信</a></li>
+				<li><a target="frame2" href="./female_mail_bonus.php">女性ボーナス追加メール</a></li>
+				<li><a target="frame2" href="./male_mail.php">男性メール送信</a></li>
+				<li><a target="frame2" href="./female_mail.php">女性メール送信</a></li>
+				<li><a target="frame2" href="./female_mail_brave.php">新・女性メール送信</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>会員向けキャンペーン</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./kaedama/">替え玉キャンペーン</a></li>
+				<li><a target="frame2" href="./tousen/">ポイント当選ダンプ</a></li>
+				<li><a target="frame2" href="./tousen/mail_txt.php">ポイント当選メール文言</a></li>
+				<li><a target="frame2" href="./hallo_pump/">パンプキンダンプ</a></li>
+				<br>
+				<li><a target="frame2" href="./mail_point/">メールポイント</a></li>
+				<li><a target="frame2" href="./izakaya2/">居酒屋マシェリ</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>パフォ向けキャンペーン</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./present_point2/">１万円プレゼントボーナス</a></li>
+				<!--
+				<li><a target="frame2" href="http://mbaito.com/mb_manage.php">光回線PCプレゼント</a></li>
+				-->
+				<br>
+				<li><a target="frame2" href="./present_point/">お客様優待券</a></li>
+				<li><a target="frame2" href="./secret_bonus/">シークレットボーナス</a></li>
+				<li><a target="frame2" href="./newgirls_bonus/">新人2週間</a></li>
+				<br>
+				<li><a target="frame2" href="./blog2/">New!パフォブログ販促</a></li>
+				<br>
+				<li><a target="frame2" href="./gc/">掛け持ちギャラリー・コメント</a></li>
+				<br>
+				<li><a target="frame2" href="./taiki_bonus/">新待機ボーナス</a></li>
+				<!--
+				<li><a target="frame2" href="./special_week/">夏のｽﾍﾟｼｬﾙWEEK</a></li>
+				<li><a target="frame2" href="./macheriecoin/">マシェ男くんﾎﾞｰﾅｽ</a></li>
+				<li><a target="frame2" href="./select_bonus/">選べるボーナス</a></li>
+				<li><a target="frame2" href="./stepup/">パフォステップアップ</a></li>
+				<li><a target="frame2" href="./jewelry_bonus/">ジュエリーボーナス</a></li>
+				<li><a target="frame2" href="./jewelry_bonus2/">ジュエリーボーナス第二部用</a></li>
+				<li><a target="frame2" href="./jewelry_bonus3/">ジュエリーボーナス第三部用</a></li>
+				<li><a target="frame2" href="./keep_bonus/">キープボーナス</a></li>
+				-->
+				<li><a target="frame2" href="./sp_bonus/">新春ボーナス</a></li>
+				<li><a target="frame2" href="./sc_bonus/">ステージクリアボーナス<br>(別ログイン限定)</a></li>
+				<li><a target="frame2" href="./taiki_b/">ステージクリアボーナス<br>(全ログイン対象)</a></li>
+				<li><a target="frame2" href="./taiki_b_new/">待機ボーナスボーナス<br>(休みなし)</a></li>
+				<br>
+				<li><a target="frame2" href="./agent_login/">エージェントログインキャンペーン</a></li>
+				<li><a target="frame2" href="./campaign_agent_rookie/">エージェント新人キャンペーン</a></li>
+				<li><a target="frame2" href="./campaign_agent_login/">Newエージェントログインキャンペーン(作成中)</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>FAQ関係</dt>
+		<dd>
+			<ul>
+				<br>パフォ管理画面右側
+				<li><a target="frame2" href="./faq/alldump.php">ランダムFAQ一覧表示</a></li>
+				<li><a target="frame2" href="./faq/category.php">ランダムFAQカテゴリ別表示</a></li>
+				<li><a target="frame2" href="./faq/search.php">ランダムFAQ検索</a></li>
+				<li><a target="frame2" href="./faq/sample.php">ランダムFAQサンプル</a></li>
+				<br>トラブル＆サポート
+				<li><a target="frame2" href="./system_operator/">女性用faq管理</a></li>
+				<li><a target="frame2" href="./system_operator/category.php">女性用faq管理カテゴリー</a></li>
+				<li><a target="frame2" href="./system_operator/search.php">女性用faq管理検索</a></li>
+				<li><a target="frame2" href="./system_operator/answer.php">女性用faq管理多い質問</a></li>
+				<br>よくある質問管理(エージェントパフォ)
+				<li><a target="frame2" href="./system_operator_agent/">女性用faq管理</a></li>
+				<li><a target="frame2" href="./system_operator_agent/category.php">女性用faq管理カテゴリー</a></li>
+				<li><a target="frame2" href="./system_operator_agent/search.php">女性用faq管理検索</a></li>
+				<li><a target="frame2" href="./system_operator_agent/answer.php">女性用faq管理多い質問</a></li>
+				<br>よくある質問管理
+				<li><a target="frame2" href="./system1/">よくある質問管理トップ</a></li>
+				<li><a target="frame2" href="./system1/category.php">よくある質問カテゴリー</a></li>
+				<li><a target="frame2" href="./system1/search.php">よくある質問検索</a></li>
+				<li><a target="frame2" href="./system1/answer.php">よくある質問多い質問</a></li>
+				<br>よくある質問管理(マシェバラ)
+				<li><a target="frame2" href="./variety_faq/">よくある質問管理トップ</a></li>
+				<li><a target="frame2" href="./variety_faq/category.php">よくある質問カテゴリー</a></li>
+				<li><a target="frame2" href="./variety_faq/search.php">よくある質問検索</a></li>
+				<li><a target="frame2" href="./variety_faq/answer.php">よくある質問多い質問</a></li>
+			</ul>
+		</dd>
+	</dl>
+
+	<dl>
+		<dt>芸能（新）</dt>
+		<dd>
+			<div style="background:#EEE; padding:3px; text-align:center;">管理基本</div>
+			<ul>
+				<li><a target="frame2" href="./cheki/event_insert.php">新規イベントコード設定</a></li>
+				<li><a target="frame2" href="./event_info/mail_txt.php?eid=mayobaka">メールテンプレート管理</a></li>
+				<li><a target="frame2" href="./collect_present">発送データ作成／回収状況一覧・更新</a></li>
+				<li><a target="frame2" href="./cheki/">チェキの状況確認ページ</a></li>
+				<li><a target="frame2" href="./variety_money/variety_performer_money_reset.php">マシェバラ出演者報酬リセット</a></li>
+				<li><a target="frame2" href="./variety/">マシェリバラエティ（更新履歴・ムービー管理）</a></li>
+				<li><a target="frame2" href="./jenic_setting/cid.php">チャットルーム共有設定</a></li>
+				<li><a target="frame2" href="./photoData_insert.php">フォトダウンロード用データ登録</a></li>
+			</ul>
+			<div style="background:#EEE; padding:3px; text-align:center;">イベント設定（開催中）</div>
+			<ul><li><a target="frame2" href="./event_info/index.php?eid=2015flash">ミスFLASH2015オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=sabra">小学館sabra netガールズ電子写真集発売への道!チャンネル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=rainbow">レインボータウンFMパーソナリティ争奪オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=genco">ジェンコチャンネル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=syaraku">テレビ大阪 走改☆車楽アイドルピットイン CM枠争奪バトル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ripdvd2nd">水着グラビアDVDリリース争奪オーディション#2設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=chocolate">歴代バクNEWクイーン派生ユニット　桜丘ショコラ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flagr5th">FLASH誌面グラビア争奪バトル#5設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=carxs">Car☆Xs レギュラーレポーター枠争奪オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flapb2nd">FLASH presents 写真集争奪オーディション#2設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=excel">わいわい！えくせるず！設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=uma">マシェバラ競馬バラエティ「ウマバラ！」設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=kitanoch">鉄子の部屋設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ripdvd">水着グラビアDVDリリース争奪オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=2014yc">ミスヤングチャンピオン2014オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=newmachetest">当日マシェバラテスト設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ggirls2014ch">G☆Girls2014チャンネル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=taishuvenus">ヴィーナスの泉 週刊大衆特集ページ内センター争奪セクシーバトル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=mayobakare">真夜中のおバカ騒ぎ番組出演　リベンジシート争奪バトル！設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=mayobakach">真夜中のおバカ騒ぎ番組出演　チャレンジシート争奪バトル！設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ymkurobuta">ヤングマガジン黒 BUTA GIRL 2014設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flash2014ch">ミスFLASH2014ch設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flapb">FLASH presents 写真集争奪オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flagr4th">FLASH誌面グラビア争奪バトル#4設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ycretsu">ヤンチャン学園普通科 烈 ヒロイン決定戦!!設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=sir3rd">サンスポアイドルリポーター 3期候補生オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ycschool">ヤンチャン学園放送部 定期実力テスト！設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=yc2013ch">ミスヤングチャンピオン2013ch設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=smapic">スマピック選手権　金のEX誌面争奪バトル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=gt">ぷにぷに爽快アワー 黄金のGT誌面争奪バトル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=burning">カスタムバーニング 誌面争奪バトル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=actrace">舞台アクトレース チーム対抗ネット生放送バトル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=wpb">週プレのトビラ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flash">ミスFLASH2014設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=blackbox">マイスマの食卓 BLACKBOX誌面争奪バトル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=bakunew">「バクNEWクイーン」コンテスト 競わせて三田！設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=exsexy">EX MAX! セクシーバトルロワイヤル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=experfect">EX MAX! THEパーフェクト設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flagr">FLASHグラビア争奪バトル#3設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=yc">ミスヤングチャンピオン2013オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=thekanmuri">ザ･カンムリラジオ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=mayobaka">真夜中のおバカ騒ぎ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ggirls2013">G☆Girls新規メンバーオーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flash2013ch">ミスFLASH2013ch設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=idolleague">アイドル☆リーグ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flashgr2nd">グラビア枠争奪オーディション#2設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=alice_s">戦国降臨GIRL設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=sanspo">SIR 2期生オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=unit">競わせて三田（みた）設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=yc12">ミスヤングチャンピオン2012設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=queen2012">EXスーパーアイドルQueen設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ntj12">日テレジェニック2012設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=kanmuri">カンムリラジオ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flashgr">FLASHグラビア枠争奪戦設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flash2012ch">ミスFLASH2012チャンネル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ggirls2012">G-Girls2012チャンネル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=yc11ch">ミスヤングチャンピオン2011チャンネル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=fitone">ふぃっとわんだふるぱーてぃー設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=kabukich">傾奇エンジェルスチャンネル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=tospo">ミス東スポ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flash2012">ミスFLASH2012設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ntj11">日テレジェニック2011設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=afilia">アフィリアサーガ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=yc11">ヤングチャンピオン2011設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=kabuki">新生傾奇エンジェルス 戦国オーディション設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=39c">キャバ嬢ユニット39C設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flash2013">ミスＦＬＡＳＨ2013設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=ggirls">G-Girlsチャンネル設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=renai_knowhow_second">コイカツ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=radio_kikuchi">ラジオ日本 1ami9設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=nishiguchi">小力の小部屋設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=neko">熱いぞ猫ヶ谷設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=naked">ネイキッドボーイズ設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=mache_live">マシェ生設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=idol">アイドルちん設定</a></li><li><a target="frame2" href="./event_info/index.php?eid=flash2011">ミスFLASH設定</a></li>			</ul>
+		</dd>
+	</dl>
+
+	<dl>
+		<dt>芸能（旧）</dt>
+		<dd>
+			<div style="background:#EEE; padding:3px; text-align:center;">管理基本</div>
+			<ul>
+				<li><a target="frame2" href="./cheki/event_insert.php">新規イベントコード設定</a></li>
+				<li><a target="frame2" href="./cheki/">チェキの状況確認ページ</a></li>
+				<li><a target="frame2" href="./variety_money/variety_performer_money_reset.php">マシェバラ出演者報酬リセット</a></li>
+				<li><a target="frame2" href="./variety/">マシェリバラエティ（更新履歴・ムービー管理）</a></li>
+				<li><a target="frame2" href="./jenic_setting/cid.php">チャットルーム共有設定</a></li>
+				<li><a target="frame2" href="./photoData_insert.php">フォトダウンロード用データ登録</a></li>
+			</ul>
+
+
+			<div style="background:#EEE; padding:3px; text-align:center;">イベント設定（開催中）</div>
+			<ul>
+				<li><a target="frame2" href="./genco/">ジェンコチャンネル</a></li>
+				<li><a target="frame2" href="./chocolate/">歴代バクNEWクイーン派生ユニット　桜丘ショコラ</a></li>
+				<li><a target="frame2" href="./flagr5th/">FLASH誌面グラビア争奪バトル#5</a></li>
+				<li><a target="frame2" href="./carxs/">Car☆Xs レギュラーレポーター枠争奪オーディション設定</a></li>
+				<li><a target="frame2" href="./flapb2nd/">FLASH presents 写真集争奪オーディション#2設定</a></li>
+				<li><a target="frame2" href="./twsuper/">台湾スーパーアイドルオーディション設定</a></li>
+				<li><a target="frame2" href="./excel/">わいわい！えくせるず！設定</a></li>
+				<li><a target="frame2" href="./uma/">マシェバラ競馬バラエティ「ウマバラ！」設定</a></li>
+				<li><a target="frame2" href="./kitanoch/">鉄子の部屋設定</a></li>
+				<li><a target="frame2" href="./2014yc/">ミスヤングチャンピオン2014オーディション設定</a></li>
+				<li><a target="frame2" href="./ripdvd/">水着グラビアDVDリリース争奪オーディション</a></li>
+				<li><a target="frame2" href="./taishuvenus/">ヴィーナスの泉 週刊大衆特集ページ内センター争奪セクシーバトル設定</a></li>
+				<li><a target="frame2" href="./ggirls2014ch/">G☆Girls2014チャンネル設定</a></li>
+				<li><a target="frame2" href="./mayobakach/">真夜中のおバカ騒ぎ番組出演　チャレンジシート争奪バトル！設定</a></li>
+				<li><a target="frame2" href="./mayobakare/">真夜中のおバカ騒ぎ番組出演　リベンジシート争奪バトル！設定</a></li>
+				<li><a target="frame2" href="./ymkurobuta/">ヤングマガジン黒 BUTA GIRL 2014設定</a></li>
+				<li><a target="frame2" href="./flash2014ch/">ミスFLASH2014ch設定</a></li>
+				<li><a target="frame2" href="./flapb/">FLASH presents 写真集争奪オーディション設定</a></li>
+				<li><a target="frame2" href="./flagr4th/">FLASH誌面グラビア争奪バトル#4設定</a></li>
+				<li><a target="frame2" href="./ycretsu/">ヤンチャン学園普通科 "烈"ヒロイン決定戦!!</a></li>
+				<li><a target="frame2" href="./sir3rd/">サンスポアイドルリポーター 3期候補生オーディション設定</a></li>
+				<li><a target="frame2" href="./ycschool/">ヤンチャン学園放送部 定期実力テスト！設定</a></li>
+				<li><a target="frame2" href="./smapic/">スマピック選手権　金のEX誌面争奪バトル設定</a></li>
+				<li><a target="frame2" href="./yc2013ch/">ミスヤングチャンピオン2013ch設定</a></li>
+				<li><a target="frame2" href="./gt/">ぷにぷに爽快アワー　黄金のGT誌面争奪バトル設定</a></li>
+				<li><a target="frame2" href="./actrace/">舞台アクトレース チーム対抗ネット生放送バトル設定</a></li>
+				<li><a target="frame2" href="./burning/">カスタムバーニング 誌面争奪バトル設定</a></li>
+				<li><a target="frame2" href="./wpb/">週プレのトビラ設定</a></li>
+				<li><a target="frame2" href="./blackbox/">マイスマの食卓 BLACKBOX誌面争奪バトル設定</a></li>
+				<li><a target="frame2" href="./flash/">ミスFLASH2014オーディション設定</a></li>
+				<li><a target="frame2" href="./bakunew/">「バクNEWクイーン」コンテスト 競わせて三田！設定</a></li>
+				<li><a target="frame2" href="./exsexy/">EX MAX! セクシーバトルロワイアル設定</a></li>
+				<li><a target="frame2" href="./experfect/">EX MAX! THEパーフェクト設定</a></li>
+				<li><a target="frame2" href="./flagr/">FLASHグラビア争奪バトル#3設定</a></li>
+				<li><a target="frame2" href="./yc/">ミスヤングチャンピオン2013オーディション</a></li>
+				<li><a target="frame2" href="./thekanmuri/">ザ・カンムリラジオ設定</a></li>
+				<li><a target="frame2" href="./mayobaka/">真夜中のおバカ騒ぎ！マヨバガールバトル</a></li>
+				<li><a target="frame2" href="./fitone/">ふぃっとわんだふるぱーてぃー設定</a></li>
+				<li><a target="frame2" href="./ggirls2013/">G☆Girls2013オーディション</a></li>
+				<li><a target="frame2" href="./flash2013ch/">ミスFLASH2013ch設定</a></li>
+				<li><a target="frame2" href="./idol-league/">アイドル☆リーグ</a></li>
+				<li><a target="frame2" href="./flashgr2nd/">グラビア枠争奪オーディション#2設定</a></li>
+				<li><a target="frame2" href="./sanspo/">SIR2設定</a></li>
+				<li><a target="frame2" href="./alice_s/">戦国降臨Girl設定</a></li>
+				<li><a target="frame2" href="./flash2013/">ミスFLASH2013設定</a></li>
+				<li><a target="frame2" href="./queen2012/">EXスーパーアイドルQueen2012</a></li>
+				<li><a target="frame2" href="./unit/">競わせて三田(みた)</a></li>
+				<li><a target="frame2" href="./kanmuri/">カンムリラジオ設定</a></li>
+				<li><a target="frame2" href="./radio/">ラジオ日本文言設定</a></li>
+			</ul>
+
+				<br>西口イベント
+			<ul>
+				<li><a target="frame2" href="./nishiguchi/">西口イベント設定</a></li>
+				<li><a target="frame2" href="./enqu_n/">女性用西口アンケート</a></li>
+				<li><a target="frame2" href="./enqu_nm/">男性用西口アンケート</a></li>
+			</ul>
+
+
+			<div style="background:#EEE; padding:3px; text-align:center;">イベント設定（終了／半終了）</div>
+
+
+				<br>日テレジェニック
+			<ul>
+				<li><a target="frame2" href="./ntj11/">日テレジェニック2011</a></li>
+				<li><a target="frame2" href="./ntj12/">日テレジェニック2012</a></li>
+				<li><a target="frame2" href="./nittere/index.php">日テレジェニック2010設定ページ</a></li>
+				<li><a target="frame2" href="./nittere/regist_addr.php">日テレジェニック2010チェキデータ登録</a></li>
+			</ul>
+
+				<br>ミスFLASH
+			<ul>
+				<li><a target="frame2" href="./flash2011/">ミスFLASH2011設定</a></li>
+				<li><a target="frame2" href="./flash2012/">ミスFLASH2012設定</a></li>
+				<li><a target="frame2" href="./flash2012ch/">ミスFLASH2012チャンネル設定</a></li>
+				<li><a target="frame2" href="./flashgr/">FLASHグラビア枠争奪オーディション設定</a></li>
+			</ul>
+
+				<br>G-Girlsチャンネル
+			<ul>
+				<li><a target="frame2" href="./ggirls/">G-Girlsチャンネル設定</a></li>
+				<li><a target="frame2" href="./ggirls2012/">G-Girls2012チャンネル設定</a></li>
+			</ul>
+
+				<br>ヤングチャンピオン
+			<ul>
+				<li><a target="frame2" href="./yc11/">ヤングチャンピオン設定</a></li>
+				<li><a target="frame2" href="./yc11ch/">ヤングチャン2011チャンネル設定</a></li>
+				<li><a target="frame2" href="./yc12/">ヤングチャンピオン2012設定</a></li>
+			</ul>
+
+				<br>ミス東スポ
+			<ul>
+				<li><a target="frame2" href="./tospo/">ミス東スポ設定</a></li>
+			</ul>
+
+				<br>傾奇エンジェルス
+			<ul>
+				<li><a target="frame2" href="./kabuki/">傾奇エンジェルス設定</a></li>
+				<li><a target="frame2" href="./kabukich/">傾奇エンジェルスチャンネル設定</a></li>
+			</ul>
+
+				<br>フィットワン
+			<ul>
+				<li><a target="frame2" href="http://www.macherie.tv/139coco1ban_eva_plusone_qpgold/fitone_point_log_m2.php">fitoneラウンジポイント取得ページ</a></li>
+				<li><a target="frame2" href="./old_fitone/index.php">(閉鎖)fitone設定ページ</a></li>
+			</ul>
+
+				<br>コイカツ
+			<ul>
+				<li><a target="frame2" href="./renai2/">コイカツ設定</a></li>
+				<li><a target="frame2" href="./enqu_renai_per/">恋愛アンケート</a></li>
+			</ul>
+
+
+				<br>女優力
+			<ul>
+				<li><a target="frame2" href="./joyu/index.php">女優力設定ページ</a></li>
+				<li><a target="frame2" href="./joyu/regist_addr.php">女優力チェキデータ登録</a></li>
+			</ul>
+
+				<br>その他単発
+			<ul>
+				<li><a target="frame2" href="./naked/">ネイキッド設定</a></li>
+				<li><a target="frame2" href="./ntv_idol/">アイドルちん設定</a></li>
+				<li><a target="frame2" href="./39c/">キャバ嬢ユニット39C設定</a></li>
+				<li><a target="frame2" href="./afilia/">アフィリアサーガ設定</a></li>
+				<li><a target="frame2" href="./neko/">猫ヶ谷</a></li>
+				<li><a target="frame2" href="./variety_goods/">グッツ販売設定ページ</a></li>
+
+
+				<li><a target="frame2" href="./variety/mache_live.php">マシェ生放送設定</a></li>
+				<!--<br>[test:※使用禁止]つんつべ♂
+				<li><a target="frame2" href="./config/">39C設定</a></li>
+				<li><a target="frame2" href="./39c/">39C設定</a></li>
+				-->
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>クイズイベント</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./quiz_2008/">クイズ</a></li>
+				<li><a target="frame2" href="./quiz_2008/answer.php">クイズ正答編集</a></li>
+				<li><a target="frame2" href="./quiz_2008/dump.php">クイズダンプ</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<!--
+	<dl>
+		<dt>居酒屋マシェリ</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./izakaya4/">居酒屋マシェリ(PSP)</a></li>
+				<li><a target="frame2" href="./izakaya5/">居酒屋マシェリ(プレゼントポイント)</a></li>
+			</ul>
+		</dd>
+	</dl>
+	-->
+	<dl>
+		<dt>パフォ向けオプション</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./add_bonus/">女性ボーナス追加</a></li>
+				<li><a target="frame2" href="./friend_count/">友達紹介カウント</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>アンケート関連</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./enqu/">男性用アンケート</a></li>
+				<li><a target="frame2" href="./enqu_p/">女性用アンケート</a></li>
+				<li><a target="frame2" href="./enqu_p2/">女性用アンケート<br />管理画面の欲しい機能の新機能</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>検索</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./male_list.php">男性会員検索</a></li>
+				<li><a target="frame2" href="./female_list.php">女性会員検索</a></li>
+				<li><a target="frame2" href="./poket_male/">マシェリポケット登録(男性)</a></li>
+				<li><a target="frame2" href="./poket_female/">マシェリポケット登録(女性)</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>現在テスト中</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./macherie_mall/">商品ダンプ</a></li>
+				<li><a target="frame2" href="./macherie_mall/orderdump.php">注文ダンプ</a></li>
+				<li><a target="frame2" href="./event/index3.php">イベントページ切り替えver.III</a></li>
+				<li><a target="frame2" href="./present/">プレゼント応募管理画面</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>JOYSPE専用</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./encryptglist/">暗号化ID検索</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<!-- dl>
+		<dt>日テレジェニック関連２回目！</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="http://www.macherie.tv/WorLDcUp1192_JiNShiBuKu875_45/jeni_point_log_male2.php">日テレジェニックラウンジポイント取得ページ</a></li>
+				<li><a target="frame2" href="./ntj_2nd/dvd.php">DVD販売住所ダンプ</a></li>
+				<li><a target="frame2" href="./ntj_2nd/index.php">日テレジェニック設定ページ</a></li>
+				<li><a target="frame2" href="./ntj_2nd/addr_dump.php">日テレジェニック住所メインダンプ</a></li>
+				<li><a target="frame2" href="./ntj_2nd/dump.php">日テレジェニック先行購入ダンプ</a></li>
+				<li><a target="frame2" href="./ntj_2nd/dump2.php">日テレジェニック質問ダンプ</a></li>
+				<li><a target="frame2" href="./ntj_2nd/photo_dump.php">日テレジェニック写真購入ダンプ</a></li>
+				<li><a target="frame2" href="./ntj_2nd/regist_addr.php">チェキデータ自動登録</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt>日テレジェニック関連</dt>
+		<dd>
+			<ul>
+				<li><a target="frame2" href="./ntj09/index.php">日テレジェニック設定ページ</a></li>
+				<li><a target="frame2" href="./ntj09/dump.php">日テレジェニック先行購入ダンプ</a></li>
+				<li><a target="frame2" href="./ntj09/dump2.php">日テレジェニック質問ダンプ</a></li>
+				<li><a target="frame2" href="./ntj09/photo_dump.php">日テレジェニック写真購入ダンプ</a></li>
+			</ul>
+		</dd>
+	</dl -->
+</div>
+	</div>
+</div>
+</body>
+</html>

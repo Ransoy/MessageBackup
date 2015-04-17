@@ -1,0 +1,224 @@
+
+/****
+* êVãKñ≥óøìoò^
+********************************/
+
+#registration-area {
+	text-align: center;
+	width: 600px;
+	margin: 0 auto 0 auto;
+	line-height: 1.3em;
+	background-color: #ffffff;
+}
+
+#regist-rakuten {
+	width: 530px;
+	margin: 10px auto;
+}
+
+#regist-rakuten-b {
+	width: 524px;
+	line-height: 1.5em;
+	border: 1px solid #323232;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#regist-rakuten-b:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#regist-rakuten-l {
+	float: left;
+	text-align: left;
+	margin-left: 20px;
+}
+
+#regist-rakuten-r {
+	float: right;
+	width: 130px;
+	margin-right: 20px;
+}
+
+#regist-rakuten-r form {
+	margin: 0;
+	padding: 0;
+}
+
+#regist-flow-img {
+	width: 560px;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+/*--------------------------2011/02/24í«â¡----------------------------*/
+
+#regist-yahoo-img {
+	width: 580px;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+/*--------------------------------------------------------------------*/
+
+#regist-form-tbl {
+	width: 580px;
+	margin: 0 auto;
+	background-image: url(http://c.macherie.tv/c/m/images/table2/top_regist_form.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 7px;
+}
+
+#regist-form-tbl h3 {
+	margin: 0;
+	padding: 0;
+}
+
+#regist-form-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/table2/middle_regist_form.gif);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 580px;
+}
+
+#regist-form-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/table2/bottom_regist_form.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 15px;
+	width: 580px;
+}
+
+#regist-form-tbl-disc {
+	width: 560px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#regist-form-tbl-disc table {
+	width: 540px;
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+#regist-form-tbl-disc th {
+	border-left: 5px solid #224fa0;
+	background: #4583c0;
+	color: #ffffff;
+	text-align: left;
+	padding: 5px 0 5px 5px;
+	width: 25%;
+}
+
+#regist-form-tbl-disc td {
+	width: 75%;
+	text-align:left;
+	background: #d3dfef;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+#regist-form-tbl-disc td input {
+	padding: 5px;
+}
+
+#regist-form-tbl-disc td input:focus {
+	background-color: #ffccff;
+}
+
+#regist-form-tbl-disc td input#nick_name,
+#regist-form-tbl-disc td input#user_id,
+#regist-form-tbl-disc td input#password,
+#regist-form-tbl-disc td input#mail,
+#regist-form-tbl-disc td input#mail2 {
+	padding: 5px;
+	width: 385px;
+}
+
+.caution-disc {
+	font-size: 10px;
+	color: #ff0000;
+}
+
+#regist-form-tbl-disc iframe {
+	width: 520px;
+	margin: 5px auto 0 auto;
+	border: 1px solid #323232;
+}
+
+.regist-caution-tbl {
+	width: 520px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.regist-caution-tbl-b {
+	border: 1px solid #323232;
+	text-align: left;
+}
+
+.regist-caution-tbl-b:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.regist-caution-tbl-b ul {
+	margin: 0;
+	padding: 0;
+	line-height: 1.3em;
+}
+
+.regist-caution-tbl-b li {
+	margin: 0;
+	padding: 8px;
+	list-style: none;
+}
+
+/*****
+* 20101130í«â¡
+****************************/
+span.attention{
+	font-size:12px;
+	font-weight:bold;
+	color:#FF2020;
+}
+p.error{
+	color:#FF2020;
+}
+
+/*****
+* verisign í≤êÆ
+****************************/
+
+.regist-caution-tbl-l {
+	float: left;
+	margin: 0 36px 0 36px;
+}
+
+.regist-caution-tbl-r {
+	float: left;
+	margin: 20px 0 20px 5px;
+}
+
+.regist-caution-disc {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+/***** verisign Ç±Ç±Ç‹Ç≈ *****/
+
+
+
+
+

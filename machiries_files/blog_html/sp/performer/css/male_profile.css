@@ -1,0 +1,74 @@
+@charset "Shift_JIS";
+
+/*-------------------------------------*/
+/*	male profile
+/*-------------------------------------*/
+.male_profile_box .ttl{
+	font-size: 1.3rem;
+	font-weight: bold;
+	background: #eaeaea;
+	background: -webkit-linear-gradient(#fff, #d7d7d7);
+	background: -o-linear-gradient(#fff, #d7d7d7);
+	background: -moz-linear-gradient(#fff, #d7d7d7);
+	background: linear-gradient(#fff, #d7d7d7);
+	padding: 0.5rem 1rem 0.5rem;
+	margin: -1rem -1rem 1.5rem;;
+	text-align: center;
+}
+.male_profile_box .ttl--top{
+	border-radius: 8px 8px 0 0;
+}
+.male_profile_box .top_area{
+	display: table;
+	margin-bottom: 1.5rem;
+}
+.male_profile_box .thumb,
+.male_profile_box .col_right{
+	display: table-cell;
+	vertical-align: middle;
+}
+.male_profile_box .thumb{
+	width: 8.0rem;
+	height: 8.0rem;
+}
+.male_profile_box .thumb .thumb_user_pic{
+	width: 8.0rem;
+	height: 8.0rem;
+	box-sizing: border-box;
+	border: solid 1px #ccc;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.1);
+	background-size: cover;
+}
+.male_profile_box .col_right{
+	padding-left: 1rem;
+}
+.male_profile_box .col_right dt{
+	font-weight: bold;
+	color: #999;
+}
+.male_profile_box .user_profile{
+	margin-bottom: 2rem;
+}
+.male_profile_box .user_profile dt{
+	font-weight: bold;
+	color: #999;
+	padding-left: 0.5rem;
+	padding: 0.2rem 0 0.2rem 0.5rem;
+	border-left: #ccc solid 4px;
+	border-bottom: #ccc solid 1px;
+}
+.male_profile_box .user_profile dd{
+	padding: 0.5rem 0;
+}
+.male_profile_box .user_favorite_type dt{
+	font-weight: bold;
+	color: #999;
+	padding-left: 0.5rem;
+	padding: 0.2rem 0 0.2rem 0.5rem;
+	border-left: #ccc solid 4px;
+	border-bottom: #ccc solid 1px;
+}
+.male_profile_box .user_favorite_type dd{
+	padding: 0.5rem 0;
+}

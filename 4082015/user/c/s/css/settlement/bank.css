@@ -1,0 +1,664 @@
+
+
+/****
+* ã‚çsêUÇËçûÇ›çwì¸ÅEÉNÉåÉWÉbÉgÉJÅ[ÉhåàçœTOPÅEÉRÉìÉrÉjåàçœ
+********************************/
+
+
+/***** default *****/
+
+body {
+	font-family: "ÇlÇr ÇoÉSÉVÉbÉN","OsakaÅ|ìôïù","Osaka",Verdana,Arial,sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 1.3em;
+	color: #555555;
+	background-image: url(http://c.macherie.tv/c/w/images/settlement/back.gif);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	display: none;
+}
+
+h2,h3,h4 {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+table {
+	font-family: "ÇlÇr ÇoÉSÉVÉbÉN","OsakaÅ|ìôïù","Osaka",Verdana,Arial,sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 1.3em;
+	color: #555555;
+	background-image: url(http://c.macherie.tv/c/w/images/settlement/back.gif);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+td {
+
+}
+
+
+
+/***** main *****/
+
+#all {
+	width: 762px;
+	margin: 0 auto;
+	padding: 0;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	background-color: #ffffff;
+}
+
+#all h2 {
+	margin: 0 auto;
+	width: 760px;
+}
+
+#flow-img {
+	padding-top: 15px;
+	margin: 0 auto;
+	width: 656px;
+}
+
+#rakuten-area {
+	padding-top: 15px;
+	margin: 0 auto;
+	width: 656px;
+}
+
+#rakuten-tbl {
+	border: 1px solid #323232;
+	padding-bottom: 8px;
+	padding-top: 1px;
+}
+
+#rakuten-tbl form {
+	padding-top: 1px;
+}
+
+#gold-bnr {
+	padding-top: 7px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+}
+
+#gold-txt {
+	line-height:1.8em;
+	width: 525px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#gold-fin-txt {
+	line-height:1.8em;
+	width: 610px;
+	margin: 10px auto 0;
+	text-align: left;
+}
+
+.f-c-r {
+	color: #ff0000;
+}
+
+
+#course-area {
+	width: 723px;
+	margin: 0 auto;
+}
+
+#course-area h3 {
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#course-area-title {
+	width: 723px;
+	margin: 0;
+	padding: 0;
+}
+
+.course-area-disc-a {
+	width: 723px;
+	margin: 0;
+	padding: 0;
+	background-image: url(http://c.macherie.tv/c/w/images/settlement/bank-course-bg.gif);
+	background-repeat: repeat-y;
+}
+
+.course-area-disc-b {
+	width: 721px;
+	margin: 0 auto;
+}
+
+
+#course-area-disc-c {
+	width: 721px;
+	height: 69px;
+	margin: 0 auto;
+	background-image: url(http://c.macherie.tv/c/w/images/settlement/bank_bottom.gif);
+}
+
+#course-area-disc-c-card {
+	float: left;
+	padding-top: 7px;
+	padding-left: 10px;
+}
+
+#course-area-disc-c-card ul {
+	margin: 0;
+	padding: 0;
+}
+
+#course-area-disc-c-card li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+#course-area-disc-c-txt {
+	float: left;
+	text-align: left;
+	width: 380px;
+	padding-top: 9px;
+	margin-left: 5px;
+}
+
+
+#course-area-disc-d {
+	width: 721px;
+	height: 69px;
+	margin: 0 auto;
+	background-image: url(http://c.macherie.tv/c/w/images/settlement/credit_bottom.gif);
+}
+
+#course-area-disc-d_renew {
+	width: 721px;
+	height: 92px;
+	margin: 0 auto;
+	background-image: url(http://c.macherie.tv/c/w/images/settlement/credit_bottom_02.gif);
+}
+
+#course-area-disc-d-card {
+	float: left;
+	padding-top: 7px;
+	padding-left: 10px;
+}
+
+#course-area-disc-d-card ul {
+	margin: 0;
+	padding: 0;
+}
+
+#course-area-disc-d-card li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+
+#course-area-disc-d_renew-card {
+	float: left;
+	padding-top: 3px;
+	padding-left: 10px;
+}
+
+#course-area-disc-d_renew-card ul {
+	margin: 0;
+	padding: 0;
+}
+
+#course-area-disc-d_renew-card li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+
+#course-area-disc-d-txt {
+	float: left;
+	text-align: left;
+	width: 520px;
+	padding-top: 9px;
+	margin-left: 5px;
+}
+
+#course-area-disc-d_renew-txt {
+	float: left;
+	text-align: left;
+	width: 520px;
+	padding-top: 16px;
+	margin-left: 8px;
+}
+
+
+#course-area-disc-e {
+	width: 721px;
+	height: 69px;
+	margin: 0 auto;
+	background-image: url(http://c.macherie.tv/c/w/images/settlement/conveni_bottom.gif);
+}
+
+#course-area-disc-e-card {
+	float: left;
+	padding-top: 7px;
+	padding-left: 10px;
+}
+
+#course-area-disc-e-card ul {
+	margin: 0;
+	padding: 0;
+}
+
+#course-area-disc-e-card li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+#course-area-disc-e-txt {
+	float: left;
+	text-align: left;
+	width: 240px;
+	padding-top: 17px;
+	margin-left: 20px;
+}
+
+
+#course-area-title:after,
+.course-area-disc-a:after,
+.course-area-disc-b:after,
+.course-area-disc-c:after,
+#course-area-disc-c-card:after,
+.course-area-disc-d:after,
+#course-area-disc-d-card:after,
+.course-area-disc-e:after,
+#course-area-disc-e-card:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.course-detail {
+	float: left;
+}
+
+#point-disc {
+	width: 723px;
+	margin: 15px auto 0 auto;
+}
+
+#point-disc table {
+	border-collapse: collapse;
+	width: 723px;
+	font-size: 14px;
+}
+
+#point-disc td {
+	border: 1px solid #c3c3c3;
+	padding: 3px 0 3px 10px;
+	background-color: #ffffff;
+	text-align: left;
+	border: 1px solid #FF95C9;
+}
+
+#point-disc td#gray-t {
+	background-color: #c3c3c3;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+
+#point-disc td#pink-t {
+	background-color: #ff95c9;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+
+#point-disc td.left-t-a {
+	text-align: left;
+	width: 423px;
+}
+
+#cash-point-flow {
+	width: 723px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#cash-point-flow h3 {
+	padding-bottom: 10px;
+}
+
+#cash-point-flow-img {
+
+}
+
+#cash-point-flow-disc {
+	text-align: left;
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 15px;
+	line-height: 1.7em;
+}
+
+
+
+#credit-point-flow-disc {
+	text-align: left;
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 15px;
+	line-height: 1.5em;
+}
+
+#credit-point-flow-disc img {
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.credit-caution-title {
+	font-weight: bold;
+	color: #002760;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+
+
+.conveni-point-flow {
+	width: 723px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.conveni-point-flow h3 {
+	padding-bottom: 10px;
+}
+
+.conveni-point-flow-img {
+
+}
+
+.conveni-point-flow-disc {
+	text-align: left;
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 15px;
+	line-height: 1.5em;
+}
+
+.conveni-point-flow-disc-a {
+	padding-bottom: 10px;
+}
+
+.conveni-point-flow-disc-b {
+	line-height: 1.7em;
+}
+
+.conveni-point-flow-disc-b img {
+	vertical-align: middle;
+}
+
+
+.conveni-point-flow-disc-ytbl {
+	background-color: #fef6dc;
+	margin: 15px 0 15px 0;
+}
+
+.conveni-point-flow-disc-c {
+	padding: 10px;
+}
+
+.conveni-point-flow-disc-c strong {
+	display: block;
+	margin-left: 10px;
+}
+
+
+
+#bank-kouza {
+	width: 723px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#bank-kouza table {
+	border-collapse: collapse;
+}
+
+#bank-kouza td {
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border: 1px solid #FF95C9;
+}
+
+#bank-kouza td.pink-t-a {
+	text-align: center;
+	background-color: #FF95C9;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#bank-kouza td.pink-t-b {
+	background-color: #ff68a5;
+	color: #ffffff;
+}
+
+#bank-kouza td.pink-t-c {
+	background-color: #ffcbef;
+}
+
+#bank-kouza td.red-t {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+#domain-form-area {
+	width: 713px;
+	margin: 0 auto;
+}
+
+#domain-form-mob {
+	padding-top: 10px;
+	text-align: left;
+}
+
+#domain-form-pc {
+	padding-top: 10px;
+	text-align: left;
+}
+
+#domain-form-coution {
+	text-align: left;
+	padding-top: 10px;
+}
+
+
+
+#foot-link {
+	background-color: #d2d2d2;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-top: 50px;
+}
+
+#foot-link ul {
+	margin: 0;
+	padding: 0;
+}
+
+#foot-link li {
+	margin: 0;
+	padding: 0 2px;
+	display: inline;
+	list-style: none;
+	font-size: 11px;
+}
+
+
+#foot-ad {
+	width: 762px;
+	margin: 0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #333333;
+}
+
+#foot-ad address {
+	color: #ffffff;
+	font-size: 10px;
+	letter-spacing: 0.2em;
+	font-style: normal;
+}
+
+
+
+/***** login form *****/
+
+#login-form-title {
+	width: 700px;
+	margin: 0 auto 0 auto;
+	padding: 15px 0 0 0;
+}
+
+#login-form-title h3 {
+	border-top: 1px solid #555555;
+	border-bottom: 1px solid #555555;
+}
+
+.login-form-tbl {
+	width: 680px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.login-form-tbl-b {
+	border: 1px solid #555555;
+	padding: 10px;
+}
+
+.login-form-tbl-b-disc {
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.login-form-tbl-b h4 {
+	text-decoration: underline;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.login-form-tbl-b-link {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.login-form-area {
+	width: 560px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.login-form-area form {
+	margin: 0;
+	padding: 0;
+}
+
+.login-form-area table {
+	border-collapse: collapse;
+	width: 560px;
+}
+
+.login-form-area th {
+	border: 1px solid #3c3aaf;
+	padding: 8px;
+	background-color: #739dcd;
+	color: #ffffff;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.login-form-area td {
+	border: 1px solid #3c3aaf;
+	padding: 8px;
+	text-align: left;
+}
+
+
+
+#foot-link-a {
+	background-color: #ffcc33;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-top: 50px;
+}
+
+#foot-link-a ul {
+	margin: 0;
+	padding: 0;
+}
+
+#foot-link-a li {
+	margin: 0;
+	padding: 0 2px;
+	display: inline;
+	list-style: none;
+	font-size: 11px;
+}
+
+#foot-link-a li a,
+#foot-link-a li a:hover {
+	color: #990000;
+	text-decoration: none;
+}
+
+
+#foot-ad-a {
+	width: 762px;
+	margin: 0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #333333;
+}
+
+#foot-ad-a address {
+	color: #ffffff;
+	font-size: 10px;
+	letter-spacing: 0.2em;
+	font-style: normal;
+	font-weight: bold;
+	background-color: #990000;
+}
+
+
+

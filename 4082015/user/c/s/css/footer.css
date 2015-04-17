@@ -1,0 +1,332 @@
+@charset "Shift_JIS";
+
+/*	footer_area
+---------------------------------------*/
+
+
+#footer_area {
+	margin: 0 auto;
+	bottom: 0;
+	background-color: #e3e3e3;
+	text-align: left;
+	color: #636363;
+	font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',Osaka,sans-serif;
+	clear: both;
+}
+
+.footer_top {
+	width: 100%;
+	height: 8px;
+	background:url(/c/s/images/common/footer/footer_bg_top.jpg) repeat-x;
+}
+
+.footer_contents {
+	margin: 57px 0 0 16px;
+	clear: both;
+}
+
+.footer_contents a{
+    color:#636363;
+    font-style:normal;
+    text-decoration:none;
+}
+.footer_contents a:link {
+    color:#636363;
+    font-style:normal;
+    text-decoration:none;
+}
+.footer_contents a:visited {
+    color:#3A3A3A;
+    text-decoration:none;
+}
+.footer_contents a:hover {
+    color:#838383;
+    font-style:normal;
+    text-decoration:underline;
+}
+.footer_contents a:active {
+    text-decoration:none;
+    color:#636363;
+}
+
+.adress_area {
+	width: 425px;
+	height: 30px;
+	margin: 10px 0px 0;
+	float: right;
+	position: relative;
+}
+
+.img_machrie_logo {
+	position: absolute;
+	top: 5px;
+	right: 25px;
+}
+
+adress {
+	background: none;
+	text-align: left;
+	line-height: 15px;
+	font-size: 11px;
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+}
+
+.open_close {
+	width: 102px;
+	height: 21px;
+	cursor: pointer;
+	float: left;
+	background:url(/c/s/images/common/footer/sitemap.png) ;
+	font-size: 13px;
+	font-weight: bold;
+	position: relative;
+	top: 30px;
+	left: 15px;
+	padding: 6px 0 0 9px;
+}
+
+adress a{
+    color:#636363;
+    font-style:normal;
+    text-decoration:none;
+}
+adress a:link {
+    color:#636363;
+    font-style:normal;
+    text-decoration:none;
+}
+adress a:visited {
+    color:#3A3A3A;
+    text-decoration:none;
+}
+adress a:hover {
+    color:#838383;
+    font-style:normal;
+    text-decoration:underline;
+}
+adress a:active {
+    text-decoration:none;
+    color:#636363;
+}
+
+.link_title {
+	font-size: 13px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #fff; /*CSS3*/
+	-moz-text-shadow: 1px 1px 1px #fff; /* Firefox用*/
+	-webkit-text-shadow: 1px 1px 1px #fff; /* Google Chrome, Safari用*/
+	margin: 0 0 3px;
+}
+
+.link_title_inner {
+	font-size: 13px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #fff; /*CSS3*/
+	-moz-text-shadow: 1px 1px 1px #fff; /* Firefox用*/
+	-webkit-text-shadow: 1px 1px 1px #fff; /* Google Chrome, Safari用*/
+	margin: 15px 0 3px;
+}
+
+.link_sub {
+	font-size: 12px;
+	font-weight: normal;
+	text-shadow: 1px 1px 1px #fff; /*CSS3*/
+	-moz-text-shadow: 1px 1px 1px #fff; /* Firefox用*/
+	-webkit-text-shadow: 1px 1px 1px #fff; /* Google Chrome, Safari用*/
+	line-height: 22px;
+}
+
+.sub_contents_area {
+	width: 150px;
+	height: 165px;
+	margin: 0px 0px 0px 0;
+	padding: 15px 10px 10px;
+}
+
+.sub_contents_area:hover {
+	background-color: #E9E9E9;
+}
+
+/****
+* clear fix
+********************************/
+
+.clearfix:after { /*floatの解除、ここがポイント*/
+	display:block;
+	clear:both;
+	height:0%;
+	visibility:hidden;
+	content:".";
+}
+.clearfix {
+	min-height: 1px; /*IE6、7対策*/
+}
+
+* html .clearfix {
+	height: 1px;
+	/*\*//*/ /*MAC IE5.x対策*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+/* ----------------------------------------
+	アコーディオン common
+---------------------------------------- */
+#news_contents_area {
+	text-align:center;
+}
+
+.mache {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:justify;
+	width:980px;
+}
+
+.macherie_news {
+	width: 450px;
+	margin: 10px 20px 30px 20px;
+	float: left;
+}
+
+.variety_news {
+	width: 450px;
+	margin: 10px 20px 30px 20px;
+	float: left;
+}
+
+#news_contents_area ul.accordion {
+	height:350px;
+	overflow:hidden;
+}
+
+#news_contents_area ul.accordion,
+#news_contents_area ul.accordion > li {
+	width: 450px;
+	font-size: 12px;
+	height: 100%;
+}
+
+#news_contents_area ul.accordion > li > a,
+#news_contents_area ul.accordion > li > .accordion_head {
+	display:block;
+	width: 428px;
+	padding: 10px;
+	background:#bcbcbc;
+	background: -webkit-gradient(linear, top center, right center, from(#CFCFCF),to(#DADADA));/* webkit */
+	background: -webkit-linear-gradient(top,#CFCFCF, #DADADA);/* webkit */
+	background:		-moz-linear-gradient(top,#CFCFCF, #DADADA);/* fx */
+	background:			-o-linear-gradient(top,#CFCFCF, #DADADA);/* opera */
+	background: 			linear-gradient(top,#CFCFCF, #DADADA);
+	border-top:solid 1px #cfcfcf;
+	border-bottom:solid 1px #aeaeae;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	color:#454545;
+	cursor: pointer;
+	font-size: 15px;
+	text-shadow: 1px 1px 1px #fff;
+	-moz-box-shadow: 1px 1px 1px #fff;　/* Firefox用 */
+	-webkit-box-shadow: 1px 1px 1px #fff;　/* Safari,Google Chrome用 */
+}
+
+#news_contents_area ul.accordion a {
+	text-decoration:none;
+}
+#news_contents_area ul.accordion > li > a:hover {
+	background:#06b1b3;
+	background: -webkit-gradient(linear, top, right, from(#05a9ab),to(#08b9bb));/* webkit */
+	background: -webkit-linear-gradient(top,#05a9ab, #08b9bb);/* webkit */
+	background: 	-moz-linear-gradient(top,#05a9ab, #08b9bb);/* fx */
+	background: 		-o-linear-gradient(top,#05a9ab, #08b9bb);/* opera */
+	background: 			linear-gradient(top,#05a9ab, #08b9bb);
+	border-top:solid 1px #30ccce;
+	border-bottom:solid 1px #068e90;
+	color:#FFFFFF;
+}
+
+#news_contents_area ul.accordion > li > .accordion_head:hover {
+	background:#ffa53c;
+	background: -webkit-gradient(linear, top, right, from(#f59f3b),to(#ffab48));/* webkit */
+	background: -webkit-linear-gradient(top,#f59f3b, #ffab48);/* webkit */
+	background: 	-moz-linear-gradient(top,#f59f3b, #ffab48);/* fx */
+	background: 		-o-linear-gradient(top,#f59f3b, #ffab48);/* opera */
+	background: 			linear-gradient(top,#f59f3b, #ffab48);
+	border-top:solid 1px #ffac4b;
+	border-bottom:solid 1px #d08630;
+	border-right:solid 1px #f59f3b;
+	border-left:solid 1px #f59f3b;
+	color:#FFFFFF;
+	text-shadow: 1px 1px 1px #000;
+	-moz-box-shadow: 1px 1px 1px #000;　/* Firefox用 */
+	-webkit-box-shadow: 1px 1px 1px #000;　/* Safari,Google Chrome用 */
+}
+
+
+/* ----------------------------------------
+	accordionの中身
+---------------------------------------- */
+#news_contents_area ul.accordion li ul {
+	width:230px;
+	padding:10px 0;
+	background:#454545;
+}
+
+#news_contents_area ul.accordion li li {
+	font-size:10px;
+	background:#454545;
+}
+
+#news_contents_area ul.accordion li li a {
+	display:block;
+	width:205px;
+	padding:7px 5px 7px 20px;
+	color:#b9b9b9;
+}
+#news_contents_area ul.accordion li li a:hover {
+	color:#e93072;
+}
+
+.news_text_area {
+	text-align: left;
+	font-size: 12px;
+	height: 100%;
+	width: 428px;
+	padding: 10px;
+}
+
+/* ----------------------------------------
+	選択中の色変更
+---------------------------------------- */
+#news_contents_area ul.accordion > li .selected,
+#news_contents_area ul.accordion > li .selected:hover {
+	background:#f43e7e;
+	background: -webkit-gradient(linear, top, right, from(#e93072),to(#fe4b8a));/* webkit */
+	background: -webkit-linear-gradient(top,#e93072, #fe4b8a);/* webkit */
+	background:    -moz-linear-gradient(top,#e93072, #fe4b8a);/* fx */
+	background:      -o-linear-gradient(top,#e93072, #fe4b8a);/* opera */
+	background:         linear-gradient(top,#e93072, #fe4b8a);
+	border-top:solid 1px #ff5a95;
+	border-bottom:solid 1px #b92c5e;
+	border-right:solid 1px #e93072;
+	border-left:solid 1px #e93072;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #000;
+	-moz-box-shadow: 1px 1px 1px #000;　/* Firefox用 */
+	-webkit-box-shadow: 1px 1px 1px #000;　/* Safari,Google Chrome用 */
+}
+
+#news_contents_area ul.accordion > li .selected + * {
+	background: #F3F2F2;
+	border-right:solid 1px #D8D8D8;
+	border-left:solid 1px #D8D8D8;
+	border-bottom:solid 1px #D8D8D8;
+}
+
+
+
+
+

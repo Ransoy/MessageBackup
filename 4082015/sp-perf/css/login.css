@@ -1,0 +1,19 @@
+@charset "Shift_JIS";
+
+/*-------------------------------------*/
+/*	login
+/*-------------------------------------*/
+
+.page_wrap--login #btn_login{
+	background: #FF0074;
+	border: #FF0074 solid 1px;
+	color: #fff;
+	box-shadow: 1.5px 1.5px 2px 0 rgba(0,0,0,0.2);
+}
+
+.page_wrap--login #btn_resend{
+	background: #00A8FF;
+	border: #00A8FF solid 1px;
+	color: #fff;
+	box-shadow: 1.5px 1.5px 2px 0 rgba(0,0,0,0.2);
+}

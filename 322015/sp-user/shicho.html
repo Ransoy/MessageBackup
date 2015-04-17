@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shift_JIS">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>%f_nick_name%　%area%｜ライブチャットMacherie</title>
+<meta name="description" content="%f_nick_name%">
+<meta name="keywords" content="%f_nick_name%,ライブチャット">
+<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<link rel="stylesheet" href="css/html5reset.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/overlay_chat.css">
+<link rel="stylesheet" href="css/details_shicho.css">
+<link rel="stylesheet" href="css/menu_open.css">
+<link rel="stylesheet" href="css/jquery.fluidbox.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+</head>
+<body class="bd_shicho">
+	<div id="main">
+		%right_menu%
+		<div class="contents">
+			<div class="contents_inner">
+				<section class="shicho_wrap">
+					<div class="head_area cf %status%"><!-- オフライン時classにofflineをつける -->
+						<h2 class="ttl"><span class="name">%f_nick_name%</span>のお部屋</h2>
+					</div><!-- // .head_area -->
+
+					<div class="screen" style="">
+						<div id="flick_viewport">
+							<div id="flick_container">
+								<div class="im_prev">
+									<!-- tmpl:ifdef %back_id% -->
+										<img class="screen_pic" style="background: url(%prev_image%); background-position:center center; background-repeat:no-repeat; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover;" src="./image/skeleton.png">
+									<!-- tmpl:endif -->
+
+									<!-- ▼%back_id% がない場合▼ -->
+									<!--<img class="screen_pic dummy" src="./image/skeleton.png">-->
+									<!-- ▲%back_id% がない場合▲ -->
+
+									<!-- tmpl:ifdef %back_id_non% -->
+										<img class="screen_pic dummy" src="./image/skeleton.png">
+									<!-- tmpl:endif -->
+								</div>
+
+								<div class="im_current">
+
+									<!-- tmpl:ifdef %offline% -->
+									<span class="screen_overlay"><span class="status_msg">パフォーマーがオフラインです</span></span>
+									<!-- tmpl:endif -->
+
+									<!-- tmpl:ifdef %chatting% -->
+									<span class="screen_overlay"><span class="status_msg">ただいまチャット中です</span></span>
+									<!-- tmpl:endif -->
+
+									<!-- tmpl:ifdef %live% -->
+									<span class="status live"></span>
+									<!-- tmpl:endif -->
+
+									<div id="canvas_width" style="display:none;">
+										<div id="cv_m">
+											<canvas  id="canvas_main" style="z-index:1;"></canvas>
+										</div>
+										<div id="cv_s" style="position:absolute;top:0;">
+											<canvas  id="canvas_sub" style="z-index:100;"></canvas>
+										</div>
+									</div>
+									<div id="im_d">
+										<img class="screen_pic" style="background: url('%prof_img%'); background-position:center center; background-repeat:no-repeat; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover;" src="./image/skeleton.png">
+									</div>
+									<!-- tmpl:ifdef %on% -->
+									<!--div class="instant_comment">
+										<p class="instant_comment_text">楽しくお話しましょう(*’ω’)</p>
+									</div-->
+									<!-- tmpl:endif -->
+								</div>
+
+								<div class="im_next">
+									<img class="screen_pic" style="background: url(%next_image%); background-position:center center; background-repeat:no-repeat; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover;" src="./image/skeleton.png">
+								</div>
+							</div>
+							<img class="loader" src="./image/shicho/loader_2.gif" />
+						</div><!-- // #flick_viewport -->
+						<!-- tmpl:ifdef %back_id% -->
+						<a class="prev" id="prev" href="javascript:void(0);" onclick="func_back()">前へ</a>
+						<!-- tmpl:endif -->
+						<!-- tmpl:ifdef %next_id% -->
+						<a class="next" id="next" href="javascript:void(0);" onclick="func_rand()">次へ</a>
+						<!-- tmpl:endif -->
+					</div><!-- // .screen -->
+
+					<div class="main_btn_area">
+						<div class="btn_wrap_center">
+							<ul>
+								<!-- ▼未ログイン▼ -->
+								<!--<li><a class="btn btn_chat shiny" href="javascript:void(0);" onclick="%btn_action%">チャットスタート</a></li>-->
+								<!-- ▲未ログイン▲ -->
+
+								<!-- ▼ログイン後 チャット履歴なし▼ -->
+								<li>
+									<!-- tmpl:ifdef %chatting% -->
+									<a class="btn btn_chat disable"  href="javascript:void(0);" onclick="%btn_action%">２ショット中</a>
+									<!-- tmpl:endif -->
+									<!-- tmpl:ifdef %live% -->
+									<a class="btn btn_chat shiny"  href="javascript:void(0);" onclick="%btn_action%">チャットスタート</a>
+									<!-- tmpl:endif -->
+									<!-- tmpl:ifdef %offline% -->
+									<a class="btn btn_chat disable offline"  href="javascript:void(0);" onclick="%btn_action%">チャットスタート</a>
+									<!-- tmpl:endif -->
+									<!-- tmpl:ifdef %is_show_notice% -->
+									<p class="notice_app"> チャット入室は専用アプリが必要です。<br><a href="./app_download.php">ダウンロードはこちら</a></p>
+									<!-- tmpl:endif -->
+								</li>
+								<!-- ▲ログイン後 チャット履歴なし▲ -->
+
+								<!-- ▼ログイン後 チャット履歴あり▼ -->
+
+									<!-- ▼パフォーマーオフライン or チャット中▼ -->
+									<!--<li><a class="btn btn_chat disable" href="javascript:void(0);" onclick="return false;">チャットスタート</a></li>-->
+									<!-- ▲パフォーマーオフライン or チャット中▲ -->
+
+									<!-- ▼パフォーマーオンライン中▼ -->
+									<!--<li><a class="btn btn_chat shiny" href="#">チャットスタート</a></li>-->
+									<!-- ▲パフォーマーオンライン中▲ -->
+
+								<!-- ▲ログイン後 チャット履歴あり▲ -->
+							</ul>
+						</div>
+					</div><!-- // .main_btn_area -->
+
+					<div class="bottom_area">
+						<div class="bottom_area_inner">
+								<a class='ic_fav %favo%'  href="javascript:void(0);" onclick="addFavorite();" id="btn_fav">お気に入り</a>
+							<a class="ic_mail" href="./mail_new_creation.php?sid=%f_hash%">メール</a>
+							<div class="profile">
+								<h4 class="ttl ttl_icon ttl_icon--profile">プロフィール</h4>
+								<div class="profile_inner">
+									<div class="data cf">
+										<dl>
+											<dt>年齢</dt><dd>%age%</dd>
+											<dt>地域</dt><dd>%area%</dd>
+										</dl>
+										<dl>
+											<dt>身長</dt><dd>%height%</dd>
+											<dt>体型</dt><dd>%type%</dd>
+										</dl>
+										<dl>
+											<dt>職業</dt><dd>%job%</dd>
+											<dt>出没時間</dt><dd>%appear_time%</dd>
+										</dl>
+										<dl>
+											<dt>カップ</dt><dd>%cup%</dd>
+											<dt>血液型</dt><dd>%blood_type%</dd>
+										</dl>
+										<dl>
+											<dt>マイク</dt><dd>%mic%</dd>
+											<dt>○○系</dt><dd>%category%</dd>
+										</dl>
+									</div>
+								</div>
+							</div><!-- // .profile -->
+							<div class="comment">
+								<h4 class="ttl ttl_icon ttl_icon--blog">
+									ブログ
+									<!-- 通報ボタン -->
+									<a id="btn_report" style="display:none;" href="./report.php?id=%f_hash%">
+										<img src="./image/shicho/caution.png" alt="通報" style="float:right; margin-bottom:-1rem; width: 2.5rem; opacity: 0.6;">
+									</a>
+									<!-- /通報ボタン -->
+								</h4>
+								<div class="comment_inner">
+									<iframe width="100%" scrolling="no" frameborder="0" id="comment_position" marginheight="0" marginwidth="0" src="/chat/now_blog.php?id=%f_hash%" name="tab_menu"></iframe>
+									<!--p>お料理が好きです♪<br>楽しくお話できたらいいなー(*’ω’)<br>息抜きしたい方もどうぞー！</p-->
+								</div>
+							</div><!-- // .profile -->
+							<!-- tmpl:ifdef %garelly% -->
+							<div class="gallery cf">
+								<h4 class="ttl ttl_icon ttl_icon--gallery">ギャラリー</h4>
+								<div class="gallery_inner">
+									<ul class="cf">
+										%garelly%
+									</ul>
+								</div>
+							</div><!-- // .gallery -->
+							<!-- tmpl:endif -->
+						</div><!-- // .bottom_area_inner -->
+					</div><!-- // .bottom_area -->
+
+				</section><!-- // .shicho_wrap -->
+			</div>
+		</div>
+		<article>
+			<section id="menu_close_area">
+				<ul class="menu_close_button">
+					<a class="menu_close_box_bg_a" id="simple-menu-close" href="#sidr">
+						<li class="menu_close_box_bg"></li>
+					</a>
+				</ul>
+			</section>
+		</article>
+	</div>
+
+	<input type="hidden" id="prof_img" name="prof_img" value="%prof_img%">
+	<input type="hidden" id="f_hash" name="f_hash" value="%f_hash%">
+	<input type="hidden" id="cs" name="cs" value="%cs%">
+	<input type="hidden" id="sp" name="sp" value="%sp%">
+	<input type="hidden" id="machiawase_flg" name="machiawase_flg" value="%machiawase%">
+	<!--input type="hidden" id="point" name="point" value="%point%"-->
+
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.fluidbox.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+var timer_flag = 1;
+var Timer1;
+var Timer2;
+
+var canvas_main;
+var ctx_main;
+var img_main;
+var p_img;
+var load_flg = 0;
+var re_w = 0;
+
+var s_msg = [];
+s_msg[0] = "オフラインです。";
+s_msg[1] = "";
+s_msg[2] = "ただいま２ショット中です";
+s_msg[3] = "無料視聴時間が終了しました。";
+
+
+function shichoInterim(){
+	if(timer_flag == 1) {
+		timer_flag = 0;
+	var hash = $('#f_hash').val();
+//	var t = $.cookie('sp');
+
+//	if(t <= 0){
+//		clearInterval(Timer1);
+//		clearInterval(Timer2);
+//		load_flg = 0;
+//		p_img = $('#prof_img').val();
+//		$('#instant_comment').html('<font>' + s_msg[3] + '</font>');
+//		$('#instant_comment').css('display','block');
+//		thumbnailSet();
+//	}
+//	else{
+
+		var h = Math.floor( Math.random() * 100000 );
+
+		if (2 == $('#cs').val()) {
+			return;
+		}
+
+		var shityo = $.ajax({
+			url: "./ajax/sp_shityo_stat_ajax.php?h="+h,
+			type : 'post',
+			data : {
+				'id':hash
+			}
+		});
+		$.when(shityo)
+		.done(function(response){
+					timer_flag = 1;
+			var res = jQuery.parseJSON(response);
+			if(res.result == 1){
+			}
+			else{
+				clearInterval(Timer1);
+				clearInterval(Timer2);
+
+				load_flg = 0;
+				if(res.result != 99){
+					$('#instant_comment').html('<font>' + s_msg[ res.result ] + '</font>');
+					$('#instant_comment').css('display','block');
+				}
+
+				if(res.result == 0){
+					$('.btn_chat').addClass('disable');
+					$('.btn_chat').addClass('offline');
+					$('.head_area').addClass('offline');
+					$('.im_current > span').remove();
+					$('.im_current').prepend("<span class='screen_overlay'><span class='status_msg'>パフォーマーがオフラインです</span></span>");
+					$('.instant_comment').remove();
+					$('.live').hide();
+				}else if(res.result == 2){
+					$('.btn_chat').text("２ショット中");
+					$('.btn_chat').addClass('disable');
+					$('.head_area').addClass('offline');
+					$('.im_current > span').remove();
+					$('.im_current').prepend("<span class='screen_overlay'><span class='status_msg'>ただいまチャット中です</span></span>");
+					$('.live').hide();
+				}
+
+				//p_img = $('#prof_img').val();
+
+				//$('#chat_start').css('display','none');
+				//$('#btn_type').html(res.btn_type);
+
+				//thumbnailSet();
+
+				$('#cv_m').css('display','none');
+				$('#cv_s').css('display','none');
+				//$('#im_d').css('display','block');
+				setTimeout(function() {
+					$('#canvas_width').hide();
+					$('#im_d').show();
+				}, 1000);
+
+				if(res.machiawase_flg == 1){
+					$('#overlay_content').css('z-index', '201');
+					if(!document.getElementById("overlay_content")){
+						$('.screen').prepend("<div id='overlay_content'><img src='./image/shicho/sumaho_message.png'>");
+						setOverlayPosition();
+						$('#overlay_content').css('opacity', '1');
+					}
+				}else{
+					setOverlayPosition();
+					$('#overlay_content').css('z-index', '-201');
+				}
+
+				return false;
+			}
+		});
+
+//		t = t - 5;
+//		$.cookie('sp',t,{ path: '/sp/'});
+//	}
+	}
+
+}
+
+var cn_w = "";
+var cn_h = "";
+
+function startShicho(){
+
+	//$.cookie('sp',60,{ path: '/sp/'});
+
+	canvas_main = document.getElementById('canvas_main');
+
+	setCanvasSize(0);
+
+	canvas_main.width = cn_w;
+	canvas_main.height = cn_h;
+
+	if (!canvas_main || !canvas_main.getContext){
+		return false;
+	}
+	ctx_main = canvas_main.getContext('2d');
+	img_main = new Image();
+
+	var cs = $('#cs').val();
+	var hash = $('#f_hash').val();
+
+	if(cs != 1){
+		$('#instant_comment').html('<font>' + s_msg[ cs ] + '</font>');
+		//p_img = $('#prof_img').val();
+		$('#instant_comment').css('display','block');
+		//$('#chat_start').css('display','none');
+		//thumbnailSet();
+
+		$('#cv_m').css('display','none');
+		$('#cv_s').css('display','none');
+		$('#im_d').css('display','block');
+
+
+		return false;
+	}
+
+	//$('#chat_start').css('display','block');
+	p_img = 'http://%para%:8081/' + hash + '/';
+
+	Timer1 = setInterval("shichoInterim()",20000);
+	// Timer2 = setInterval("thumbnailSet()",1000);
+	thumbnailSet();
+}
+
+function thumbnailSet(){
+
+	// if(load_flg == 1){
+	// 	return;
+	// }
+
+	// load_flg = 1;
+
+	img_main.src = p_img + "?" + new Date().getTime();
+
+	img_main.onload = function(){
+		ctx_main.drawImage(img_main, 0, 0, cn_w, cn_h);
+		// load_flg = 0;
+			$('#canvas_width').show();
+			$('#im_d').hide();
+	}
+	// img_main.onerror = function(){
+	//     load_flg = 0;
+	// }
+	Timer2 = setTimeout("thumbnailSet()",500);
+
+}
+
+
+function func_rand() {
+	url = "shicho.php?id=%next_id%&rand_id&world=%world%%pg_ru%";
+	location.href = url;
+}
+
+function func_back() {
+	url = "shicho.php?id=%prev_id%&back=%back_id%&world=%world%%pg_ru%";
+	location.href = url;
+}
+
+function chat_start(m){
+	var a = $('#f_hash').val();
+	var sp = $('#sp').val();
+	var h = Math.floor( Math.random() * 100000 );
+
+
+	var start = $.ajax({
+		url : './ajax/sp_chat_in.php?h=' + h,
+		type : 'post',
+		data : {
+			'id':a,
+			'sp':sp,
+			'chat_mode':m
+		}
+	});
+
+	$.when(start)
+		.done(function(response){
+			var data = jQuery.parseJSON(response);
+
+			if(data.success == 'false'){
+				if(data.msgflg != ""){
+					//$('#errmsg').html(data.msgflg);
+					alert(data.msgflg);
+				}
+				return false;
+			}
+
+			if(data.success == 'login'){
+				location.href = data.result;
+				return false;
+			}
+
+			var userAgent   = window.navigator.userAgent.toLowerCase();
+			var queryString = location.search.slice(1);
+
+			if (queryString.indexOf('is_app_access') > -1) {
+				// アプリ内Webviewの場合のチャット起動処理
+				var paramString        = data.result.replace('macherie://', '').slice(1);
+				var appDirName         = userAgent.indexOf('chrome') > -1 ? 'android' : 'ios';
+				var startupParamString = paramString.replace(/(filelist_url=.+\/)(.+?)(\/file_list\.xml)/, '$1' + appDirName + '$3');
+				location.href = '/sp/chat/app/start-chat.inapp' + '?' + startupParamString;
+			} else if(sp == 2){
+				launchApp(data.result);
+			} else {
+				if (userAgent.indexOf('chrome') != -1) {
+					/*アンドロイド*/
+					location.href = "intent://#Intent;scheme="+data.result+";package=air.tv.macherie.macherie;end";
+				} else {
+					launchPlay(data.result);
+				}
+			}
+
+
+		});
+}
+
+function launchPlay(url){
+	var app_star = "https://play.google.com/store/apps/details?id=air.tv.macherie.macherie";
+	var iframe = document.createElement('iframe');
+	iframe.style.visibility = "hidden"
+	iframe.src = url;
+	document.body.appendChild(iframe);
+	var time = (new Date()).getTime();
+	setTimeout(function(){
+		var now = (new Date()).getTime();
+		document.body.removeChild(iframe);
+		if((now-time)>400) {
+			return;
+		}
+		document.location = app_star;
+}, 300);
+}
+
+function launchApp(url){
+	/*
+	document.location = url;
+	var time = (new Date()).getTime();
+	setTimeout(function(){
+		var now = (new Date()).getTime();
+		if((now-time)<400) {
+			document.location = './';
+		}
+	}, 300);
+	*/
+
+	var iframe = document.createElement('iframe');
+	iframe.style.visibility = "hidden";
+	iframe.src = url;
+	document.body.appendChild(iframe);
+	var time = (new Date()).getTime();
+	setTimeout(function(){
+		var now = (new Date()).getTime();
+		document.body.removeChild(iframe);
+		if((now-time)>400) {
+			return;
+		}
+		document.location = 'https://itunes.apple.com/ja/app/masheri-raibukomyunikeshon/id937994579?l=ja&ls=1&mt=8';
+
+	}, 300);
+
+
+}
+
+function addFavorite(){
+
+	var a = $('#f_hash').val();
+	var h = Math.floor( Math.random() * 100000 );
+
+	var favo = $.ajax({
+		url : './ajax/sp_favorite.php?h=' + h,
+		type : 'post',
+		data : {
+			'id':a
+		}
+	});
+
+	$.when(favo)
+	.done(function(response){
+		var data = jQuery.parseJSON(response);
+
+		if(data.flg == 1){
+			$('#btn_fav').addClass('on');
+		}
+		else if(data.flg == 2){
+			$('#btn_fav').removeClass('on');
+		}
+
+		alert(data.msg);
+		return false;
+
+	});
+}
+
+function setCanvasSize(r){
+	//var container = document.getElementById("canvas_width");
+	//cn_w = container.offsetWidth;
+
+	cn_w = $(window).width();
+	if (window.innerHeight < window.innerWidth) {
+		cn_w = $(window).width() * 0.665;
+	}
+		cn_h = Math.ceil(( cn_w / 4 ) * 3) ;
+
+	if(re_w != cn_w){
+		$('.shicho_wrap .screen').css('height',cn_h);
+
+		if(r == 1){
+
+			canvas_sub.width = cn_w;
+			canvas_sub.height = cn_h;
+
+			canvas_main.width = cn_w;
+			canvas_main.height = cn_h;
+			setOverlayPosition();
+		}
+		re_w = cn_w;
+	}
+}
+
+function setOverlayPosition() {
+	p_notice_app = 0;
+	if($('p.notice_app').length > 0) {
+		//$('p.notice_app').hide();
+		p_notice_app = $('p.notice_app').height();
+	}
+
+	$('.shicho_wrap #overlay_content').css('width', $('.screen_pic').width()*.8+'px');
+	$('.shicho_wrap #overlay_content').css('margin-left', '-'+($('.shicho_wrap #overlay_content img').width()/2)+'px');
+	$('.shicho_wrap #overlay_content').css('top', ($('.shicho_wrap .screen').height()-($('.shicho_wrap #overlay_content img').height())-20)+'px');
+}
+
+function loginAlert(){
+	// window.alert('ログインをしてからご利用ください');
+	var currentUrl = encodeURI('shicho.php' + location.search);
+	// location.href = './login.php';
+	location.href = './login.php?url=' + currentUrl;
+}
+
+var canvas_sub;
+$(function(){
+	if($('#machiawase_flg').val() == 1) {
+			$('.screen').prepend("<div id='overlay_content'><img src='./image/shicho/sumaho_message.png'>");
+	}
+	var isset_gallery = false;
+
+	canvas_sub = document.getElementById('canvas_sub');
+	if(!canvas_sub || !canvas_sub.getContext ){
+		return false;
+	}
+
+	setCanvasSize(0);
+
+	canvas_sub.width = cn_w;
+	canvas_sub.height = cn_h;
+
+	var ctx_sub = canvas_sub.getContext('2d');
+	var img_sub = new Image();
+	img_sub.src = "image/spacer.gif";
+	img_sub.onload = function(){
+		ctx_sub.drawImage(img_sub, 0, 0,cn_w,cn_h);
+	}
+
+	//startShicho();
+
+	$('#memo_login').on('click',function(){
+		 document.F2.submit();
+	});
+
+	$('#memo_save').on('click',function(){
+		 document.F3.submit();
+	});
+
+	//for ipad
+	window.onorientationchange = function(e) {
+		setCanvasSize(1);
+	};
+
+	$(window).load(function(){
+		setOverlayPosition();
+		$('.shicho_wrap #overlay_content').css('opacity', 1);
+		startShicho();
+	});
+
+	window.onresize = function(){
+		setCanvasSize(1);
+	};
+
+});
+$(function(){
+	// prev item is not exist
+	if($('#prev').length > 0){
+		prev_empty_flag = 0;
+	}else{
+		prev_empty_flag = 1;
+	}
+
+	// swipe pager
+	$('#flick_container').swipe({
+		// next
+		swipeLeft: function(event, direction, distance, duration, fingerCount){
+			$(this).animate({ marginLeft: '-=100%' }, 200);
+			setTimeout(function(){
+				$('#flick_viewport .loader').show();
+				setTimeout(function(){
+					func_rand();
+				}, 200);
+
+			}, 600);
+		},
+		// prev
+		swipeRight: function(event, direction, distance, duration, fingerCount){
+			if(prev_empty_flag == 1){
+				return;
+			}
+			$(this).animate({ marginLeft: '0%' }, 200);
+			setTimeout(function(){
+				$('#flick_viewport .loader').show();
+				setTimeout(function(){
+					func_back();
+				}, 200);
+
+			}, 600);
+		}
+	});
+});
+$(function(){
+	// shiny button
+	$('.shiny').append($('<span>', { 'class': 'shine_effect' }));
+});
+$(function(){
+	// gallery resize
+	function makeSquare(){
+		var img_w = $('.square').width();
+		$('.square').css({ height: img_w });
+	};
+	$(window).resize(function(){
+		makeSquare();
+	});
+	makeSquare();
+
+	// gallery modal
+	$('a[rel=fluidbox]').fluidbox({
+		closeTrigger: [
+				{
+						selector: '#fluidbox-overlay',
+						event: 'click'
+				}
+		]
+	});
+});
+
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-13149951-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript';
+ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-13149951-13', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+<!-- for app webview access. -->
+<script src="/sp/chat/app/js/forAppWebviewAccess.js"></script>
+<!-- /for app webview access. -->
+
+</body>
+</html>

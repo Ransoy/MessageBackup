@@ -1,0 +1,21 @@
+@charset "Shift_JIS";
+.btn_reload{cursor:pointer;background: url('http://c.macherie.tv/c/m/images/roombar/btn_quick_update_sp.png') no-repeat top left;background-position: 0 0; width: 122px; height: 41px; margin-right: 5px;}
+.btn_reload:hover{background-position: 0 -51px; width: 122px; height: 41px;}
+#tag_party{background: url('http://c.macherie.tv/c/m/images/common/tag/tag_sprite.gif') no-repeat top left;background-position: 0 -1001px; width: 280px; height: 41px;}
+#tag_first{background: url('http://c.macherie.tv/c/m/images/common/tag/tag_sprite.gif') no-repeat top left;background-position: 0 -910px; width: 280px; height: 41px;}
+#tag_second{background: url('http://c.macherie.tv/c/m/images/common/tag/tag_sprite.gif') no-repeat top left;background-position: 0 -819px; width: 280px; height: 41px;}
+.tochat{cursor:pointer;display:block;width:120px;height:90px}
+.selectArea{background: url("http://c.macherie.tv/c/m/images/common/tag/tag_bg.gif") repeat-x scroll 0 0 #000000; clear: both; height: 41px;}
+.selectArea .select{border: 1px solid #000000; margin-top: 10px; width: 100px;}
+/*
+.btn_auto_reload{background: url('http://c.macherie.tv/c/m/images/roombar/btn_auto_update_sp.png') no-repeat top left; width: 79px; height: 41px; margin-right: 4px; cursor: pointer; margin-right: 15px;}
+*/
+.btn_auto_reload_idol{background: url('http://c.macherie.tv/c/m/images/common/top/auto-reload_idol.gif') no-repeat top left; width: 48px; height: 41px; cursor: pointer;}
+.btn_debut_detail{cursor:pointer;background: url('http://c.macherie.tv/c/m/images/roombar/btn_debut_detail_sp.png') no-repeat top left;background-position: 0 0; width: 42px; height: 41px; margin-right: 5px; position:absolute; right: 131px; top: 1px;}
+.btn_debut_detail:hover{background-position: 0 -41px; width: 42px; height: 41px;}
+
+.btn_reload_debut{cursor:pointer;background: url('http://c.macherie.tv/c/m/images/roombar/btn_quick_update_debut_sp.png') no-repeat top left;background-position: 0 0; width: 122px; height: 41px; margin-right: 5px;}
+.btn_reload_debut:hover{background-position: 0 -51px; width: 122px; height: 41px;}
+
+#newFaceArea{position: relative;}
+

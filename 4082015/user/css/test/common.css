@@ -1,0 +1,194 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Macherie
+	BUILD:	2007/4/11
+	AUTHOR:	S.takaya
+_______________________________________*/
+
+/*	Layout
+---------------------------------------*/
+h1{
+	background:url(../../images/test/header/logo.gif);
+	width:200px;
+	height:50px;
+	text-indent:-9999px;
+}
+#left{
+	float:left;
+	width:170px;
+	padding-bottom:10px;
+}
+#right{
+	float:right;
+	margin-left:-170px;
+	background:#ccc;
+}
+#content{
+	margin-left:180px;
+}
+address{
+	clear:both;
+	font-size:10px;
+	background:#333;
+	color:#fff;
+	font-style:normal;
+	font-family:Arial;
+	text-align:center;
+	line-height:20px;
+}
+/*	Genral
+----------------------------------------*/
+.mini{
+	font-size:10px;
+}
+/*	header
+----------------------------------------*/
+#globalNavi{
+	padding-top:10px;
+}
+#globalNavi li{
+	float:left;
+	display:block;
+	width:100px;
+	color:#fff;
+	background:#333;
+	margin:0 2px;
+	text-align:center;
+	line-height:20px;
+}
+#globalNavi li a{
+	color:#fff;
+	display:block;
+	width:100px;
+	height:20px;
+	text-decoration:none;
+}
+#globalNavi li#select{
+	background:#e63200;
+}
+#subNavi{
+	clear:both;
+	background:#e63200;
+	color:#fff;
+	text-align:right;
+	height:20px;
+	line-height:20px;
+	margin-bottom:5px;
+}
+#subNavi li{
+	float:right;
+	padding:0 10px;
+}
+#subNavi li a{
+	color:#fff;
+}
+/*	left
+----------------------------------------*/
+#left .block{
+	margin:5px 0;
+}
+#left .block dl{
+	border:1px solid #000;
+	border-top:0px;
+	padding:4px;
+}
+#left .block dl dt{
+	padding:6px 0;
+}
+#left .block dl dd{
+	padding:4px 0;
+}
+#left .block dl dd strong{
+	font-weight:normal;
+	color:red;
+}
+/*	login
+---------------------*/
+div#login table{
+	width:164px;
+	margin:0 2px;
+}
+div#login table th{
+	text-align:left;
+	font-size:10px;
+}
+div#login table th em{
+	color:#ff9900;
+	font-style:normal;
+	letter-spacing:1px;
+}
+div#login table td p{
+	text-align:right;
+	font-size:10px;
+}
+div#login table td input.imgSubmit{
+	border:0;
+}
+div#login{
+	background:#fff0fb;
+}
+div#login input.login{
+	width:110px;
+}
+div#loginBorder{
+	border:1px solid #000;
+	border-top:0px;
+	padding:4px 0;
+}
+/*	GirlsBlock
+----------------------------------------*/
+.gB{
+	margin:1px 0 0 1px;
+    position:relative;
+    width:125px;
+    height:144px;
+    overflow:hidden;
+    float:left;
+}
+.on{background: url(../../images/xxsato/g/onbg.gif) top left no-repeat;}
+.pon{background: url(../../images/xxsato/g/onbg.gif) top left no-repeat;}
+.ch{background: url(../../images/xxsato/g/2bg.gif) top left no-repeat;}
+.pc{background: url(../../images/xxsato/g/pbg.gif) top left no-repeat;}
+.off{background: url(../../images/xxsato/g/offbg.gif) top left no-repeat;}
+.eve1{background:url(../../images/xxsato/g/eventbg.gif) top left no-repeat;}
+.tag{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:120px;
+    height:27px;
+    overflow:hidden;
+    text-align:left;
+}
+.pic{
+    position:relative;
+    top:0px;
+    left:1px;
+    width:120px;
+    height:90px;
+    text-align:center;
+    overflow: hidden;
+    background:center center no-repeat;
+}
+.name{
+    position:relative;
+    top:4px;
+    left:5px;
+    width:118px;
+    overflow: hidden;
+	text-align:left;
+	line-height:17px;
+}
+.mail{
+    position:relative;
+    top:-18px;
+    left:80px;
+    width:34px;
+    height:17px;
+    text-align:right;
+}
+.name a{color:#333333; text-decoration: none;}
+.name a:hover {text-decoration: underline;}
+/*	Footer
+---------------------------*/

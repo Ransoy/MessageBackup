@@ -1,0 +1,17 @@
+@charset "shift_jis";
+
+#menu img{
+	display: block;
+	margin: auto;
+}
+
+img.cp{
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+span.red{
+color:#ff0000;
+}
+

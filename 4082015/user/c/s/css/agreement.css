@@ -1,0 +1,226 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Macherie
+	BUILD:	2012/8/10
+	AUTHOR:	fujimaki
+_______________________________________*/
+
+
+/*	main_contents_sct
+---------------------------------------*/
+
+#main_contents_agreement {
+	text-align: center;
+	margin: 10px auto;
+	color: #333333;
+	border: none;
+	background: #ffffff;
+}
+
+#center_agreement {
+	text-align: center;
+	margin: 0 auto;
+	min-width: 625px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+#agreement {
+	width: 625px;
+	text-align: center;
+	margin: 10px auto;
+	color: #333333;
+}
+
+
+/*	title
+---------------------------------------*/
+
+#title_agreement {
+	width: 628px;
+	text-align: left;
+	margin: 30px auto;
+	border-bottom:4px dotted #c3c3c3;
+	padding-bottom: 6px;
+}
+
+#text_top_agreement {
+	width: 625px;
+	text-align: left;
+	margin: 0 auto;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 10pt;
+}
+
+#text_area_agreement {
+	width: 625px;
+	text-align: left;
+	margin: 0 auto;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 15px;
+}
+
+.text_area_title_agreement {
+	width: 612px;
+	height:30px;
+	text-align: left;
+	margin: 30px auto 20px 0;
+	padding: 6px 0 0 13px;
+	background:url(/c/m/images/table2/agreement_title_bg_2.png);
+	font-size: 16px;
+	font-weight: bold;
+}
+
+* html .text_area_title_agreement{
+	height: 37px;
+}
+
+.text_contents_agreement{
+	width: 625px;
+	text-align: left;
+	margin: 0 auto;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 14px;
+	padding: 0 10px;
+}
+
+.text_contents_agreement_number{
+	width: 20px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 14px;
+	padding: 0 3px;
+	float: left;
+	display:inline
+}
+
+.text_contents_agreement_textcontents{
+	width: 599px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 14px;
+	padding: 0;
+	float: left;
+	display:inline
+}
+
+* html .text_contents_agreement_textcontents{
+	width: 603px;
+}
+
+.text_contents_agreement_number_round_bracket{
+	width: 30px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 14px;
+	padding: 0 5 0 0px;
+	float: left;
+	display:inline
+}
+
+* html .text_contents_agreement_number_round_bracket{
+	width: 26px;
+}
+
+.text_contents_agreement_number_round_bracket_textcontents{
+	width: 595px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 14px;
+	padding: 0;
+	float: left;
+	display:inline
+}
+
+* html .text_contents_agreement_number_round_bracket_textcontents{
+	width: 598px;
+}
+
+.text_contents_agreement_kana{
+	width: 20px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 14px;
+	padding: 0 10px 0 20px;
+	float: left;
+	display:inline
+}
+
+* html .text_contents_agreement_kana {
+	padding: 0 4px 0 20px;
+}
+
+.text_contents_agreement_kana_textcontents{
+	width: 575px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 14px;
+	padding: 0;
+	float: left;
+	display:inline
+}
+
+* html .text_contents_agreement_kana_textcontents {
+	width: 562px;
+}
+
+.move_top_agreement{
+	text-align: right;
+	margin-top: 45px;
+	font-size: 12px;
+	padding: 0 15px;
+}
+
+.move_top_agreement a{
+color: #0078E5;
+text-decoration: underline;
+}
+
+.move_top_agreement a:hover{
+color: #cf4b4b;
+text-decoration: underline;
+}
+
+/*clear fix */
+
+.clearfix:after { /*float‚Ì‰ğœA‚±‚±‚ªƒ|ƒCƒ“ƒg*/
+	display:block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	content:".";
+}
+.clearfix {
+	min-height: 1px; /*IE6A7‘Îô*/
+}
+
+* html .clearfix {
+	height: 1px;
+	/*\*//*/ /*MAC IE5.x‘Îô*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+.additional_rule{
+	text-align: left;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

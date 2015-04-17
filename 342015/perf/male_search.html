@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<title>【マシェリ】パフォーマ管理画面 男性会員検索</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="./css/default.css" />
+<link rel="stylesheet" type="text/css" href="./css/common.css" />
+<link rel="stylesheet" type="text/css" href="./css/top.css" />
+<link rel="stylesheet" type="text/css" href="./css/beginner.css" />
+<link rel="stylesheet" type="text/css" href="./css/page.css" />
+<link rel="stylesheet" type="text/css" href="./css/male_search.css" />
+<script language="JavaScript" src="../js/tpl.js"></script>
+<script language="JavaScript" src="../js/male_search.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function goto_page(pos){
+	document.F1.pos.value=pos;
+	document.F1.action="";
+	document.F1.target="";
+	document.F1.submit();
+}
+function goto_search(){
+	document.F1.action="";
+	document.F1.target="";
+	document.F1.submit();
+	return;
+}
+function func_detail(hash){
+	MM_openBrWindow('male_profile.php?hash=' + hash, 'maleProfile', 'width=600,height=510,titlebar=0,status=0,scrollbars=no,resizable=no');
+}
+
+function func_mail(hash){
+	MM_openBrWindow('/operator/mail/write.php?sid=' + hash + '&search=1', 'memberWebmail', 'width=1100,height=700,titlebar=0,status=0,scrollbars=yes,resizable=yes');
+}
+function form_open(){
+     window.open("./campaign/mansearch/form.php","window1","scrollbars=no,resizable=yes,menubar=no,directories=no,status=no,location=no,width=513,height=406");
+}
+function manyuaru_open(){
+     window.open("./campaign/mansearch/","window1","scrollbars=yes,resizable=yes,menubar=no,directories=no,status=no,location=no");
+}
+function chTab(id){
+	document.F1.pos.value=0;
+	document.F1.tab.value=id;
+	if(id == "3"){
+		document.F1.last_login_con.value = 0;
+	}
+	if(id == "2"){
+		document.F1.last_login_con.value = 6;
+	}
+	goto_search();
+}
+//-->
+</script>
+
+</head>
+
+<body id="index" onload="initalizeEvents();">
+
+<div id="wrapper">
+
+	%header%
+
+<!-- tmpl:ifdef %disp_when_not_dairiten% -->
+	%navi_contents%
+<!-- tmpl:endif -->
+
+	<div id="Contens" class="clearfix" style="clear: both">
+
+		<div id="MainBlock" class="cmnSection">
+
+			<div id="male_search" class="cmnSection">
+
+				<h2 class="clearfix">
+					<span class="title">会員様検索</span>
+				</h2>
+
+				<form id="maleSerch" action="" method="post" name="F1">
+
+					<div id="balloon" style="display:none;position:absolute;opacity:1;width:174px;left:150px;margin:0px;padding:0px;z-index:1001;"><img style="margin:0px;padding:0px;display:block;" src="./images/search/balt.gif"><div id="inBalloontxt" style="padding:0 5px 0 5px;font-size:small;display:block;background-color:#FFFFCC;border-left:1px solid #999999;border-right:1px solid #999999;"></div><img style="margin:0px;padding:0px;display:block;" src="./images/search/balb.gif"></div>
+
+					<ul id="bottom_images">
+						<li><a onmouseover="onevent(7,event);" onMouseOut="Balreset();" href="javascript:chTab(1);"><img src="./images/search/search_g1_btn%g1%.gif" /></a></li>
+						<li><a onmouseover="onevent(8,event);" onMouseOut="Balreset();" href="javascript:chTab(2);"><img src="./images/search/search_g2_btn%g2%.gif" /></a></li>
+					<!-- 	<li><a onmouseover="onevent(9,event);" onMouseOut="Balreset();" href="javascript:chTab(3);"><img src="./images/search/search_g3_btn%g3%.gif" /></a></li> -->
+					</ul>
+
+					<img src="./images/search/search_top.gif" alt="会員様サーチ" style="display:block;"/>
+					<div style="float:right;height:1px;"><a href="#"><img src="./images/search/search_to_form.gif" style="position:relative;float:right;top:-40px;left:-150px;z-index:2;" onclick="javascript: form_open();" alt="ご意見フォームへ" /></a>
+					<a href="#"><img src="./images/search/search_manyu_btn.gif" style="position:relative;float:right;top:-40px;left:105px;z-index:3;" onclick="javascript: manyuaru_open();" alt="マニュアルへ"  /></a></div>
+						<p id="TEXT01">
+						</p><br />
+					<table summary="会員様サーチ">
+						<tr>
+							<th width="10%"></th>
+							<td width="5%"></td>
+							<th width="10%"></th>
+							<td width="35%"></td>
+						</tr>
+						<tr>
+							<th><div>年齢</div></th>
+							<td>%age_con%</td>
+							<th><div>身長</div></th>
+							<td>%height_con%</td>
+						</tr>
+						<tr>
+							<th><div>地域</div></th>
+							<td>%area_con%</td>
+							<th><div>体型</div></th>
+							<td>%body_type_con%</td>
+						</tr>
+						<tr>
+							<th><div onmouseover="onevent(2,event);" onMouseOut="Balreset();">寝る時間</div></th>
+							<td>%sleep_time_con%</td>
+							<th><div>血液型</div></th>
+							<td>%blood_type_con%</td>
+						</tr>
+						<tr>
+							<th><div onmouseover="onevent(4,event);" onMouseOut="Balreset();">チャットネーム</div></th>
+							<td>%chat_name_con%</td>
+							<th><div onmouseover="onevent(1,event);" onMouseOut="Balreset();">誕生日</div></th>
+							<td>%birthday_mon_con%月%birthday_day_con%日</td>
+						</tr>
+						<tr>
+							<th><div onmouseover="onevent(0,event);" onMouseOut="Balreset();">最終ログイン日</div></th>
+							<td>%last_login_con%</td>
+							<th><div>被お気に入り登録</div></th>
+							<td><select name="favorites_con"><option value="">--</option><option value="1"%favorites_con_1%>あり</option></select></td>
+						</tr>
+						<tr>
+							<th><div onmouseover="onevent(3,event);" onMouseOut="Balreset();">マイキーワード検索</div></th>
+							<td>%my_keyword_con%</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="4" class="submit"><input type="image" src="./images/search/search_btn.gif" /></td>
+						</tr>
+					</table>
+					<img src="./images/search/search_bottom.gif" />
+					<input type="hidden" name="mode" value="%mode_set%">
+					<input type=hidden name=pos>
+					<input type=hidden name="tab" value="%tab%">
+				</form>
+
+
+				<div id="result" class="clearfix">
+					<!-- tmpl:ifdef %data_num% -->
+					<table class="rtable">
+						<tr>
+							<td width="80">&nbsp;</td>
+							<td width="90"><!--%data_num%人--></td>
+							%page_feed%
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td bgcolor="#ffcccc" style="text-align:center" width="688px">　&nbsp;３時間以内にログインした会員様の人数&nbsp;： <font color="#ff0000">%num%</font>　</td>
+						</tr>
+					</table>
+					<!-- tmpl:endif -->
+
+					<div class="rogin_icon">
+						<span><img src="./images/search/icon_30m.gif">ログイン30分以内</span><span><img src="./images/search/icon_1h.gif">ログイン1時間以内</span><span><img src="./images/search/icon_3h.gif">ログイン3時間以内</span><span><img src="./images/search/icon_6h.gif">ログイン6時間以内</span>
+					</div>
+
+					<!-- tmpl:loop %boys_list% -->
+					<ul class="%frame%">
+						<li class="photo"><a href="javascript:func_detail('%hash%');"><img src="%image%"  oncontextmenu="return false"/></a></li>
+						<li class="meta">
+							<div class="name"><a href="javascript:func_detail('%hash%');" style="float:left;width:100px;margin:0;padding:0;">%nick_name%&nbsp;</a>%new_icon%</div>
+							<div class="mail">%face_icon%%tenso_icon%<a href="javascript:func_mail('%hash%');"><img src="./images/search/icon_mail.gif" /></a></div>
+						</li>
+					</ul>
+					<!-- tmpl:endloop -->
+
+					<!-- tmpl:ifdef %data_num% -->
+					<table class="rtable">
+						<tr>
+							<td width="80">&nbsp;</td>
+							<td width="90"><!--%data_num%人--></td>
+							%page_feed%
+						</tr>
+					</table>
+					<!-- tmpl:endif -->
+
+					<!-- tmpl:ifdef %data_zero% -->
+					<div align="center">該当する検索結果はありません。</div>
+					<!-- tmpl:endif -->
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="UtilitiesBlock">
+
+			%utilities%
+
+		</div>
+
+	</div>
+
+	%footer%
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+@charset "shift_jis";
+
+#titleArea{
+text-align:center;
+line-height:1.7em;
+margin:15px 0 0 0;}
+
+span.purple{
+color:#B74255;}
+
+table#putPhoto{
+width:500px;
+border:1px #999999 solid;
+margin:10px auto 0 auto;
+}
+
+table#putPhoto th{
+width:130px;
+background:#EFEFEF;
+border:1px #999999 solid;
+text-align:center;
+font-weight:normal;
+}
+
+table#putPhoto td{
+width:355px;
+text-align:center;}
+
+table#putPhoto td img{
+margin:15px 0 10px 0;}
+
+table#putPhoto td input{
+width:170px;
+height:23px;
+margin:0 0px 10px 0;}
+
+#explainArea{
+text-align:center;
+margin:10px 0 30px 0;
+line-height:1.7em;}
+
+#explainArea img{
+margin:10px 0 0 0;}
+
+.titlePurple{
+color:#B74255;
+font-size:15px;
+font-weight:bold;
+text-align:center;}
+
+#photoStepArea{
+background:url(../../images/fresh_step/P2_step.jpg) no-repeat;
+width:502px;
+height:198px;
+margin:10px auto 0 auto;
+position:relative;}
+
+#photoStepArea p.step1{
+position:absolute;
+top:119px;
+left:10px;
+line-height:1.4em;}
+
+#photoStepArea p.step2{
+position:absolute;
+top:119px;
+left:178px;
+line-height:1.4em;}
+
+#photoStepArea p.step3{
+position:absolute;
+top:119px;
+left:367px;
+line-height:1.4em;}
+
+#photoUploadMobile{
+text-align:center;
+padding:0 0 10px 0;}
+
+#titleTopLine{
+border-top:1px dashed #E4B2BB;
+margin:30px 5px 0 5px;
+padding:20px 0 10px 0;}
+
+#qrCodeArea{
+margin:10px 0 40px 0;
+text-align:center;}
+
+#uploadFromQRcode{
+background:url(../../images/fresh_step/P2_stepQR.jpg) no-repeat;
+width:502px;
+height:198px;
+margin:10px auto 30px auto;
+position:relative;}
+
+#uploadFromQRcode p.step1{
+position:absolute;
+top:132px;
+left:8px;
+line-height:1.4em;}
+
+#uploadFromQRcode p.step2{
+position:absolute;
+top:132px;
+left:188px;
+line-height:1.4em;}
+
+#uploadFromQRcode p.step2 span.small{
+font-size:10px;
+position:relative;
+left:-8px;}
+
+#uploadFromQRcode p.step3{
+position:absolute;
+top:132px;
+left:367px;
+line-height:1.4em;
+}
+
+#aboutQRexlpain{
+line-height:1.7em;
+padding:10px 0 0 25px;}
+
+table#aboutQRcodeArea{
+width:500px;
+margin:20px auto 20px auto;
+}
+
+table#aboutQRcodeArea th{
+width:150px;
+font-weight:normal;
+text-align:center;
+line-height:1.5em;
+vertical-align:top;}
+
+table#aboutQRcodeArea th img{
+margin:0 0 5px 0;}
+
+table#aboutQRcodeArea td{
+width:330px;
+padding:0 0 0 20px;
+vertical-align:top;
+line-height:1.7em;}
+
+

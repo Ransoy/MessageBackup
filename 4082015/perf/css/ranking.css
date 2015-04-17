@@ -1,0 +1,267 @@
+@charset "Shift_JIS";
+
+
+/* ranking
+-----------------------*/
+
+#ranking {
+	width: 206px;
+	height: 228px;
+	margin: 0px auto;
+	text-align: center;
+	background:url(/performer/images/ranking/ranking_pafo_o_bg.png) no-repeat left top;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+}
+
+.ranking_dent_white {
+	margin: 0px auto;
+	padding: 52px 5px 0px 5px;
+}
+
+.ranking_dent_white_two {
+	margin: 0px auto;
+	padding: 4px 5px 0px 5px;
+}
+
+.ranking_bg_top {
+	padding-top:7px;/* ã•”‰æ‘œ‚Ì‚‚³*/
+	background:url(/performer/images/ranking/ranking_pafo_w_bg_top.png) no-repeat left top;
+}
+.ranking_bg_mid {
+	padding: 0px 5px 0px 5px; /* —]”’w’è*/
+	background:url(/performer/images/ranking/ranking_pafo_w_bg_mid.png) repeat-y left top;
+}
+
+.ranking_bg_bot {
+	height:4px;/* ‰º•”‰æ‘œ‚Ì‚‚³*/
+	background:url(/performer/images/ranking/ranking_pafo_w_bg_bot.png) no-repeat left bottom;
+	font-size:1px;/* •¶šƒTƒCƒYŠg‘å‚Ì•ö‚ê‰ñ”ğ */
+	line-height:1px;
+}
+
+.rank_area {
+	width: 186px;
+	height: 15px;
+	text-align: center;
+	padding-bottom: 3px;
+	border-bottom-style: dotted;
+	border-bottom-color: #E0E0E0;
+}
+
+.rank_area_last {
+	width: 186px;
+	height: 15px;
+	text-align: center;
+	padding-bottom: 2px;
+}
+
+.rank_area_two {
+	width: 186px;
+	height: 15px;
+	text-align: center;
+	padding: 0 0 4px 0;
+}
+
+.rank_area_cong {
+	width: 186px;
+	height: 15px;
+	text-align: center;
+	padding-bottom: 2px;
+	line-height: 1;
+}
+
+.rank_area_number_one {
+	width: 186px;
+	height: 18px;
+	text-align: center;
+	padding: 0 0 0px 0;
+}
+
+.rank_icon_red {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background:url(/performer/images/ranking/ranking_pafo_icon_star_red.png) no-repeat left top;
+	margin: 1px 3px 0 12px;
+}
+
+.rank_icon_blue {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background:url(/performer/images/ranking/ranking_pafo_icon_star_blue.png) no-repeat left top;
+	margin: 1px 3px 0 12px;
+}
+
+.rank_icon_green {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background:url(/performer/images/ranking/ranking_pafo_icon_star_green.png) no-repeat left top;
+	margin: 1px 3px 0 12px;
+}
+
+.rank_icon_crown {
+	width: 17px;
+	height: 17px;
+	float: left;
+	background:url(/performer/images/ranking/ranking_pafo_icon_crown.png) no-repeat left top;
+	margin: -2px 5px 0 20px;
+}
+
+.rank_icon_crown_two {
+	width: 17px;
+	height: 17px;
+	float: left;
+	background:url(/performer/images/ranking/ranking_pafo_icon_crown.png) no-repeat left top;
+	margin: -2px 0px 0 0px;
+}
+
+.rank_text {
+	font-size: 13px;
+	text-align:left;
+}
+
+.rank_text_center {
+	font-size: 13px;
+	text-align:center;
+}
+
+.rank_text_cong {
+	font-size: 13px;
+	text-align:center;
+	font-weight: bold;
+}
+
+.rank_text_number_one {
+	font-size: 13px;
+	text-align:center;
+	float: left;
+}
+
+.rank_text span {
+	font-weight: bold;
+	text-align:left;
+	color: #ff003c;
+	margin: 0 3px 0 5px;
+}
+
+.rank_text_center span {
+	font-weight: bold;
+	text-align:left;
+	color: #ff003c;
+	margin: 0 3px 0 5px;
+}
+
+.rank_text_number_one span {
+	font-weight: bold;
+	text-align:left;
+	color: #ff003c;
+	margin: 0 3px 0 5px;
+	font-size: 15px;
+}
+
+.ranking_pafo_btn_history{
+	text-align: right;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 46px;
+    height: 21px;
+    background: url('/performer/images/ranking/ranking_pafo_btn_history.png') no-repeat;
+	float: right;
+	margin: 28px 3px 0px 0px;
+}
+
+.ranking_pafo_btn_history:hover {
+    background: url('/performer/images/ranking/ranking_pafo_btn_history_ov.png') no-repeat;
+}
+
+/* ƒ|ƒbƒvƒAƒbƒv
+-----------------------*/
+
+#ipop {
+	padding: 0;
+	top: 400px;
+	right: 480px;
+    background: url('/performer/images/ranking/ranking_pafo_popup_bg.png') no-repeat;
+	/* ‚±‚Ì‚Ts‚Í•K{ */
+	width: 237px;
+	height: 232px;
+	position: absolute;
+	/*   display: none; */
+	z-index: 9999;
+
+}
+
+#ipop_title {
+	width: 237px;
+	height: 44px;
+    background: url('/performer/images/ranking/ranking_pafo_popup_title.png') no-repeat;
+	cursor: move;
+}
+
+#ipop_close {
+	width: 26px;
+	height: 27px;
+    background: url('/performer/images/ranking/ranking_pafo_popup_btn_close.png') no-repeat;
+	cursor: pointer;
+	float: right;
+}
+
+#ipop_close:hover {
+    background: url('/performer/images/ranking/ranking_pafo_popup_btn_close_ov.png') no-repeat;
+}
+
+.rank_area_popup {
+	width: 186px;
+	height: 15px;
+	text-align: center;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #E0E0E0;
+}
+
+.rank_area_kome {
+	width: 196px;
+	text-align: center;
+	padding-bottom: 2px;
+}
+
+.rank_area_kome_detail {
+	width: 196px;
+	text-align: center;
+	padding-bottom: 2px;
+	padding-left: 3px;
+}
+
+.rank_area_last_popup {
+	width: 196px;
+	height: 15px;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+
+.rank_text_center_popup {
+	font-size: 13px;
+	text-align:center;
+}
+
+.rank_text_popup {
+	font-size: 11px;
+	text-align:left;
+}
+
+.ranking_dent_popup {
+	margin: 0px auto;
+	padding: 0px 5px 0px 20px;
+}
+
+.ranking_dent_popup_kome {
+	margin: 0px auto;
+	padding: 7px 5px 0px 20px;
+}
+
+

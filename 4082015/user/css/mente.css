@@ -1,0 +1,75 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #474747;
+}
+img{
+	border: none;
+}
+.sbox-outer{
+	margin: 10px;
+	background-color: #ffaeae;
+}
+.sbox-inner{
+	width: 100%;
+	border: 1px solid #ffffff;
+	background-color: #ffd3d3;
+}
+.lbox-outer{
+	margin: 10px 0px;
+	background-color: #ffaeae;
+}
+.lbox-inner{
+	width: 100%;
+	border: 1px solid #ffffff;
+	background-color: #ffd3d3;
+}
+.lbox-outer-non{
+	margin: 10px 0px;
+}
+.section-title{
+	background-color: #ffeded;
+	color: #f46565;
+	font-weight: bold;
+	padding: 5px;
+}
+.section-top{
+	background: #ffeded url(images/mente/bg_top.gif) top left repeat-x;
+}
+.step-number{
+	font-family: Alial;
+	font-size: 24px;
+	font-weight: bold;
+	color: #f46565;
+}
+.step-logo{
+	color: #f46565;
+	line-height: 12px;
+}
+.step-title{
+	font-weight: bold;
+	font-size: 18px;
+	color: #f46565;
+}
+.thumb{
+	border: 5px solid #ffaeae;
+}
+.picup{
+	font-size: 16px;
+	font-weight: bold;
+	color: #f94040;
+}
+.red{
+	color: #f94040;
+}
+.footer{
+	color: #ffffff;
+	font-weight: bold;
+	height: 40px;
+}
+.question{
+	color: #3987be;
+	font-weight: bold;
+}

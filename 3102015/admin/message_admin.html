@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+
+<title>メッセージ画面管理</title>
+
+<style>
+div>input[type=button] {
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+
+tr.isnt_visible_row {
+	background-color: #999 !important;
+}
+
+tr.is_special {
+	background-color: #ffd4e3;
+}
+
+td {
+	padding: 2px 3px;
+}
+
+td.title_col {
+	width: 20%;
+}
+
+td.flv1_col {
+	width: 15%;
+}
+
+td.act_col {
+	width: 5%;
+	text-align: center;
+}
+</style>
+
+<script type="text/javascript" src="./jquery-1.9.1.js"></script>
+<link href="/css/message_admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h2 align="center">メッセージ画面管理</h2>
+	<div class="blog_manage">
+		<div class="search_wrap cf">
+			<form id='admin-screen-form'>
+				メッセージ検索：<input name="keyword" value="" class="keyword"
+					id="message-keyword" type="text" placeholder="キーワード検索" /><br />
+				パフォーマーID検索:<input value="" class="search_performer" type="text"
+					placeholder="パフォーマーID入力" /> <select id="performer-type">
+					<option value="0">問わない</option>
+					<option value="1">送信者</option>
+					<option value="2">受信者</option>
+				</select> <br />
+				<br /> ユーザーID検索:<input value="" class="search_male" type="text"
+					placeholder="ユーザーID入力" /> <select id="male-type">
+					<option value="0">問わない</option>
+					<option value="1">送信者</option>
+					<option value="2">受信者</option>
+				</select> <br /> <br /> 開始日付 : <select name="year" id="start-year">
+					<option value="" selected>年</option>
+					<!-- tmpl:loop %year% -->
+					<option value="%year_val%">%year_val%</option>
+					<!-- tmpl:endloop -->
+				</select> <select name="month" id="start-month">
+					<option value="" selected>月</option>
+					<!-- tmpl:loop %month% -->
+					<option value="%month_val%">%month_val%</option>
+					<!-- tmpl:endloop -->
+				</select> <select name="day" id="start-day">
+					<option value="" selected>日</option>
+					<!-- tmpl:loop %day% -->
+					<option value="%day_val%">%day_val%</option>
+					<!-- tmpl:endloop -->
+				</select> <br />
+				<br /> 終了日付 : <select name="year" id="end-year">
+					<option value="" selected>年</option>
+					<!-- tmpl:loop %year% -->
+					<option value="%year_val%">%year_val%</option>
+					<!-- tmpl:endloop -->
+				</select> <select name="month" id="end-month">
+					<option value="" selected>月</option>
+					<!-- tmpl:loop %month% -->
+					<option value="%month_val%">%month_val%</option>
+					<!-- tmpl:endloop -->
+				</select> <select name="day" id="end-day">
+					<option value="" selected>日</option>
+					<!-- tmpl:loop %day% -->
+					<option value="%day_val%">%day_val%</option>
+					<!-- tmpl:endloop -->
+				</select>
+
+				<!-- <input type="hidden" id="page" name="page" value=""/>
+					<input type="hidden" id="order" name="order" value=""/> -->
+
+				<div style="margin-top: 15px; ">
+					<div class="sort cf" style='float: right; margin-left: 10%;'>
+						<select>
+							<option value="1">更新日時が新しい順</option>
+							<option value="2">更新日時が古い順</option>
+						</select>
+					</div>
+					<div class="is-check cf" style='margin-left: 10%;'>
+						<select>
+							<option value="0">チェックしない</option>
+							<option value="1">チェックした</option>
+							<option value="2">全</option>
+						</select>
+					</div>
+					<div class="select-message cf" style='float: right; margin-left: 10%;'>
+						<select>
+							<option value="all">全</option>
+							<option value="body">メッセージ</option>
+							<option value="image">イメージ</option>
+						</select>
+					</div>
+				</div>
+				<div style='clear:both;'></div>
+				<div style='margin-top: 15px; text-align:center;'>
+					<input type='submit' id='btn-search' class='btn_style' value='検索'/> <input type='reset' id='btn-reset' class='btn_style' value='リセット'/>
+				</div>
+			</form>
+		</div>
+		<!-- // .search_wrap -->
+
+		<div class="control_area cf">
+			<div class="check_all_area">
+				<label><input class="check_all" id="chck-all" type="checkbox" />全て選択</label>
+			</div>
+			<label>
+				<button type="button" class="btn btn-default chk_all">チェック</button>
+				<button type="button" class="btn btn-default del_all">削除</button>
+			</label>
+		</div>
+		<table width="100%" border="1" class="tble_data">
+			<thead>
+				<tr>
+					<th style='width: 50px;'></th>
+					<th style='width: 150px;'>送信者</th>
+					<th style='width: 150px;'>受信者</th>
+					<th>日時</th>
+					<th>メッセージ</th>
+					<th style='width: 140px;'>選択</th>
+				</tr>
+			</thead>
+			<tbody id="message" style="text-align:center;">
+			</tbody>		
+		</table>
+		<div id="loader" style="display:none;">
+			<div class="blog_pager">
+				<div class="spinner">
+					<div class="bounce1"></div>
+					<div class="bounce2"></div>
+					<div class="bounce3"></div>
+					<p>ローディング。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // .blog_manage -->
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/message_admin.js"></script>
+	<!--<script type="text/javascript" src="/js/linemail-2.js"></script>   -->
+</body>
+</html>

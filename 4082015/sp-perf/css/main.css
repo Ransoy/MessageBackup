@@ -1,0 +1,151 @@
+@charset "Shift_JIS";
+
+.page_wrap--main{
+
+}
+
+.page_wrap--main .section--main{
+
+}
+
+.page_wrap--main .section--main .profile{
+	position: relative;
+	display: table;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 1.3rem;
+	margin-bottom: 0.75rem;
+}
+.page_wrap--main .section--main .profile .thumb,
+.page_wrap--main .section--main .profile .data{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+}
+.page_wrap--main .section--main .profile .thumb{
+	width: 8rem;
+	height: 8rem;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.page_wrap--main .section--main .profile .thumb img{
+	display: block;
+	width: 7rem;
+	height: 7rem;
+	border-radius: 7rem;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	border: #fff solid 0.4rem;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+}
+.page_wrap--main .section--main .profile .data{
+	text-align: left;
+	padding: 0 1rem;
+}
+.page_wrap--main .section--main .profile .name{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.page_wrap--main .section--main .point_data{
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 0.5rem 0;
+	margin-bottom: 1.5rem;
+}
+.page_wrap--main .section--main .point_data table{
+	width: 100%;
+	table-layout: fixed;
+}
+.page_wrap--main .section--main .point_data table th{
+	font-weight: bold;
+	padding: 0.5rem;
+	text-align: center;
+	background: #ffbaba;
+	border: #fff solid 1px;
+	font-weight: bold;
+}
+.page_wrap--main .section--main .point_data table td{
+	padding: 0.5rem;
+	text-align: center;
+	background: #FFF1F1;
+	border: #fff solid 1px;
+	font-size: 1.5rem;
+	vertical-align: middle;
+}
+.page_wrap--main .section--main .dashboard{
+	width: 100%;
+	box-sizing: border-box;
+}
+.page_wrap--main .section--main .dashboard ul{
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	border: #cfcfcf solid 1px;
+	border-radius: 4px;
+}
+.page_wrap--main .section--main .dashboard ul li{
+	position: relative;
+	display: table-cell;
+	height: 10rem;
+	background: #F9F9F9;
+	border-left: #cfcfcf solid 1px;
+	text-align: center;
+	vertical-align: middle;
+	color: #cfcfcf;
+	box-shadow: 1px 1px 0 0 rgba(255,255,255,1) inset;
+}
+.page_wrap--main .section--main .dashboard ul li:first-child{
+	border-left: none;
+}
+.page_wrap--main .section--main .dashboard ul li a{
+	display: block;
+	color: #999;
+	font-size: 1.4rem;
+	height: 100%;
+}
+.page_wrap--main .section--main .dashboard ul li .menu_txt{
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	right:  0;
+	margin: auto;
+	color: #666;
+	font-weight: bold;
+	text-shadow: -1px -1px 0 #fff;
+}
+.page_wrap--main .section--main .dashboard ul li .badge{
+	position: absolute;
+	top: -0.7rem;
+	right: 0.8rem;
+	min-width: 1.8rem;
+	height: 1.8rem;
+	background: #f00;
+	padding: 0.5rem 0.5rem;
+	color: #fff;
+	border-radius: 1.8rem;
+	linie-height: 1;
+	font-weight: bold;
+	z-index: 1;
+}
+.page_wrap--main .section--main .dashboard ul li a:before{
+	position: absolute;
+	top: 3.8rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: inline;
+	font-family: FontAwesome;
+	font-size: 5rem;
+	color: #B8B8B8;
+	line-height: 0;
+}
+.page_wrap--main .section--main .dashboard ul li.menu_message a:before{
+	top: 3.8rem;
+	content: '\f086';
+}
+.page_wrap--main .section--main .dashboard ul li.menu_blog a:before{
+	top: 4.2rem;
+	content: '\f044';
+}

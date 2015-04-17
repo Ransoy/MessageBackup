@@ -1,0 +1,243 @@
+
+/****
+* V‹K–³—¿“o˜^
+********************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	font-family : 'ƒƒCƒŠƒI', 'Verdana', 'Helvetica', 'Arial', '‚l‚r ‚oƒSƒVƒbƒN', 'MS P Gothic', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'Helvetica', 'Arial', 'Gothic', 'sans-serif';
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+.step1{
+	width: 658px;
+	text-align: center;
+	margin:25px 0px 0px 0px;
+}
+
+#title_gazou2{
+	width: 658px;
+	text-align: center;
+	margin: 20px 0px 5px 0px;
+}
+
+.mail_icon{
+    padding: 0 0 0 20px;
+    background: url(http://c.macherie.tv/c/m/images/renewimages/mail_icon.png) left top no-repeat;
+	text-align: left;
+}
+
+/*clear fix */
+
+.clearfix:after { /*float‚Ì‰ğœA‚±‚±‚ªƒ|ƒCƒ“ƒg*/
+	display:block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	content:".";
+}
+.clearfix {
+	min-height: 1px; /*IE6A7‘Îô*/
+}
+
+* html .clearfix {
+	height: 1px;
+	/*\*//*/ /*MAC IE5.x‘Îô*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+
+/*****
+* V‚µ‚­“o˜^‚·‚éƒ[ƒ‹ƒAƒhƒŒƒX
+****************************/
+
+#mail_henkou-test-tbl {
+	width: 658px;
+	height: 100%;
+	margin-top: 5px;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/akauntojyouhou_blue_01.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 13px;
+}
+
+#mail_henkou-test-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/akauntojyouhou_blue_03.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 13px;
+	width: 658px;
+	height: 100%;
+}
+
+#mail_henkou-test-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/akauntojyouhou_blue_02.png);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 658px;
+	height: 100%;
+}
+
+#mail_henkou-test{
+	width:648px;
+	margin:0px 0px 0px 0px;
+	border-style:none;
+	height: 100%;
+}
+
+#mail_henkou-test {
+	display:inline-block;
+	vertical-align: middle;
+	height: 100%;
+	margin:0px 0px 0px 0px;
+}
+
+#mail_henkou-test_left{
+	width:140px;
+	background-color:#ffffff;
+	color:#ffffff;
+	float:left;
+	vertical-align: middle;
+	height: 100%;
+	margin:0px 0px 0px 0px;
+}
+
+#mail_henkou-test_center{
+	width:450px;
+	float:left;
+	background-color:#ffffff;
+	vertical-align: middle;
+	height: 100%;
+	margin:0px 0px 0px 0px;
+}
+
+#mail_henkou-test_right{
+	width:58px;
+	color:#ffffff;
+	float:right;
+	vertical-align: middle;
+	height: 100%;
+	margin:0px 0px 0px 0px;
+}
+
+input.hoge {
+	width: 410px;
+	height: 27	px;
+	padding: 5px;
+	margin-top: 2px;
+}
+
+/*****
+* V‚µ‚­“o˜^‚·‚éƒ[ƒ‹ƒAƒhƒŒƒX@‚±‚±‚Ü‚Å
+****************************/
+
+#title001{
+	width: 655px;
+	height: 100%;
+	margin: 25px 0 0 0;
+	background-image: url(http://c.macherie.tv/c/m/images/renewimages/title_002.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding:0px 0px 5px 0px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	line-height:170%;
+}
+
+#akauntojyouhou_mongon{
+	height: 100%;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+	color:#ff691f;
+	margin: 0 auto;
+	line-height:100%;
+	text-align: left;
+	padding: 0 0 5px 0;
+}
+
+#akauntojyouhou_mongon2{
+	height: 100%;
+	width: 658px;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+	color:#333333;
+	margin: 0 auto;
+	line-height:150%;
+	text-align: left;
+	padding: 5px 0 10px 0;
+}
+
+/*****
+* text_ƒtƒHƒ“ƒgŒn
+****************************/
+
+a.link4:link {
+	color: #0031FF
+}
+a.link4:visited {
+	color: #0068FF;
+	text-decoration: underline
+}
+a.link4:hover {
+	color: #001D96;
+	text-decoration: underline
+}
+a.link4:active {
+	color: #0031FF;
+}
+
+
+/***** text_ƒtƒHƒ“ƒgŒn ‚±‚±‚Ü‚Å *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

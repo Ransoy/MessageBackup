@@ -1,0 +1,172 @@
+@charset "Shift_JIS";
+
+/*	Payment
+---------------------------------------*/
+#payment .message div
+{
+	margin:10px;
+	padding:15px;
+	color:red;
+	background:#f9e8eb;
+	border:1px solid #ccc;
+}
+#payment h2
+{
+	margin-bottom:10px;
+}
+
+#payment #linkArea
+{
+	padding:0 10px 10px;
+	margin-bottom:10px;
+}
+
+#payment #MainBlock form
+{
+	padding:0 10px 30px;
+	text-align:center;
+}
+
+#payment form p
+{
+	text-align:left;
+	padding:10px;
+	background:#f3f3f3;
+	border:1px solid #ccc;
+	margin-bottom:20px;
+}
+
+
+
+/* 累計振込金額用 */
+#payment form p.ruikei_area
+{
+	text-align:left;
+	padding:0px;
+	background:#ffffff;
+	border:0px solid #fff;
+	margin-bottom:0px;
+	width:50%;
+}
+/* 累計振込金額用 */
+#payment form p span.ruikei_amount
+{
+	color:#339999;
+	font-weight:bold;
+	font-size:18px;
+}
+/* ページ情報（全○件 ○～○件を表示中）*/
+#payment form p.page_info
+{
+	text-align:right;
+	padding:0px;
+	background:#ffffff;
+	border:0px solid #fff;
+	margin-bottom:0px;
+	font-size:15px;
+}
+
+
+
+#payment form p span
+{
+	color:#000000; /* #d50242 */
+	font-weight:normal; /* bold */
+}
+#payment form table
+{
+	margin:0 auto 20px;
+}
+
+/* Payment form
+---------------------------*/
+#payment form th,
+#payment form td
+{
+	padding:2px 2px; /* 10px 5px */
+}
+#payment form td
+{
+	vertical-align:center; /* top */
+}
+
+#payment table th
+{
+	text-align:center;
+	background:#99ccff; /* #d5e9ba */
+	font-weight:normal;
+}
+
+#payment table td input#tel{width:200px;}
+#payment table td input#handy{width:300px;}
+#payment table td input#mail{width:300px;}
+#payment table td input#zip{width:200px;}
+#payment table td input#address{width:500px;}
+
+
+/* テーブルの幅 */
+#payment .pointInformation
+{
+	border-collapse:collapse;
+	border-top:1px solid #cccccc;	/* #547626 */
+	border-left:1px solid #cccccc;  /* #547626 */
+	width:100%; /* 550px */
+}
+#payment .pointInformation td
+{
+	border-right:1px solid #cccccc; /* #547626 */
+	border-bottom:1px solid #cccccc; /* #547626 */
+}
+#payment .pointInformation th
+{
+	border-left:1px solid #6699cc; /* #547626 */
+	border-top:1px solid #6699cc; /* #547626 */
+	border-right:1px solid #6699cc; /* #547626 */
+	border-bottom:1px solid #6699cc; /* #547626 */
+}
+#payment .pointInformation th.definition
+{
+	background:#a9ca7c;
+}
+#payment .pointInformation td
+{
+	text-align:center; /* right */
+}
+
+
+
+/* 受付日のセル幅 */
+#payment .pointInformation td.td_date
+{
+	width: 120px;
+}
+/* 精算金額のセル幅 */
+#payment .pointInformation td.td_seisan
+{
+	width: 120px;
+}
+/* 振込金額のセル幅 */
+#payment .pointInformation td.td_furikomi
+{
+	width: 120px;
+}
+/* 精算種類のセル幅 */
+#payment .pointInformation td.td_kind
+{
+	width: 120px;
+}
+/* 銀行名のセル幅 */
+#payment .pointInformation td.td_bank
+{
+	width: 120px;
+}
+/* 支店名のセル幅 */
+#payment .pointInformation td.td_branch
+{
+	width: 120px;
+}
+/* 口座名義のセル幅 */
+#payment .pointInformation td.td_meigi
+{
+}
+

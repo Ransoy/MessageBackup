@@ -1,0 +1,135 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Agesage Macherie
+	BUILD:	2007/11/19
+_______________________________________*/
+
+/*	Layout
+---------------------------------------*/
+#wrap{
+	width:580px;
+	padding:0pt 0pt 0pt 2px;
+}
+/*	General Element
+----------------------------------------*/
+.block{
+	margin-bottom:10px;
+}
+.attention{
+	color:red;
+}
+
+
+#tab{
+	padding-left:50px;
+	margin-bottom:20px;
+}
+#tab img{
+	margin-right:3px;
+}
+
+/*	Girls Block
+----------------------------------------*/
+.gB{
+	margin:1px 0 0 1px;
+    position:relative;
+    width:114px;
+    height:134px;
+    overflow:hidden;
+    float:left;
+}
+.on{background: url(../images/gm/onbg.gif) top left no-repeat;}
+.pon{background: url(../images/gm/onbg.gif) top left no-repeat;}
+.ch{background: url(../images/gm/2bg.gif) top left no-repeat;}
+.pc{background: url(../images/gm/pbg.gif) top left no-repeat;}
+.off{background: url(../images/gm/offbg.gif) top left no-repeat;}
+
+.tag{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:120px;
+    height:27px;
+    overflow:hidden;
+    text-align:left;
+}
+.pic{
+    position:relative;
+    top:0px;
+    left:1px;
+    width:110px;
+    height:84px;
+    overflow: hidden;
+    background:center center no-repeat;
+}
+.name{
+    position:relative;
+    top:4px;
+    left:5px;
+    width:118px;
+    overflow: hidden;
+	text-align:left;
+	line-height:17px;
+	font-size:11px;
+}
+.mail{
+    position:relative;
+    top:-18px;
+    left:70px;
+    width:34px;
+    height:17px;
+    text-align:right;
+}
+.name a{color:#333333; text-decoration: none;}
+.name a:hover {text-decoration: underline;}
+
+
+/*  Universal
+---------------------------------------*/
+*{
+	margin:0;
+	padding:0;
+}
+/*  Structure
+---------------------------------------*/
+body{
+	font-family:"‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size:12px;
+	color:#444;
+}
+/*  Hypertext
+---------------------------------------*/
+a {
+	color:#000099;
+	text-decoration:none;
+}
+a:hover{
+	color:#0066cc;
+}
+/*	LIST
+---------------------------------------*/
+ul{
+	list-style:none;
+}
+/*	Forms
+---------------------------------------*/
+
+/*	Image
+---------------------------------------*/
+img {
+	vertical-align:bottom;
+	border:0;
+}
+/*	Clearfix
+---------------------------------------*/
+#content div.inner:after{
+  height:0;
+  visibility:hidden;
+  content:".";
+  display:block;
+  clear:both;
+}
+* html #content div.inner{height:1%;}
+
+*:first-child+html div.inner {height:1%;}

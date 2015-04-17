@@ -1,0 +1,296 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Macherie
+	BUILD:	2007/4/11
+	AUTHOR:	Macherie
+_______________________________________*/
+
+/*	CommonBlock
+---------------------------------------*/
+.cMb{
+	width:598px;
+	margin:10px auto;
+	color:#323232;
+	border:1px solid #000;
+	background:url(../../images/xxsato/common/bg2.gif);
+}
+.search{
+	margin:5px auto;
+	color:#323232;
+}
+.begiMenu{
+	margin-top:20px;
+	margin-bottom:-20px;
+	text-align:center;
+}
+.firstB{
+	background:#fff;
+	margin:20px 30px;
+	padding:10px;
+	border:1px solid #000;
+	text-align:left;
+}
+.firstB dt strong{
+	width:300px;
+	line-height:30px;
+	color:#38689b;
+}
+.firstB dt img{
+	margin-right:10px;
+}
+.firstB dt p{
+	width:300px;
+	float:left;
+	line-height:1.5em;
+	padding-bottom:10px;
+}
+#beginner dl.firstB dt p{
+	width:510px;
+	padding-top:10px;
+}
+.firstB li.fBtext{
+	padding:5px;
+}
+.cMb dl.firstB dt p#begiT{
+	padding:0;
+}
+.firstB dd{
+	text-align:right;
+	clear:both;
+}
+.firstB a{
+	color:#b40101;
+}
+.firstB dt ul{
+	width:452px;
+	float:left;
+}
+.firstB dt ul li{
+	line-height:1.5em;
+}
+.firstB dt ul#answer li{
+	padding-bottom:10px;
+}
+.memberBlock{
+	background:#fff;
+	margin:20px 22px;
+	padding:10px;
+	border:1px solid #000;
+	text-align:left;
+}
+#memberForm{
+	text-align:center;
+}
+#memberForm table{
+	width:420px;
+	margin:0 auto;
+}
+.search{
+	text-align:center;
+}
+.search form{
+	padding-top:10px;
+}
+.search table{
+	clear:both;
+	width:580px;
+	margin:15px auto;
+}
+.searchTable td input{
+	width:150px;
+}
+#memberForm table th{
+	border-left:5px solid #224fa0;
+	background:#4583c0;
+	padding:0 5px 0 10px;
+	color:#fff;
+	text-align:left;
+	vertical-align:middle;
+}
+.search form table th{
+	border-left:5px solid #224fa0;
+	background:#4583c0;
+	padding:0 5px 0 10px;
+	color:#fff;
+	text-align:left;
+	vertical-align:middle;
+	width:60px;
+}
+#memberForm table td{
+	padding:5px;
+	background:#d3dfef;
+	text-align:left;
+}
+.search form table td{
+	padding:5px;
+	background:#d3dfef;
+	text-align:left;
+	width:220px;
+}
+.search form table.serchInfo td{
+	text-align:center;
+}
+.serchComment{
+	background:#fff;
+}
+#conBlock .searchDetail{
+	border-collapse:collapse;
+	margin:10px auto;
+	width:80%;
+}
+.searchDetail th{
+	background:#6097cf;
+	padding:5px;
+	color:#fff;
+}
+.searchDetail th a{
+	color:#fff;
+}
+.searchDetail th.nameDetail{
+	background:#6097cf;
+	border-left:5px solid #224fa0;
+	padding-left:8px;
+	text-align:left;
+}
+.searchImg{
+	border:5px solid #92beea;
+	width:120px;
+}
+.serchComment{
+	padding:10px 15px;
+	border:5px solid #92beea;
+	text-align:left;
+	vertical-align:top;
+	line-height:1.5em;
+}
+.searchAge,.searchStat,.searchMail,.searchProf{
+	width:90px;
+}
+.searchAge,.searchArea{
+	text-align:left;
+}
+.memChang{
+	padding-top:10px;
+}
+#favorite a{
+	color:#000;
+}
+#memo a{
+	color:#000;
+}
+/*	RegistForm
+---------------------------------------*/
+#regForm{
+	width:600px;
+	margin:10px auto;
+	color:#323232;
+	border:1px solid #000;
+	background:#fff;
+}
+#regForm iframe{
+	margin:10px auto;
+	width:524px;
+	height:100px;
+	border:1px solid #000;
+}
+#regForm table{
+	width:530px;
+	margin:0 auto;
+}
+#regForm input#nick_name,
+#regForm input#user_id,
+#regForm input#password,
+#regForm input#mail,
+#regForm input#mail2{
+	width:385px;
+}
+#regForm table th{
+	border-left:5px solid #224fa0;
+	background:#4583c0;
+	padding:0 5px 0 10px;
+	color:#fff;
+	text-align:left;
+	vertical-align:middle;
+}
+#regForm table td{
+	padding:5px;
+	background:#d3dfef;
+	text-align:left;
+}
+#regForm table td p#camp{
+	background:url(../../images/xxsato/top/icon_tv.gif) no-repeat left bottom;
+	padding-top:3px;
+	text-indent:17px;
+}
+#regmain{
+	background:url(../../images/xxsato/common/table2/middle_regist_form.gif) repeat-y center;
+	margin:10px 0;
+}
+.regmain{
+	background:url(../../images/xxsato/common/table2/middle_regist_form.gif) repeat-y center;
+	margin:10px 0;
+}
+.regmain h3{
+	text-align:left;
+	padding-left:30px;
+	padding-bottom:10px;
+}
+p.descri{
+	padding:20px;
+}
+#regmain input#submitbtn{
+	border:0;
+	margin-top:10px;
+}
+#regmain p.error{
+	border:1px solid red;
+	margin:20px 50px;
+	color:red;
+}
+#regmain p.indent{
+	padding-left:100px;
+	line-height:1.5em;
+	text-align:left;
+}
+#regmain em{
+	font-style:normal;
+	display:block;
+	margin:5px;
+}
+#regmain strong{
+	font-size:14px;
+	display:block;
+	color:red;
+	margin:5px;
+}
+#regmain ul{
+	border:1px solid #000;
+	text-align:left;
+	margin:10px 36px;
+}
+#regmain li{
+	padding:8px;
+}
+/*	MEMO
+-----------------------------*/
+#memoForm table{
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-collapse:collapse;
+}
+#memoForm table td,
+#memoForm table th{
+	padding:3px;
+	border-right:1px solid #999;
+	border-bottom:1px solid #999;
+}
+#memoForm table th{
+	background:#4583c0;
+	color:#fff;
+	font-weight:normal;
+	text-align:center;
+}
+#prevLink a{
+	color:#000;
+}

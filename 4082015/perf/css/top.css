@@ -1,0 +1,159 @@
+@charset "Shift_JIS";
+
+
+/* selectBonus && standbyBonus
+--------------------------------*/
+#standbyBonus
+{
+	text-align:center;
+	margin-bottom:10px;
+}
+#standbyBonus
+{
+	color:#9a0000;
+	font-weight:bold;
+}
+
+/* multipleInformation
+--------------------------------*/
+#centerBlock
+{
+	width:490px;
+	float:left;
+}
+
+#multipleInformation ul
+{
+	padding-top:0;
+	text-indent:0;
+}
+
+#multipleInformation ul li
+{
+	float:left;
+	background:url(../img/compornent_tab_line.gif) right no-repeat;
+}
+
+#multipleInformation ul li a
+{
+	display:block;
+	padding:0 18px 0 16px;
+	text-decoration:none;
+	color:#000;
+}
+#multipleInformation ul li a:hover
+{
+	background-color: #ffcccc;
+}
+#multipleInformation ul li.ui-tabs-selected
+{
+	background:url(../img/compornent.png) -270px -375px no-repeat;
+	margin-bottom: 0;
+}
+#multipleInformation ul li.ui-tabs-selected a
+{
+	color:#fff;
+}
+
+/* tabDirector
+--------------------------------*/
+#tabDirector
+{
+	padding:10px;
+}
+#tabDirector #director
+{
+	padding-left:100px;
+	border-bottom:1px solid #ccc;
+	margin-bottom:20px;
+}
+
+#tabDirector dl
+{
+	width:122px;
+	float:left;
+}
+#tabDirector dl.main
+{
+	margin-right:20px;
+}
+
+#tabDirector dl dt
+{
+	text-align:center;
+	background:#000;
+	color:#fff;
+}
+#tabDirector dl dd
+{
+	margin-bottom:10px;
+}
+#tabDirector dl dd img
+{
+	border:1px solid #555;
+}
+
+
+#tabDirector #directorComment
+{
+	clear:both;
+}
+
+/* rightBlock
+-----------------------*/
+#rightBlock
+{
+	width:210px;
+	float:right;
+}
+/* TopicSection
+-----------------------*/
+#TopicSection
+{
+}
+
+#TopicSection dl
+{
+	padding:10px;
+}
+#TopicSection dl dd ul a
+{
+	display:block;
+}
+#TopicSection dl dd ul a:hover
+{
+	background-color: #ffcccc;
+}
+#TopicSection dl dd ul li
+{
+	margin-bottom:8px;
+}
+#TopicSection dl dd ul li.Question
+{
+	font-size:10px;
+	color:#ff008c;
+	text-indent:-4px;
+}
+#TopicSection dl dd ul li.Anwer
+{
+	border-bottom:1px solid #ccc;
+	padding-bottom:6px;
+}
+
+ * jQuery UI Tabs 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative;border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+

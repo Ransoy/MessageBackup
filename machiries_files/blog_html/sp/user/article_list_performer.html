@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>スマホでライブチャットマシェリ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="css/jquery.sidr.dark.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/menu_open.css">
+<link rel="stylesheet" href="css/blog.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script src="js/jquery-1.11.0.js"></script>
+</head>
+
+<body class="bd_guide">
+<div id="main">
+<header id="header" class="cf">
+	<h1 id="header_logo"><a href="./"><img src="image/header_logo.png" class="hmenu"></a></h1>
+	<div id="icon_login"><a id="simple-menu" href="#sidr"><img src="image/icon/login_off.png" class="h_menu"></a></div>
+</header>
+
+<!-- 右サイドメニュー開く -->
+<div id="sidr">
+	<header id="login">
+		<h2>ログイン</h2>
+	</header>
+
+	<section id="normal_login">
+
+		<form action="" method="POST">
+			<input type="text" name="id" value="" placeholder="ID" autofocus >
+		</form>
+
+		<form action="" method="POST">
+			<input type="text" name="pass" value="" placeholder="パスワード" autofocus >
+		</form>
+
+		<p class="cheack_area">
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox">次回から入力を省略</lable>
+		</p>
+
+		<div id="login_button_area">
+
+			<ul class="button">
+				<li class="login_box">
+					<a href="login.html">ログイン</a>
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="regist_box">
+					<a href="registrationfree.html">新規無料登録はこちら</a>
+				</li>
+			</ul>
+		</div>
+
+		<p class="login_text_link"><a href="resend_renew.html">>パスワードを忘れた方</a></p>
+
+	</section>
+
+	<section id="foreign_login">
+
+		<h3>他サービスのIDを利用してログイン</h3>
+
+		<div id="login_button_area">
+
+			<ul class="button">
+				<li class="yahoo_box">
+					<a href="open_yahoo.html">Yahoo!</a>
+					<img src="image/icon/foreign_yahoo.png">	
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="rakuten_box">
+					<a href="open_rakuten.html">楽天</a>
+					<img src="image/icon/foreign_rakuten.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="google_box">
+					<a href="open_google.html">Google</a>
+					<img src="image/icon/foreign_google.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="twitter_box">
+					<a href="open_twitter.html">Twitter</a>
+					<img src="image/icon/foreign_twitter.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="facebook_box">
+					<a href="open_facebook.html">Facebook</a>
+					<img src="image/icon/foreign_facebook.png">
+				</li>
+			</ul>
+
+		</div>
+
+	</section>
+
+	<footer>
+		<p><small>&copy; MACHERIE</small></p>
+	</footer>
+
+</div>
+<!-- 右サイドメニュー閉める -->
+
+
+<div class="contents">
+    <div class="blog_wrap cf">
+        <div class="box_inner">
+
+            <div class="ttl_area cf">
+                <h2 class="ttl_top">{パフォーマー名}ちゃんのブログ一覧</h2>
+            </div>
+
+            <div class="performer_info performer_info--style1 b_link cf">
+                <div class="performer_figure">
+                    <img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" />
+                </div>
+                <div class="performer_data">
+                    <span class="status offline">オフライン</span>
+                    <!--<span class="status online">オンライン</span>-->
+                    <!--<span class="status onchat">チャット中</span>-->
+                    <p class="performer_name"><a href="#">パフォーマー名</a></p>
+                </div>
+            </div>
+		</div>
+
+        <div class="tab_menu cf">
+            <ul>
+                <li class="on">
+                    <a href="#">新着順</a>
+                </li>
+                <li>
+                    <a href="#">人気順</a>
+                </li>
+                <li>
+                    <a href="#">いいね順</a>
+                </li>
+                <li>
+                    <a href="#">コメント順</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab_contents">
+            <div class="article_list cf">
+                
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime"><span class="ic_new_post">NEW</span>2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link">
+                        <div class="article_figure">
+                            <a href="./article_detail.html"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="#">タイトルがはいります。タイトルがはいります。タイトルがはいります。</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- // .article -->
+                </div><!-- // .article_box -->
+
+            </div><!-- // .article_list -->
+        </div><!-- // .tab_contents -->
+
+        <div class="blog_pager">
+            <div class="cell--left">
+                <a class="prev disable" href="#">前へ</a>
+            </div>
+            <div class="cell--center">
+                <ul>
+                    <li class="current"><span>01</span></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><span>…</span></li>
+                    <li><a href="#">105</a></li>
+                </ul>
+            </div>
+            <div class="cell--right">
+                <a class="next" href="#">次へ</a>
+            </div>
+        </div>
+
+		<a class="link_back link_back--bottom" href="./blog_index.html">ブログ一覧ページ</a>
+
+	</div><!-- // blog_wrap -->
+</div><!-- // .contents -->
+
+<footer class="footer_bottom">
+	<div class="nav_main">
+        <ul>
+            <li class="top"><a href="./"><span>トップページ</a></span></li>
+            <li class="app_download"><a href="./app_download.html"><span>ダウンロード方法</a></span></li>
+            <li class="guide"><a href="./guide.html"><span>遊び方・料金説明</a></span></li>
+            <li class="faq"><a href="http://faqs.jp/?site_domain=macherie" target="_blank"><span>FAQ・よくある質問</a></span></li>
+            <li class="cs_support"><a href="./cs_support.html"><span>お問い合わせ</a></span></li>
+        </ul>
+    </div>
+    <div class="nav_sub">
+		<ul>
+        	<li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特定商取引法に基づく表記</a></li>
+            <li><a href="#">利用規約</a></li>
+        </ul>
+    </div>
+    <small class="copyright">&copy;MACHERIE</small>
+</footer>
+
+<article>
+	<section id="menu_close_area">
+		<ul class="menu_close_button"><a class="menu_close_box_bg_a" id="simple-menu-close" href="#sidr"><li class="menu_close_box_bg"></li></a></ul>
+	</section>
+</article>
+<a id="scroll_top" href="#header"><img src="image/icon/btn_pagetop.png" /></a>
+</div><!-- // #main -->
+
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/jquery.biggerlink.js"></script>
+<script src="js/common.js"></script>
+<script src="js/blog.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.b_link').biggerlink();
+});
+</script>
+</body>
+</html>

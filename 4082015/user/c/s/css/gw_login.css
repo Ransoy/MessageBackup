@@ -1,0 +1,174 @@
+
+#gw_login {
+    background-color: #282828;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+}
+
+#gw_login ul{
+	list-style: none;
+}
+
+#gw_login li{
+	float: left;
+	width: 110px;
+	height: 34px;
+	padding: 0;
+	margin: 5px 0 0 5px;
+	overflow:hidden;
+}
+/*
+#gw_login li.regist{
+	width: 110px;
+}*/
+
+
+#gw_login li.gw_other_login{
+	width: 275px;
+	height: 34px;
+	background-image: url(http://www.macherie.tv/images/gw_2014/gw_other_login.jpg);
+	background-position: 0 -1px;
+	padding: 0;
+}
+
+/*
+#gw_login li.pafo{
+	width: 90px;
+}*/
+
+
+#gw_login li img:hover{
+	margin-top: -34px;
+}
+
+#gw_login li li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin: 2px 2px 0 2px !important;
+	padding: 1px 0 0 0;
+	overflow:hidden;
+}
+
+#gw_login li li:first-child{
+	margin: 2px 2px 0 70px !important;
+}
+
+#gw_login li li img:hover{
+	margin-top: -30px;
+}
+
+
+/*ログイン後の会員情報 2014-05-26 追加*/
+
+#after_login {
+    background-color: #fff;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    font-family: 'メイリオ',Meiryo;
+}
+
+#after_login span{
+	height: 34px !important;
+	display: inline-block;
+	padding:10px 0 0 22px;
+	margin: 5px;
+	line-height: 16px;
+}
+
+#after_login a{
+	color: #000;
+	text-decoration: underline;
+}
+
+#after_login a:hover{
+	text-decoration: none;
+}
+
+.al_member{
+	background-image: url("http://www.macherie.tv/images/gw_2014/icon_member.png");
+}
+
+.al_mail{
+	background-image: url("http://www.macherie.tv/images/gw_2014/icon_mail.png");
+}
+
+.al_point{
+	background-image: url("http://www.macherie.tv/images/gw_2014/icon_point.png");
+}
+
+.al_point_buy{
+	background-image: url("http://www.macherie.tv/images/gw_2014/icon_point_buy.png");
+}
+
+.al_member,
+.al_mail,
+.al_point,
+.al_point_buy{
+	background-position: left 5px;
+	background-repeat: no-repeat;
+	list-style: none;
+}
+
+#after_login  form,
+#after_login  input{
+	width:40px !important;
+}
+
+#after_login .logout{
+	float: right;
+	width: 40px;
+	padding: 16px 0 0;
+}
+
+/*ログイン後の会員情報 2014-06-04 さらに追加*/
+
+#after_info {
+    background-color: #fff;
+    height: 34px;
+    margin: -5px 0 0;
+    padding: 0;
+    font-family: 'メイリオ',Meiryo;
+}
+
+#after_info a{
+	height: 24px !important;
+	display: inline-block;
+	padding:5px 0 0 22px;
+	background-position: 2px 5px;
+	background-repeat: no-repeat;
+	margin: 0 5px 5px;
+	line-height: 16px;
+	color: #000;
+	text-decoration: underline;
+}
+
+#after_info a:hover{
+	text-decoration: none;
+}
+
+.ai_mail_add{
+	background-image: url("http://www.macherie.tv/c/m/images/renewimages/left_logout_oshirase_01.jpg");
+}
+
+.ai_free_point{
+	background-image: url("http://www.macherie.tv/c/m/images/renewimages/left_logout_star_01.jpg");
+}
+
+/*clearfix*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}

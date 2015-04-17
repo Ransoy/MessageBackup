@@ -1,0 +1,345 @@
+
+/***************
+* normal main
+******************************/
+
+#big-menu {
+	width: 966px;
+	height: 38px;
+	margin: 8px auto;
+	padding: 0;
+}
+
+#big-menu:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#big-menu ul {
+}
+
+#big-menu li {
+	list-style: none;
+	float: left;
+}
+
+#big-menu li#screen-area-b {
+	background-image: url(/chat/images2/screen_menu_s.gif);
+	background-repeat: no-repeat;
+	width: 126px;
+	height: 38px;
+}
+
+#screen-b-size {
+	float: right;
+	width: 85px;
+	height: 38px;
+}
+
+#screen-b-size:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#screen-b-size ul {
+
+}
+
+#screen-b-size li {
+	float: left;
+	margin-right: 4px;
+	padding-top: 8px;
+}
+
+
+#big-menu li#font-area {
+	background-image: url(/chat/images2/letter_menu_s.gif);
+	background-repeat: no-repeat;
+	width: 126px;
+	height: 38px;
+}
+
+#font-b-size {
+	float: right;
+	width: 85px;
+	height: 38px;
+}
+
+#font-b-size:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#font-b-size ul {
+
+}
+
+#font-b-size li {
+	float: left;
+	margin-right: 4px;
+	padding-top: 8px;
+}
+
+
+
+
+#big-main-screen {
+	width: 966px;
+	height: 538px;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url(/chat/images2/red_big_back.gif);
+	background-repeat: no-repeat;
+}
+
+#big-main-screen-w {
+	width: 936px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+#big-main-screen-w:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#big-flash-screen {
+	width: 792px;
+	height: 506px;
+	float: left;
+	position: relative;
+}
+
+#big-right-area {
+	width: 132px;
+	float: right;
+}
+
+
+
+#big-right-prof {
+	width: 132px;
+	height: 262px;
+	background-image: url(/chat/images2/big_prof_back.gif);
+	background-repeat: no-repeat;
+}
+
+#right-prof-area {
+	width: 110px;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: left;
+}
+
+#right-prof-a {
+	text-align: center;
+}
+
+#right-prof-a img {
+	border: 1px solid #000000;
+}
+
+#right-prof-b {
+	text-align: center;
+}
+
+#right-prof-c {
+
+}
+
+#right-prof-d {
+
+}
+
+#right-prof-e {
+
+}
+
+#right-prof-c img,
+#right-prof-d img,
+#right-prof-e img {
+	vertical-align: middle;
+}
+
+#right-prof-f {
+	padding-top: 3px;
+}
+
+#right-prof-g {
+
+}
+
+#right-prof-h {
+
+}
+
+#right-prof-i {
+
+}
+
+#right-prof-f .r-f,
+#right-prof-g .r-f,
+#right-prof-h .r-f,
+#right-prof-i .r-f {
+	color: #b43232;
+}
+
+#right-prof-j {
+	font-size: 11px;
+	text-align: right;
+	padding-top: 3px;
+}
+
+
+#big-bottom-info-tbl {
+	clear: both;
+	margin-top: 10px;
+	width: 132px;
+	height: 234px;
+	background-image: url(/chat/images2/big_baner_back.gif);
+	background-repeat: no-repeat;
+}
+
+#big-bottom-info-bnr {
+	width: 122px;
+	margin: 0 auto;
+	padding-top: 13px;
+}
+
+#big-bottom-info-bnr-l {
+	
+}
+
+#big-bottom-info-bnr-r {
+	clear: both;
+	padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#big-bottom-area {
+	width: 936px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#big-bottom-area:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#big-bottom-prof {
+	float: left;
+	width: 480px;
+}
+
+#big-bottom-prof h3 {
+	width: 480px;
+}
+
+#big-bottom-prof-tbl {
+	width: 480px;
+	height: 204px;
+	background-image: url(/chat/images2/profile_main.gif);
+	background-repeat: no-repeat;
+}
+
+#big-prof-detail {
+	width: 440px;
+	margin: 0 auto;
+	padding: 7px 0 0 0;
+	text-align: left;
+}
+
+#big-prof-detail:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#big-prof-detail-l {
+	width: 220px;
+	float: left;
+}
+
+#big-prof-detail-r {
+	width: 220px;
+	float: right;
+}
+
+#big-prof-detail ul {
+
+}
+
+#big-prof-detail li {
+
+}
+
+#big-prof-detail .f-r {
+	color: #b43232;
+}
+
+
+
+
+#big-bottom-comment {
+	float: left;
+	width: 308px;
+	margin-left: 13px;
+}
+
+#big-bottom-comment h3 {
+
+}
+
+#big-bottom-comment-tbl {
+	width: 308px;
+	height: 204px;
+	background-image: url(/chat/images2/comment_main.gif);
+	background-repeat: no-repeat;
+}
+
+#big-bottom-comment-tbl iframe {
+	width: 308px;
+	height: 204px;
+	margin: 0;
+}
+
+#event_disp_img{
+	position:absolute;
+	top:-23px;
+	left: 1px;
+	width:148px;
+	height:23px;
+	z-index:1;
+}
+
+
+#big-bottom_area {
+	width: 966px;
+}

@@ -1,0 +1,612 @@
+@charset "Shift_JIS";
+
+/* Layout
+----------------------------------------------*/
+#wrapper
+{
+	width:980px;
+	margin:0 auto;
+	border:1px solid #efefef;
+}
+#Header
+{
+	background:url(../img/compornent.png) 0 0 no-repeat;
+	height:97px;
+	position:relative;
+	z-index:40;
+}
+#Contens
+{
+	padding:10px;
+	text-align:left;
+	z-index:0;
+}
+#MainBlock
+{
+	width:710px;
+	float:right;
+}
+#UtilitiesBlock
+{
+	width:240px;
+	float:left;
+	text-align:left;
+}
+#Footer
+{
+	/*
+	background:url(../img/compornent.png) 0 -471px no-repeat;
+	height:300px;
+	*/
+}
+#Footer .sitemap01
+{
+	float: left;
+	width: 20%;
+	text-align:left;
+}
+#Footer .sitemap02
+{
+	float: left;
+	width: 16%;
+	text-align:left;
+}
+#Footer .sitemap03
+{
+	float: left;
+	width: 18%;
+	text-align:left;
+}
+#Footer .sitemap04
+{
+	float: left;
+	width: 26%;
+	text-align:left;
+}
+#Footer .sitemap05
+{
+	margin-left: 80%;
+	text-align:left;
+}
+#Footer address
+{
+	font-size:10px;
+	font-style:normal;
+	text-align:right;
+	line-height:29px;
+	padding-right:10px;
+}
+#logoutArea
+{
+	padding:0;
+}
+/* cmnSection
+----------------------------------------------*/
+.cmnSection
+{
+	margin-bottom:15px;
+}
+.banner
+{
+	padding:4px;
+}
+
+/* MainBlock
+----------------------------------------------*/
+#MainBlock .cmnSection
+{
+	border:1px solid #ccc;
+}
+#MainBlock .cmnSection h2,
+#multipleInformation ul
+{
+	background:url(../img/compornent.png) -270px -346px no-repeat;
+	border-bottom:1px solid #ccc;
+	padding-top:2px;
+	line-height:24px;
+	text-indent:8px;
+	padding-right:10px;
+	font-size:12px;
+}
+#MainBlock .cmnSection h2 span.title
+{
+	float:left;
+}
+
+#MainBlock .cmnSection h2 span.btn
+{
+	margin-top:3px;
+	width:48px;
+	height:16px;
+	overflow:hidden;
+	display:block;
+	text-indent:-9999px;
+	float:right;
+	cursor:pointer;
+}
+#MainBlock .cmnSection h2 span.btn_open
+{
+	margin-top:3px;
+	width:48px;
+	height:16px;
+	overflow:hidden;
+	display:block;
+	text-indent:-9999px;
+	float:right;
+	cursor:pointer;
+	background:url(../img/compornent.png) -240px -128px no-repeat;
+	display:none;
+}
+#MainBlock .cmnSection h2 span.btn_close
+{
+	margin-top:3px;
+	width:48px;
+	height:16px;
+	overflow:hidden;
+	display:block;
+	text-indent:-9999px;
+	float:right;
+	cursor:pointer;
+	background:url(../img/compornent.png) -288px -128px no-repeat;
+}
+#MainBlock .cmnSection h2 span#open_btn
+{
+	background:url(../img/compornent.png) -240px -128px no-repeat;
+	display:none;
+}
+#MainBlock .cmnSection h2 span#close_btn
+{
+	background:url(../img/compornent.png) -288px -128px no-repeat;
+
+}
+
+#MainBlock .cmnSection_bonus_t
+{
+	padding: 3px 3px 5px 3px;
+	text-align: center;
+	color: #333333;
+}
+
+#MainBlock .cmnSection_bonus_t2
+{
+	padding: 0px 20px 10px 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #333333;
+}
+
+#MainBlock .cmnSection_bonus_t3
+{
+	padding: 0px 20px 10px 20px;
+}
+
+#MainBlock .cmnSection_bonus_time
+{
+	border:1px solid #ccc;
+	width: 210px;
+}
+
+#MainBlock .cmnSection_bonus_time_l
+{
+	border-right:1px solid #ccc;
+	width: 80px;
+	text-align: center;
+	font-weight: bold;
+	color: #ff0f5a;
+	float:left;
+}
+
+#MainBlock .cmnSection_bonus_time_r
+{
+	text-align: center;
+	font-weight: bold;
+	color: #333333;
+	float:right;
+}
+
+/* header
+----------------------------------------------*/
+#Header h1
+{
+	width:150px;
+	padding-top:10px;
+	float:left;
+	padding-bottom:14px;
+}
+
+#Header h1 a
+{
+	margin:0 15px;
+	display:block;
+	text-indent:-9999px;
+	width:150px;
+	height:46px;
+	overflow:hidden;
+
+}
+#Header dl#welcome
+{
+	margin-top:20px;
+	float:right;
+}
+#Header dl#welcome dd,
+#Header dl#welcome dt
+{
+	float:left;
+	padding-right:6px;
+}
+#Header dl#welcome dd
+{
+	padding-right:15px;
+}
+#Header dl#welcome dd a
+{
+	display:block;
+	width:50px;
+	height:18px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:url(../img/compornent.png) -240px -144px no-repeat;
+}
+
+/* header Navigation
+----------------------------------------------*/
+#Header #Navigation
+{
+	padding:0 10px 0;
+	clear:both;
+	position:static;
+	z-index:99;
+}
+#Navigation dd
+{
+	width:120px;
+	text-align:center;
+	position:relative;
+	float:left;
+}
+#Navigation dd strong
+{
+	display:block;
+	width:120px;
+	height:27px;
+	cursor:pointer;
+	font-weight:normal;
+}
+
+#Navigation dd a
+{
+	display:block;
+	width:120px;
+	height:27px;
+	cursor:pointer;
+	text-decoration:none;
+	color:#000;
+}
+#Navigation dd ul.menuChild
+{
+	position:absolute;
+	top:27px;
+	left:0;
+	display:none;
+	z-index:99;
+	background:#efefef;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	padding:4px 0;
+}
+#Navigation dd ul#naviSetting{width:160px;}
+#Navigation dd ul#naviMailbox{width:140px;}
+#Navigation dd ul#naviPayment{width:150px;}
+#Navigation dd ul#naviWork{width:150px;}
+#Navigation dd ul#naviMobile{width:140px;}
+#Navigation dd ul#naviSupport{width:190px;}
+
+
+#Navigation dd ul.menuChild li
+{
+	margin:0 6px;
+	text-align:left;
+	line-height:24px;
+	padding:2px 0;
+}
+#Navigation dd ul.menuChild li a
+{
+	width:100%;
+	height:auto;
+	background:#ccc;
+	text-indent:4px;
+}
+#Navigation dd ul.menuChild li a:hover
+{
+	background:#69a52f;
+	color:#fff;
+}
+/* OntimeInformation
+----------------------------------------------*/
+#OntimeInformation
+{
+	background:url(../img/compornent.png) 0px -100px no-repeat;
+	height:134px;
+}
+#OntimeInformationShort
+{
+	background:url(../img/compornent.png) 0px -362px no-repeat;
+	height:81px;
+}
+#OntimeInformation ul
+{
+	padding:10px 10px 0 0;
+	text-align:right;
+	margin-bottom:18px;
+	color:red;
+}
+#OntimeInformation p,
+#OntimeInformationShort p
+{
+	line-height:1.6;
+	font-size:10px;
+	text-align:center;
+}
+#OntimeInformationShort p.top
+{
+	padding-top:10px;
+}
+
+#OntimeInformation p.result,
+#OntimeInformationShort p.result
+{
+	font-size:20px;
+}
+#OntimeInformation strong,
+#OntimeInformationShort strong
+{
+	color:red;
+}
+
+/* SubInformation
+----------------------------------------------*/
+#SubInformation,
+#MobileInformation
+{
+	background:url(../img/compornent.png) -240px -100px no-repeat;
+	font-size:10px;
+	line-height:30px;
+	height:28px;
+	overflow:hidden;
+}
+#MobileInformation
+{
+	background:url(../img/compornent.png) -740px -100px no-repeat;
+}
+
+#SubInformation ul li,
+#MobileInformation ul li
+{
+	float:left;
+	text-align:right;
+}
+#SubInformation ul li a,
+#MobileInformation ul li a
+{
+	padding-right:6px;
+	display:block;
+}
+
+#SubInformation ul li#NewMail
+{
+	width:118px;
+	background:url(../img/icon_set.gif) -18px -9px;
+}
+
+#SubInformation ul li#WaitingChat
+{
+	width:120px;
+	background:url(../img/icon_set.gif) -16px -49px;
+}
+
+#MobileInformation ul li#mobileMail
+{
+	width:120px;
+	background:url(../img/icon_set.gif) -19px -373px;
+}
+
+#SubInformation ul li a,
+#MobileInformation ul li a
+{
+	color:red;
+}
+/* LoginButtonBlock
+----------------------------------------------*/
+#LoginButtonBlock ul li
+{
+	margin-bottom:6px;
+}
+#LoginButtonBlock ul li a
+{
+	display:block;
+	height:60px;
+	width:240px;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+
+#LoginButtonBlock ul li#shot2Connection a{background:url(../img/compornent.png) 0px -502px no-repeat;}
+#LoginButtonBlock ul li#shot2Connection a:hover{background:url(../img/compornent.png) -240px -502px no-repeat;}
+#LoginButtonBlock ul li#partyConnection a{background:url(../img/compornent.png) 0px -572px no-repeat;}
+#LoginButtonBlock ul li#partyConnection a:hover{background:url(../img/compornent.png) -240px -572px no-repeat;}
+
+
+#LoginButtonBlock ul li#testConnection a
+{
+	width:240px;
+	height:24px;
+	float:right;
+}
+#LoginButtonBlock ul li#testConnection a{background:url(../img/compornent.png) -244px -210px no-repeat;}
+#LoginButtonBlock ul li#testConnection a:hover{background:url(../img/compornent.png) -244px -186px no-repeat;}
+
+#LoginButtonBlock ul li#event2shot a,
+#LoginButtonBlock ul li#eventParty a
+{
+	text-indent:0;
+	height:auto;
+}
+
+
+/* OperatorStats
+----------------------------------------------*/
+#OperatorStats
+{
+	border:1px solid #ccc;
+	background:#fefefe;
+	padding:8px;
+}
+#OperatorStats #gallery
+{
+	width:128px;
+	float:left;
+}
+/*
+#OperatorStats #gallery img
+{
+	width:120px;
+	border:2px solid #000;
+}
+#OperatorStats #gallery ul
+{
+	padding-top:4px;
+}
+#OperatorStats #gallery ul li
+{
+	margin-left:8px;
+	padding-left:17px;
+	background:url(../img/icon_set.gif) -22px -97px;
+}
+*/
+#OperatorStats dl
+{
+	width:92px;
+	float:right;
+}
+#OperatorStats dl dt
+{
+	margin-bottom:4px;
+}
+#OperatorStats dl dd span
+{
+	color:red;
+}
+#OperatorStats .buttonArea
+{
+	clear:both;
+	padding:6px 0 14px;
+}
+#OperatorStats .buttonArea li
+{
+	height:24px;
+}
+#OperatorStats .buttonArea .mailBox
+{
+	width:222px;
+	padding-bottom:6px;
+}
+#OperatorStats .buttonArea .chatHistory
+{
+	width:222px;
+}
+#OperatorStats .buttonArea li a
+{
+	width:102px;
+	height:24px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#OperatorStats #statsSetting li
+{
+	width:111px;
+	text-indent:16px;
+	margin-bottom:8px;
+	float:left;
+}
+
+#OperatorStats #statsSetting li.clientComment{background:url(../img/icon_set.gif) -23px -280px no-repeat;}
+#OperatorStats #statsSetting li.payment{background:url(../img/icon_set.gif) -24px -231px no-repeat;}
+#OperatorStats #statsSetting li.newMember{background:url(../img/icon_set.gif) -23px -142px no-repeat;}
+#OperatorStats #statsSetting li.memo{background:url(../img/icon_set.gif) -24px -187px no-repeat;}
+#OperatorStats #statsSetting li.target{background:url(../img/icon_set.gif) -24px -331px no-repeat;}
+
+/*	GirlsBlock
+----------------------------------------*/
+.gB{
+	margin:1px 0 0 1px;
+    position:relative;
+    width:125px;
+    height:144px;
+    overflow:hidden;
+    float:left;
+}
+.on{background: url(/c/images/common/g/onbg.gif) top left no-repeat;}
+.pon{background: url(/c/images/common/g/onbg.gif) top left no-repeat;}
+.ch{background: url(/c/images/common/g/2bg.gif) top left no-repeat;}
+.pc{background: url(/c/images/common/g/pbg.gif) top left no-repeat;}
+.off{background: url(/c/images/common/g/offbg.gif) top left no-repeat;}
+.tagP{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:120px;
+    height:27px;
+    overflow:hidden;
+    text-align:left;
+}
+.pic{
+    position:relative;
+    top:0px;
+    left:1px;
+    width:120px;
+    height:90px;
+    text-align:center;
+    overflow: hidden;
+    background:center center no-repeat;
+    float:left;
+}
+.name{
+    position:relative;
+    top:4px;
+    left:5px;
+    width:118px;
+    overflow: hidden;
+	text-align:left;
+	line-height:17px;
+}
+.mail{
+    position:relative;
+    top:-18px;
+    left:80px;
+    width:34px;
+    height:17px;
+    text-align:right;
+}
+
+.left_btn {
+    margin-bottom: 7px;
+}
+
+.notes_ive_sch {
+    text-align: left;
+	font-size: 9pt;
+	color: #555555;
+}
+
+
+
+
+
+
+
+
+
+

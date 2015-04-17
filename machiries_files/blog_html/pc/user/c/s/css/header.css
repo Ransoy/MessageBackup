@@ -1,0 +1,28 @@
+@charset "Shift_JIS";
+#header{
+	background:url(/c/s/images/header/bg.gif) #a2e3f5;
+	border-bottom:1px solid #fff;
+	height:55px;
+}
+#header h1{
+	float:left;
+	display:block;
+	background:url(/c/s/images/header/title.gif) no-repeat #a2e3f5;
+	width:622px;
+	height:55px;
+	text-indent:10px;
+	overflow:hidden;
+	border:0;
+	color:#b4b4b4;
+	font-size:10px;
+	font-weight:normal;
+
+}
+#header h1 a{
+	display:block;
+	width:170px;
+	height:45px;
+}
+#header input{
+	border:0;
+}

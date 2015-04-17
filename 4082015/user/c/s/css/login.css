@@ -1,0 +1,107 @@
+
+/****
+* ÉçÉOÉCÉì
+********************************/
+
+.login-area {
+	text-align: center;
+	width: 600px;
+	margin: 0 auto 0 auto;
+	line-height: 1.3em;
+	background-color: #ffffff;
+	padding-top: 10px;
+}
+
+.login-form-tbl {
+	width: 580px;
+	margin: 0 auto;
+	background-image: url(http://c.macherie.tv/c/m/images/table2/top_regist_form.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 7px;
+}
+
+.login-form-tbl h3 {
+	margin: 0 0 0 20px;
+	padding: 0;
+	text-align: left;
+	font-weight: bold;
+}
+
+.login-form-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/table2/middle_regist_form.gif);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 580px;
+}
+
+.login-form-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/table2/bottom_regist_form.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 15px;
+	width: 580px;
+}
+
+.login-form-tbl-disc {
+	width: 560px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.login-form-tbl-disc table {
+	width: 540px;
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+.login-form-tbl-disc th {
+	border-left: 5px solid #224fa0;
+	background: #4583c0;
+	color: #ffffff;
+	text-align: left;
+	padding: 5px 0 5px 5px;
+	width: 25%;
+}
+
+.login-form-tbl-disc td {
+	width: 75%;
+	text-align:left;
+	background: #d3dfef;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+.login-form-tbl-disc td input {
+	padding: 5px;
+}
+
+.login-form-tbl-disc td input:focus {
+	background-color: #ffccff;
+}
+
+.login-form-tbl-disc td input#user_id,
+.login-form-tbl-disc td input#password,
+.login-form-tbl-disc td input#mail {
+	padding: 5px;
+	width: 385px;
+}
+
+.login-caution {
+	
+}
+
+.login-btn {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.login-form-tbl-caution {
+	padding-top: 10px;
+}
+
+.login-form-tbl-caution a {
+	text-decoration: underline;
+}

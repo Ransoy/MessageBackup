@@ -1,0 +1,277 @@
+
+/****
+* よくある質問・お問い合わせフォーム
+********************************/
+
+#faq-temp {
+	width: 604px;
+	margin: 10px auto;
+	padding-bottom: 15px;
+	border: 1px solid #808080;
+	background-color: #ffffff;
+/*	background-image: url(/images/after/faq-bg.gif); */
+}
+
+#menu-sec {
+	width: 600px;
+	margin: 0 auto;
+}
+
+#menu-sec:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#menu-sec-faq {
+	float: left;
+}
+
+#menu-sec-inq {
+	float: right;
+}
+
+#menu_block {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	background-color: #00bee0;
+	width: 600px;
+	margin: 0 auto;
+	color: #ffffff;
+	line-height: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+#menu_sub{
+	line-height:2em;
+}
+#menu_block a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+
+
+.hot-faq-space {
+	margin-top: 18px;
+	margin: 0 auto;
+	width: 500px;
+}
+
+.hot-faq-disc {
+	text-align: left;
+	color: #666699;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.faq-area {
+	font-size: 14px;
+	line-height: 1.5em;
+	margin: 0 auto;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	width: 500px;
+	font-weight: normal;
+}
+
+.faq-area a {
+	cursor: pointer;
+	color: #003278;
+	text-decoration: underline;
+}
+
+.faq-title {
+	text-align: left;
+}
+
+.faq-title-bg {
+	text-align: left;
+	background-image: url(http://c.macherie.tv/c/m/images/support/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: left 60%;
+	padding-left: 20px;
+}
+
+.faq-title a,
+.faq-title-bg a {
+	color: #0000ff;
+}
+
+.faq-tbl-top {
+	background-image: url(http://c.macherie.tv/c/m/images/support/answer_top.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 12px;
+	width: 442px;
+	margin: 0;
+}
+
+.faq-tbl-mdl {
+	background-image: url(http://c.macherie.tv/c/m/images/support/answer_bg.gif);
+	background-repeat: repeat-y;
+	width: 442px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.faq-tbl-btm {
+	background-image: url(http://c.macherie.tv/c/m/images/support/answer_bottom.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 12px;
+	width: 442px;
+	margin: 0 auto;
+}
+
+.faq-tbl-disc {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.faq-answer {
+	font-family: Arial;
+	font-weight: bold;
+	color: #ff7f00;
+	border-bottom: 1px solid #FF7F00;
+	text-align: left;
+}
+
+.faq-detail {
+	color: #003278;
+	line-height: 1.5em;
+	font-size: 12px;
+	text-align: left;
+}
+
+
+.category-area {
+	font-size: 14px;
+	width: 520px;
+	margin: 18px auto 0 auto;
+}
+
+.cate-title {
+	font-weight: bold;
+	text-align: left;
+	color: #787878;
+	width: 520px;
+	border-bottom: 1px solid #787878;
+	padding-bottom: 3px;
+}
+
+
+
+
+.search_head {
+	padding: 5px;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.search_head p {
+	padding: 10px;
+	font-size: 12px;
+}
+
+.search_head div {
+	margin-left : 25px;
+	margin-right: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #f0f0f0;
+	font-size: 16px;
+}
+
+
+
+
+#support-tbl {
+	width: 578px;
+	margin: 0 auto;
+}
+
+#support-tbl-title {
+	background-image: url(http://c.macherie.tv/c/m/images/support/tag_bg.gif);
+	background-repeat: no-repeat;
+	width: 578px;
+	height: 41px;
+	margin-top: 10px;
+}
+
+#support-tbl-title h3 {
+	text-align: left;
+	font-size: 16px;
+	padding-left: 35px;
+	padding-top: 12px;
+	font-weight: bold;
+}
+
+#support-form {
+	width: 550px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+#support-form table {
+	font-size: 12px;
+}
+
+#support-form th {
+	border-bottom: 2px solid #ffffff;
+	padding: 12px;
+	background-color: #E1E1E1;
+	background-image: url(http://c.macherie.tv/c/m/images/support/formaccent.gif);
+	background-repeat: repeat-y;
+	font-weight: bold;
+	width: 200px;
+	text-align: left;
+	color: #000000;
+}
+
+#support-form th .font-r {
+	color: #ff0000;
+}
+
+#support-form td {
+	background-color: white;
+	width: 420px;
+	text-align: left;
+	padding: 12px;
+}
+
+#support-form textarea {
+	height: 10em;
+	margin: 10px 0 0;
+	width: 220px;
+}
+
+#support-form-btn button {
+	border:0;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+
+
+/****
+* フォント
+********************************/
+
+.font-dp {
+	color: #ff0077;
+}
+
+.font-ab {
+	color: #0055ff;
+}
+
+a.font-ab {
+	color: #0055ff;
+}

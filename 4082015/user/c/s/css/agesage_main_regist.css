@@ -1,0 +1,251 @@
+
+/****
+* main
+********************************/
+
+#main{
+	width: 600px;
+	text-align: left;
+	margin: 0 auto;
+	background-color: #ffffff;
+	float: right;
+}
+
+#title_regist{
+	width: 600px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.step_1_2{
+	width: 600px;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.form_and_rakuten{
+	width: 600px;
+	height: 14px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.left_form_top{
+	width: 300px;
+	text-align: left;
+	margin: 0 auto;
+	float: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 10pt;
+	color: #FF691F;
+}
+
+.left_form_text{
+	width: 300px;
+	text-align: left;
+	margin: 0 auto;
+	position: relative;
+}
+
+.left_form_text_contents{
+	width: 300px;
+	text-align: left;
+	margin: 0 auto;
+	position: absolute;
+	top: 5px;
+}
+
+.right_form_top{
+	width: 270px;
+	height: 60px;
+	text-align: left;
+	margin: 0 auto;
+	float: right;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 9pt;
+	background-image: url(/c/m/images/renewimages/rakuten_haikei01.png);
+}
+
+.right_form_text{
+	width: 270px;
+	text-align: left;
+	margin: 0 auto;
+	position: relative;
+}
+
+.right_form_text_contents{
+	width: 255px;
+	text-align: right;
+	margin: 0 auto;
+	position: absolute;
+	top: 4px;
+	left: 9px;
+}
+
+/****
+* form
+********************************/
+
+#form_mail_pass_nick-top {
+	width: 600px;
+	height: 100%;
+	margin-top: 8px;
+	background-image: url(/c/m/images/renewimages/haikei_top02_agesage.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 5px;
+}
+
+#form_mail_pass_nick-mdl {
+	background-image: url(/c/m/images/renewimages/renew_form_back_mid_agesage.jpg);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 600px;
+	height: 100%;
+}
+
+#form_mail_pass_nick-btm {
+	background-image: url(/c/m/images/renewimages/renew_form_back_bot_agesage.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 0px;
+	width: 600px;
+	height: 100%;
+}
+
+#terms_of_service-top {
+	width: 600px;
+	height: 100%;
+	margin-top: 8px;
+	background-image: url(/c/m/images/renewimages/tos_top.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 5px;
+}
+
+#terms_of_service-mdl {
+	background-image: url(/c/m/images/renewimages/tos_mid.jpg);
+	background-repeat: repeat-y;
+	margin: 0 auto;
+	width: 600px;
+	height: 100%;
+}
+
+#terms_of_service-btm {
+	background-image: url(/c/m/images/renewimages/tos_bot.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0;
+	padding-bottom: 0px;
+	width: 600px;
+	height: 100%;
+}
+
+#terms_of_service {
+	width: 585px;
+	height: 430px;
+	margin: 8px;
+	padding: 0;
+}
+
+.terms_of_service-text_top {
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.terms_of_service-textarea {
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+#iframe_tos {
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#iframe_tos-contents {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50px;
+	left: 12px;
+}
+
+.verisign {
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.verisign-text {
+	width: 418px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 320px;
+	left: 7px;
+}
+
+.verisign-img {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 330px;
+	right: 12px;
+}
+
+
+
+#attention{
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size: 9pt;
+	color: red;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

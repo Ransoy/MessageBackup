@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shift-JIS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat">
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。">
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/html5reset.css" />
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/message.css" />
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/font-awesome.min.css" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<body>
+<div class="page_wrap page_wrap--message">
+	%header%
+	<div class="pagebody cf">
+		<div class="pagebody_inner">
+
+            <!--<div class="page_ttl_area cf">
+                <h2 class="page_ttl">マイブログ一覧</h2>
+            </div>-->
+
+            <div class="message_header message_header--inbox">
+                <div class="col_left">
+                </div>
+                <div class="col_center">
+                    <h3 class="icon icon--block_list">拒否リスト</h3>
+                </div>
+                <div class="col_right">
+                    <a href="#" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+                </div>
+                <div class="panel_menu" id="panel_menu">
+                    <ul>
+                        <li><a class="btn_message_list" href="./inbox.php">メールBOX</a></li>
+                        <li><a class="btn_contact_list" href="./contact_list.php">連絡先</a></li>
+                        <li><a class="btn_block_list" href="./block_list_edit.php">拒否リスト</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- old version link -->
+            <!--<a class="link_old_mailbox" href="#">旧メールボックスへ ></a>-->
+            <!-- old version link -->
+
+            <div class="message_list message_list--edit contact_list cf">
+                <form class="message_list_form" action="" method="post">
+                    <!-- tmpl:ifdef %result% -->				
+                    <div class="ui_msg_area ui_msg_area--not_exist">
+                        <p class="msg">受信拒否設定のユーザーがいません。</p>
+                    </div>
+                    <!-- tmpl:endif --> 
+                    <!-- tmpl:loop %all_set% -->
+                    <div class="message_list_item">
+                        <div class="message_inner">
+                            <div class="col_left">
+                                <label><input type="checkbox"  name="contact_ids[]" value="%contactId%:%performerId%"></label>
+                            </div>
+                            <div class="thumb">
+                                <img src="/img/spacer.gif" style="background-image: url('/imgs/member/320x240/%image%')" />
+                            </div>
+                            <div class="message_data">
+                                <p class="user_name">%name%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tmpl:endloop -->
+    			</form> 
+            </div><!-- // .message_list -->
+
+            <div class="btn_wrap btn_wrap--center btn_wrap--padding cf">
+                <ul>
+                    <li><a href="javascript:void(0);" class="btn btn--max btn--bg_gray_deep disable" id="exe_cancel_block_list">拒否解除する</a></li>
+                </ul>
+            </div>
+
+            <div class="message_pager">
+            	<!-- tmpl:ifdef %prev-href% -->
+            	<div class="cell--left">
+            		<a class='prev %prev-disable%' href='block_list_edit.php?page=%prev-href%'>前へ</a>
+            	</div>
+            	<!-- tmpl:endif -->
+            			<!-- tmpl:ifdef %nav% -->
+            				%nav%
+            			<!-- tmpl:endif -->
+            	<!-- tmpl:ifdef %next-href% -->
+    			<div class="cell--right">
+            		<a class='next %next-disable%' href='block_list_edit.php?page=%next-href%'>次へ</a>
+            	</div>
+            	<!-- tmpl:endif -->
+            </div>
+
+		</div><!-- // .pagebody_inner -->
+	</div><!-- // .pagebody -->
+	%footer%
+</div><!-- ./page_wrap -->
+
+<script type="text/javascript" src="/sp/performer/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/sp/performer/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" src="/sp/performer/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="/sp/performer/js/jquery.biggerlink.js"></script>
+<script type="text/javascript" src="/sp/performer/js/message.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.b_link').biggerlink();
+	
+	// notice dropdown list
+	$('.dropdown_trigger').on('click', function(e){
+		e.preventDefault();
+		var dropdown_list = $('#' + $(this).attr('data-target'));
+		if(dropdown_list.is(':visible')){
+			dropdown_list.slideUp(200);
+		}else{
+			dropdown_list.slideDown(200);
+		}
+	});
+});
+</script>
+</body>
+</html>

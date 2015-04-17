@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>スマホでライブチャットマシェリ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="css/jquery.sidr.dark.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/menu_open.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/margin.css">
+<link rel="stylesheet" href="css/message.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script src="js/jquery-1.11.0.js"></script>
+</head>
+
+<body class="bd_message bd_message_detail">
+<div id="main">
+<header id="header" class="cf">
+	<h1 id="header_logo"><a href="./"><img src="image/header_logo.png" class="hmenu"></a></h1>
+	<div id="icon_login"><a id="simple-menu" href="#sidr"><img src="image/icon/login_off.png" class="h_menu"></a></div>
+</header>
+
+<!-- 右サイドメニュー開く -->
+<div id="sidr">
+	<header id="login">
+		<h2>ログイン</h2>
+	</header>
+
+	<section id="normal_login">
+
+		<form action="" method="POST">
+			<input type="text" name="id" value="" placeholder="ID" autofocus >
+		</form>
+
+		<form action="" method="POST">
+			<input type="text" name="pass" value="" placeholder="パスワード" autofocus >
+		</form>
+
+		<p class="cheack_area">
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox">次回から入力を省略</lable>
+		</p>
+
+		<div id="login_button_area">
+
+			<ul class="button">
+				<li class="login_box">
+					<a href="login.html">ログイン</a>
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="regist_box">
+					<a href="registrationfree.html">新規無料登録はこちら</a>
+				</li>
+			</ul>
+		</div>
+
+		<p class="login_text_link"><a href="resend_renew.html">>パスワードを忘れた方</a></p>
+
+	</section>
+
+	<section id="foreign_login">
+
+		<h3>他サービスのIDを利用してログイン</h3>
+
+		<div id="login_button_area">
+
+			<ul class="button">
+				<li class="yahoo_box">
+					<a href="open_yahoo.html">Yahoo!</a>
+					<img src="image/icon/foreign_yahoo.png">	
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="rakuten_box">
+					<a href="open_rakuten.html">楽天</a>
+					<img src="image/icon/foreign_rakuten.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="google_box">
+					<a href="open_google.html">Google</a>
+					<img src="image/icon/foreign_google.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="twitter_box">
+					<a href="open_twitter.html">Twitter</a>
+					<img src="image/icon/foreign_twitter.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="facebook_box">
+					<a href="open_facebook.html">Facebook</a>
+					<img src="image/icon/foreign_facebook.png">
+				</li>
+			</ul>
+
+		</div>
+
+	</section>
+
+	<footer>
+		<p><small>&copy; MACHERIE</small></p>
+	</footer>
+
+</div>
+<!-- 右サイドメニュー閉める -->
+
+<div class="contents">
+    <div class="message_wrap cf">
+
+        <!--<div class="box_inner">
+            <div class="ttl_area cf">
+                <h2 class="ttl_top">メッセージ詳細</h2>
+            </div>
+		</div>-->
+
+		<div class="message_header message_header--detail">
+			<div class="col_left">
+				<a class="btn_back" href="./message_inbox.html"><i class="fa fa-angle-left"></i></a>
+			</div>
+			<div class="col_center">
+				<h3>{パフォーマー名}</h3>
+			</div>
+			<div class="col_right">
+                <a href="#" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+			</div>
+			<div class="panel_menu" id="panel_menu">
+				<ul>
+					<li><a class="btn_favorite" href="#">お気に入り</a></li>
+					<li><a class="btn_profile" href="#">プロフィール</a></li>
+					<li><a class="btn_block" href="#">拒否</a></li>
+				</ul>
+			</div>
+		</div>
+
+        <div class="message_detail_area cf" id="message_detail_area">
+            <a class="btn_more" href="#">もっと見る</a>
+
+            <div class="postdate_box">
+                <span class="postdate">10/10 (金)</span>
+            </div>
+
+            <div class="cf message_detail_item message_detail_item--left">
+                    <div class="thumb">
+                        <img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" />
+                    </div>
+                    <div class="bubble">
+                        <p class="desc">ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。</p>
+                        
+                    </div>
+                    <span class="posttime">21:28</span>
+            </div>
+
+            <div class="cf message_detail_item message_detail_item--right">
+                    <div class="bubble">
+                        <p class="desc">ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。</p>
+                    </div>
+                    <span class="posttime">21:28</span>
+            </div>
+
+            <div class="cf message_detail_item message_detail_item--right">
+                    <div class="bubble">
+                        <p class="desc">ここにメッセージが入ります。ここにメッセージが入ります。</p>
+                    </div>
+                    <span class="posttime">21:28</span>
+            </div>
+
+            <div class="cf message_detail_item message_detail_item--left">
+                    <div class="thumb">
+                        <img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" />
+                    </div>
+                    <div class="bubble">
+                        <p class="desc"><img class="resized" src="./image/message/upload/sample_2.jpg" /></p>
+                    </div>
+                    <span class="posttime">21:28</span>
+            </div>
+
+            <div class="cf message_detail_item message_detail_item--right">
+                    <div class="bubble">
+                        <p class="desc"><img class="resized" src="./image/message/upload/sample_1.jpg" /></p>
+                    </div>
+                    <span class="posttime">21:28</span>
+            </div>
+
+            <div class="postdate_box">
+                <span class="postdate">10/10 (金)</span>
+            </div>
+
+            <div class="cf message_detail_item message_detail_item--left">
+                    <div class="thumb">
+                        <img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" />
+                    </div>
+                    <div class="bubble">
+                        <p class="desc">ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。</p>
+                    </div>
+                    <span class="posttime">21:28</span>
+            </div>
+
+            <div class="cf message_detail_item message_detail_item--left">
+                    <div class="thumb">
+                        <img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" />
+                    </div>
+                    <div class="bubble">
+                        <p class="desc">ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。</p>
+                        
+                    </div>
+                    <span class="posttime">21:28</span>
+            </div>
+
+            <div class="cf message_detail_item message_detail_item--right">
+                    <div class="bubble">
+                        <p class="desc">ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。ここにメッセージが入ります。</p>
+                    </div>
+                    <span class="posttime">21:28</span>
+            </div>
+
+            <div class="cf message_detail_item message_detail_item--right">
+                    <div class="bubble">
+                        <p class="desc">ここにメッセージが入ります。ここにメッセージが入ります。</p>
+                    </div>
+                    <span class="posttime">21:28</span>
+            </div>
+
+        </div><!-- // .message_detail_area -->
+
+        <div class="message_footer">
+            <div class="message_input_area">
+
+                <!-- ▼送信できない条件の場合 -->
+                <div class="notice_msg">
+                    <p>相手側の都合により、メール送信できません。</p>
+                    <p>ポイントが足りません。ポイントを購入しますか？<a class="link_purchase" href="#">ポイントを購入＞</a></p>
+                </div>
+                <!-- ▲送信できない条件の場合 -->
+
+                <div class="col_left">
+                    <span class="btn_attach btn_attach--emoji" id="btn_emoji"></span>
+                    <span class="btn_attach btn_attach--photo" id="btn_photo"></span>
+                </div>
+                <div class="col_center">
+
+                    <!-- ▼送信できない条件の場合 -->
+                    <!--<textarea id="message_textarea" disabled></textarea>-->
+                    <!-- ▲送信できない条件の場合 -->
+
+                    <!-- ▼送信できる条件の場合 -->
+                    <textarea id="message_textarea" placeholder="メッセージを入力..."></textarea>
+                    <!-- ▲送信できる条件の場合 -->
+
+                </div>
+                <div class="col_right">
+
+                    <!-- ▼送信できない条件の場合 -->
+                    <!--<input type="submit" class="ui_btn ui_btn--small btn_submit_message" id="btn_submit_message" value="送信" disabled="disabled" />-->
+                    <!-- ▲送信できない条件の場合 -->
+
+                    <!-- ▼送信できる条件の場合 -->
+                    <input type="submit" class="ui_btn ui_btn--small btn_submit_message" id="btn_submit_message" value="送信" />
+                    <!-- ▲送信できる条件の場合 -->
+
+                </div>
+            </div><!-- // .message_input_area -->
+
+			<!-- photo panel -->
+			<div class="photo_panel" id="photo_panel">
+                <div class="ui_btn_wrap ui_btn_wrap--half cf">
+                    <ul>
+                        <li><a class="ui_btn ui_btn--max" href="#">ファイルを選択</a></li>
+                        <li><a class="ui_btn ui_btn--max" href="#">撮影する</a></li>
+                    </ul>
+                </div>
+			</div>
+			<!-- // photo panel -->
+
+			<!-- emoji panel -->
+            <div class="emoji_panel" id="emoji_panel">
+                <div class="emoji_tab_menu cf">
+                    <ul>
+                        <li class="on" data-target="emoji_tab_1"><a href="#">マーク</a></li>
+                        <li data-target="emoji_tab_2"><a href="#">表情<br>動物</a></li>
+                        <li data-target="emoji_tab_3"><a href="#">食べ物<br>乗り物</a></li>
+                        <li data-target="emoji_tab_4"><a href="#">天気<br>季節</a></li>
+                        <li data-target="emoji_tab_5"><a href="#">その他</a></li>
+                    </ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_1">
+                    <ul>
+                        <li><a href="#"><img src="./image/emoji/001.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/002.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/003.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/004.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/005.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/006.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/007.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/008.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/009.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/010.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/011.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/012.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/013.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/014.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/015.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/016.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/017.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/018.gif" /></a></li>
+                    </ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_2">
+                    <ul>
+                        <li><a href="#"><img src="./image/emoji/019.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/020.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/021.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/022.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/023.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/024.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/025.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/026.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/027.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/028.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/029.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/030.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/031.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/032.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/033.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/034.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/035.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/036.gif" /></a></li>
+    
+                        <li><a href="#"><img src="./image/emoji/037.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/038.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/039.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/040.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/041.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/042.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/043.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/044.gif" /></a></li>
+                    </ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_3">
+                    <ul>
+                        <li><a href="#"><img src="./image/emoji/045.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/046.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/047.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/048.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/049.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/050.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/051.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/052.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/053.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/054.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/055.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/056.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/057.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/058.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/059.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/060.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/061.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/062.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/063.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/064.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/065.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/066.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/067.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/068.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/069.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/070.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/071.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/072.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/073.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/074.gif" /></a></li>
+                    </ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_4">
+                    <ul>
+                        <li><a href="#"><img src="./image/emoji/075.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/076.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/077.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/078.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/079.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/080.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/081.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/082.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/083.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/084.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/085.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/086.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/087.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/088.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/089.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/090.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/091.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/092.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/093.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/094.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/095.gif" /></a></li>
+                    </ul>
+                </div>
+                <div class="emoji_tab cf" id="emoji_tab_5">
+                    <ul>
+                        <li><a href="#"><img src="./image/emoji/096.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/097.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/098.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/099.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/100.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/101.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/102.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/103.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/104.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/105.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/106.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/107.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/108.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/109.gif" /></a></li>
+                        <li><a href="#"><img src="./image/emoji/110.gif" /></a></li>
+                    </ul>
+                </div>
+            </div><!-- // .emoji_panel -->
+
+		</div><!-- // .message_footer -->
+
+
+
+
+	</div><!-- // message_wrap -->
+</div><!-- // .contents -->
+
+<footer class="footer_bottom">
+	<div class="nav_main">
+        <ul>
+            <li class="top"><a href="./"><span>トップページ</a></span></li>
+            <li class="app_download"><a href="./app_download.html"><span>ダウンロード方法</a></span></li>
+            <li class="guide"><a href="./guide.html"><span>遊び方・料金説明</a></span></li>
+            <li class="faq"><a href="http://faqs.jp/?site_domain=macherie" target="_blank"><span>FAQ・よくある質問</a></span></li>
+            <li class="cs_support"><a href="./cs_support.html"><span>お問い合わせ</a></span></li>
+        </ul>
+    </div>
+    <div class="nav_sub">
+		<ul>
+        	<li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特定商取引法に基づく表記</a></li>
+            <li><a href="#">利用規約</a></li>
+        </ul>
+    </div>
+    <small class="copyright">&copy;MACHERIE</small>
+</footer>
+
+<article>
+	<section id="menu_close_area">
+		<ul class="menu_close_button"><a class="menu_close_box_bg_a" id="simple-menu-close" href="#sidr"><li class="menu_close_box_bg"></li></a></ul>
+	</section>
+</article>
+<!--<a id="scroll_top" href="#header"><img src="image/icon/btn_pagetop.png" /></a>-->
+</div><!-- // #main -->
+
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/jquery.biggerlink.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/message.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.b_link').biggerlink();
+
+	$('#message_textarea').on('input', function(e){
+		if($(this).val().indexOf("\n") > 0 || $(this).val().indexOf("\r") > 0 || $(this).val().indexOf("\r\n") > 0){
+			$(this).animate({ 'height': '4rem' }, 200);
+		}else{
+			$(this).animate({ 'height': '2.5rem' }, 200);
+		}
+	});
+
+	// reset message detail area
+	function msgAreaReset(){
+		var msg_area = $('#message_detail_area');
+		var scroll_h = msg_area.get(0).scrollHeight;
+		var win_h = $(window).height();
+
+		if(scroll_h > win_h){
+			$('html, body').scrollTop(scroll_h);
+		}
+	}
+	
+	// init message detail area
+	setTimeout(function(){
+		msgAreaReset();
+	}, 100);
+});
+</script>
+</body>
+</html>

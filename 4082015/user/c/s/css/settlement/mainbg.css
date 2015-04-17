@@ -1,0 +1,46 @@
+
+/****
+* ゴールド会員とは？
+********************************/
+
+#card-disc_fin_top {
+	width: 714px;
+	margin: 0px auto;
+	letter-spacing: 1px;
+	line-height: 2.2em;
+}
+
+.card-disc_fin_bg_mid {
+	width: 714px;
+	padding:0px 0px 0px 0px; /* 余白指定*/
+	background:url(http://www.macherie.tv/settlement/images/gold/mainbg_fin_mid.gif) repeat-y left top;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.card-disc_fin_bg_bot {
+	width: 714px;
+	height:23px;/* 下部画像の高さ*/
+	background:url(http://www.macherie.tv/settlement/images/gold/mainbg_fin_bot.gif) no-repeat left bottom;
+	font-size:1px;/* 文字サイズ拡大時の崩れ回避 */
+	line-height:1px;
+	margin: 0 auto 0px;
+	text-align: center;
+}
+
+.card-disc-fin_titleimg {
+	text-align: left;
+	padding-left: 35px;
+	padding-right: 35px;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #464646;
+}
+
+.card-disc-fin_text_link {
+	text-align: left;
+	padding: 15px 35px 20px 35px;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #464646;
+}

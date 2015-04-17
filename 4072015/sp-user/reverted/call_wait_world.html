@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>｡ﾚ･ﾞ･ｷ･ｧ･遙ﾛ｡｡･ﾑ･ﾕ･ｩ｡ｼ･ﾞｴﾉﾍｲ靂ﾌ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style3 {
+	color: #333F73;
+	font-weight: bold;
+	font-family: "｣ﾍ｣ﾓ ･ｴ･ｷ･ﾃ･ｯ", "Osaka｡ﾝﾅ";
+	font-size: 14px;
+}
+.style4 {font-size: 12px}
+.style6 {font-size: 12px; color: #FF0000; }
+.style7 {color: #333F73}
+-->
+</style>
+<style type="text/css"><!--A { text-decoration:none; }--></style>
+<script language="JavaScript" src="/js/tpl.js"></script>
+<script language="javascript">
+<!--
+function goto_page(pos){
+	document.F1.pos.value = pos;
+	document.F1.submit();
+	}
+function goto_favorite(sid){
+	document.F1.sid.value = sid;
+	document.F1.mode.value = "favorite";
+	document.F1.submit();
+	}
+//-->
+</script>
+
+
+</head>
+
+<body topmargin="0" leftmargin="0">
+
+<table width="600" border="1" cellpadding="0" cellspacing="0" bordercolor="#333F73">
+  <tr>
+    <td><table width="600" border="0" cellpadding="0" cellspacing="0" bordercolor="#B13149">
+      <tr>
+        <td height="480" valign="top">
+            <div align="center">                <br>
+              <br>
+
+                <table width="550" border="1" cellpadding="1" cellspacing="1" bordercolor="#333F73">
+                  <tr>
+                    <td><br><div align="center">
+					  <table width="500" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td><p align="left">
+                              <span class="style4">｢｣It is a list of the chat end waiting customer.<br>
+                                                   ｡｡ If a right button is pushed, the memo can be added.</span><br>
+                              <span style="color: #FF0000; font-size:12px;font-weight:bold;">｢｣Mail can be transmitted by clicking the chat name.</span><br>
+                              <span class="style4">｢｣The member to whom the chat name is displayed by ｡ﾘ---｡ﾙ becomes<BR>｡｡ a member not notified nickname.</span><br>
+                                <span class="style6"><br>
+                              </span></p>                              </td>
+                            </tr>
+                          </table>
+                        <table width="500" border="0" cellspacing="0" cellpadding="0">
+						<form method="post" name="F1" action="">
+                          <tr>
+                            <td bgcolor="#333F73"><table width="500" border="0" align="center" cellpadding="10" cellspacing="1" bordercolor="#E49EAB">
+                                <tr class="style4">
+                                  <td width="99" bgcolor="#CFD5EB"><div align="center">Chat Name</div></td>
+                                  <td width="79" bgcolor="#B7BEDF"><div align="center">Favorite</div></td>
+                                  <td width="132" bgcolor="#CFD5EB" class="style4"<div align="center">Request Time</div></td>
+                                  <td width="105" bgcolor="#B7BEDF" class="style4"><div align="center">Memo</div></td>
+                                </tr>
+							<!-- tmpl:loop %list_loop% -->
+						<!-- tmpl:ifdef %disp_nick_name_flg1% -->
+                                <tr class="style4">
+                                  <td bgcolor="#FFFFFF"><div align="center">%nick_name%</div></td>
+                                  <td bgcolor="#FFFFFF"><div align="center">%favorite%</div></td>
+                                  <td bgcolor="#FFFFFF" class="style4"><div align="center">%last_connect%</div></td>
+                                  <td bgcolor="#FFFFFF" class="style4"><div align="center">
+                                    <input type="button" name="MemoWindow" value="･皈筅ｫ､ｯ" onclick="MM_openBrWindow('operator_memo_window.php?sid=%hash%','MemoWindow', 'width=599,height=500');">
+                                  </div></td>
+                                </tr>
+						<!-- tmpl:endif -->
+						<!-- tmpl:ifdef %disp_nick_name_flg0% -->
+                                <tr class="style4">
+                                  <td bgcolor="#FFFFFF"><div align="center">---</div></td>
+                                  <td bgcolor="#FFFFFF"><div align="center">&nbsp;</div></td>
+                                  <td bgcolor="#FFFFFF" class="style4"><div align="center">%last_connect%</div></td>
+                                  <td bgcolor="#FFFFFF" class="style4"><div align="center">---
+                                  </div></td>
+                                </tr>
+						<!-- tmpl:endif -->
+							<!-- tmpl:endloop -->
+                            </table></td>
+                          </tr>
+						<!-- tmpl:ifdef %non_zero% -->
+						  <tr>
+							  <td align="right">
+						<!-- tmpl:ifdef %non_zero% -->
+							  %prev_link%｡｡|｡｡%next_link%
+						<!-- tmpl:endif -->
+							  </td>
+						  </tr>
+						<!-- tmpl:endif -->
+						<input type="hidden" name="pos">
+						<input type="hidden" name="mode" value="favorite">
+						</form>
+                        </table>
+                        <br>
+                        <br>
+                    </div></td>
+                  </tr>
+                </table>
+                <br>
+                <br>
+            </div>
+        </td>
+      </tr>
+      <tr bgcolor="#333F73">
+        <td height="50" valign="middle">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

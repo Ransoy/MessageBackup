@@ -1,0 +1,28 @@
+td{
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 1.5em;
+	color: #555555;
+}
+.header{
+	color: #FFFFFF;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+}
+.logo{
+	padding-top: 40px;
+}
+.enter{
+	padding-top: 40px;
+}
+.attention{
+	color: #FFFFFF;
+	font-size: 10px;
+	padding-right: 10px;
+}
+.footer{
+	color: #FFFFFF;
+	font-size: 10px;
+	line-height: 1.5em;
+	padding-right: 10px;
+}

@@ -1,0 +1,17 @@
+@charset "shift_jis";
+
+#webCameraTitle{
+text-align:center;
+margin:25px auto 0 auto;}
+
+table#webCameraTable{
+margin:20px auto 20px auto;}
+
+table#webCameraTable td{
+text-align:center;
+width:200px;
+line-height:1.7em;
+margin:20px auto 0 auto;}
+
+table#webCameraTable td img{
+margin:5px 0 0 0;}

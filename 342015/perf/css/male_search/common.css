@@ -1,0 +1,186 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	macherie
+	BUILD:	2008/3/10
+	AUTHOR:	S.takaya
+_______________________________________*/
+
+/*	Layout
+---------------------------------------*/
+#wrapper{
+	margin:10px;
+	width:69px;
+}
+#prof{
+	width:584px;
+	background:url(../images/search/prof_bg.gif) repeat-y;
+}
+#resultTag{
+	margin:10px 0 8px;
+}
+#result ul{
+	position:relative;
+    overflow:hidden;
+	margin-top:5px;
+	width:136px;
+	height:145px;
+	float:left;
+	margin-right:2px;
+}
+#result ul.normal{
+	background:url(../images/search/photo_bg.gif) no-repeat;
+}
+#result ul.r30m{
+	background:url(../images/search/photo_bg_30m.gif) no-repeat;
+}
+#result ul.r1h{
+	background:url(../images/search/photo_bg_1h.gif) no-repeat;
+}
+#result ul.r3h{
+	background:url(../images/search/photo_bg_3h.gif) no-repeat;
+}
+#result ul.r6h{
+	background:url(../images/search/photo_bg_6h.gif) no-repeat;
+}
+#result ul li.photo{
+    position:relative;
+    top:10px;
+    left:0px;
+	width:136px;
+	height:90px;
+	text-align:center;
+}
+#result ul li.meta{
+    position:relative;
+    top:15px;
+    left:8px;
+	width:120px;
+}
+#result ul li div.mail{
+    position:relative;
+	top:0px;
+    left:50%;
+	width:50%;
+	text-align:right;
+}
+#result ul li div.mail img{
+	padding:2px;
+}
+#result ul li div.name{
+    position:relative;
+	top:0px;
+    left:0px;
+	width:100%;
+}
+
+html>/**/body #result ul li div.name {
+	top /*\**/:-17px\9;
+}  
+
+html>/**/body #result ul li div.mail {
+	top /*\**/:-17px\9;
+}  
+
+#result ul li div.mail2{
+    position:relative;
+	top:-12px;
+    left:86px;
+	width:16px;
+}
+#result div.rogin_icon{
+	margin-top:3px;
+	margin-bottom:3px;
+
+}
+#result div.rogin_icon span{
+	margin-right:20px;
+}
+.rtable{
+	width:688px;
+	height:30px;
+	border:0;
+	background:url(../images/search/result_bg.gif) repeat-y;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+/*	SerchForm
+---------------------------------------*/
+#maleSerch{
+	width:695px;
+	background:url(../images/search/search_bg.gif) repeat-y;
+}
+#maleSerch table{
+	width:695px;
+	margin:0 auto;
+}
+#maleSerch table th,
+#maleSerch table td{
+	padding:8px;
+	padding-top:1px;
+}
+#maleSerch table th div{
+	padding:2px;
+	background-color:#DAEAEA;
+}
+/* PROFILE
+----------------------------------------*/
+#leftBlock{
+	width:176px;
+	float:left;
+}
+#leftBlock dt,
+#leftBlock dd{
+	margin-left:28px;
+}
+#leftBlock dt{
+	width:126px;
+	height:96px;
+	border:1px solid #b4b4b4;
+	text-align:center;
+}
+#leftBlock dt img{
+	margin-top:3px;
+}
+#leftBlock dd{
+	padding:4px 20px;
+}
+#leftBlock dd a{
+	color:#ff5000;
+	text-decoration:underline;
+}
+#leftBlock dd.mail{background:url(../images/search/icon_mail.gif) left center no-repeat;}
+#leftBlock dd.memo{background:url(../images/search/icon_memo.gif) left center no-repeat;}
+#leftBlock dd.address{background:url(../images/search/icon_address.gif) left center no-repeat;}
+
+#rightBlock{
+	float:right;
+	width:380px;
+}
+#rightBlock table td,
+#rightBlock table th{
+	padding:2px 0;
+}
+#rightBlock table th{
+	background:#e6e6e6;
+	font-weight:normal;
+	width:80px;
+	text-indent:4px;
+}
+#rightBlock table td{
+	width:100px;
+}
+#rightBlock dl{
+	padding:10px 15px 10px 2px;
+}
+#rightBlock dl dt{
+	background:#e6e6e6;
+	padding:3px 4px;
+}
+#rightBlock dl dd{
+	border:1px solid #b4b4b4;
+	margin-top:2px;
+	padding:4px;
+	line-height:1.4em;
+}

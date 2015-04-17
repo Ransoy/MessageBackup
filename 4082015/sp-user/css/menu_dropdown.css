@@ -1,0 +1,95 @@
+@charset "Shift_JIS";
+/* CSS Document */
+/*dropdown menu CSS*/
+
+.ddmenu			{	background-color: #3a383b;padding:5px 2%;	display:block;	overflow:hidden;	box-shadow:0px 2px 2px #ccc;}
+.ddmenu .left	{ float: left; }
+.ddmenu .right	{ float: right; }
+
+
+
+.ddmenu ul{	display:block;}
+.ddmenu li{ display:inline-block; margin:0 auto; padding:0; vertical-align:middle;word-break:keep-all;}
+.ddmenu li.back{ width:17%; }
+.ddmenu .back a{ color:#fff !important;font-weight:normal;}
+.ddmenu li.right_settlement{ float: right;	display:block;	font-size: 1.5rem;	background:#555;	padding:5px 5px;	box-shadow:1px 1px 2px #222;	border-radius:2px;	color:#fff; word-break:keep-all;}
+.ddmenu li.center{ text-align:left; margin:0 1%; color:#fff; word-break:break-all; line-height:3rem; font-size:1.5rem;font-weight:bold;}
+
+div.menu_ttl{ 
+	background-color: #3a383b;padding:7px 10% 7px 2%;	display:block;	overflow:hidden;box-shadow:0px 2px 2px #ccc;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	font-size:1.5rem;
+}
+
+div.menu_ttl span.back{ color:#fff; text-align:left; float:left; font-size:1.2rem; font-weight:normal;}
+div.menu_ttl span.back a{ color:#fff !important; text-align:left; }
+
+.ddmenu span.content	{ text-align:center; color:#fff; background:#FFED00 !important; box-shadow:none; margin:0 auto; width:30%; display:inline-block; position:absolute;}
+
+.menu_content{}
+.menu_content ul{ background:#f5f5f5; padding:0 0 3px 0;border-bottom:1px solid #999;}
+.menu_content li{ background:#f5f5f5;border-bottom:1px solid #ccc;}
+.menu_content li span{ float:right;}
+.menu_content li a:link, .menu_content li a:visited{ color:#333 !important;  display:block; padding:10px; text-decoration:none; font-size:1.5rem;}
+.menu_content li a:hover, .menu_content li.on a{ color:#fff !important; background:#999; display:block;}
+.menu_content li:last-child{ border-bottom: none; }
+
+.menu_content_refine{}
+.menu_content_refine ul{ background:#f5f5f5; padding:0 0 3px 0;border-bottom:1px solid #999;}
+.menu_content_refine li{ background:#f5f5f5;border-bottom:1px solid #ccc;}
+.menu_content_refine li:last-child{ border-bottom: none; }
+.menu_content_refine li span{ float:right;}
+.menu_content_refine li a:link, .menu_content_refine li a:visited{ color:#333 !important;  display:block; padding:10px; text-decoration:none; font-size:1.5rem;}
+.menu_content_refine li a:hover, .menu_content_refine li.on a{ color:#fff !important; background:#999; display:block;}
+.menu_content_refine ul li.ttl{ background:#fff; padding:15px 10px 8px 10px; font-weight:bold; font-size:1.5rem;}
+.menu_content_refine ul center{ padding:10px;}
+.menu_content_refine div.search{background:#f5f5f5;	padding:10px; border-bottom:1px solid #999;}
+
+.menu_content_refine div.search p{ display:block; padding-bottom:5px;}
+.menu_content_refine div.search span img{ width:20px; vertical-align:middle; padding-right:5px;}
+.menu_content_refine div.search input[type='text']{ margin:0px; padding:8px; border:1px solid #999; width:80%;}
+
+
+.menu_sub{	padding:5px 2%;	display:block;	overflow:hidden; color:#333;	border-bottom:1px solid #ccc;}
+.menu_sub .left{	float: left;	display:block;	padding:3px 0;	text-align:left;	vertical-align:middle;}
+.menu_sub .left input[type='checkbox']{	padding:0;	margin:0;	width:20px;	height:20px;	vertical-align:middle;}
+.menu_sub .left span{	vertical-align:midle;	padding:0;	margin:0;	text-align:left;}
+.menu_sub .right{	float: right;	display:block;	line-height:1.2rem;	text-align:right;	padding:5px 0;}
+
+.menu_sub_detail{	padding:5px 2% 0px 2%;	display:block;	overflow:hidden; color:#333;	border-bottom:1px solid #ccc; background:#f5f5f5; margin:2px 0 0 0;}
+.menu_sub_detail .left{	float: left;	display:block;	padding:3px 0;	text-align:left;	vertical-align:middle;}
+.menu_sub_detail .right{	float: right;	display:block;	line-height:1.2rem;	text-align:right;	padding:5px 0;}
+.menu_sub_detail a{ text-decoration:none;}
+.menu_sub_detail strong{ font-weight:bold;}
+
+
+/* modify 20140708 >>> */
+.ddmenu > p{
+	display: block;
+	font-size: 1.5rem;
+	background: #555;
+	padding: 5px 5px;
+	box-shadow: 1px 1px 2px #222;
+	border-radius: 2px;
+	color: #fff;
+	word-break: keep-all;
+	cursor: pointer;
+}
+.ddmenu > p:after{
+	content: '¥';
+	padding-left: 0.2rem;
+}
+.ddmenu > p.on{
+	background: #999;
+}
+.ddmenu > p.on:after{
+	content: '£';
+}
+
+.menu_content,
+.menu_content_refine{
+	display: none;
+}
+/* <<< */

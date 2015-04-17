@@ -1,0 +1,22 @@
+<div class="cf" id="after_login">
+	<span class="al_member">%nick_name%さま</span>
+	<span class="al_mail">未読メール<a href="/message/inbox.php">%mail_unread_count%件</a></span>
+	<span class="al_point">ポイント%user_point%pt</span>
+	<span class="al_point_buy"><a target="_blank" href="/settlement/credit.php">ポイント購入</a></span>
+	<form class="logout" name="logout_f" action="/" method="post">
+		<input class="submit" type="image" value="ログアウト" alt="ログアウト" onmouseout="this.src='images/gw_2014/logout_btn.png'" onmouseover="this.src='images/gw_2014/logout_btn_on.png'" src="images/gw_2014/logout_btn.png">
+		<input type="hidden" value="1" name="logout">
+	</form>
+</div>
+<!-- tmpl:ifdef %info_flg% -->
+<div class="cf" id="after_info">
+<!-- tmpl:endif -->
+	<!-- tmpl:ifdef %mail_auth% -->
+	<a class="ai_mail_add" href="/attestation_renew.php">メールアドレスの確認をしてください</a>
+	<!-- tmpl:endif -->
+	<!-- tmpl:ifdef %card_auth% -->
+	<a class="ai_free_point" href="/regist_credit.php">無料体験ポイントが受け取れます</a>
+	<!-- tmpl:endif -->
+<!-- tmpl:ifdef %info_flg% -->
+</div>
+<!-- tmpl:endif -->

@@ -1,0 +1,195 @@
+/****************
+* ƒ|ƒbƒvƒAƒbƒv ƒoƒ‰ƒGƒeƒB@•ÒW@‚±‚±‚©‚ç
+********************************/
+
+.popup-mysc_login {
+	padding: 0;
+	background: url(/c/m/images/schedule_calendar/popup/my_edit_bg.png) no-repeat;
+	width: 514px;
+	height: 344px;
+	position: absolute;
+	display: none;
+	z-index: 9999;
+}
+
+.popup-mysc_login-title {
+	cursor: move;
+	width: 414px;
+	height: 38px;
+    position:relative;
+}
+
+.popup-mysc_login-title_text {
+    position:absolute;
+	top: 12px;
+	left: 17px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:12pt;
+}
+
+.popup-mysc_login-title_day {
+    position:absolute;
+	top: 19px;
+	left: 423px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:7pt;
+}
+
+.popup-mysc_login-title_close {
+	cursor: pointer;
+    position:absolute;
+	top: 13px;
+	right: 15px;
+}
+
+.popup-mysc_login-title_textarea {
+    position:absolute;
+	top: 56px;
+	left: 40px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+
+.popup-mysc_login-title_textarea_time {
+	width: 407px;
+    position:absolute;
+	top: 77px;
+	left: 40px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_login-title_comentarea {
+    position:absolute;
+	top: 118px;
+	left: 40px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_login-title_comentarea2 {
+    position:absolute;
+	top: 251px;
+	left: 40px;
+	text-align: left;
+	color: #FF691F;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:12pt;
+}
+
+.popup-mysc_login-title_comentarea3 {
+    position:absolute;
+	top: 280px;
+	left: 40px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_login-title_comentarea_colon {
+    position:absolute;
+	top: 77px;
+	left: 71px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_login-title_comentarea_time {
+	width: 407px;
+    position:absolute;
+	top: 137px;
+	left: 40px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_login-title_detailslink {
+    position:absolute;
+	bottom: 20px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_login-title_loginbt {
+    position:absolute;
+	top: 180px;
+	left: 42px;
+	text-align: left;
+}
+
+.popup-mysc_login-title_registbt {
+    position:absolute;
+	bottom: 42px;
+	right: 44px;
+	text-align: right;
+}
+
+input.mysc_login {
+	height: 30px;
+	width: 428px;
+	padding-left: 5px;
+}
+
+.popup-mysc_login-title_checkbox {
+    position:absolute;
+	top: 181px;
+	right: 160px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_login-title_abbreviation {
+    position:absolute;
+	top: 179px;
+	right: 49px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_login-title_forget {
+    position:absolute;
+	top: 203px;
+	right: 49px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+a.link_pass:link {
+	color: #3F4FFF
+}
+a.link_pass:visited {
+	color: #2296FF;
+	text-decoration: underline
+}
+a.link_pass:active {
+	color: #3F4FFF;
+}
+a.link_pass:hover {
+	color: #0073DB;
+	text-decoration: underline
+}
+
+.popup-mysc_login-line_blue {
+    position:absolute;
+	bottom: 118px;
+	right: 9px;
+	text-align: right;
+	width: 495px;
+	height: 1px;
+}
+
+
+

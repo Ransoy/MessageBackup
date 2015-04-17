@@ -1,0 +1,133 @@
+@charset "shift_jis";
+
+#noticeTitle{
+text-align:center;
+color:#FF0000;
+font-size:15px;
+font-weight:bold;
+margin:20px 0 20px 0;
+background-color:#AE234A;
+}
+
+#titlePhotoProfile{
+text-align:center;}
+
+table#profileArea{
+margin:10px auto 0 auto;}
+
+table#profileArea td.title1{
+text-align:right;
+/*color:#B64154;*/
+color:#CCC;
+width:100px;
+padding:5px 0 5px 0;}
+
+table#profileArea td.text1{
+width:100px;
+padding:5px 0 5px 0;}
+
+table#profileArea td.title2{
+text-align:right;
+color:#B64154;
+width:80px;
+padding:5px 0 5px 0;}
+
+table#profileArea td.text2{
+width:80px;
+padding:5px 0 5px 0;}
+
+table#profileArea td.title3{
+text-align:right;
+color:#B64154;
+width:60px;
+padding:5px 0 5px 0;}
+
+table#profileArea td.text3{
+width:50px;
+padding:5px 0 5px 0;}
+
+#profileChange{
+text-align:center;
+margin:10px 0 10px 0;}
+
+#buttonArea{
+text-align:center;
+margin:20px 0 10px 0;}
+
+.boxArea{
+/*width:275px;*/
+/*float:left;*/
+}
+
+.boxArea p.title{
+text-align:center;}
+
+.boxArea p.button{
+text-align:center;}
+
+p#commentBox{
+/*width:229px;*/
+width:90%;
+height:145px;
+overflow-y:scroll;
+overflow-x:auto;
+margin:5px auto 10px auto;
+line-height:1.7em;}
+
+p#photoArea{
+text-align:center;
+margin:20px;}
+
+table#bankInfoTable{
+margin:10px auto 10px auto;
+width:230px;}
+
+table#bankInfoTable th{
+text-align:right;
+color:#B53F57;
+font-weight:normal;
+padding:3px 0 3px 0;
+width:110px;
+line-height:1.5em;}
+
+table#bankInfoTable td{
+padding:3px 0 3px 0;
+width:130px;
+line-height:1.5em;}
+
+p#noticeArea{
+margin:0 auto 10px auto;
+width:230px;
+line-height:1.7em;}
+
+p#noticeArea strong{
+color:#FF0000;}
+
+table#bankAddressTable{
+margin:10px auto 10px auto;
+}
+
+table#bankAddressTable th{
+text-align:right;
+color:#B53F57;
+font-weight:normal;
+padding:3px 0 3px 0;
+width:80px;
+vertical-align:top;
+line-height:1.5em;}
+
+table#bankAddressTable td{
+padding:3px 0 3px 0;
+width:130px;
+vertical-align:top;
+line-height:1.5em;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>ｲﾝ･､･ﾈ･愠ｰ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<script language="JavaScript">
+<!--
+	function goto_page(pos){
+		document.F1.pos.value=pos;
+		document.F1.submit();
+		}
+
+	function func_download(){
+		document.F1.action="point_log_download_m.php";
+		document.F1.submit();
+		document.F1.action="";
+		}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF">
+<h2 align="center">ｲﾝ･､･ﾈ･愠ｰ</h2>
+<center>%msg%</center>
+<form name=F1 method="post" action="">
+
+<div align="center">
+	<table width="460" border="0">
+	  <tr> 
+		<td width="90" nowrap><font size="-1">%user_id_con_l%</font></td>
+		<td width="140" nowrap> <font size="-1"> %user_id_con%</font></td>
+		<td width="90" nowrap><font size="-1">%cre_id_con_l%</font></td>
+		<td width="140" nowrap><font size="-1"> %cre_id_con%</font> </td>
+	  </tr>
+	  <tr> 
+		<td nowrap><font size="-1">%last_from_con_l%</font></td>
+		<td nowrap> <font size="-1"> %last_from_con%</font></td>
+		<td nowrap> <div align="left"><font size="-1">%last_to_con_l%</font></div></td>
+		<td nowrap> <font size="-1"> %last_to_con% (YYYY/MM/DD)</font></td>
+	  </tr>
+	  <tr> 
+		<td width="90" nowrap><font size="-1">%mode_con_l%</font></td>
+		<td width="140" nowrap> <font size="-1"> %mode_con%</font></td>
+		<td width="90"><font size="-1">ｺ鋿ｮ｣ﾉ｣ﾐ</font></td>
+		<td width="140"><font size="-1"> %female_user_id_con%</font> </td>
+	  </tr>
+	  <tr> 
+		<td ><font size="-1">&nbsp;</font></td>
+		<td ><font size="-1">&nbsp;</font></td>
+		<td ><font size="-1">&nbsp;</font></td>
+		<td ><font size="-1">&nbsp;</font></td>
+	  </tr>
+	<table width="460" border="0">
+	  <tr> 
+<!--
+		<td > <div align="right"> 
+-->
+		<td > <div align="center"> 
+			%Submit%
+		  </div></td>
+	  </tr>
+	</table>
+  </div>
+<div align="center">
+<!-- tmpl:ifdef %disp_data% -->
+	<table width="600" border="0">
+	  <tr> 
+		<td colspan=2> <font size=-1>･ﾇ｡ｼ･ｿｷ�ｿｧ%data_num%</font> </td>
+		<td> <div align="right"> 
+			%download%
+		  </div></td>
+	  </tr>
+      %page_feed%
+<!--
+	   <tr> 
+		<td width="100"> %prev_link% </td>
+		<td align="center" width="400"> %page_link% </td>
+		<td align="right" width="100"> %next_link% </td>
+	  </tr>
+-->
+	</table>
+	<table width="685" border="1">
+	  <tr bgcolor="#CCCCCC"> 
+		<th width="70" nowrap> <div align="center"><font size="-1">ｲﾉ｣ﾄ</font></div></th>
+		<th width="94" nowrap> <p align="center"><font size="-1">ｹｹｿｷｸ螂ﾝ･､･ﾈ</font></p></th>
+		<th width="94" nowrap> <div align="center"><font size="-1">ｹｹｿｷﾁｰ･ﾝ･､･ﾈ</font></div></th>
+		<th width="73" nowrap> <div align="center"><font size="-1">ﾄﾉｲﾃpt</font></div></th>
+		<th width="80" nowrap> <div align="center"><font size="-1">ｹｹｿｷ･筍ｼ･ﾉ</font></div></th>
+		<th width="148" nowrap> <div align="center"><font size="-1">ｺ鋿ｮﾆ�ｻ</font></div></th>
+		<th width="60" nowrap> <div align="center"><font size="-1">ｺ鋿ｮｼﾔ</font></div></th>
+		<th width="66" nowrap> <div align="center"><font size="-1">ｺ鋿ｮ｣ﾉ｣ﾐ</font></div></th>
+	  </tr>
+	  <!-- tmpl:loop %list_loop% -->
+	  <tr> 
+		<td width="70" nowrap><font size="-1">%user_id%｡｡</font></td>
+		<td width="94" nowrap><div align="right"><font size="-1">%point_new%｡｡</font></div></td>
+		<td width="94" nowrap><div align="right"><font size="-1">%point_old%｡｡</font></div></td>
+		<td width="73" nowrap><div align="right"><font size="-1">%point_sub%｡｡</font></div></td>
+		<td width="80" nowrap><font size="-1">%mode%｡｡</font></td>
+		<td width="148" nowrap><font size="-1">%cre_date%｡｡</font></td>
+		<td width="60" nowrap><font size="-1">%cre_id%</font></td>
+		<td width="66" nowrap><font size="-1">%cre_ip%</font></td>
+	  </tr>
+	  <!-- tmpl:endloop -->
+	</table>
+<!-- tmpl:endif -->
+</div>
+<input type=hidden name=pos>
+<input type="hidden" name="mode" value="%mode_set%">
+</form>
+</body>
+</html>

@@ -1,0 +1,431 @@
+@charset "Shift_JIS";
+
+/*------------------------------------------*/
+/* 待機ページ
+/* shicho
+/*------------------------------------------*/
+
+
+.shicho_wrap .screen {
+	position: relative;
+	width: 100%;
+}
+.shicho_wrap .screen img {
+	width: 100%;
+}
+.shicho_wrap #btn_type span{
+	display: block;
+	width: 90%;
+	text-align:center;
+}
+.shicho_wrap a#shityo_btn{
+	white-space: nowrap;
+	font-size:1.4rem;
+}
+.shicho_wrap .btn a,
+.shicho_wrap .btn a:link,
+.shicho_wrap .btn a:visited{
+	font-size:1.4rem;
+}
+
+/* add for flick >>> */
+.shicho_wrap #flick_viewport{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	-webkit-transform: translateZ(0); /* Optional: When heavy at iOS6+ */
+}
+.shicho_wrap #flick_container{
+	position: relative;
+	width: 303%;
+	opacity: 0;
+}
+/*.shicho_wrap #flick_container:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}*/
+.shicho_wrap #flick_viewport .loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display :none;
+	margin-top: -5%;
+	margin-left: -5%;
+	width: 10%;
+	z-index: 1000;
+}
+.shicho_wrap #flick_container{
+	display: table;
+	table-fixed: fixed;
+}
+.shicho_wrap #flick_container > div{
+	display: table-cell;
+	position: relative;
+}
+.shicho_wrap #flick_container > div .screen_pic{
+	display: block;
+	margin: 0 auto;
+}
+.shicho_wrap canvas#canvas_main{
+	margin: auto;
+}
+.shicho_wrap #cv_s{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.shicho_wrap #canvas_sub{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+/* <<< */
+
+/* modify 201408 >>> */
+/* head_area */
+.shicho_wrap .head_area{
+	width: 100%;
+	background: #ff3c7d;
+	color: #fff;
+}
+.shicho_wrap .head_area.offline{
+	background: #8c8c8c;
+}
+.shicho_wrap .head_area > .ttl{
+	font-weight: bold;
+	font-size: 1.4rem;
+	color: #fff;
+	padding: 0.5rem 0.5rem;
+	text-align: center;
+}
+/* screen */
+.shicho_wrap .screen{
+	position: relative;
+	background: #222;
+}
+@-webkit-keyframes turn_y{
+	0% {-webkit-transform: rotateY(0deg); }
+	100% {-webkit-transform: rotateY(360deg); }
+}
+.shicho_wrap .screen .status.live{
+	display: block;
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	z-index: 1;
+	width: 7.7rem;
+	height: 2.5rem;
+	background: url('../image/shicho/ic_live.png') no-repeat 0 0;
+	background-size: contain;
+	/*-webkit-animation: turn_y 2.5s linear infinite;*/
+}
+.shicho_wrap .screen .screen_overlay{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	margin: 0;
+}
+.shicho_wrap .screen .status_msg{
+	max-width: 80%;
+	height: 1em;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	font-size: 1.3rem;
+	letter-spacing: 0.2em;
+}
+.shicho_wrap .screen .prev,
+.shicho_wrap .screen .next{
+	position: absolute;
+	top: 50%;
+	margin-top: -4rem;
+	width: 2.5rem;
+	height: 3.5rem;
+	color: #fff;
+	text-align: center;
+	border-radius: 4px;
+	line-height: 1000;
+	overflow: hidden;
+	z-index: 2;
+}
+.shicho_wrap .screen .prev{
+	left: 1rem;
+	background: url('../image/shicho/ic_prev.png') no-repeat center center,rgba(0,0,0,0.5);
+	background-size: 0.7rem auto;
+}
+.shicho_wrap .screen .next{
+	right: 1rem;
+	background: url('../image/shicho/ic_next.png') no-repeat center center,rgba(0,0,0,0.5);
+	background-size: 0.7rem auto;
+}
+.shicho_wrap .instant_comment{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 99.3%;
+	box-sizing: border-box;
+	border: solid 2px #ff3c7d;
+	background: rgba(255,255,255,0.8);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.8) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.8) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.8) 100%);
+	background: linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.8) 100%);
+	color: #ff3c7d;
+	font-size: 1.5rem;
+	padding: 1rem;
+	text-align: center;
+}
+.shicho_wrap .instant_comment:before{
+	content: "";
+	position: absolute;
+	top: -14px;
+	left: 10px;
+	margin-left: 0;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 0 14px 14px;
+	border-color: transparent transparent #ff3c7d transparent;
+	z-index: 0;
+}
+.shicho_wrap .instant_comment:after{
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 12px;
+	margin-left: 0;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 0 10px 10px;
+	border-color: transparent transparent #fff transparent;
+	z-index: 0;
+}
+.shicho_wrap .instant_comment_text{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/* main btn area */
+.shicho_wrap .main_btn_area{
+	padding: 1rem 0 1rem;
+	background: url('../image/shicho/bg_texture.gif') repeat 0 0;
+	background-size: 20px 20px;
+}
+.shicho_wrap .main_btn_area .btn_wrap_center li{
+	margin-top: 1.5rem;
+}
+.shicho_wrap .main_btn_area .btn_wrap_center li:first-child{
+	margin-top: 0;
+}
+
+@-webkit-keyframes shine{
+	0% { left: -100%; }
+	93% { left: -100%; }
+	94% { left: -15%; }
+	100% { left: 115%; }
+}
+.shiny{
+	position: relative;
+	overflow: hidden;
+}
+.shiny .shine_effect{
+	position: absolute;
+	top: -50%;
+	left: -100%;
+	width: 30%;
+	height: 250%;
+	opacity: 1;
+	background: -webkit-gradient(
+	    linear, left top, right top,
+	    color-stop(0%  ,rgba(255, 255, 255, 0.0)),
+	    color-stop(75% ,rgba(255, 255, 255, 0.2)),
+	    color-stop(90% ,rgba(255, 255, 255, 0.8)),
+	    color-stop(100%,rgba(255, 255, 255, 0.0))
+	);
+	-webkit-transform: rotate(-45deg);
+	-webkit-animation: shine 10s ease-in-out infinite;
+}
+.shicho_wrap .main_btn_area .btn_chat{
+	border: solid 1px #ff3c7d;
+	margin: 0 10% 1rem;
+	background: #ff437d;
+	background: -moz-linear-gradient(top, #ff6a8d 0%, #ff6a8d 50%, #ff437d 51%, #ff437d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6a8d), color-stop(50%,#ff6a8d), color-stop(51%,#ff437d), color-stop(100%,#ff437d));
+	background: -webkit-linear-gradient(top, #ff6a8d 0%,#ff6a8d 50%,#ff437d 51%,#ff437d 100%);
+	background: -o-linear-gradient(top, #ff6a8d 0%,#ff6a8d 50%,#ff437d 51%,#ff437d 100%);
+	background: -ms-linear-gradient(top, #ff6a8d 0%,#ff6a8d 50%,#ff437d 51%,#ff437d 100%);
+	background: linear-gradient(to bottom, #ff6a8d 0%,#ff6a8d 50%,#ff437d 51%,#ff437d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6a8d', endColorstr='#ff437d',GradientType=0 );
+	text-shadow: rgba(0,0,0,0.2) -1px -1px 0;
+	box-shadow: 0 2px 0 0 rgba(0,0,0,1);
+}
+.shicho_wrap .main_btn_area .btn_chat.disable{
+	background: #8c8c8c;
+	border: #8c8c8c solid 1px;
+	text-shadow: none;
+	cursor: default;
+}
+.shicho_wrap .main_btn_area .notice_app{
+	text-align: center;
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+.shicho_wrap .main_btn_area .notice_app a{
+	color: #4bd9b6;
+	text-decoration: underline;
+}
+
+/* bottom area */
+.shicho_wrap .bottom_area{
+	position: relative;
+	background: #c5c5c5;
+	padding: 1rem 2%;
+}
+.shicho_wrap .bottom_area .bottom_area_inner{
+	position: relative;
+	padding: 0 0.7rem;
+	background: #fff;
+}
+.shicho_wrap .bottom_area .ttl{
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #4bd9b6;
+	padding: 1.3rem 1rem 1rem;
+	border-bottom: #4bd9b6 0.5rem solid;
+}
+.shicho_wrap .bottom_area .ttl_icon:before{
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin-right: 0.3em;
+	vertical-align: middle;
+}
+.shicho_wrap .bottom_area .ttl_icon--profile:before{
+	background: url('../image/shicho/ic_profile.png') no-repeat center center;
+	background-size: auto 1em;
+}
+.shicho_wrap .bottom_area .ttl_icon--comment:before{
+	background: url('../image/shicho/ic_comment.png') no-repeat center center;
+	background-size: auto 1em;
+}
+.shicho_wrap .bottom_area .ttl_icon--gallery:before{
+	background: url('../image/shicho/ic_gallery.png') no-repeat center center;
+	background-size: auto 1em;
+}
+.shicho_wrap .bottom_area .ic_mail{
+	position: absolute;
+	top: 0;
+	right: 0.7rem;
+	display: block;
+	width: 3.9rem;
+	height: 3.9rem;
+	background: url('../image/shicho/ic_mail_off.png') no-repeat center center;
+	background-size: contain;
+	line-height: 1000;
+	overflow: hidden;
+}
+.shicho_wrap .bottom_area .ic_fav{
+	position: absolute;
+	top: 0;
+	right: 4.6rem;
+	display: block;
+	width: 3.9rem;
+	height: 3.9rem;
+	background: url('../image/shicho/ic_fav_off.png') no-repeat center center;
+	background-size: contain;
+	line-height: 1000;
+	overflow: hidden;
+}
+.shicho_wrap .bottom_area .ic_fav.on{
+	background: url('../image/shicho/ic_fav_on.png') no-repeat center center;
+}
+
+/* profile */
+.shicho_wrap .profile{
+	font-size: 1.3rem;
+}
+.shicho_wrap .profile .profile_inner{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1.5rem 2rem;
+}
+.shicho_wrap .profile .data dl{
+	display: table;
+	table-layout: fixed;
+	clear: both;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 0.5rem;
+}
+.shicho_wrap .profile .data dl dt{
+	display: table-cell;
+	width: 4.5em;
+	font-weight: bold;
+	color: #4bd9b6;
+}
+.shicho_wrap .profile .data dl dt:after{
+	content: ':';
+	display: block;
+	color: #000;
+	font-weight: normal;
+	float: right;
+}
+.shicho_wrap .profile .data dl dd{
+	display: table-cell;
+	padding-left: 1em;
+}
+/* comment */
+.shicho_wrap .comment{
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+.shicho_wrap .comment_inner{
+	padding: 1.5rem 2rem;
+}
+/* gallery */
+.shicho_wrap .gallery_inner{
+	padding: 1.5rem 2rem;
+}
+.shicho_wrap .gallery ul{
+}
+.shicho_wrap .gallery li{
+	width: 33%;
+	float: left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+.shicho_wrap .gallery li img{
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+@media all and (orientation:landscape){
+	.shicho_wrap #flick_container > div .screen_pic{
+		width: 66.5%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.shicho_wrap .gallery li{
+		width: 19.9%;
+	}
+}
+/* <<< */

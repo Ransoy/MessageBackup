@@ -1,0 +1,581 @@
+
+/****
+* V‹K–³—¿“o˜^
+********************************/
+
+.openid_regist_title {
+	width: 658px;
+	text-align: center;
+	margin: 20px auto;
+}
+
+/*****
+* ƒI[ƒvƒ“ID
+****************************/
+
+.openid_regist {
+	width: 658px;
+	height: 140px;
+	margin: 0px auto 45px auto;
+	background: url('/c/m/images/openid/openid_regist_bg.png') no-repeat;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	position: relative;
+}
+
+.openid_login {
+	width: 658px;
+	height: 140px;
+	margin: 0px auto 45px auto;
+	background: url('/c/m/images/openid/openid_login_bg.png') no-repeat;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	position: relative;
+}
+
+.openid_regist-easy{
+	text-align: left;
+    width: 600px;
+	position: absolute;
+	top: 24px;
+	left: 21px;
+}
+
+.openid_regist-yahoo{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 132px;
+    height: 30px;
+    background: url('/c/m/images/openid/openid_regist_yahoo_off.png') no-repeat;
+	position: absolute;
+	top: 50px;
+	left: 45px;
+}
+
+.openid_regist-yahoo:hover {
+    background: url('/c/m/images/openid/openid_regist_yahoo_on.png') no-repeat;
+}
+
+.openid_regist-google{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 132px;
+    height: 30px;
+    background: url('/c/m/images/openid/openid_regist_google_off.png') no-repeat;
+	position: absolute;
+	top: 50px;
+	left: 260px;
+}
+
+.openid_regist-google:hover {
+    background: url('/c/m/images/openid/openid_regist_google_on.png') no-repeat;
+}
+
+.openid_regist-twitter{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 132px;
+    height: 30px;
+    background: url('/c/m/images/openid/openid_regist_twitter_off.png') no-repeat;
+	position: absolute;
+	top: 50px;
+	right: 55px;
+}
+
+.openid_regist-twitter:hover {
+    background: url('/c/m/images/openid/openid_regist_twitter_on.png') no-repeat;
+}
+
+.openid_regist-facebook{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 132px;
+    height: 30px;
+    background: url('/c/m/images/openid/openid_regist_facebook_off.png') no-repeat;
+	position: absolute;
+	bottom: 18px;
+	left: 45px;
+}
+
+.openid_regist-facebook:hover {
+    background: url('/c/m/images/openid/openid_regist_facebook_on.png') no-repeat;
+}
+
+.openid_regist-biglobe{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+/*    text-indent: -9999px;*/
+    width: 132px;
+    height: 30px;
+/*    background: url('/c/m/images/openid/openid_regist_biglobe_off.png') no-repeat;*/
+	position: absolute;
+	bottom: 18px;
+	right: 55px;
+}
+/*
+.openid_regist-biglobe:hover {
+    background: url('/c/m/images/openid/openid_regist_biglobe_on.png') no-repeat;
+}*/
+
+.openid_regist-rakuten{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    width: 132px;
+    height: 30px;
+	position: absolute;
+	bottom: 18px;
+	left: 260px;
+}
+
+.openid_regist-question{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 186px;
+    height: 14px;
+    background: url('/c/m/images/openid/openid_regist_question_off.png') no-repeat;
+	position: absolute;
+	bottom: -25px;
+	right: 5px;
+}
+
+.openid_regist-question:hover {
+    background: url('/c/m/images/openid/openid_regist_question_on.png') no-repeat;
+}
+
+.openid_regist-text{
+	width: 600px;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	font-weight: normal;
+	color:#FF691F;
+	text-align: left;
+	height: 100%;
+	margin: 10px 0px 0px 0px;
+}
+
+.registered {
+	width: 658px;
+	height: 28px;
+	position: relative;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	color:#3f4fff;
+}
+
+.registered-title {
+	width: 202px;
+	height: 19px;
+	text-align: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.registered-text {
+	width: 450px;
+	height: 19px;
+	text-align: left;
+	position: absolute;
+	top: 2px;
+	left: 222px;
+}
+
+/*****
+* “o˜^Š®—¹
+****************************/
+
+.regist_info_openid{
+	width: 655px;
+	height: 100%;
+	margin: 0 auto;
+	background-image: url(/c/m/images/openid/title/openid_subtitle_google.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 3px 0px 5px 0px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	line-height:150%;
+}
+
+.regist_info_openid-google{
+	width: 655px;
+	height: 100%;
+	margin: 0 auto;
+	background-image: url(/c/m/images/openid/title/openid_subtitle_google.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 3px 0px 5px 0px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	line-height:150%;
+}
+
+.regist_info_openid-facebook{
+	width: 655px;
+	height: 100%;
+	margin: 0 auto;
+	background-image: url(/c/m/images/openid/title/openid_subtitle_facebook.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 3px 0px 5px 0px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	line-height:150%;
+}
+
+.regist_info_openid-yahoo{
+	width: 655px;
+	height: 100%;
+	margin: 0 auto;
+	background-image: url(/c/m/images/openid/title/openid_subtitle_yahoo.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 3px 0px 5px 0px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	line-height:150%;
+}
+
+.regist_info_openid-twitter{
+	width: 655px;
+	height: 100%;
+	margin: 0 auto;
+	background-image: url(/c/m/images/openid/title/openid_subtitle_twitter.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 3px 0px 5px 0px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	line-height:150%;
+}
+
+.regist_info_openid-rakuten{
+	width: 655px;
+	height: 100%;
+	margin: 0 auto;
+	background-image: url(/c/m/images/openid/title/openid_subtitle_rakuten.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 3px 0px 5px 0px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	line-height:150%;
+}
+
+.regist_info_openid-biglobe{
+	width: 655px;
+	height: 100%;
+	margin: 0 auto;
+	background-image: url(/c/m/images/openid/title/openid_subtitle_biglobe.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 3px 0px 5px 0px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	line-height:150%;
+}
+
+
+/*****
+* “o˜^î•ñ@”wŒi
+****************************/
+
+#openid_registinfo-google {
+	width: 658px;
+	height: 78px;
+	margin: 10px 0;
+	background-image: url(/c/m/images/openid/title/bg_openid_registinfo_google.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	position: relative;
+}
+
+#openid_registinfo-facebook {
+	width: 658px;
+	height: 78px;
+	margin: 10px 0;
+	background-image: url(/c/m/images/openid/title/bg_openid_registinfo_facebook.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	position: relative;
+}
+
+#openid_registinfo-yahoo {
+	width: 658px;
+	height: 78px;
+	margin: 10px 0;
+	background-image: url(/c/m/images/openid/title/bg_openid_registinfo_yahoo.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	position: relative;
+}
+
+#openid_registinfo-twitter {
+	width: 658px;
+	height: 78px;
+	margin: 10px 0;
+	background-image: url(/c/m/images/openid/title/bg_openid_registinfo_twitter.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	position: relative;
+}
+
+#openid_registinfo-rakuten {
+	width: 658px;
+	height: 78px;
+	margin: 10px 0;
+	background-image: url(/c/m/images/openid/title/bg_openid_registinfo_rakuten.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	position: relative;
+}
+
+#openid_registinfo-biglobe {
+	width: 658px;
+	height: 78px;
+	margin: 10px 0;
+	background-image: url(/c/m/images/openid/title/bg_openid_registinfo_biglobe.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:10pt;
+	color:#333333;
+	font-weight: bold;
+	position: relative;
+}
+
+.openid_registinfo_mail_left {
+	display:inline-block;
+	width:150px;
+	height: 17px;
+	margin: 0 auto;
+	text-align: right;
+	position: absolute;
+	top: 16px;
+	left: 0px;
+}
+
+.openid_registinfo_mail_right {
+	display:inline-block;
+	width:450px;
+	text-align: left;
+	height: 17px;
+	margin: 0 auto;
+	position: absolute;
+	top: 16px;
+	left: 180px;
+}
+
+.openid_registinfo_nickname_left {
+	display:inline-block;
+	width:150px;
+	height: 17px;
+	margin: 0 auto;
+	text-align: right;
+	position: absolute;
+	top: 43px;
+	left: 0px;
+}
+
+.openid_registinfo_nickname_right {
+	display:inline-block;
+	width:450px;
+	text-align: left;
+	height: 17px;
+	margin: 0 auto;
+	position: absolute;
+	top: 43px;
+	left: 180px;
+}
+
+/*****
+* ŠO•”ID(OpenID)‚Å‚ÌƒƒOƒCƒ“E“o˜^‚Æ‚Í@ƒƒOƒCƒ“ƒ{ƒ^ƒ“•”•ª
+****************************/
+
+.faq_openid_regist {
+	width: 658px;
+	height: 120px;
+	margin: 20px auto 10px auto;
+	background: url('/c/m/images/openid/bg_faq_openid.png') no-repeat;
+	position: relative;
+}
+
+.faq_openid_regist-yahoo{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 132px;
+    height: 30px;
+    background: url('/c/m/images/openid/openid_regist_yahoo_off.png') no-repeat;
+	position: absolute;
+	top: 25px;
+	left: 55px;
+}
+
+.faq_openid_regist-yahoo:hover {
+    background: url('/c/m/images/openid/openid_regist_yahoo_on.png') no-repeat;
+}
+
+.faq_openid_regist-google{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 132px;
+    height: 30px;
+    background: url('/c/m/images/openid/openid_regist_google_off.png') no-repeat;
+	position: absolute;
+	top: 25px;
+	left: 265px;
+}
+
+.faq_openid_regist-google:hover {
+    background: url('/c/m/images/openid/openid_regist_google_on.png') no-repeat;
+}
+
+.faq_openid_regist-twitter{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 132px;
+    height: 30px;
+    background: url('/c/m/images/openid/openid_regist_twitter_off.png') no-repeat;
+	position: absolute;
+	top: 25px;
+	right: 55px;
+}
+
+.faq_openid_regist-twitter:hover {
+    background: url('/c/m/images/openid/openid_regist_twitter_on.png') no-repeat;
+}
+
+.faq_openid_regist-facebook{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+    width: 132px;
+    height: 30px;
+    background: url('/c/m/images/openid/openid_regist_facebook_off.png') no-repeat;
+	position: absolute;
+	bottom: 20px;
+	left: 55px;
+}
+
+.faq_openid_regist-facebook:hover {
+    background: url('/c/m/images/openid/openid_regist_facebook_on.png') no-repeat;
+}
+
+
+
+.faq_openid_regist-biglobe{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+/*    text-indent: -9999px;*/
+    width: 132px;
+    height: 30px;
+/*    background: url('/c/m/images/openid/openid_regist_biglobe_off.png') no-repeat;*/
+	position: absolute;
+	bottom: 18px;
+	right: 55px;
+}
+
+/*
+.faq_openid_regist-biglobe:hover {
+    background: url('/c/m/images/openid/openid_regist_biglobe_on.png') no-repeat;
+}*/
+
+.faq_openid_regist-rakuten{
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    width: 132px;
+    height: 30px;
+	position: absolute;
+	bottom: 20px;
+	left: 265px;
+}
+
+/*****
+* ŠO•”ID(OpenID)‚Å‚ÌƒƒOƒCƒ“E“o˜^‚Æ‚Í@‘O‚É–ß‚é
+****************************/
+
+.btn_faq_openid_back {
+	text-align: left;
+	cursor:pointer;
+	display: block;
+    text-indent: -9999px;
+	width: 132px;
+	height: 35px;
+	margin: 30px auto 10px auto;
+	background: url('/c/m/images/openid/btn_faq_openid_back_off.png') no-repeat;
+}
+
+.btn_faq_openid_back:hover {
+    background: url('/c/m/images/openid/btn_faq_openid_back_on.png') no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+

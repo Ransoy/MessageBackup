@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shfit-JIS">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>%title%　-%performer_name%-/大人気スマホでライブチャットマシェリブログ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="/sp/css/jquery.sidr.dark.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="/sp/css/reset.css">
+<link rel="stylesheet" href="/sp/css/common.css">
+<link rel="stylesheet" href="/sp/css/menu_open.css">
+<link rel="stylesheet" href="/sp/css/blog.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script src="/sp/js/jquery-1.11.0.js"></script>
+</head>
+
+<body class="bd_guide">
+<div id="main">
+	%right_menu%
+	<div class="contents">
+		<div class="blog_wrap cf">
+			<div class="box_inner">
+
+				<div class="ttl_area cf">
+					<h3 class="ttl_top">ブログ詳細</h3>
+				</div>
+
+				<div class="blog_contents_inner blog_contents_inner--narrow_padding_top">
+
+					<div class="article_detail_wrap box--style_1 no_margin_top cf">
+
+						<div class="performer_info performer_info--style1 b_link cf">
+							<div class="performer_figure">
+								<img src="/sp/image/spacer.gif" style="background-image: url('%performer_img%')" />
+							</div>
+							<div class="performer_data">
+							   %status%
+							   <p class="performer_name"><a %chat_shicho% data-val="../shicho.php?id=%performer_hash%" href="javascript:void(0);">%performer_name%</a></p>
+
+							   <!-- mail link -->
+							   <a class="btn_mail btn_mail--small nest_link" href="/sp/message/detail.php?id=%performer_hash%">メールを送る</a>
+							   <!-- mail link -->
+
+							</div>
+						</div>
+
+						<div class="article_ttl_area cf">
+							<h3 class="article_ttl">%title%</h3>
+							<p class="posttime">%date%</p>
+						</div>
+						<div class="article_detail_box">
+							<div class="article cf">
+								<div class="article_figure">
+									<span class="image_layer"></span>
+									<!--  tmpl:ifdef %blog_img% -->
+									<img src="%blog_img%"/>
+									<!-- tmpl:endif -->
+								</div>
+								<div class="article_data">
+									<div class="desc">%body%</div>
+								</div>
+
+								<!-- mail link -->
+								<a class="btn_mail" href="/sp/message/detail.php?id=%performer_hash%">メールを送る</a>
+								<!-- mail link -->
+
+							</div>
+							<div class="article_bottom_area cf">
+								<div class="counter cf">
+									<ul>
+										<li class="cnt_view">
+											<a class="disable" href="javascript:void(0);"><span class="cnt_ttl">閲覧数</span><span class="cnt">%view_cnt%</span></a>
+										</li>
+									   <li class="cnt_like %on%">
+											<a class="btn_like func_like" href="javascript:void(0);"><span class="cnt_ttl">いいね</span><span class="cnt">%like_cnt%</span></a>
+										</li>
+										<li class="cnt_comment">
+											<a class="disable" href="javascript:void(0);"><span class="cnt_ttl">コメント</span><span class="cnt">%comment_cnt%</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- comment_area -->
+							<div class="comment_area cf">
+								<!-- tmpl:ifdef %show_comment_form% -->
+								<div class="comment_item comment_item--input cf">
+									<form id="post_comment" method="post" action="">
+										<div class="comment_item_inner">
+											<div class="comment_content cf">
+												<textarea id="msg" name='msg' placeholder="コメントを入力してください"></textarea>
+											</div>
+										</div>
+										<div class="ui_btn_wrap ui_btn_wrap--center cf">
+											<ul>
+												<li><a class="ui_btn ui_btn--max ui_btn--gray" href="javascript:void(0);">コメントを投稿する</a></li>
+											</ul>
+										</div>
+								  </form>
+								</div>
+								<!-- tmpl:endif -->
+
+								<!-- tmpl:ifdef %no_comment_form% -->
+								<div class="comment_item cf"> <p>※コメントをするにはログインが必要です。</p> </div>
+								<!-- tmpl:endif -->
+								<div class="comment_list">
+									<div id="load_comment">
+									  <!-- tmpl:loop %loop_comment% -->
+										<div class="comment_item cf">
+											<div class="comment_item_inner">
+												<div class="comment_content cf">
+													<p class="comment_author_name">%nick_name%</p>
+													<p class="comment_datetime">%created%</p>
+													<p class="comment_text">%msg%</p>
+												</div>
+											</div>
+										</div>
+										<!-- tmpl:endloop -->
+									</div>
+									<!-- tmpl:ifdef %page% -->
+									<div class="load_more">
+										<a href="javascript:void(0);" data-val="1">もっと見る</a>
+										<input type="hidden" value="%pages%" id="pages">
+									</div>
+									<!-- tmpl:endif -->
+								</div><!-- // .comment_list -->
+							</div><!-- // .comment_area -->
+						</div><!-- // .article_detail_box -->
+					</div><!-- // .article_detail_wrap -->
+				</div><!-- // .blog_contents_inner -->
+			</div><!-- // .box_inner -->
+
+			<div class="blog_pager">
+				<div class="cell--left">
+					<a class="prev %prev_statusID%" href="./article_detail.php?id=%prevID%">前へ</a>
+				</div>
+				<div class="cell--center">
+					<a class="ui_btn ui_btn--medium" href="./article_list_performer.php?creator=%performer_hash%&sort=newest">この女の子のブログ一覧へ</a>
+				</div>
+				<div class="cell--right">
+				   <a class="next %next_statusID%" href="./article_detail.php?id=%nextID%">次へ</a>
+				</div>
+			</div>
+
+			<div class="blog_pager blog_pager--bottom">
+				<div class="cell--left">
+					<a class="prev prev--txt %prev_status%" href="./article_detail.php?id=%prev%">前へ</a>
+				</div>
+				<div class="cell--center">
+					<a class="ui_btn ui_btn--medium ui_btn--bg_coral" href="./index.php">みんなのブログ一覧へ</a>
+				</div>
+				<div class="cell--right">
+					<a class="next next--txt %next_status%" href="./article_detail.php?id=%next%">次へ</a>
+				</div>
+			</div>
+
+		</div><!-- // blog_wrap -->
+	</div><!-- // .contents -->
+
+	%footer%
+	<!--
+	<footer class="footer_bottom">
+		<div class="nav_main">
+			<ul>
+				<li class="top"><a href="../"><span>トップページ</a></span></li>
+				<li class="app_download"><a href="../app_download.php"><span>ダウンロード方法</a></span></li>
+				<li class="guide"><a href="../guide.php"><span>遊び方・料金説明</a></span></li>
+				<li class="faq"><a href="http://faqs.jp/?site_domain=macherie" target="_blank"><span>FAQ・よくある質問</a></span></li>
+				<li class="cs_support"><a href="../cs_support.php"><span>お問い合わせ</a></span></li>
+			</ul>
+		</div>
+		<div class="nav_sub">
+			<ul>
+				<li><a href="#">プライバシーポリシー</a></li>
+				<li><a href="#">特定商取引法に基づく表記</a></li>
+				<li><a href="#">利用規約</a></li>
+			</ul>
+		</div>
+		<small class="copyright">&copy;MACHERIE</small>
+	</footer>-->
+
+	<article>
+		<section id="menu_close_area">
+			<ul class="menu_close_button"><a class="menu_close_box_bg_a" id="simple-menu-close" href="#sidr"><li class="menu_close_box_bg"></li></a></ul>
+		</section>
+	</article>
+	<a id="scroll_top" href="#header"><img src="/sp/image/icon/btn_pagetop.png" /></a>
+</div><!-- // #main -->
+
+<script src="/sp/js/jquery.sidr.min.js"></script>
+<script src="/sp/js/smoothScroll.js"></script>
+<script src="/sp/js/jquery.biggerlink.js"></script>
+<script src="/sp/js/common.js"></script>
+<script src="/sp/js/blog.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.b_link').biggerlink();
+
+	//add like
+	$('.cnt_like > a').click(function(e) {
+		var $likeBtn = $('.cnt_like');
+		var $likeCnt = $('.cnt_like > a > span.cnt');
+
+		// if liked already, do nothing
+		if ($likeBtn.hasClass('on')) return false;
+
+		var count = (+$likeCnt.text());
+		$.post('article_detail.php', { article_id:%id%, like:1 }, function(result) {
+			if ('ok' == result) {
+				like = 1;
+				$likeBtn.addClass('on');
+				$likeCnt.text(++count);
+			}
+		});
+	});
+
+	//add comment
+	$('.comment_item > form > div > ul > li > a').click(function() {
+	  var login = $('#person_info').length;
+	  if (login == 0) {
+			// alert('ログインをしてからご利用ください');
+			return false;
+	  }
+	  var msg = $('#msg').val();
+	  if ( msg.trim().length > 0 ) $('#post_comment').submit();
+	});
+
+	//blog pager
+	$('.blog_pager > div > a ').click(function() {
+		if ($(this).data('val')) {
+			window.location = $(this).data('val');
+		}
+	});
+
+	//load more
+	var click = 0;
+	$('.load_more > a').click(function() {
+		var page = $(this).data('val');
+		click += 1 ;
+		if (click <= 1) {
+			$.get('article_detail.php', { page : page, article_id : %id% }, function(data) {
+				page++;
+				$('#load_comment').append(data);
+				$('.load_more > a').data('val',page);
+				click = 0;
+				if (page == $('#pages').val()) $('.load_more').hide();
+			});
+		}
+	});
+
+});//enf of on ready
+
+
+/* MobileChatWindowOpen
+-------------------------------------*/
+function MO(id){
+	var url = '/sp/shicho.php?id=' + id + '&rand_id=1&world=0';
+	window.location  = url;
+}
+
+
+
+</script>
+</body>
+</html>

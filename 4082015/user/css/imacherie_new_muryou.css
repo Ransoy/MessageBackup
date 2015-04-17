@@ -1,0 +1,258 @@
+/*---------------無料会員様ページ（3ステップ）---------------*/
+#step{
+	height: 60px;
+	display: block;
+	margin: 0px auto 15px;
+}
+
+#step .stepone{
+	width: 259px;
+	height: 60px;
+	margin-left: 20px;
+	float: left;
+}
+
+#step .steptwo{
+	width: 333px;
+	height: 60px;
+	margin-left: 20px;
+	float: left;
+}
+
+#step .stepthree{
+	width: 336px;
+	height: 60px;
+	margin-left: 20px;
+	float: left;
+}
+
+#msg{
+	height: 25px;
+	display: block;
+	margin: 5px auto 5px;
+}
+
+#msg .received{
+	width: 591px;
+	height: 25px;
+	margin-left: 20px;
+	margin-right: 40px;
+	float: left;
+}
+
+#msg .pafocheck{
+	width: 346px;
+	height: 25px;
+	float: left;
+}
+
+
+/*---------------無料会員様ページ（３ステップ）ここまで---------------*/
+
+
+/*---------------無料会員様ページ（決済コース）---------------*/
+#wrapper{
+	width: 840px;
+	height: auto;
+	margin-left: 90px;
+	margin-top: 25px;
+}
+
+#box_top{
+	width: 840px;
+	height: 10px;
+	background: url(../images/state/box_top.gif) no-repeat;
+}
+
+#box_bottom{
+	width: 840px;
+	height: 10px;
+	background: url(../images/state/box_bottom.gif) no-repeat;
+	margin-bottom: 10px;
+}
+
+#box_bg{
+	width: 840px;
+	height: 491px;
+	background: url(../images/state/box_bg.gif) repeat-y;
+}
+
+#contents{
+	width: 840px;
+	height: auto;
+	color: #505050;
+	font-size: 12px;
+}
+
+#contents .left_side{
+	width: 410px;
+	height: auto;
+	margin-left: 20px;
+	margin-top: 20px;
+	float: left;
+}
+
+#contents .left_side_b{
+	width: 435px;
+	height: auto;
+	margin-left: 6px;
+	margin-top: 18px;
+	float: left;
+}
+
+/*------------------------*/
+/*------------------------*/
+div.pafo_list{
+	width: 430px;
+	height: auto;
+}
+
+div.pafo_list ul{
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.pafo_list ul li{
+	display: inline;
+	float: left;
+	height: 90px;
+	width: 120px;
+	margin: 35px 0px 0px 18px;
+}
+/*------------------------*/
+/*------------------------*/
+#c_pafo_list{
+	width: 430px;
+	height: auto;
+}
+
+div.pafo_box{
+	width: 120px;
+	height: 110px;
+	margin-top: 20px;
+	margin-left: 18px;
+	line-height: 1.8em;
+	text-align: left;
+	float: left;
+}
+
+/*------------------------*/
+/*------------------------*/	
+#contents .line-y{
+	height: 510px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#contents .line-y_b{
+	height: 510px;
+	margin-left: 7px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#contents .right_side{
+	width: 360px;
+	height: auto;
+	margin-top: 10px;
+	padding-left: 22px;
+	float: left;
+}
+
+#contents .right_side_b{
+	width: 360px;
+	height: auto;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding-left: 12px;
+	float: left;
+}
+
+.right_uewaku{
+	width: 360px;
+	height: 5px;
+	background: url(../images/state/right_uewaku.gif) no-repeat;
+}
+
+.right_yokowaku{
+	width: 360px;
+	height: 460px;
+	background: url(../images/state/right_yokowaku.gif) repeat-y;
+}
+
+.right_sitawaku{
+	width: 360px;
+	height: 5px;
+	background: url(../images/state/right_sitawaku.gif) no-repeat;
+}
+
+.inside{
+	margin-left: 15px;
+}
+
+.sammary{
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding-left: 37px;
+	margin-bottom: 10px;
+}
+
+.icon_posi{
+	padding: 15px 0px 0px 35px;
+	margin-bottom: 20px;
+}
+
+.icon_posi_bank{
+	padding: 15px 0px 0px 35px;
+	margin-bottom: 10px;
+}
+
+.icon_posi_con{
+	padding: 15px 0px 0px 5px;
+	margin-bottom: 10px;
+}
+
+.sammary_two{
+	padding-left: 35px;
+	margin-bottom: 20px;
+}
+
+.btn_kounyu{
+	padding: 18px 0px 0px 63px;
+}
+
+.clearleft{
+	clear: left;
+}
+	
+/*---------------無料会員様ページ（決済コース）ここまで---------------*/
+
+
+/*---------------メールアドレス登録フォームここから---------------*/
+
+.pt_present{
+	text-align:center;
+	margin: 1em auto;
+	width:572px;
+	border:double 4px #A0A000;
+	padding:2px 3em;
+}
+.pt_present input{
+	border:none;
+	font-size:14px;
+}
+
+.pt_present span input{
+	border:solid 1px #969696;
+}
+.pt_present p{
+	margin:1em 0;
+}
+
+.pt_present hr{
+ margin:1em 0;
+}
+/*---------------メールアドレス登録フォームここまで---------------*/

@@ -1,0 +1,486 @@
+/* CSS Document */
+
+body
+    {margin: 0px;
+	 padding: 0px;
+	 font-family: "ＭＳ Ｐゴシック";
+}
+
+div#container
+    {width: 694px;
+	 height: 531px;
+	 color: #FFFFFF;
+	 font-size: 12px;
+	 font-family: "ＭＳ Ｐゴシック";
+	 letter-spacing: 1.1pt;
+}
+
+div#outline
+    {width: 694px;
+	 height: 531px;
+	 background: url(http://c.macherie.tv/c/m/images/common/profile/black_back.gif) no-repeat;
+}
+
+img#gap
+    {display: block;
+}
+
+a:link
+    {color: #ffffff;
+	 text-decoration: none;
+}
+a:visited
+    {color: #ffffff;
+	 text-decoration: none;
+}
+a:hover
+    {color: #ffffff;
+	 text-decoration: underline;
+}
+a:active
+    {color: #ffffff;
+	 text-decoration: none;
+}
+
+
+/*-----------------------------基本設定ここまで-----------------------------------*/
+
+
+
+
+
+
+/*-----------------------------メイン設定ここから---------------------------------*/
+
+
+div#tab_space
+    {width: 694px;
+	 height: 33px;
+	 margin: 0px;
+	 padding: 0px;
+}
+
+div#tab_prof
+    {width: 140px;
+	 height: 33px;
+	 margin: 0px;
+	 padding: 0px;
+	 float: left;
+}
+
+div#tab_photo
+    {width: 526px;
+	 height: 33px;
+	 margin: 0px;
+	 padding: 0px;
+	 float: right;
+	 float: left;
+}
+
+div#close_space
+    {width: 28px;
+	 height: 33px;
+	 float: right;
+}
+
+div#close_posi
+    {width: 22px;
+	 height: 22px;
+	 padding-top: 6px;
+}
+
+
+/*-------------------------タブ設定ここまで------------------------------*/
+
+
+div#main_space
+    {width: 694px;
+	 height: 498px;
+	 clear: left;
+	 clear: right;
+	 margin: 0px;
+	 padding: 0px;
+	 background: url(http://c.macherie.tv/c/m/images/common/profile/red_back.gif) no-repeat;
+}
+
+div#photo_space
+    {width: 694px;
+	 height: 336px;
+	 margin: 0px;
+	 padding: 0px;
+	 text-align: center;
+}
+
+div#free_space1
+    {width: 694px;
+	 height: 68px;
+}
+
+div#photo_back
+    {width: 340px;
+	 height: 260px;
+	 background: url(http://c.macherie.tv/c/m/images/common/profile/photo_back.gif) no-repeat;
+	 margin-left: 177px;
+	 display: inline;
+	 float: left;
+}
+
+img#photo_posi
+    {margin: 10px 0px 0px 0px;
+}
+
+div#next_before_space
+    {width: 44px;
+	 height: 260px;
+	 float: right;
+	 float: left;
+}
+
+div#next_before_space ul
+    {list-style: none;
+	 margin: 138px 0px 0px 4px;
+	 padding: 0px;
+	 width: 40px;
+	 height: 122px;
+}
+
+div#next_before_space ul li#next_space1
+    {width: 26px;
+	 height: 48px;
+	 display: inline;
+}
+
+div#next_before_space ul li#next_space2
+    {width: 26px;
+	 height: 48px;
+	 display: inline;
+}
+
+div#next_before_space ul li#next_space3
+    {width: 40px;
+	 height: 26px;
+	 background: url(http://c.macherie.tv/c/m/images/common/profile/date_back.gif) no-repeat;
+	 display: inline;
+}
+
+div#deta_space
+    {width: 40px;
+	 height: 26px;
+	 background: url(http://c.macherie.tv/c/m/images/common/profile/date_back.gif) no-repeat;
+}
+
+div#deta_text
+    {text-align: center;
+	 padding-top: 7px;
+}
+
+div#photo_list_space
+    {width: 694px;
+	 height: 134px;
+	 background-color: #3d0101;
+	 border-top: 1px solid #b85b60;
+	 border-bottom: 1px solid #b85b60;
+	 overflow-x: scroll;
+}
+
+
+
+
+/*--------------------------photo_listここから--------------------------*/
+
+
+div#list_container
+    {width: 7000px;
+	 height: 117px;
+	 background-color: #3d0101;
+}
+
+div#list_container ul
+    {list-style: none;
+	 width: 6964px;
+	 height: 92px;
+	 margin: 0px;
+	 padding: 13px 0px 0px 30px;
+}
+
+div#list_container ul li
+    {float: left;
+	 white-space: nowrap;
+}
+
+img.photo_border
+    {border: 1px solid #000000;
+	 text-align: center;
+}
+
+li#photo_distance
+    {margin-left: 6px;
+}
+
+
+
+/*-------------------------footerここから--------------------------*/
+
+div#footer
+    {width: 694px;
+	 height: 26px;
+	 background-color: #3d0101;
+	 color: #b85b60;
+	 text-align: center;
+	 font-family: Arial;
+	 font-size: 10px;
+	 letter-spacing: 0.8px;
+}
+
+div#footer_text
+    {padding-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------プロフィールページここから----------------------------------------*/
+
+div#tab_prof_p
+    {width: 160px;
+	 height: 33px;
+	 float: left;
+}
+
+div#tab_photo_p
+    {width: 506px;
+	 height: 33px;
+	 background: url(http://c.macherie.tv/c/m/images/common/profile/photo_album_close.gif) no-repeat;
+	 float: right;
+	 float: left;
+}
+
+div#close_space_p
+    {width: 28px;
+	 height: 33px;
+	 float: right;
+}
+
+
+/*----------------------------タブ設定ここまで-----------------------------*/
+
+
+div#main_space_p
+    {width: 694px;
+	 height: 498px;
+	 clear: left;
+	 clear: right;
+	 margin: 0px;
+	 padding: 0px;
+	 background: url(http://c.macherie.tv/c/m/images/common/profile/red_back_p.gif) no-repeat;
+}
+
+div#left_box
+    {width: 214px;
+	 height: 472px;
+	 margin: 0px;
+	 padding: 0px;
+	 float: left;
+}
+
+div#right_box
+    {width: 480px;
+	 height: 472px;
+	 margin: 0px;
+	 padding: 0px;
+	 float: right;
+}
+
+div#footer_p
+    {width: 694px;
+	 height: 26px;
+	 background-color: #3d0101;
+	 color: #b85b60;
+	 text-align: center;
+	 font-family: Arial;
+	 font-size: 10px;
+	 letter-spacing: 0.8px;
+	 clear: left;
+	 clear: right;
+}
+
+/*-----------------------------基本設定ここまで--------------------------------*/
+
+div#left_menu
+    {width: 182px;
+	 height: 267px;
+	 margin: 21px 0px 0px 20px;
+}
+
+img.photo_border_p
+    { border: 1px solid #000000;
+	 text-align: center;
+}
+
+li#menu_photo
+    {width: 182px;
+	 height: 137px;
+	 display: inline;
+}
+
+li#menu_list
+    {width: 182px;
+	 height: 24px;
+	 background-color: #a01400;
+	 display: inline;
+}
+
+div#menu_distance
+    {width: 182px;
+	 height: 24px;
+	 margin-top: 2px;
+}
+
+div#menu_icon
+    {width: 28px;
+	 height: 24px;
+	 background-color: #a01400;
+	 margin: 0px;
+	 padding: 0px;
+	 float: left;
+	 display: inline;
+}
+
+div#menu_link
+    {width: 154px;
+	 height: 24px;
+	 background-color: #a01400;
+	 margin: 0px;
+	 padding: 0px;
+	 float: right;
+	 display: inline;
+}
+
+img#list_icon1
+    {width: 16px;
+	 height: 16px;
+	 margin-left: 6px;
+	 margin-top: 4px;
+	 display: block;
+}
+
+div#link_text
+    {margin-top: 6px;
+}
+
+
+
+
+
+
+
+/*----------------------------right_box---------------------------*/
+
+div#right_top
+    {width: 460px;
+	 height: 253px;
+	 margin: 0px;
+	 padding: 0px;
+}
+
+div#right_bottom
+    {width: 460px;
+	 height: 219px;
+	 margin: 0px;
+	 padding: 0px;
+}
+
+div#prof_title
+    {width: 460px;
+	 height: 28px;
+	 padding-top: 21px;
+}
+
+div#prof_text
+    {width: 460px;
+	 height: 194px;
+	 background: url(http://c.macherie.tv/c/m/images/common/profile/profile_back.gif) no-repeat;
+}
+
+div#comment_title
+    {width: 460px;
+	 height: 28px;
+	 margin: 0px;
+	 padding: 0px;
+}
+
+div#comment_text
+    {width: 460px;
+	 height: 172px;
+	 background: url(http://c.macherie.tv/c/m/images/common/profile/comment_back.gif) no-repeat;
+	 color: #333333;
+}
+
+div#prof_left
+    {width: 175px;
+	 float: left;
+}
+
+div#prof_right
+    {width: 285px;
+	 float: right;
+}
+
+table
+    {color: #333333;
+	 letter-spacing: 0.7px;
+	 line-height: 160%;
+	 font-size: 12px;
+}
+
+table#posi
+    {margin-top: 8px;
+}
+
+span#color_red
+    {color: #b43232;
+}
+
+div#com_text_posi
+    {margin-left: 18px;
+	 margin-right: 18px;
+	 padding-top: 11px;
+	 line-height: 160%;
+}
+
+
+
+
+
+/*---------------------comment_iframeここから----------------------*/
+
+div#comment_outline
+    {margin-left: 11px;
+	 color: #333333;
+	 font-size: 12px;
+	 line-height: 160%;
+	 letter-spacing: 0.8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

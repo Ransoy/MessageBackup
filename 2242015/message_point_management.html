@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>ポイント・手数料</title>
+
+<style>
+.summary{
+	height: 50px;
+	padding: 10px;
+	
+}
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<form action="" method="post">
+
+<div align="center">
+
+<h2 align="center">ポイント・手数料</h2>
+
+<div>
+	<div align="center">%msg%<br></div>
+</div>	
+<table width="100%" border="1">
+	<!--  <tr>
+		<td colspan="2">
+			<div class="summary">
+				男性要約
+			</div>
+		</td>
+		<td colspan="2">
+			<div class="summary">
+				女性要約
+			</div>
+		</td>
+		<td colspan="2">
+			<div class="summary">
+				システム要約
+			</div>
+		</td>
+	</tr>
+	  <tr bgcolor="#CCCCCC"> 
+		<td colspan="2"> <div align="center"><font size="-1">男性</font></div></td>
+		<td colspan="2"> <div align="center"><font size="-1">女性</font></div></td>
+		<td> <div align="center"><font size="-1">システムのポイント</font></div></td>
+	  </tr>
+<!-- 無料体験ポイント 
+  <tr> 
+	<td><font size="-1">%etc191_l%</font></td>
+	<td> <font size="-1"><input type="text" value='%etc191%' name="etc191" style="width:100%;"></font></td>
+	<td><font size="-1">%etc193_l%</font></td>
+	<td> <font size="-1"><input type="text" value='%etc193%' name="etc193" style="width:100%;"></font></td>
+	<td><input type="number" step="any" required min="0" style="width:100%;"/></td>
+  </tr>
+  <tr> 
+	<td><font size="-1">%etc192_l%</font></td>
+	<td> <font size="-1"><input type="text" value='%etc192%' name="etc192" style="width:100%;"></font></td>
+	<td><font size="-1">%etc194_l%</font></td>
+	<td> <font size="-1"><input type="text" value='%etc194%' name="etc194" style="width:100%;"></font></td>
+	<td><input type="number" step="any" required min="0" style="width:100%;"/></td>
+  </tr>-->
+  <thead>
+  	<tr>
+  		<th></th>
+  		<th colspan="3">男性</th>
+  		<th colspan="3">女性</th>
+  	</tr>
+  	<tr>
+  		<td></td>
+  		<td>送り元</td>
+  		<td>会員フラグ</td>
+  		<td>消費ポイント</td>
+  		<td>女性獲得報酬</td>
+  		<td>女性獲得ポイント</td>
+  	</tr>
+  </thead>
+  <tbody>
+  	<!-- tmpl:loop %point_message_detail% -->
+  	<tr>
+  		<!-- tmpl:ifdef %show_msg_label% -->
+  		<td rowspan="6">メッセージ送信</td>
+  		<!-- tmpl:endif -->
+  		<td>%sender_verion%</td>
+  		<td>%msg_user_point_des%</td>
+  		<td>
+  			<input type="hidden" name="point_id_hidden[%msg_user_point_id%]" value="%msg_user_point_val%" >
+  			<input type='number' step='any' min='0' name='point_id[%msg_user_point_id%]' value='%msg_user_point_val%' required />
+  		</td>
+  		<td>
+  			<input type="hidden" name="point_id_hidden[%msg_female_yen_id%]" value="%msg_female_yen_val%" >
+  			<input type='number' step='any' min='0' name='point_id[%msg_female_yen_id%]' value='%msg_female_yen_val%' required />
+  		</td>
+  		<td>
+  			<input type="hidden" name="point_id_hidden[%msg_female_point_id%]" value="%msg_female_point_val%" >
+  			<input type='number' step='any' min='0' name='point_id[%msg_female_point_id%]' value='%msg_female_point_val%' required />
+  		</td>
+  		
+  	</tr>
+  	<!-- tmpl:endloop -->
+  	
+  		<!-- tmpl:loop %imgpoint_message_detail% -->
+  	<tr>
+  		<!-- tmpl:ifdef %show_msg_label% -->
+  		<td rowspan="6">イメージ送信</td>
+  		<!-- tmpl:endif -->
+  		<td>%img_sender_verion%</td>
+  		<td>%img_user_point_des%</td>
+  		<td>
+	  		<input type="hidden" name="point_id_hidden[%img_user_point_id%]" value="%img_user_point_val%" >
+	  		<input type='number' step='any' min='0' name='point_id[%img_user_point_id%]' value='%img_user_point_val%' required />
+  		</td>
+  		<td>
+	  		<input type='number' step='any' min='0' name='point_id[%img_female_yen_id%]' value='%img_female_yen_val%' required />
+	  		<input type="hidden" name="point_id_hidden[%img_female_yen_id%]" value="%img_female_yen_val%" >
+  		</td>
+  		<td>
+  			<input type="hidden" name="point_id_hidden[%img_female_point_id%]" value="%img_female_point_val%" >
+  			<input type='number' step='any' min='0' name='point_id[%img_female_point_id%]' value='%img_female_point_val%' required />
+  		</td>
+  		
+  	</tr>
+  	<!-- tmpl:endloop -->
+  	
+  	
+  </tbody>
+  
+</table>
+</div>
+
+<div align="center">
+	<input type="reset" name="Submit2" value="リセット">
+	　　
+	<input type="submit" name="Submit" id="save-point" value="登録">
+</div>
+
+<input type="hidden" name="mode" value="update">
+</form>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" >
+$(document).ready(function() {
+	$('#save-point').click(function(e) {
+		alert('testing');
+	});
+});
+</script>
+</body>
+</html>

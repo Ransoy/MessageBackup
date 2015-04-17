@@ -1,0 +1,4 @@
+<Files ~ "^common_proc\.inc$">
+order deny,allow
+deny from all
+</Files>

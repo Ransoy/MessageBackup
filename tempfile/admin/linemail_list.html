@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <title>サイトアナウンス</title>
+
+    <style>
+      div > input[type=button] {
+        font-size:16px;
+        margin-bottom:12px;
+      }
+      tr.isnt_visible_row {
+        background-color:#999 !important;
+      }
+      tr.is_special {
+        background-color:#ffd4e3;
+      }
+      td {
+        padding:2px 3px;
+      }
+      td.title_col {
+        width:20%;
+      }
+      td.flv1_col {
+        width:15%;
+      }
+      td.act_col {
+        width:5%;
+        text-align:center;
+      }
+    </style>
+
+    <script type="text/javascript" src="./jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('.vis_chk').each(function(e) {
+          var $row = $(this).closest('tr');
+          $(this).prop('checked', !$row.hasClass('isnt_visible_row'));
+        });
+
+        $('.vis_chk').click(function() {
+          var $row = $(this).closest('tr');
+          var prio = getPrio($row);
+          var isChecked = (this.checked) ? 1 : 0;
+          $.post('visible_denko.php', { prio: prio, is_visible: isChecked },
+            function(data) {
+              if (isChecked) {
+                $row.removeClass('isnt_visible_row');
+              }
+              else {                
+                $row.addClass('isnt_visible_row');
+              }
+          });
+        });
+
+        $('.up_btn').click(function() {
+          var $firstRow = $('tr:nth-child(2)');
+          var $row = $(this).closest('tr');
+          if ($row.is($firstRow)) alert("一番上なので移動できません");
+          else { // move priority UP
+            var btn = this;
+            btn.disabled = true;
+            var prio = getPrio($row);
+            $.post('prio_denko.php', { prio: prio, action: 'up' },
+              function(data) {
+                if (0 < data) {
+                  var $prevRow = $row.prev();
+                  $row.insertBefore($prevRow);
+                  switchPrio($row, $prevRow);
+                }
+                btn.disabled = false;
+              });
+          }
+        });
+
+        $('.down_btn').click(function() {
+          var $lastRow = $('tr:last');
+          var $row = $(this).closest('tr');
+          if ($row.is($lastRow)) alert("一番下なので移動できません");
+          else { // move priority DOWN
+            var btn = this;
+            btn.disabled = true;
+            var prio = getPrio($row);
+            $.post('prio_denko.php', { prio: prio, action: 'down' },
+              function(data) {
+                if (0 < data) {
+                  var $nextRow = $row.next();
+                  $row.insertAfter($nextRow);
+                  switchPrio($row, $nextRow);
+                }
+                btn.disabled = false;
+              });
+          }
+        });
+
+        $('.del_btn').click(function() {
+          var $row = $(this).closest('tr');
+          if(confirm('削除します。よろしいですか？')) { // delete bulletin
+            var btn = this;
+            btn.disabled = true;
+            var prio = getPrio($row);
+            $.post('prio_denko.php', { prio: prio, action: 'del' },
+              function(data) {
+                if (1 == data) $row.remove();
+              });
+          }
+        });
+      });
+
+      /**
+       * Switch priorities for current row (<tr>) and target row (<tr>).
+       * Modify row id and title link target.
+       * @param $currentRow
+       * @param $targetRow
+       */
+      function switchPrio($currentRow, $targetRow) {
+        var currentPrio = getPrio($currentRow);
+        var targetPrio = getPrio($targetRow);
+
+        // switch row ids
+        var idPrefix = 'prio_';
+        $currentRow.attr('id', idPrefix + targetPrio);
+        $targetRow.attr('id', idPrefix + currentPrio);
+
+        // switch links
+        var linkPrefix = 'save_denko.php?prio=';
+        $currentRow.find('a').attr('href', linkPrefix + targetPrio);
+        $targetRow.find('a').attr('href', linkPrefix  + currentPrio);
+
+      }
+
+      /**
+       * Get prio from current row id.
+       * @param $row
+       * @return int
+       */
+      function getPrio($row) {
+        var splitId = $row.attr('id').split('_');
+        return splitId[1];
+      
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2 align="center">イベント</h2>
+    <div>
+      <input type="button" onclick="window.location.href='header_denko.php';" value="フリー欄更新画面">
+      <input type="button" onclick="window.location.href='save_denko.php';" value="登録">
+    </div>
+    <table width="100%" border="1">
+      <tr>
+      	<th></th>
+        <th>Sender/Reciever</th>
+        <th>message</th>
+        <th>option</th>
+      </tr>
+
+	  <tr id="prio_%priority%" class="%isnt_visible_row% %is_special%">
+		<td class="act_col">
+		     <input type="check" class="up_btn" name="chck_btn" value="">
+       	</td>
+        <td class="title_col"></td>
+		<td class="title_col"></td>
+		<td class="act_col">
+			<input type="button" class="check" name="check" value="CHECKED">
+			<input type="button" class="del_btn" name="del_btn" value="DELETE">
+		</td>
+	</tr>
+
+    </table>
+  </body>
+</html>

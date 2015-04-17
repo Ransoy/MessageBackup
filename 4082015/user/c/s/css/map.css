@@ -1,0 +1,17 @@
+.sitemapTB{
+	border: 1px solid #555555;
+	margin: 10px;
+}
+.sitemap-header{
+	padding: 10px 15px 5px 15px;
+}
+.sitemap-title{
+	font-size: 16px;
+	border-bottom: 1px solid #555555;
+}
+.sitemap-body{
+	padding: 10px 15px 5px 15px;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 1.4em;
+}

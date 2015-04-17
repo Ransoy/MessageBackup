@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>スマホでライブチャットマシェリ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="../css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/menu_open.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/margin.css">
+<link rel="stylesheet" href="../css/message.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script src="../js/jquery-1.11.0.js"></script>
+</head>
+
+<body class="bd_message bd_message_inbox">
+<div id="main">
+<header id="header" class="cf">
+	<h1 id="header_logo"><a href="./"><img src="image/header_logo.png" class="hmenu"></a></h1>
+	<div id="icon_login"><a id="simple-menu" href="#sidr"><img src="image/icon/login_off.png" class="h_menu"></a></div>
+</header>
+
+<!-- 右サイドメニュー開く -->
+<div id="sidr">
+	<header id="login">
+		<h2>ログイン</h2>
+	</header>
+
+	<section id="normal_login">
+
+		<form action="" method="POST">
+			<input type="text" name="id" value="" placeholder="ID" autofocus >
+		</form>
+
+		<form action="" method="POST">
+			<input type="text" name="pass" value="" placeholder="パスワード" autofocus >
+		</form>
+
+		<p class="cheack_area">
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox">次回から入力を省略</lable>
+		</p>
+
+		<div id="login_button_area">
+
+			<ul class="button">
+				<li class="login_box">
+					<a href="login.html">ログイン</a>
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="regist_box">
+					<a href="registrationfree.html">新規無料登録はこちら</a>
+				</li>
+			</ul>
+		</div>
+
+		<p class="login_text_link"><a href="resend_renew.html">>パスワードを忘れた方</a></p>
+
+	</section>
+
+	<section id="foreign_login">
+
+		<h3>他サービスのIDを利用してログイン</h3>
+
+		<div id="login_button_area">
+
+			<ul class="button">
+				<li class="yahoo_box">
+					<a href="open_yahoo.html">Yahoo!</a>
+					<img src="image/icon/foreign_yahoo.png">	
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="rakuten_box">
+					<a href="open_rakuten.html">楽天</a>
+					<img src="image/icon/foreign_rakuten.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="google_box">
+					<a href="open_google.html">Google</a>
+					<img src="image/icon/foreign_google.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="twitter_box">
+					<a href="open_twitter.html">Twitter</a>
+					<img src="image/icon/foreign_twitter.png">
+				</li>
+			</ul>
+
+			<ul class="button">
+				<li class="facebook_box">
+					<a href="open_facebook.html">Facebook</a>
+					<img src="image/icon/foreign_facebook.png">
+				</li>
+			</ul>
+
+		</div>
+
+	</section>
+
+	<footer>
+		<p><small>&copy; MACHERIE</small></p>
+	</footer>
+
+</div>
+<!-- 右サイドメニュー閉める -->
+
+
+<div class="contents">
+    <div class="message_wrap cf">
+
+		<div class="message_header message_header--inbox">
+			<div class="col_left">
+				<a href="./message_inbox_edit.html">編集</a>
+			</div>
+			<div class="col_center">
+				<h3 class="icon icon--message_list">メールボックス</h3>
+			</div>
+			<div class="col_right">
+                <a href="#" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+			</div>
+			<div class="panel_menu" id="panel_menu">
+				<ul>
+					<li><a class="btn_message_list" href="./message_inbox.html">メールボックス</a></li>
+					<li><a class="btn_contact_list" href="./message_contact_list.html">連絡先</a></li>
+					<li><a class="btn_block_list" href="./message_block_list_edit.html">拒否リスト</a></li>
+				</ul>
+			</div>
+		</div>
+
+        <!-- old version link -->
+        <a class="link_old_mailbox" href="#">旧メールボックスへ ></a>
+        <!-- old version link -->
+
+        <div class="message_search_area d_table">
+        	<div class="d_cell">
+            	<input type="text" placeholder="名前で検索..." />
+            </div>
+            <div class="d_cell">
+            	<button class="ui_btn ui_btn--bg_gray">検索</button>
+        	</div>
+        </div>
+
+        <div class="message_sort_menu cf" id="message_sort_menu">
+            <ul>
+                <li class="on"><a href="#">全て表示</a></li>
+                <li><a href="#">未読のみ表示</a></li>
+            </ul>
+        </div>
+
+        <div class="message_list cf">
+
+            <!-- ▼データがない場合▼ -->
+            <div class="ui_msg_area ui_msg_area--not_exist">
+                <p class="msg">まだメールの送受信履歴がありません。</p>
+                <p class="msg">該当するメールがありません。</p>
+            </div>
+            <!-- ▲データがない場合▲ -->
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/message/ui/ic_cs.png')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <p class="user_name">マシェリスタッフ<span class="cnt_unread">1</span></p>
+                        <p class="desc t_truncate"><a href="./message_detail.html">スタッフからのお知らせがはいります。スタッフからのお知らせがはいります。スタッフからのお知らせがはいります。スタッフからのお知らせがはいります。スタッフからのお知らせがはいります。スタッフからのお知らせがはいります。</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+            </div>
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <!--<span class="user_status onchat">チャット中</span>-->
+                        <span class="user_status online">オンライン</span>
+                        <p class="user_name">パフォーマー名<span class="cnt_unread">1</span></p>
+                        <p class="desc t_truncate"><a href="./message_detail.html">こんにちわぁ~。今ヒマなのでよかったらメッセージでもチャットでもお話したいです~♪</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+			</div>
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <span class="user_status onchat">チャット中</span>
+                        <!--<span class="user_status online">オンライン</span>-->
+                        <p class="user_name">パフォーマー名<span class="cnt_unread">1</span></p>
+                        <p class="desc t_truncate"><a href="./message_detail.html">こんにちわぁ~。今ヒマなのでよかったらメッセージでもチャットでもお話したいです~♪</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+            </div>
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <!--<span class="user_status onchat">チャット中</span>-->
+                        <!--<span class="user_status online">オンライン</span>-->
+                        <p class="user_name">パフォーマー名</p>
+                        <p class="desc t_truncate replied"><a href="./message_detail.html">こんにちわぁ~。今ヒマなのでよかったらメッセージでもチャットでもお話したいです~♪</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+            </div>
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <!--<span class="user_status onchat">チャット中</span>-->
+                        <!--<span class="user_status online">オンライン</span>-->
+                        <p class="user_name">パフォーマー名</p>
+                        <p class="desc t_truncate replied"><a href="./message_detail.html">こんにちわぁ~。今ヒマなのでよかったらメッセージでもチャットでもお話したいです~♪</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+            </div>
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <!--<span class="user_status onchat">チャット中</span>-->
+                        <!--<span class="user_status online">オンライン</span>-->
+                        <p class="user_name">パフォーマー名</p>
+                        <p class="desc t_truncate replied"><a href="./message_detail.html">こんにちわぁ~。今ヒマなのでよかったらメッセージでもチャットでもお話したいです~♪</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+            </div>
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <!--<span class="user_status onchat">チャット中</span>-->
+                        <!--<span class="user_status online">オンライン</span>-->
+                        <p class="user_name">パフォーマー名</p>
+                        <p class="desc t_truncate replied"><a href="./message_detail.html">こんにちわぁ~。今ヒマなのでよかったらメッセージでもチャットでもお話したいです~♪</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+            </div>
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <!--<span class="user_status onchat">チャット中</span>-->
+                        <!--<span class="user_status online">オンライン</span>-->
+                        <p class="user_name">パフォーマー名</p>
+                        <p class="desc t_truncate replied"><a href="./message_detail.html">こんにちわぁ~。今ヒマなのでよかったらメッセージでもチャットでもお話したいです~♪</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+            </div>
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <!--<span class="user_status onchat">チャット中</span>-->
+                        <!--<span class="user_status online">オンライン</span>-->
+                        <p class="user_name">パフォーマー名</p>
+                        <p class="desc t_truncate replied"><a href="./message_detail.html">こんにちわぁ~。今ヒマなのでよかったらメッセージでもチャットでもお話したいです~♪</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+            </div>
+
+            <div class="message_list_item">
+				<div class="message_inner swipe_panel b_link">
+                    <div class="thumb">
+                        <a href="#"><img src="./image/spacer.gif" style="background-image: url('./image/performer/sample.jpg')" /></a>
+                    </div>
+                    <div class="message_data b_link">
+                        <!--<span class="user_status onchat">チャット中</span>-->
+                        <!--<span class="user_status online">オンライン</span>-->
+                        <p class="user_name">パフォーマー名</p>
+                        <p class="desc t_truncate replied"><a href="./message_detail.html">こんにちわぁ~。今ヒマなのでよかったらメッセージでもチャットでもお話したいです~♪</a></p>
+                        <p class="posttime">2014-08-23 14:57</p>
+                    </div>
+                </div>
+				<div class="func_area hidden_panel">
+					<ul>
+						<li><span class="btn_delete func_del_message_list_item">削除</span></li>
+					</ul>
+				</div>
+            </div>
+
+        </div><!-- // .message_list -->
+
+        <div class="message_pager">
+            <div class="cell--left">
+                <a class="prev disable" href="#">前へ</a>
+            </div>
+            <div class="cell--center">
+                <ul>
+                    <li class="current"><span>01</span></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><span>…</span></li>
+                    <li><a href="#">105</a></li>
+                </ul>
+            </div>
+            <div class="cell--right">
+                <a class="next" href="#">次へ</a>
+            </div>
+        </div>
+
+	</div><!-- // message_wrap -->
+</div><!-- // .contents -->
+
+<footer class="footer_bottom">
+	<div class="nav_main">
+        <ul>
+            <li class="top"><a href="./"><span>トップページ</a></span></li>
+            <li class="app_download"><a href="./app_download.html"><span>ダウンロード方法</a></span></li>
+            <li class="guide"><a href="./guide.html"><span>遊び方・料金説明</a></span></li>
+            <li class="faq"><a href="http://faqs.jp/?site_domain=macherie" target="_blank"><span>FAQ・よくある質問</a></span></li>
+            <li class="cs_support"><a href="./cs_support.html"><span>お問い合わせ</a></span></li>
+        </ul>
+    </div>
+    <div class="nav_sub">
+		<ul>
+        	<li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特定商取引法に基づく表記</a></li>
+            <li><a href="#">利用規約</a></li>
+        </ul>
+    </div>
+    <small class="copyright">&copy;MACHERIE</small>
+</footer>
+
+<article>
+	<section id="menu_close_area">
+		<ul class="menu_close_button"><a class="menu_close_box_bg_a" id="simple-menu-close" href="#sidr"><li class="menu_close_box_bg"></li></a></ul>
+	</section>
+</article>
+<a id="scroll_top" href="#header"><img src="image/icon/btn_pagetop.png" /></a>
+</div><!-- // #main -->
+
+<script src="../js/jquery.sidr.min.js"></script>
+<script src="../js/smoothScroll.js"></script>
+<script src="../js/jquery.biggerlink.js"></script>
+<script src="../js/jquery.touchSwipe.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/message.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.b_link').biggerlink();
+
+	// swipe list
+	$('.swipe_panel').swipe({
+		swipeLeft: function(event, direction, distance, duration, fingerCount){
+			$(this).animate({ marginLeft: '-10rem' }, 200);
+		},
+		swipeRight: function(event, direction, distance, duration, fingerCount){
+			$(this).animate({ marginLeft: '0rem' }, 200);
+		}
+	});
+});
+</script>
+</body>
+</html>

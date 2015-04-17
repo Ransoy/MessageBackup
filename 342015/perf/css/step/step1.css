@@ -1,0 +1,46 @@
+@charset "shift_jis";
+
+#titleArea{
+text-align:center;
+margin:20px 0 0 0;
+}
+
+table#step1Form{
+width:500px;
+margin:15px auto 10px auto;
+border-top:1px solid #999999;
+border-left:1px solid #999999;
+border-collapse: separate;
+}
+
+table#step1Form th{
+width:130px;
+background:#EFEFEF;
+border-right:1px solid #999999;
+border-bottom:1px solid #999999;
+text-align:center;
+padding:17px 0 17px 0;
+font-weight:normal;
+}
+
+table#step1Form td{
+width:355px;
+border-right:1px solid #999999;
+border-bottom:1px solid #999999;
+padding:17px 0 17px 15px;
+}
+
+textarea#comment{
+width:330px;
+height:80px;
+font-size:12px;}
+
+#buttonArea{
+text-align:center;
+padding:20px 0 10px 0;
+}
+
+table#step1Form tr td button{
+width: 48%;
+}
+

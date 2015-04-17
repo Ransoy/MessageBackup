@@ -1,0 +1,702 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	iMacherie
+	BUILD:	2009/7/29
+	AUTHOR:	Y.yamamoto
+_______________________________________*/
+
+
+
+/*	navi（imacherie　トップメニュー部分）
+---------------------------------------*/
+#navi{
+	height:20px;
+}
+
+/*
+#navi #topmenu{
+	height:28px;
+	width:760px;
+	display:block;
+	position:relative;
+	margin-left : auto ;
+	margin-right : auto ;
+}
+
+#navi #topmenu ul{
+	display:block;
+	position:relative;
+	height:28px;
+	margin:0 auto;
+	padding:0 0 0 12px;
+}
+
+#navi #topmenu ul li{
+	display:block;
+	float:left;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0 12px 0 0;
+	padding:5px 0 0 0;
+}
+
+#navi #topmenu ul li a{
+	margin:0;
+	padding:0;
+}
+*/
+/*	navi（imacherie　トップメニュー部分）ここまで
+---------------------------------------*/
+
+/*	navi（imacherie　トップメニューテキスト版）
+---------------------------------------*/
+
+#navi #topmenu_text{
+	height:20px;
+	display:block;
+	
+}
+
+#navi #topmenu_text ul{
+	display:block;
+	position: absolute;
+	right:10px;
+	height:20px;
+	padding:0;	
+}
+
+#navi #topmenu_text ul li{
+	display:block;
+	float:left;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:3px 6px 0 0;
+	padding:0;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#navi #topmenu_text ul li a{
+	margin:0;
+	padding:0;
+	color:#00A6D4;
+	display:block;
+/*	color:#0096a4;*/
+}
+#navi #topmenu_text ul li a:hover{
+	text-decoration:underline;
+/*	color:#0096a4;*/
+}
+/*	navi（imacherie　トップメニュー部分）ここまで
+---------------------------------------*/
+
+#member{
+	height:228px;
+	display:block;
+	position:relative;
+	margin:0 auto 15px auto;
+/*	background-image: url(../images/i_member/i_member_bg.gif);*/
+	background-repeat:repeat-x;
+}
+
+#member .memberbox{
+	width:308px;
+	/*_width:298px; */ /* IE6以下用 */
+	height:150px;
+	display:block;
+	float:left;
+	margin:12px 0 0 18px;
+	_margin:12px 0 0 10px;/* IE6以下用 */
+}
+
+#member iframe{
+	background-color:#FFFFFF;
+	position:absolute;
+	top:1em;
+	left:330px;
+	width:670px;
+}
+
+#member .memberbox .avatar{
+	height:90px;
+	width:120px;
+	display:block;
+	float:left;
+	margin:0 4px 0 0;
+	padding:0;	
+}
+
+#member .memberbox .detail{
+	height:90px;
+	width:174px;
+	background-color:#FFFFFF;
+	display:block;
+	float:right;
+	line-height:22px;
+	padding:0 5px;
+}
+
+#member .memberbox .detail span{
+	color:#FF5000;
+}
+
+#member .memberbox .detail img{
+	text-align:center;
+	margin-top:0;
+}
+
+#member .memberbox .detail a.prof{
+/*	z-index:2;*/
+	position:absolute;
+	top:12px;
+	left:255px;
+	color:#1d3994;
+	width:6em;
+	display:block;
+}
+
+#member .memberbox .detail a.m-box{
+/*	z-index:3;*/
+	position:absolute;
+	top:58px;
+	left:252px;
+	color:#1d3994;
+	width:6em;
+	display:block;
+}
+
+#member .memberbox .detail a:hover{
+	text-decoration:underline;
+}
+
+#member .memberbox .detail p{
+	border-bottom:1px solid #cccccc;
+	z-index:1;
+}
+
+#member .memberbox .detail p.bn{
+	border: none;
+}
+
+#member .memberbox .member_cle{
+	height:6px;
+	clear: both;
+}
+
+#member .memberbox table{
+	width:308px;
+	height:55px;
+	_height:47px;/*IE6用*/
+	border-collapse: collapse;
+	line-height:1.5em;
+	/*border: solid 1px #cccccc;*/
+	border: none;
+	text-align:center;
+	margin-top:5px;
+	clear: both;
+}
+/*IE8用*/
+html>/**/body #member .memberbox table {  
+	margin-top/*\**/:70px\9;
+}
+/*IE7用*/
+*:first-child+html #member .memberbox table {
+	margin-top:82px;
+}
+
+#member .memberbox table th{
+	width:101px;
+/*	background-color:#B9EFFF;*/
+	background-color:#FEFEFE;
+	color:#444444;
+	/*border: solid 1px #b4b4b4;*/
+	border: none;
+	border-left: solid 1px #b4b4b4;
+	border-bottom: solid 1px #b4b4b4;
+}
+
+#member .memberbox table th.pafo{
+	border: none;
+}
+
+#member .memberbox table td{
+	background-color:#FFFFFF;
+	/*border: solid 1px #b4b4b4;*/
+	border: none;
+	border-left: solid 1px #b4b4b4;
+	color:#0091BB;
+}
+
+
+/*	#topnavi（imacherie　ナビ部分）ここから
+---------------------------------------*/
+
+
+#member #topnavi{
+	height:41px;
+	display:block;
+	position: absolute;
+	top:163px;
+	_top:162px;/*IE6用*/
+	left:0;
+	margin-left:13px;
+	_margin-left:10px;/*IE6用*/
+}
+
+#member #topnavi ul{
+	display:block;
+	position:relative;
+	height:41px;
+	margin:0 auto;
+	padding:0 0 0 0;
+}
+
+/*IE7用*/
+*:first-child+html #member #topnavi ul{
+	float:left;
+} 
+
+#member #topnavi ul li{
+	display:block;
+	float:left;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:3px 0 0 5px;
+	padding:5px 0 0 0;
+	text-align:center;
+	vertical-align:middle;
+	line-height:24px;
+}
+
+#member #topnavi ul li a{
+	margin:0;
+	padding:0;
+	color:#00A6D4;
+	width:116px;
+	height:23px;
+	display:block;
+	background-color:#FFFFFF;
+	border:solid 1px #B4B4B4;
+/*	color:#0096a4;*/
+}
+#member #topnavi ul li a:hover{
+	background-color:#FFFFFF;
+	border:solid 1px #FFFFFF;
+	text-decoration:underline;
+/*	color:#0096a4;*/
+}
+
+
+
+/*	#topnavi（imacherie　会員本人下のリスト部分）ここまで
+---------------------------------------*/
+
+/*	ul.l_menu（imacherie　会員本人下のリスト部分）ここから
+---------------------------------------*/
+/*0908*/
+#member ul.l_menu{
+	height:24px;
+	display:block;
+	float:left;
+	margin:12px 0 0 0;
+	 position: absolute; 
+	 top: 192px;
+	 left: 18px;
+	/*_top: 118px;*/  /* IE6以下用 */
+	_left: 20px;/* IE6以下用 */
+}
+
+#member ul.l_menu li{
+	height:19px;
+	display:block;
+	float:left;
+	margin:0 4px 0 0;
+	padding:3px 5px 0 5px;
+	background-color:none;
+	text-decoration: none;
+	color:#FFF
+}
+
+#member ul.l_menu li.g{
+	background-color:#ebebeb;
+	text-decoration:none;
+	border:1px solid #b4b4b4;
+	padding:3px 5px 0 5px;
+}
+
+#member ul.l_menu li.g:hover{
+	background-color:#ffffff;
+	text-decoration:none;
+	color:#444444;
+	border-bottom-color:#FFFFFF;
+}
+
+#member ul.l_menu li a{
+	color:#FFF;
+	text-decoration:none;
+}
+#member ul.l_menu li a:hover{
+	text-decoration:underline;
+}
+
+#member ul.l_menu li.g a{
+	color:#444444;
+}
+
+#member ul.l_menu li.g_select{
+	background-color:#ffffff;
+	text-decoration:none;
+	color:#323232;
+	border:1px solid #b4b4b4;
+	border-bottom-color:#FFFFFF;
+	height:20px;
+}
+
+/*	ul.l_menu（imacherie　会員本人下のリスト部分）ここまで
+---------------------------------------*/
+
+/*	ul.r_menu（imacherie　会員本人下のリスト部分）ここから
+---------------------------------------*/
+
+#member ul.r_menu{
+	height:24px;
+	display:block;
+	float:right;
+	margin:12px 0 0 0;
+	 position: absolute; 
+	 top: 164px;
+	 right: 18px;
+	_top: 168px;/* IE6以下用 */
+	_right: 20px;/* IE6以下用 */
+}
+
+#member ul.r_menu li{
+	height:19px;
+	display:block;
+	float:right;
+	margin:0 0 4px 0;
+	padding:3px 5px 0 5px;
+	background-color:none;
+	text-decoration: none;
+	color:#FFF
+}
+
+
+#member ul.r_menu li a{
+	color:#FFF;
+}
+#member ul.r_menu li a:hover{
+	text-decoration:underline;
+}
+/*	ul.r_menu（imacherie　会員本人下のリスト部分）ここまで
+---------------------------------------*/
+
+
+
+/*-------------------	main（imacherie　メイン部分）ここから-------------------*/
+#main {
+	display:block;
+/*	position:relative;*/
+	margin:0;
+	padding:0 0 0 18px;
+}
+
+#wrap{
+	min-width: 1030px;
+}
+* html #wrap{
+			width:expression(document.body.clientWidth < 1034 ? "1030px" : "auto");
+}
+
+h1.line{
+background-color:#00A6D4;
+color:#FFFFFF;
+display:block;
+font-weight:bold;
+line-height:2em;
+height:24px;
+margin:0 0 1em 0;
+padding:0;
+position:relative;
+text-align: center;
+width:100%;
+}
+
+#main #main_l {
+	display:block;
+	position:relative;
+	margin:0;
+	padding:0;
+	width:32.5%;
+	_width:31.5%;/*-- IE6以下用 --*/
+	float:left;
+}
+
+
+#main #main_c {
+	display:block;
+	position:relative;
+	margin:0 15px;
+	padding:0;
+	width:32%;
+	_width:31.5%;/*-- IE6以下用 --*/
+	float:left;
+}
+
+#main #main_r {
+	display:block;
+	position:relative;
+	margin:0;
+	padding:0;
+	width:32%;
+	_width:31.5%;/*-- IE6以下用 --*/
+	float:left;
+}
+
+/**/
+#main .main_0 {
+	display:block;
+	position:relative;
+	margin:0 4px;
+	padding:0;
+	width:32%;
+	_width:31.5%;/*-- IE6以下用 --*/
+	float:left;
+}
+
+#main .main_1 {
+	display:block;
+	position:relative;
+	margin:0 4px;
+	padding:0;
+	width:32%;
+	_width:31.5%;/*-- IE6以下用 --*/
+	float:left;
+}
+
+#main .main_all {
+	display:block;
+	position:relative;
+	margin:0 4px;
+	padding:0;
+	width:32%;
+	_width:31.5%;/*-- IE6以下用 --*/
+	float:left;
+}
+
+/*
+.imContentsBox{
+	background-color: #ffffff;
+	margin: 0px 15px 15px 15px;
+	border-right: 2px solid #cccccc;
+}
+*/
+.imContentsBox {
+	display:block;
+	position:relative;
+	margin:0 0 12px 0;
+	padding:0;
+	width:100%;
+/*	height:280px;*/
+	height:290px;
+	/height:290px;/*--IE6,7用--*/
+/*	border:solid 1px #00a6d4;*/
+}
+.imMainBox {
+	border: 0px solid #000000;
+	width: 100%;
+}
+
+/**/
+/*
+#ifbox01,#ifbox02,#ifbox03,#ifbox04,#ifbox05 {
+	display:block;
+	position:relative;
+	margin:0 0 12px 0;
+	padding:0;
+	width:100%;
+	border:solid 1px #00a6d4;
+}
+*/
+/*------- #ifboxの高さ指定ここから -------*/
+#main #ifbox01{
+	height:140px;
+}
+#main #ifbox02{
+	height:265px;
+}
+#main #ifbox03{
+	height:330px;
+}
+#main #ifbox04{
+	height:390px;
+}
+#main #ifbox05{
+	height:245px;
+}
+
+#main #ifbox01{
+	/height:155px;/*--IE6,7用--*/
+}
+#main #ifbox02{
+	/height:280px;/*--IE6,7用--*/
+}
+#main #ifbox03{
+	/height:350px;/*--IE6,7用--*/
+}
+#main #ifbox04{
+	/height:405px;/*--IE6,7用--*/
+}
+#main #ifbox05{
+	/height:265px;/*--IE6,7用--*/
+}
+
+/*------- #ifboxの高さ指定ここまで -------*/
+
+/*------- #ifbox内の指定ここから -------*/
+#main .title {
+	display:block;
+	position:relative;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:24px;
+	background-color:#00a6d4;
+	color:#FFFFFF;
+	text-align: left;
+	font-weight:bold;
+	cursor:move;
+}
+
+#main .title p{
+	margin:0;
+	padding:0;
+	position: absolute;
+	bottom: 5px;
+	left:8px;
+}
+
+#main .title ul{
+	float:right;
+	margin:0;
+	padding:0;
+	position: absolute;
+	bottom: 6px;
+	right:8px;
+}
+
+#main .title ul li{
+	margin:0 0 0 3px;
+	float:left;
+	cursor:pointer;
+}
+
+#main_max #max_display{
+	display:block;
+	position:relative;
+	margin:0 auto;
+	padding:0;
+	width:100%;
+}
+
+/**/
+.imacherieTitle {
+	display:block;
+	position:relative;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:24px;
+/*	background-color:#00a6d4;*/
+	color:#FFFFFF;
+	text-align: left;
+	font-weight:bold;
+	cursor:move;
+}
+
+.imacherieTitle p{
+	margin:0;
+	padding:0;
+	position: absolute;
+	bottom: 5px;
+	left:8px;
+}
+
+.imacherieTitle ul{
+	float:right;
+	margin:0;
+	padding:0;
+	position: absolute;
+	bottom: 6px;
+	right:8px;
+}
+
+.imacherieTitle ul li{
+	margin:0 0 0 3px;
+	float:left;
+	cursor:pointer;
+}
+/**/
+
+
+
+
+#main iframe{
+	width:100%;
+}
+
+#main #ifbox01 iframe{
+	height:130px;
+}
+#main #ifbox02 iframe{
+	height:255px;
+}
+#main #ifbox03 iframe{
+	height:325px;
+}
+#main #ifbox04 iframe{
+	height:380px;
+}
+#main #ifbox05 iframe{
+	height:240px;
+}
+
+/*------- #ifbox内の指定ここまで -------*/
+
+
+
+/*-------------------	main（imacherie　メイン部分）ここまで-------------------*/
+
+
+
+
+/*--------------------------------------	member（imacherie　会員本人部分）ここまで---------------------------------------*/
+
+
+
+
+/*	以下clearfix
+---------------------------------------*/
+.wrapper:after, .clearfix:after {
+clear:both;
+content:"";
+display:block;
+height:0;
+visibility:hidden;
+}
+.wrapper, .clearfix {
+display:inline-block;
+}
+* html .wrapper, * html .clearfix {
+height:1%;
+}
+* + html .wrapper, * + html .clearfix {
+height:1%;
+}
+.wrapper, .clearfix {
+display:block;
+}

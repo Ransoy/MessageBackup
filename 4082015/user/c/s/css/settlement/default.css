@@ -1,0 +1,71 @@
+
+/****
+* ƒfƒtƒHƒ‹ƒgİ’è
+********************************/
+
+body {
+	text-align: center;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka";
+	color: #464646;
+}
+
+a {
+	color: #ff6400;
+	text-decoration: none;
+}
+
+a:link {
+	color: #ff6400;
+}
+
+a:visited {
+	color: #ff6400;
+}
+
+a:hover {
+	color: #ff3030;
+	text-decoration: underline;
+}
+
+input,
+textarea {
+	font-family: Arial, Helvetica, "ƒqƒ‰ƒMƒmŠpƒS Pro W3",  sans-serif;
+	border: none;
+	border: 1px solid #a8a8a8;
+	padding: 0.1em 5px;
+	background: #fff;
+}
+
+textarea {
+	height: 6em;
+	padding: 0.4em 8px;
+}
+
+input.submit {
+	border: 0;
+}
+
+input.radio {
+	background-color: transparent;
+	border: none;
+}
+
+img {
+	vertical-align: bottom;
+	border: 0;
+}
+
+h1 {
+	display: none;
+}
+
+h2,h3,h4,h5 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 12px;
+}
+

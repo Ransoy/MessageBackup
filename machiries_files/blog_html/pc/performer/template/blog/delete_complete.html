@@ -1,0 +1,416 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/blog.css" />
+</head>
+
+<body id="blog">
+
+<div id="wrapper">
+
+				<div id="Header">
+
+				<h1><a href="/performer/">Macherie</a></h1>					<div style="position:relative;top:10px;left:80px;"><p style="width:300px; height:30px; float:left;"><a href="http://www.macherie.tv/performer/first_manual/" target="_blank"><img src="http://www.macherie.tv/performer/img/manual.jpg" onmouseover="this.src='http://www.macherie.tv/performer/img/manual_on.jpg'" onmouseout="this.src='http://www.macherie.tv/performer/img/manual.jpg'" /></a></p>
+					<a href="/performer/support/support_tel.php"><img src="/performer/img/banner/phone.png" >電話問い合わせ</a>&nbsp;&nbsp;
+					<a href="http://www.macherie.tv/cs_support/" target="_blank"><img src="/performer/img/banner/mail.png" >メール問い合わせ</a>&nbsp;&nbsp;<a href="/operator/"><img src="/performer/img/banner/old_manage.gif" onmouseover="this.src='/performer/img/banner/old_manage_on.gif'" onmouseout="this.src='/performer/img/banner/old_manage.gif'" /></a></div>				<div id="mail_icon"><a href="/performer/mail/mailbox_receive.php?midokuL" class="newWindow"><img src="/performer/img/banner/icon_mail_new.png" ></a></div>
+				<dl id="welcome" class="clearfix">
+					<dt>お疲れ様です。<strong>テスト中</strong>さん</dt>					<dt><a href="http://www.macherie.tv/" target="_blank"><img src="/performer/img/banner/btn_macherie.gif"></a><dt>
+
+					<dd>
+						<form method="post" action="/performer/logout.php" id="logoutArea" name="logoutArea">							<a href="javascript:logoutF();">ログアウト</a>
+							<input type="hidden" name="logout" value="1" />
+						</form>
+					</dd>
+				</dl>
+
+				<dl id="Navigation" class="clearfix">
+					<dd class="start"><a href="/performer/">HOME</a></dd>
+					<dd>
+						<strong>設定変更</strong>
+						<ul id="naviSetting" class="menuChild">
+							<li><a href="/performer/edit_info/operator_edit_profile.php">プロフィール設定・変更</a></li>
+							<li><a href="/performer/edit_info/operator_edit_comment.php">プロフィールコメント変更</a></li>
+							<li><a href="/performer/edit_info/operator_edit_photo.php">フォトギャラリー設定</a></li>
+							<li><a href="/performer/edit_info/operator_edit_secretname.php">匿名チャットネームの設定</a></li>
+							<li><a href="/performer/edit_info/operator_edit_skin.php">チャット画面背景変更</a></li>
+							<li><a href="/performer/edit_info/operator_edit_myinfo.php">個人情報設定・変更</a></li>						</ul>
+					</dd>
+					<dd>
+						<strong>メール BOX</strong>
+						<ul id="naviMailbox" class="menuChild">
+							<li><a href="/performer/mail/mailbox_receive.php?midoku" class="newWindow">未読メール</a></li>
+							<li><a href="/performer/mail/write.php" class="newWindow">新規作成</a></li>
+							<li><a href="/performer/mail/mailbox_receive.php" class="newWindow">受信BOX</a></li>
+						</ul>
+					</dd>
+					<dd><strong>報酬について</strong>						<ul id="naviPayment" class="menuChild">
+							<li><a href="/performer/payment_system/operator_pay_point.php">獲得ポイント状況</a></li>
+							<li><a href="/performer/payment_system/operator_pay_bonusinfo.php">ボーナス履歴</a></li>							<li><a href="/performer/payment_system/operator_pay_access.php">アクセス履歴</a></li>
+							<!-- <li><a href="/performer/payment_system/operator_pay_bonusinfo.php">ボーナス履歴</a></li> -->
+
+							<!-- <li><a href="/performer/payment_system/operator_pay_point.php#compensation">報酬体系</a></li> -->
+							<li><a href="/performer/payment_system/operator_pay_paidinfo.php">精算履歴</a></li>
+							<!-- <li><a href="/performer/payment_system/operator_pay_account.php">登録口座情報</a></li> -->
+							<!-- <li><a href="/performer/payment_system/operator_pay_point.php#attention">精算に関しての注意</a></li> -->						</ul>
+					</dd>					<dd>
+						<strong>お仕事について</strong>
+						<ul id="naviWork" class="menuChild">
+							<!-- <li><a href="/performer/howtowork/step1.php">お仕事の始め方</a></li> -->
+							<li><a href="/performer/manual/faq/?M=list&id=443">待機・チャット画面</a></li>
+							<li><a href="/performer/campaign/setting/" target="_blank">カメラ・マイク設定</a></li>
+							<li><a href="/performer/manual/faq/?M=list&id=425">快適にお仕事頂く為に</a></li>
+						</ul>
+					</dd>					<dd>
+						<strong>マシェリモバイル</strong>
+						<ul id="naviMobile" class="menuChild">
+							<li><a href="/performer/mobile_tel/">マシェリモバイル設定画面</a></li>
+							<li><a href="/performer/mobile_tel/access.php">携帯版マシェリ お仕事ページへアクセス</a></li>
+
+							<li><a href="http://m-mb.jp/operator.php?M=OP_MAIL_RECEIVEBOX&FROMIDNO=momo01&FROMPASS=39399n9n" class="newWindow">マシェリモバイルメールBOX</a></li>
+							<li><a href="/performer/manual/mobile_faq/?M=list&id=76">マシェリモバイルマニュアル</a></li>
+						</ul>
+
+					</dd>		
+					<dd>
+						<strong>ヘルプ</strong>
+						<ul id="naviSupport" class="menuChild">
+							<!-- <li><a href="/performer/support/faq.php">よくある質問(FAQ)</a></li> -->
+							<li><a href="#" onclick="org=document.charset;document.charset='UTF-8';document.tofaq.submit();document.charset=org;">よくある質問(FAQ)</a></li>
+							<li><a href="http://www.macherie.tv/cs_support/" target="_blank">サポートセンター問合わせ</a></li>
+							<li><a href="/performer/support/support_tel.php">電話でのお問い合わせ</a></li>
+							<li><a href="/performer/support/bbs.php">フォーラム(BBS)</a></li>
+							<li><a href="/performer/prohibition/">禁止事項</a></li>
+							<li><a href="/performer/agreement.php">ご利用規約</a></li>
+							<li><a href="/performer/manual/faq/?M=detail&qid=3989">推奨環境</a></li>
+							<li><a href="/performer/info/operator_info_black.php">ブラックリスト</a></li>
+							<li><a href="/performer/support/operator_staff_list.php">スタッフ紹介</a></li>
+		</ul>
+					</dd>
+					<dd class="end"><a href="javascript:allNavi_manage()">全メニュー表示</a></dd>
+				</dl>
+
+			</div>
+
+				<div id="all_navi" style="display:none">
+				<div id="Footer" style="text-align:left">
+					<div class="sitemap01" style="padding:10px 0px;">
+						<ul>
+							<div style="padding:0px 10px;">
+							<li><b>設定変更</b></li
+							><li><img src="/performer/img/banner/pointer.png"><a href="/performer/edit_info/operator_edit_profile.php">プロフィール設定・変更</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/edit_info/operator_edit_comment.php">プロフィールのコメント変更</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/edit_info/operator_edit_photo.php">フォトギャラリー設定</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/edit_info/operator_edit_secretname.php">匿名チャットネームの設定</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/edit_info/operator_edit_photo.php">フォトギャラリー設定・変更</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/edit_info/operator_edit_skin.php">チャット画面背景変更</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/edit_info/operator_edit_myinfo.php">個人情報設定・変更</a></li>
+							</div>
+						</ul>
+
+					</div>
+					<div class="sitemap02" style="padding:10px 0px;">
+						<ul>
+							<li><b>メール BOX</b></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="javascript:window.open('/performer/mail/mailbox_receive.php?midoku', 'opwin', 'scrollbars=yes, toolbar=no,resizable=yes');void(0);">未読メール</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="javascript:window.open('/performer/mail/write.php', 'opwin', 'scrollbars=yes, toolbar=no,resizable=yes');void(0);">新規作成</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="javascript:window.open('/performer/mail/mailbox_receive.php', 'opwin', 'scrollbars=yes, toolbar=no,resizable=yes');void(0);">受信BOX</a></li>
+						</ul>
+						<ul>
+							<li><b>報酬について</b></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/payment_system/operator_pay_point.php">獲得ポイント状況</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/payment_system/operator_pay_access.php">アクセス履歴</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/payment_system/operator_pay_bonusinfo.php">ボーナス履歴</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/payment_system/operator_pay_paidinfo.php">精算履歴</a></li>
+						</ul>
+					</div>
+					<div class="sitemap03" style="padding:10px 0px;">
+						<ul>
+							<li><b>お仕事について</b></li>
+							<!-- <li><img src="/performer/img/banner/pointer.png"><a href="/performer/howtowork/step1.php">お仕事の始め方</a></li> -->
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/manual/faq/?M=list&id=443">待機・チャット画面</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/campaign/setting/" target="_blank">カメラ・マイク設定</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/manual/faq/?M=list&id=425">快適にお仕事頂く為に</a></li>
+						</ul>
+					</div>
+					<div class="sitemap04" style="padding:10px 0px;">
+						<ul>
+							<li><b>マシェリモバイル</b></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/mobile_tel/">マシェリモバイル設定画面</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/mobile_tel/access.php">携帯版マシェリ お仕事ページへアクセス</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="javascript:window.open('http://m-mb.jp/operator.php?M=OP_MAIL_RECEIVEBOX&FROMIDNO=momo01&FROMPASS=39399n9n', 'opwin', 'scrollbars=yes, toolbar=no,resizable=yes');void(0);">マシェリモバイルメールBOX</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/manual/mobile_faq/?M=list&id=76">マシェリモバイルマニュアル</a></li>
+						</ul>
+					</div>
+
+					<div class="sitemap05" style="padding:10px 0px 10px 10px;">
+						<ul>
+							<li><b>ヘルプ</b></li>
+							<!-- <li><img src="/performer/img/banner/pointer.png"><a href="/performer/support/faq.php">よくある質問(FAQ)</a></li> -->
+							<li><img src="/performer/img/banner/pointer.png"><a href="#" onclick="org=document.charset;document.charset='UTF-8';document.tofaq.submit();document.charset=org;">よくある質問(FAQ)</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="http://www.macherie.tv/cs_support/" target="_blank">サポートセンター問合わせ</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/support/support_tel.php">電話でのお問い合わせ</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/support/bbs.php">フォーラム(BBS)</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/prohibition/">禁止事項</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/agreement.php">ご利用規約</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/manual/faq/?M=detail&qid=3989">推奨環境</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/info/operator_info_black.php">ブラックリスト</a></li>
+							<li><img src="/performer/img/banner/pointer.png"><a href="/performer/support/operator_staff_list.php">スタッフ紹介</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+	<div id="Contens" class="clearfix" style="clear: both">
+
+		<div id="MainBlock">
+
+			<div class="cmnSection">
+
+                <div class="breadcrumbs cf">
+                    <ol>
+                        <li><a href="./index.html">ブログ</a></li>
+                        <li>編集 - 完了</li>
+                    </ol>
+                </div><!-- // .breadcrumbs -->
+
+                <div class="cmnSection_inner">
+
+					<div class="blog_form_wrap blog_form_wrap--complete">
+						<p class="msg_complete">記事を削除しました。</p>
+                        <div class="btn_wrap cf">
+							<ul>
+                                <li><a class="btn_style btn_style--large" href="./index.html">ブログTOPへ</a></li>
+							</ul>
+                        </div>
+					</div><!-- // .blog_form_wrap -->
+
+				</div><!-- // .cmnSection_inner -->
+			</div><!-- // .cmnSection -->
+
+		</div><!-- // #MainBlock -->
+
+		<div id="UtilitiesBlock">
+
+							<div id="LoginButtonBlock" class="cmnSection">
+					<ul class="clearfix">
+						<div class="left_btn"><a href="/performer/schedule_calendar.php"><img src="/performer/img/banner/btn_left_ive_cal_off.png" onmouseover="this.src='/performer/img/banner/btn_left_ive_cal_on.png'" onmouseout="this.src='/performer/img/banner/btn_left_ive_cal_off.png'" /></a></div><li id="shot2Connection"><a href="/performer/chat/chat_top.php?chat_mode=0&camp=0">2ショット接続</a></li>					<li id="partyConnection"><a href="/performer/chat/party.php?chat_mode=1">パーティーチャット接続</a></li>
+					
+					<li id="mikeDirect" style="line-height:24px;"></li>
+					<div class="mic_on_off"><a href="" onclick="return popDisp(2013,this)" target="_parent">マイク あり・なし の注意について</a></div>
+	<div class="popWindow popWin2013">
+		<a class="popClose" href="javascript:;" onclick="popDisp(2013)"></a>
+		<div class="popBody">
+			<img src="http://www.macherie.tv/performer/images/mic_on_off.png" />
+		</div>
+	</div>
+					<li id="testConnection"><a href="/performer/connect/operator_camera_check.php">カメラの接続テスト</a></li>
+					<input type="hidden" id="user_id" name="user_id" value="momo01">
+				</ul>
+			</div>
+
+			<div style="position:relative;">
+				<div id="mail_icon_mini1"><a href="/performer/mail/mailbox_receive.php?midokuL" class="newWindow"><img src="/performer/img/banner/icon_new.png"></a></div>
+				<div id="SubInformation" class="clearfix cmnSection">
+					<ul>
+						<li id="NewMail"><a href="/performer/mail/mailbox_receive.php?midokuL" class="newWindow">36件</a></li>
+						<li id="WaitingChat"><a href="/performer/memo/call_wait.php">0件</a></li>
+					</ul>
+				</div>
+			</div>			<div id="MobileInformation" class="clearfix cmnSection">
+				<ul>
+					<li id="mobileMail"><a href="http://m-mb.jp/operator.php?M=OP_MAIL_RECEIVEBOX&FROMIDNO=momo01&FROMPASS=39399n9n" class="newWindow">0件</a></li>
+				</ul>
+			</div>				<div id="OntimeInformation" class="cmnSection">
+					<ul>
+						<li>46
+人</li>
+						<li>35
+人</li>
+					</ul>
+					<p>過去３時間以内にログインした会員様の数は</p>
+					<p class="result"><strong>622
+</strong>人</p>
+					<p><a href="/performer/male_search.php">アプローチメールを会員様サーチから送ろう！</a></p>
+				</div>			<div id="OperatorStats" class="cmnSection clearfix">
+				<div id="mail_icon_mini2"><a href="/performer/mail/mailbox_receive.php?midokuL" class="newWindow"><img src="/performer/img/banner/icon_new.png"></a></div>
+
+				<div id="gallery">
+					<!-- img src="/imgs/op/120x90/6/imgVRIP0E.jpg" alt="テスト中" /-->
+					<div id="pIcon"></div>
+					<ul>
+						<li>
+							<img src="/performer/img/banner/prof_icon.gif" >
+							<a href="/performer/edit_info/operator_edit_profile.php">プロフィール編集</a>
+						</li>
+					</ul>
+				</div>
+
+				<dl>
+					<dt>テスト中</dt>今月の獲得報酬<br /><span id='pafo1'>623.5pt</span><br /><span id='pafo1'>95425円</span><br /><span id='pafo3'>精算可能金額</span><br /><span id='pafo2'>86730円</span><br /><ul id="statsSetting" class="clearfix"><li class="payment"><a href="/performer/payment_system/operator_pay_point.php">もっと詳しく</a></li></ul>					<!-- <dd>目標金額まで<br /><span>円</span></dd> -->
+					<!-- <dd>今月の目標金額<br /><span>円</span></dd> -->
+					<dt>
+						<img src="/performer/img/customer_view/customer_view_s.png" border="0" onMouseOver="this .src='/performer/img/customer_view/customer_view_s_ov.png'" onMouseOut="this .src='/performer/img/customer_view/customer_view_s.png'" value="お客様視点" 
+						onClick="javascript:window.open('http://www.macherie.tv/chat/shicho.php?id=643f50291d911c40ce757e1c499bd6e4');void(0);" style="margin:-1px 0 0 0;">
+					</dt>
+				</dl>
+				<ul class="buttonArea clearfix">
+					<div><a href="/performer/mail/" class="newWindow"><img src="/performer/img/banner/mail_box.png" /></a></div>
+					<div style="position:relative;top:6px;"><a href="/performer/memo/chat_history.php"><img src="/performer/img/banner/chat_history.png" /></a></div>
+				</ul>
+
+				<ul id="statsSetting" class="clearfix">
+					<!-- <li class="clientComment"><a href="/performer/edit_info/operator_edit_comment.php">お客様に一言</a></li> -->					<li class="newMember"><a href="/performer/memo/new_male_regist.php">新規会員様</a></li>
+					<li class="memo"><a href="/performer/memo/operator_memo_info.php">お客様メモ</a></li>
+					<!-- <li class="target"><a href="/performer/">目標設定</a></li> -->
+				</ul>
+
+			</div>
+
+			<div id="bannerBlock" class="cmnSection">				<div style="padding-bottom:10px;" class="rollover">
+					<a href="/performer/support/bbs.php"><img src="/performer/img/banner/bbs_banner.gif" /></a>
+				</div>
+				<div style="padding-bottom:10px;" class="rollover">
+					<a href="/performer/movie/" target="_blank"><img src="/performer/img/banner/moviemanual_btn.gif" /></a>
+				</div>
+				<div class="btn_ranking">
+					<a href="/performer/ranking/" target="_blank">獲得ポイントランキング</a>
+				</div>			</div>
+
+		</div>
+
+	</div>
+
+				<div id="Footer" style="background:#e9e9e9; margin-top:20px;">				<div style="text-align:left; background-image:url(img/sitemap_bg.png);background-repeat:no-repeat;">
+				</br><b>　-サイトマップ-</b></br>
+				</div>
+				<div class="sitemap01" style="padding:10px 0px 20px 0px;">
+					<ul>
+						<div style="padding:0px 0px 5px 10px;">
+						<a href="/performer/schedule_calendar.php"><img src="/performer/img/banner/btn_ive_cal.png" onmouseover="this.src='/performer/img/banner/btn_ive_cal_on.png'" onmouseout="this.src='/performer/img/banner/btn_ive_cal.png'" /></a>
+						</div>
+
+						<div style="padding:0px 0px 5px 10px;"><a id="map2Shot" href="/performer/chat/chat_top.php?chat_mode=0&camp=0"><img src="/performer/img/banner/btn_2shot.png" onmouseover="this.src='/performer/img/banner/btn_2shot_on.png'" onmouseout="this.src='/performer/img/banner/btn_2shot.png'" /></a>						</div>
+						<div style="padding:0px 0px 5px 10px;">
+						<a id="mapParty" href="/performer/chat/party.php?chat_mode=1"><img src="/performer/img/banner/btn_party.png" onmouseover="this.src='/performer/img/banner/btn_party_on.png'" onmouseout="this.src='/performer/img/banner/btn_party.png'" /></a>
+						</div>
+						<div style="padding:0px 0px 5px 10px;">
+						<a href="/performer/connect/operator_camera_check.php"><img src="/performer/img/banner/btn_cameratest_ora.png" onmouseover="this.src='/performer/img/banner/btn_cameratest_ora_on.png'" onmouseout="this.src='/performer/img/banner/btn_cameratest_ora.png'" /></a>
+						</div>
+						<div style="padding:0px 0px 10px 10px;">
+						<a href="/performer/support/bbs.php"><img src="/performer/img/banner/btn_bbs.png" onmouseover="this.src='/performer/img/banner/btn_bbs_on.png'" onmouseout="this.src='/performer/img/banner/btn_bbs.png'" /></a>
+						</div>
+						<div style="padding:0px 0px 0px 6px;">
+						<li><img src="/performer/img/banner/pointer.png" /><a href="http://www.macherie.tv/" target="_blank">マシェリ ﾒｲﾝｻｲﾄ(会員様側)</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="http://m-mb.jp/" target="_blank">マシェリモバイル</a></li>
+						</div>
+					</ul>
+				</div>
+				<div class="sitemap02" style="padding:10px 0px 20px 0px;">
+					<ul>
+						<li><b>はじめに</b></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/prohibition/">禁止事項について</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/agreement.php">ご利用規約について/a></li>
+					</ul>
+					</br>
+					<ul>
+						<li><b>メール</b></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/mail/mailbox_receive.php?midoku" target="_blank">未読メール</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/mail/write.php" target="_blank">新規作成</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/mail/mailbox_receive.php" target="_blank">受信ボックス</a></li>
+					</ul>
+				</div>
+				<div class="sitemap03" style="padding:10px 0px 20px 0px;">
+					<ul>
+						<div style="margin-left:20px;">
+						<li><b>アクセス情報</b></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/payment_system/operator_pay_access.php">アクセス履歴</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/payment_system/operator_pay_bonusinfo.php">ボーナス履歴</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/memo/chat_history.php">チャット履歴</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/male_search.php">会員様サーチ機能</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/payment_system/operator_pay_point.php">今月の獲得ポイント状況</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/payment_system/operator_pay_paidinfo.php">精算履歴一覧</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/payment_system/operator_pay_point.php#compensation">報酬体系一覧</a></li>
+						</div>
+					</ul>
+				</div>
+				<div class="sitemap04" style="padding:10px 0px 20px 0px;">
+					<ul>
+						<div style="margin-left:40px;">
+						<li><b>お仕事マニュアル</b></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/manual/faq/?M=list&id=443">チャット画面操作方法</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/movie/" target="_blank">マシェリ動画マニュアル</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/work_explanation/photo.php" target="_blank">トップ写真撮影テクニック</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/work_explanation/waiting.php" target="_blank">待機テクニック</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/campaign/setting/" target="_blank">カメラ・マイク　解消方法</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/manual/faq/?M=list&id=423">キャッシュクリア</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/manual/faq/?M=detail&qid=3989">推奨環境</a></li>
+						</div>
+					</ul>
+				</div>
+				<div class="sitemap05" style="padding:10px 0px 20px 0px;">
+					<ul>
+						<li><b>情報編集</b></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/edit_info/operator_edit_profile.php">プロフィール変更</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/edit_info/operator_edit_myinfo.php">個人情報変更</a></li>
+					</ul>
+					</br>
+					<ul>
+						<li><b>サポート</b></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="http://www.macherie.tv/cs_support/" target="_blank">メール問い合わせ</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/support/support_tel.php">電話での問い合わせ</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/support/operator_staff_list.php">スタッフ紹介</a></li>
+						<li><img src="/performer/img/banner/pointer.png" /><a href="/performer/recruit/index_recruit.php">運営スタッフ募集中！</a></li>
+					</ul>
+				</div>
+				<div style="clear: both; background-image:url(img/footer_bg.png);background-repeat:no-repeat;">
+					<address>Copyright &copy; Macherie All Rights Reserved. </address>
+				</div>
+			</div>
+
+			<div id="pWindow" style="display:none" >
+
+			</div>			</div>
+			<link rel="stylesheet" type="text/css" href="../../css/pop_window.css?v=1" />
+			<script type="text/javascript" src="../../js/jquery-1.7.1.min.js"></script>
+			<script type="text/javascript" src="../../js/jquery-ui-tabs-1.8.16.min.js"></script>
+			<script type="text/javascript" src="../../js/jquery.curvycorners.min.js"></script>
+			<script type="text/javascript" src="../../js/common.js?v=2"></script>
+			<script type="text/javascript" src="../../js/pop_window.js?v=1"></script>
+
+			<script type="text/javascript" src="../../js/blog.js"></script>
+
+			<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-13149951-1']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			</script>
+
+<form action="https://secure.okbiz.okwave.jp/faqs/end_user_login" method="post" target="_blank" name="tofaq" accept-charset="UTF-8" onsubmit="return false;">
+
+  <input id="_username" name="$username" value="performer" type="hidden">
+  <input id="_password" name="$password" value="machelogin" type="hidden">
+  
+  <input id="_http_method" name="$http_method" value="post" type="hidden">
+  <input id="site_domain" name="site_domain" value="performer" type="hidden">
+
+</form>
+
+
+</body>
+</html>

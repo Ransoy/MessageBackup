@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="Shift-JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shfit-JIS" />
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="/performer/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/margin.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/message.css" />
+</head>
+<style>
+	.on {
+		background:none;
+	}
+</style>
+<body id="message_page">
+
+<div id="wrapper">
+
+  %header%
+
+	%navi_contents%
+
+	<div id="Contens" class="clearfix" style="clear: both">
+
+		<div id="MainBlock">
+
+			<div class="cmnSection">
+
+                <div class="breadcrumbs cf">
+                    <ol>
+                        <li>メール</li>
+                        <li>連絡先</li>
+                    </ol>
+                    <!-- old version link -->
+                    <a class="link_old_mailbox" href="../../performer/mail/">旧メールボックスへ ></a>
+                    <!-- old version link -->
+                </div><!-- // .breadcrumbs -->
+
+                <div class="cmnSection_inner">
+
+                    <div class="tab_menu cf">
+                        <ul>
+                            <li>
+                                <a href="./inbox.php">メールボックス</a>
+                            </li>
+                            <li class="on">
+                                <a href="./contact_list.php">連絡先</a>
+                            </li>
+                        </ul>
+
+                        <a href="#" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+                        <div class="panel_menu" id="panel_menu">
+                            <ul>
+                                <li><a class="btn_message_list" href="./inbox_edit.php">メール削除</a></li>
+                                <li><a class="btn_contact_list" href="./contact_list_edit.php">連絡先編集</a></li>
+                                <li><a class="btn_block_list" href="./block_list_edit.php">拒否リスト</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="message_sort_menu cf" id="message_sort_menu">
+                        <ul>
+                            <li class="all %all%"><a href="javascript:;">全て表示</a></li>
+                            <li class="chat %chat%"><a href="javascript:;">チャット入室あり</a></li>
+                        </ul>
+                        <form action="contact_list.php" method="get"  id='contact-form'>
+                        <div class="message_search_area">
+                            <input type="text" placeholder="名前で検索..." name="q" value='%searchVal%'/>
+                            <input type="hidden" name="v" value="%v%" id="view-tab"/>
+                            <button class="btn_style">検索</button>
+                        </div>
+                        </form>
+                    </div>
+
+                    <div class="message_list_wrap cf">
+	                    <div class="message_list contact_list cf">
+
+                            <!-- tmpl:ifdef %result% -->
+                            <div class="ui_msg_area ui_msg_area--not_exist">
+                                <p class="msg">まだ連絡先に表示するユーザーがいません。</p>
+                            </div>
+                           <!-- tmpl:endif -->
+
+							<table>
+								<!-- tmpl:loop %all_set% -->
+								<tr class="message_list_item">
+									<td class="col_left">
+                                    	<div class="thumb">
+                                    		%image%
+										</div>
+									</td>
+									<td class="col_center b_link">
+                                        <p class="user_name"><a href="./detail.php?id=%id%">%name%</a></p>
+									</td>
+								</tr>
+							   	<!-- tmpl:endloop -->	
+							</table>
+
+                        </div><!-- // .message_list -->
+					</div><!-- // .message_list_wrap -->
+
+                    <div class="message_pager border_top">
+                        <!-- tmpl:ifdef %prev-href% -->
+			        	<div class="cell--left">
+			        		<a class='prev %prev-disable%' href='contact_list.php?page=%prev-href%'>前へ</a>
+			        	</div>
+			        	<!-- tmpl:endif -->
+			        			<!-- tmpl:ifdef %nav% -->
+			        				%nav%
+			        			<!-- tmpl:endif -->
+			        	<!-- tmpl:ifdef %next-href% -->
+						<div class="cell--right">
+			        		<a class='next %next-disable%' href='contact_list.php?page=%next-href%'>次へ</a>
+			        	</div>
+			        	<!-- tmpl:endif -->
+                    </div>
+
+				</div><!-- // .cmnSection_inner -->
+			</div><!-- // .cmnSection -->
+
+		</div><!-- // #MainBlock -->
+
+		<div id="UtilitiesBlock">
+			%utilities%
+		</div>
+	</div>
+	%footer%
+			
+</div>
+
+<link rel="stylesheet" type="text/css" href="/performer//css/pop_window.css?v=1" />
+<script type="text/javascript" src="/performer/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/performer/js/jquery-ui-tabs-1.8.16.min.js"></script>
+<script type="text/javascript" src="/performer/js/jquery.curvycorners.min.js"></script>
+<script type="text/javascript" src="/performer/js/common.js?v=2"></script>
+<script type="text/javascript" src="/performer/js/pop_window.js?v=1"></script>
+<script type="text/javascript" src="/performer/js/message.js"></script>
+<script type="text/javascript" src="/performer/js/jquery.biggerlink.js"></script>
+<script type="text/javascript" src="/performer/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript">
+     $(function(){
+		$('.b_link').biggerlink();
+		// modal
+		$('a[rel=leanModal]').leanModal();
+
+		$(document).keyup(function(e){
+		    if(e.keyCode == 27)
+		    	$("#lean_overlay").trigger("click");
+		});
+
+		$('#message_sort_menu').find('a').click(function() {
+			var view = ($(this).parent('li').hasClass('all'))? 'all': 'chat';
+			$('#view-tab').val(view);
+			$('#contact-form').submit();
+		});
+     });
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-13149951-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>

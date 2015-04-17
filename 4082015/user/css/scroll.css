@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+#container-head2{
+	width:170px;
+	height:24px;
+	background-image:url(../images/campaign/new_tag_contents.gif);
+	text-align:right;
+}
+
+#container-head2 img{
+	margin:6px 5px 0 0;
+	border-style:none;
+}
+
+#container-box2{
+	width:168px;
+	border-left:solid #787878 1px;
+	border-right:solid #787878 1px;
+	border-bottom:solid #787878 1px;
+}
+
+#container2{
+	width:148px;
+	padding:10px 10px 5px 10px;
+}
+
+#container2 p,
+#container2 ul{
+	margin:0;
+	padding:0;
+	font-size:100%;
+}
+
+#container li {
+	list-style:none;
+}
+
+#container2 img {
+	border:0;
+}
+
+#container2 div.bannerBox {
+	overflow:hidden;
+	zoom:1;
+	font-size:82%;
+	padding:3px;
+	margin-bottom:10px;
+}
+
+#container2 div.bannerBox img {
+	width:auto;
+	float:left;
+}
+
+
+
+#campaignBox2 div.inner {
+	overflow:hidden;
+	position:relative;
+	height:180px;
+	width:148px;
+	clear:both;
+}
+
+#campaignBox2 p.btnTop {
+	position:absolute;
+	z-index:200;
+	cursor:pointer;
+	background:#FFFFFF;
+	height:15px;
+}
+
+
+#campaignBox2 p.btnBottom {
+	position:relative;
+	top:-7px;
+	z-index:200;
+	cursor:pointer;
+	background:#FFFFFF;
+	height:15px;
+}
+
+* html #naviColumn2 #campaignBox2 {
+	padding:1px 0;
+}
+
+#naviColumn2 #campaignBox2 .textBannerStyle {
+	position:absolute;
+	padding:12px 0px 10px 0;
+	margin-right:0;
+	top:0;
+	left:0;
+}
+
+#naviColumn2 #campaignBox2 .textBannerStyle li {
+	width:100%;
+	margin-right:0;
+	margin-top:5px;
+}
+
+#naviColumn2 #campaignBox2 .textBannerStyle li img{
+	vertical-align:top;
+}
+
+
+#container2 .infoBox ul.textBannerStyle {
+	overflow:hidden;
+	zoom:1;
+	margin-right:-10px;
+}
+
+
+#container2 .infoBox ul.textBannerStyle li {
+	width:148px;
+	float:left;
+	list-style:none;
+	margin-right:10px;
+	display:inline;
+}
+
+
+
+#container2 .infoBox ul.textBannerStyle.wide li {
+	width:148px;
+	float:left;
+	list-style:none;
+	display:inline;
+	margin-right:10px;
+}
+
+#campaignBox2 .infoBox ul.textBannerStyle li {
+	float:none;
+}
+
+* html #container2 .infoBox ul.textBannerStyle.wide li {
+	width:148px;
+}
+
+
+
+
+
+
+
+
+
+#container-head{
+	width:170px;
+	height:24px;
+	background-image:url(../images/campaign/new_tag_event.gif);
+	text-align:right;
+}
+
+#container-head img{
+	margin:6px 5px 0 0;
+	border-style:none;
+}
+
+#container-box{
+	width:168px;
+	border-left:solid #787878 1px;
+	border-right:solid #787878 1px;
+	border-bottom:solid #787878 1px;
+}
+
+#container{
+	width:148px;
+	padding:10px 10px 5px 10px;
+}
+
+#container p,
+#container ul{
+	margin:0;
+	padding:0;
+	font-size:100%;
+}
+
+#container li {
+	list-style:none;
+}
+
+#container img {
+	border:0;
+}
+
+#container div.bannerBox {
+	overflow:hidden;
+	zoom:1;
+	font-size:82%;
+	padding:3px;
+	margin-bottom:10px;
+}
+
+#container div.bannerBox img {
+	width:auto;
+	float:left;
+}
+
+
+
+#campaignBox div.inner {
+	overflow:hidden;
+	position:relative;
+	height:180px;
+	width:148px;
+	clear:both;
+}
+
+#campaignBox p.btnTop {
+	position:absolute;
+	z-index:200;
+	cursor:pointer;
+	background:#FFFFFF;
+	height:15px;
+}
+
+
+#campaignBox p.btnBottom {
+	position:relative;
+	top:-7px;
+	z-index:200;
+	cursor:pointer;
+	background:#FFFFFF;
+	height:15px;
+}
+
+* html #naviColumn #campaignBox {
+	padding:1px 0;
+}
+
+#naviColumn #campaignBox .textBannerStyle {
+	position:absolute;
+	padding:12px 0px 10px 0;
+	margin-right:0;
+	top:0;
+	left:0;
+}
+
+#naviColumn #campaignBox .textBannerStyle li {
+	width:100%;
+	margin-right:0;
+	margin-top:5px;
+}
+
+#naviColumn #campaignBox .textBannerStyle li img{
+	vertical-align:top;
+}
+
+
+#container .infoBox ul.textBannerStyle {
+	overflow:hidden;
+	zoom:1;
+	margin-right:-10px;
+}
+
+
+#container .infoBox ul.textBannerStyle li {
+	width:148px;
+	float:left;
+	list-style:none;
+	margin-right:10px;
+	display:inline;
+}
+
+
+
+#container .infoBox ul.textBannerStyle.wide li {
+	width:148px;
+	float:left;
+	list-style:none;
+	display:inline;
+	margin-right:10px;
+}
+
+#campaignBox .infoBox ul.textBannerStyle li {
+	float:none;
+}
+
+* html #container .infoBox ul.textBannerStyle.wide li {
+	width:148px;
+}

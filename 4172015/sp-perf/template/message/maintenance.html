@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shift-JIS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat">
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。">
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/html5reset.css" />
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/message.css" />
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/male_profile.css" />
+<link rel="stylesheet" type="text/css" href="/sp/performer/css/font-awesome.min.css" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<body>
+<div class="page_wrap page_wrap--message">
+	%header%
+	<div class="pagebody cf">
+		<div class="pagebody_inner">
+			<h1 style="margin: 50px 0 ;">System Under Maintenance</h1>
+		</div><!-- // .pagebody_inner -->
+	</div><!-- // .pagebody -->
+	%footer%
+</div><!-- ./page_wrap -->
+
+<script type="text/javascript" src="/sp/performer/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/sp/performer/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" src="/sp/performer/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="/sp/performer/js/jquery.biggerlink.js"></script>
+<script type="text/javascript" src="/sp/performer/js/message.js"></script>
+<script type="text/javascript">
+$(function(){
+	var searched=%searched%;
+	var old_keyword = '%old_keyword%';
+	
+	$('.b_link').biggerlink();
+
+	// modal
+	$('a[rel=leanModal]').leanModal();
+	
+	// swipe list
+	$('.swipe_panel').swipe({
+		swipeLeft: function(event, direction, distance, duration, fingerCount){
+			$(this).animate({ marginLeft: '-10rem' }, 200);
+		},
+		swipeRight: function(event, direction, distance, duration, fingerCount){
+			$(this).animate({ marginLeft: '0rem' }, 200);
+		}
+	});
+
+	
+	/**
+	tabs
+	*/
+	$('#message_sort_menu ul > li').click(function() {
+		keyword = $('#keyword').val();
+		if ( $(this).hasClass('all')) {
+			$(this).addClass('on');
+			$('.unread').removeClass('on');
+			$('#tab').val('all');
+		}
+		else {
+			$(this).addClass('on');
+			$('.all').removeClass('on');
+			$('#tab').val('unread');
+		}
+		$('#page').val(1);
+		/*if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}*/
+		$('.message_search_area > div > form').submit();
+	});
+	
+	/**
+	search contact
+	 */
+	$('#search').click(function() {
+		$('#page').val(1);
+		$('.message_search_area > div > form').submit();
+	});
+
+	/**
+	page next / prev click
+	*/
+	$('.pager > div > a').click(function() {
+		if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}
+		var currentPage = $('#page');
+			if ($(this).hasClass('prev')) {
+				currentPage.val(+currentPage.val() - 1);
+			} 
+			else if($(this).hasClass('next')) {
+				currentPage.val(+currentPage.val() + 1);
+			}
+		$('.message_search_area > div > form').submit();
+	});
+
+	/**
+	page number click
+	*/ 
+	$('.pager > div > ul > li > a').click(function() {
+		if (searched == 0) {
+			$('#keyword').val('');
+		} else if (old_keyword != keyword) {
+			$('#keyword').val(old_keyword);
+		}
+		var page = $(this).html();
+		$('#page').val(page);
+		$('.message_search_area > div > form').submit();
+	});
+	
+	$('.message_search_area > div > form > input#keyword').keydown(function(e){
+		if (e.keyCode == 13) {
+			$('#page').val(1);
+		}
+	}); 
+
+	truncateMessage();
+
+	$('.message_data .desc').find('img').load(function() {
+		var inbox = $(this).parent().parent('.desc');
+		if (inbox[0].scrollWidth > inbox.innerWidth()) {
+			inbox.siblings('.trun_message').show();
+		} else {
+			inbox.siblings('.trun_message').hide();
+		}
+	});
+});
+
+$(window).on('resize', function(){
+	truncateMessage();
+});
+
+function truncateMessage() {
+	$('.message_data .desc').each(function() {
+		var inbox  = $(this);
+		if (inbox[0].scrollWidth > inbox.innerWidth()) {
+			inbox.siblings('.trun_message').show();
+		} else {
+			inbox.siblings('.trun_message').hide();
+		}
+	});
+}
+</script>
+</body>
+</html>

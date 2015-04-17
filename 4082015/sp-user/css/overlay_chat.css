@@ -1,0 +1,33 @@
+
+/***************
+* overlay_chat 
+******************************/
+
+.shicho_wrap #overlay {    
+	background-color: #ffffff;
+    border: 1px solid;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.shicho_wrap #overlay_content {
+	opacity: 0;
+    height: 77px;
+    left: 50%;
+    position: absolute;
+    /*width: 50%;*/
+    z-index: 201;
+}
+
+
+
+
+	
+
+
+
+

@@ -1,0 +1,246 @@
+.main_body *{
+	font-size:12px;
+	margin:0;
+	padding:0;
+	color:#444444;
+}
+
+.main_body {
+	margin: 10px;
+	padding: 0;
+	min-width:730px;
+}
+
+
+/*------------------iframe内form用---------------------*/
+/*-------formリセット用ここから--------*/
+.main_body fieldset, , .main_body label, .main_body legend{  
+	margin:0;  
+	padding:0;  
+	border:0;  
+	font-weight:inherit;  
+	font-style:inherit;  
+	font-size:100%;  
+	font-family:inherit;  
+	vertical-align:baseline;  
+}  
+/*-------formリセット用ここまで--------*/
+
+.main_body table {
+	border-collapse: collapse;
+	line-height:1.5em;
+	border: solid 1px #FFFFFF;
+	width:100%;
+	min-width:730px;
+}
+
+.main_body table th{
+	background-color:#00A6D4;
+	color:#FFFFFF;
+	text-align:left;
+	border: solid 1px #FFFFFF;
+	padding:0.5em 1em;
+	width:100px;
+	min-width:100px;
+	/width:140px;/*--IE7以下用--*/
+	/min-width:140px;/*--IE7以下用--*/
+}
+
+.main_body th.pafo{
+	width:7%;
+	min-width:5em;
+	/width:7%;/*--IE7以下用--*/
+}
+
+.main_body .wid_full{
+	width:100%;
+	/min-width:200px;/*--IE7以下用--*/
+}
+
+.main_body *:.main_body first-child+html .main_body .wid_full_ie7/*--IE7用--*/{
+	width:100%;
+}
+
+.main_body td.wid_full{
+	vertical-align: top;
+	/min-width:100%;/*--IE7以下用--*/
+}
+
+.main_body td.wid_full{
+	vertical-align: top;
+	/min-width:100%;/*--IE7以下用--*/
+}
+
+.main_body .wid_33{
+	width:33%;
+	min-width:100px;/*--IE7以下用--*/
+}
+
+.main_body .wid_retrieval{
+	width:160px;
+	max-width:160px;	
+	white-space:nowrap;
+}
+
+
+.main_body .text_center{
+	text-align:center;
+}
+
+.main_body table td{
+	background-color:#f0f0f0;
+	text-align: left;
+	border: solid 1px #FFFFFF;
+	padding:5px;
+}
+
+.main_body table td.list{
+	width:26%;
+}
+
+.main_body table td.noborder{
+	background-color:#f0f0f0;
+	text-align: left;
+	width:780px;
+	border:none;
+}
+
+.main_body table td input{
+	margin: 0px 5px 0 0px;
+	text-align:	left;
+}
+
+.main_body table td input.rbtn-cbox{
+	margin: 0px 5px 0 0px;
+	text-align:	left;
+	width:1em; 
+}
+
+
+
+.main_body table td input.text_{
+	margin: 0;
+	padding:0;
+	text-align:left;
+	width:15em; 
+}
+
+.main_body table td input.btn{
+	margin: 0;
+	width:10em;
+	text-align: center;
+}
+.main_body table td input.btn_s{
+	margin: 0;
+	width:3.5em;
+	text-align: center;
+}
+.main_body table td input.btn_m{
+	margin: 0;
+	/margin: 0 0 0 1em;/*--IE7以下用--*/
+	width:4.5em;
+	text-align: center;
+}
+
+.main_body table td textarea{
+	padding:5px;
+}
+
+.main_body table td select{
+	/margin-left:1em;/*--IE7以下用--*/
+}
+
+.main_body .textleft{
+	float: left;
+	display: block;
+	position:relative;
+	padding-top:2px;
+}
+
+.main_body .imgleft{
+	float: left;
+	display: block;
+	position:relative;
+}
+
+.main_body .textbox{
+	margin-left:1em;
+	float: left;
+	display: block;
+	position:relative;
+}
+
+.main_body #pf_box{
+	width:100%;
+	min-width:730px;
+}
+
+.main_body p.r_text {
+	line-height:1.75em;
+	text-align:right;
+}
+
+/*------------------online-new.html用ここから---------------------*/
+.online_area{
+	clear:both;
+	background:url(../images/face/tag/tag_bg.gif) repeat-x #000;
+	height:41px;
+	width:100%;
+	min-width:700px;
+	position:relative;
+	display:block;
+	z-index:1
+}
+
+.nf_area{
+	background:url(../images/face/tag/tag_newface_bg.gif) repeat-x;
+	height:41px;
+	width:100%;
+	min-width:700px;
+	position:relative;
+	display:block;
+	z-index:0
+}
+
+.oa_title{
+	position: absolute;
+	top:0;
+	left:0;	
+	z-index:2
+}
+
+.online_area select{
+	position: absolute;
+	top:0px;
+	right:120px;	
+	z-index:3
+}
+
+.online_area select.easy{
+	position: absolute;
+	top:0px;
+	right:10px;	
+	z-index:3
+}
+
+.nf_area .info{
+	position: absolute;
+	top:0;
+	right:113px;
+	z-index:4
+}
+
+.nf_area .info-easy{
+	position: absolute;
+	top:0;
+	right:3px;
+	z-index:4
+}
+
+.online_area a,.nf_area a{
+	position: absolute;
+	top:0;
+	right:0;
+	z-index:5
+}
+/*------------------online-new.html用ここまで---------------------*/

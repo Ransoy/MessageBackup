@@ -1,0 +1,376 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Macherie
+	BUILD:	2007/4/11
+	AUTHOR:	S.takaya
+_______________________________________*/
+
+/*	Layout
+---------------------------------------*/
+#header{
+	background:url(../../images/face/head/bg.gif) #a2e3f5;
+	border-bottom:1px solid #fff;
+	height:45px;
+}
+#pan{
+	clear:both;
+	line-height:18px;
+	background:#0d53af;
+	color:#fff;
+	padding-left:5px;
+	letter-spacing:2px;
+	font-size:10px;
+}
+#pan a{
+	color:#fff;
+}
+#topRegist{
+	height:52px;
+	background:url(../../images/face/center_banner_bg.gif) repeat-x;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#liquid{
+	width:100%;
+	padding-bottom:20px;
+	float:left;
+}
+*+html #liquid{
+	height:1%;
+}
+#conBlock{
+	margin:0 185px;
+	text-align:left;
+}
+#gBLock{
+	margin:0 185px;
+	text-align:center;
+}
+#leftBlock{
+	float:left;
+	width:185px;
+	margin-left:-100%;
+	padding-bottom:10px;
+}
+#rightBlock{
+	float:left;
+	margin-left:-185px;
+	width:185px;
+	padding-bottom:10px;
+}
+#footer{
+	clear:both;
+	padding:8px 0;
+	letter-spacing:1px;
+	color:#fff;
+	font-size:10px;
+	width:100%;
+	background:#002a66;
+	line-height:14px;
+	text-align:center;
+}
+#footer a{
+	color:#fff;
+}
+#footer p a:hover{
+	border-bottom:1px solid #fff;
+}
+address{
+	font-size:10px;
+	font-style:normal;
+	background:#333;
+	color:#fff;
+	text-align:center;
+}
+address a{
+	color:#fff;
+}
+* html body #wrap{
+	border-right:800px solid #ddd;
+	float:left;
+	position:relative;
+	margin-right:-800px;
+}
+*+html #conBlock,
+*+html #gBLock{
+	height:1%;
+}
+* html body #conBlock,
+* html body #gBLock{
+	width:100%;
+	height:1%;
+}
+* html img#ieLock{
+	width:652px;
+	height:1px;
+}
+/*	Genral
+----------------------------------------*/
+.block{
+}
+#leftBlock .block{
+	margin:5px 5px 0 10px;
+}
+#rightBlock .block{
+	margin:5px 10px 0 5px;
+}
+.clear{
+	clear:both;
+}
+.rImg{
+	float:right;
+}
+.lImg{
+	float:left;
+}
+.attention{
+	color:red;
+	font-size:10px;
+}
+.f10{
+	font-size:10px;
+}
+#ieLock{
+	width:638px;
+	height:1px;
+	clear:both;
+}
+.box{
+	width:100%;
+}
+.box li.left{
+	float:left;
+}
+.box li.right{
+	float:right;
+}
+/*	Header
+----------------------------------------*/
+#header h1{
+	float:left;
+	display:block;
+	background:url(../../images/face/head/title.gif) no-repeat #a2e3f5;
+	width:622px;
+	height:45px;
+	text-indent:-9999px;
+	overflow:hidden;
+	border:0;
+}
+#header h1 a{
+	display:block;
+	width:200px;
+	height:45px;
+}
+/*	Index
+----------------------------------------*/
+.selectArea{
+	clear:both;
+	background:url(../../images/xxsato/common/bar.gif) repeat-x #000;
+	height:37px;
+}
+.selectArea select{
+	width:200px;
+}
+.select{
+	margin-top:10px;
+	border:1px solid #000;
+}
+.selectArea form select option{
+	line-height:20px;
+}
+a.update{
+	text-decoration:none;
+}
+.girlsView{
+	width:100%;
+	padding-top:2px;
+	height:1%;
+	clear:both;
+}
+.girlsView ul{
+	list-style:none;
+}
+.girlsView p{
+	display:block;
+	padding:50px 10px;
+}
+#nBiframe{
+	clear:both;
+	width:100%;
+	height:200px;
+	border:0;
+}
+#nBleft{
+	position:relative;
+	width:200px;
+	list-style:none;
+}
+#nBottom{
+	clear:both;
+	background:#ccc;
+}
+#nBottom p{
+	margin:3px;
+	padding:3px;
+	border:1px solid #666;
+	background:#f7f7f7;
+	line-height:25px;
+}
+/*	LeftBlock
+----------------------------------------*/
+div#login table{
+	width:164px;
+}
+div#login table th{
+	text-align:left;
+	font-size:10px;
+}
+div#login table th em{
+	color:#ff9900;
+	font-style:normal;
+	letter-spacing:1px;
+}
+div#login table td p{
+	text-align:right;
+	font-size:10px;
+}
+div#login table td input.imgSubmit{
+	border:0;
+}
+div#login{
+	padding:2px;
+	background:#fff0fb;
+	border:1px solid #000;
+}
+div#login input.login{
+	width:110px;
+}
+#menu{
+	padding-bottom:3px;
+	background:url(../../images/xxsato/common/menu/btn_bottom.gif) bottom no-repeat;
+}
+#menu li{
+	width:170px;
+	height:36px;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+#menu li a{
+	display:block;
+	width:170px;
+	height:36px;
+}
+ul#menu li#mTitle{background:url(../../images/face/menu/btn_top.gif); height:30px;}
+#menu1 a{background:url(../../images/xxsato/common/menu/btn_top_top.gif);}
+#menu2 a{background:url(../../images/xxsato/common/menu/btn_registration.gif);}
+#menu3 a{background:url(../../images/xxsato/common/menu/btn_about.gif);}
+#menu4 a{background:url(../../images/xxsato/common/menu/btn_beginner.gif);}
+#menu5 a{background:url(../../images/xxsato/common/menu/btn_price.gif);}
+#menu6 a{background:url(../../images/xxsato/common/menu/btn_serch.gif);}
+#menu7 a{background:url(../../images/xxsato/common/menu/btn_member.gif);}
+#menu8 a{background:url(../../images/xxsato/common/menu/btn_support.gif);}
+#menu li a:hover{background-position:0px -36px;}
+#iconHelp{
+	background:url(../../images/xxsato/common/menu2/bg_iconhelp.gif) repeat-y;
+}
+
+#iconHelp li.title{
+	padding:0;
+}
+/*	RightBlock
+----------------------------------------*/
+#rightBlock dl{
+	background:url(../../images/xxsato/common/menu2/side_bottom.gif) no-repeat bottom;
+	padding-bottom:2px;
+}
+#rightBlock dl dt{
+	font-weight:bold;
+	line-height:20px;
+}
+#rightBlock dl dt,
+#rightBlock dl dd{
+	background:url(../../images/xxsato/common/menu2/bg_iconhelp.gif);
+	padding:2px 0  2px 6px;
+	font-weight:normal;
+}
+#rightBlock dl dd a{
+	color:#333;
+}
+/*	GirlsBlock
+----------------------------------------*/
+.gB{
+	margin:1px 0 0 1px;
+    position:relative;
+    width:125px;
+    height:144px;
+    overflow:hidden;
+    float:left;
+}
+.on{background: url(../../images/xxsato/g/onbg.gif) top left no-repeat;}
+.pon{background: url(../../images/xxsato/g/onbg.gif) top left no-repeat;}
+.ch{background: url(../../images/xxsato/g/2bg.gif) top left no-repeat;}
+.pc{background: url(../../images/xxsato/g/pbg.gif) top left no-repeat;}
+.off{background: url(../../images/xxsato/g/offbg.gif) top left no-repeat;}
+.eve1{background:url(../../images/xxsato/g/eventbg.gif) top left no-repeat;}
+.tag{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:120px;
+    height:27px;
+    overflow:hidden;
+    text-align:left;
+}
+.pic{
+    position:relative;
+    top:0px;
+    left:1px;
+    width:120px;
+    height:90px;
+    text-align:center;
+    overflow: hidden;
+    background:center center no-repeat;
+}
+.name{
+    position:relative;
+    top:4px;
+    left:5px;
+    width:118px;
+    overflow: hidden;
+	text-align:left;
+	line-height:17px;
+}
+.mail{
+    position:relative;
+    top:-18px;
+    left:80px;
+    width:34px;
+    height:17px;
+    text-align:right;
+}
+.name a{color:#333333; text-decoration: none;}
+.name a:hover {text-decoration: underline;}
+/*	Footer
+---------------------------*/
+#footer ul li{
+	float:left;
+	padding:0 4px 5px;
+	list-style:none;
+}
+#footer img{
+	float:left;
+	margin:0 5px;
+}
+#footText{
+	text-align:left;
+	width:430px;
+	float:left;
+}
+#link{
+	clear:both;
+}
+#fTop{
+	width:850px;
+	margin:0 auto;
+}

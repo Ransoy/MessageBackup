@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shift-JIS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat">
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。">
+<link rel="stylesheet" type="text/css" href="../css/html5reset.css" />
+<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/blog.css" />
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<body>
+<div class="page_wrap page_wrap--blog">
+	<header class="header" id="header">
+		<div class="d_table">
+        	<div class="d_cell t_left v_middle">
+        		<h1 class="header__logo"><a href="./index.php">Macherie</a></h1>
+			</div>
+        	<div class="d_cell t_right v_middle">
+        		<a class="btn btn--logout" href="../login/logout.php">ログアウト</a>
+        	</div>
+        </div>
+	</header>
+
+	<div class="pagebody cf">
+		<div class="pagebody_inner">
+			<div class="breadcrumbs cf">
+				<ol>
+					<li><a href="./index.php">ブログトップ</a></li>
+					<li>マイブログ一覧</li>
+				</ol>
+			</div><!-- // .breadcrumbs -->
+            <div class="common_inner no_padding_top">
+
+                <div class="blog_menu_btns cf">
+                    <ul>
+                        <li><a class="btn btn--small" href="./index.php">新規投稿</a></li>
+                        <li class="dropdown_trigger" data-target="blog_notice_list"><a class="btn btn--small btn--notice" href="javascript:void(0);">お知らせ
+                        		<!--  tmpl:ifdef %notif% -->
+                        			<span class="badge">%notif%</span>
+                        		<!--  tmpl:endif -->
+                        		</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="blog_notice_list dropdown_list" id="blog_notice_list">
+		                    <ul>
+		                    			%notif_list%
+		                    </ul>
+			                    <div style= "%display%" class="blog_notice_list_pager cf">
+			                    		<input type="hidden" id="pages" value="%notif_pages%"/>
+			                        <a class="prev disable" data-val="0" href="javascript:void(0);">前</a>
+			                        <a class="next" data-val="%next_page%" href="javascript:void(0);">次</a>
+			                    </div>
+                </div>
+
+                <div class="blog_display_switch cf">
+                    <ul>
+                        <li class="blog_display_switch_menu myblog"><a class="on" href="javascript:void(0);">マイブログ</a></li>
+                        <li class="blog_display_switch_menu allblog"><a href="./article_list_others.php">みんなのブログ</a></li>
+                        <li class="blog_display_switch_menu themeblog"><a href="./article_list_theme.php">テーマ別ブログ</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="article_list cf">
+
+				<!-- tmpl:ifdef %no_article% -->
+                <div class="ui_msg_area ui_msg_area--not_exist">
+                	<p class="msg">まだ投稿がありません。</p>
+                </div>
+                <!-- tmpl:endif -->
+
+                <!-- tmpl:loop %loop% -->
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <!-- tmpl:ifdef %hidden% -->
+                            <span class="status hide">%hidden%</span>
+                            <!-- tmpl:endif -->
+                            <img src="../img/blog/spacer.gif" style="background-image: url('%article_img%')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.php?id=%article_id%">%title%</a></h4>
+                            <p class="desc t_truncate">%body%</p>
+                            <p class="posttime">%date%</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">%view%</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">%like%</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">%comment%</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./update.php?id=%article_id%">編集</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- tmpl:endloop -->
+
+            </div><!-- // .article_list -->
+
+            <!-- tmpl:ifdef %pagination% -->
+            <div class="pager">
+                <div class="cell--left">
+                	<a class="prev %prev_stat%" href="javascript:void(0);">前へ</a>
+				</div>
+            	<div class="cell--center">
+                    <ul>
+                        %pagination%
+                    </ul>
+                </div>
+                <div class="cell--right">
+                	<a class="next %next_stat%" href="javascript:void(0);">次へ</a>
+ 				</div>
+                <form id="pager" action="" method="post">
+                        <input type='hidden' name='page' id='page'/>
+                </form>
+            </div>
+          <!-- tmpl:endif -->
+		</div><!-- // .pagebody_inner -->
+	</div><!-- // .pagebody -->
+
+	<footer class="footer" id="footer">
+		<small class="footer__copyright">&copy; Macherie</small>
+	</footer>
+</div><!-- ./page_wrap -->
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" src="../js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../js/jquery.biggerlink.js"></script>
+<script type="text/javascript" src="../js/blog.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.b_link').biggerlink();
+
+	// notice dropdown list
+	$('.dropdown_trigger').on('click', function(e){
+		e.preventDefault();
+		var dropdown_list = $('#' + $(this).attr('data-target'));
+		if(dropdown_list.is(':visible')){
+			dropdown_list.slideUp(200);
+		}else{
+			dropdown_list.slideDown(200);
+		}
+	});
+
+/** action for page of articles       */
+    $('.pager > div > ul > li > a').click(function(){
+        var page = $(this).text();
+        $('#page').val(page);
+        $('#pager').submit();
+    });
+
+    //next for articles
+    $('.pager > div > a.next').click(function(){
+        var current = +$('.pager > div > ul > li.current > span').text();
+        var page = current+1;
+        $('#page').val(page);
+        $('#pager').submit();
+    });
+
+        //prev for articles
+    $('.pager > div > a.prev').click(function(){
+        var current = +$('.pager > div > ul > li.current > span').text();
+        var page=current-1;
+        $('#page').val(page);
+        $('#pager').submit();
+    });
+
+	//blog notif pager ajax
+	$('.blog_notice_list_pager > a ').click(function() {
+		var page = $(this).data('val');
+		var $prev = 	$('.blog_notice_list_pager > a.prev');
+		var $next =   	$('.blog_notice_list_pager > a.next');
+		if(page > 0 && page <= %notif_pages%){
+			$.get('index.php',{page:page,notif:1},function(res) {
+				$('.blog_notice_list > ul').html(res);
+				$prev.data('val',(page-1));
+				$next.data('val',(page+1));
+
+				if($prev.data('val') == 0) {
+					$prev.addClass('disable');
+				}else{
+					$prev.removeClass('disable');
+				}
+
+				if($next.data('val') > %notif_pages%) {
+					$next.addClass('disable');
+				}else{
+					$next.removeClass('disable');
+				}
+			});
+		}
+		return false;
+	});
+
+});
+</script>
+</body>
+</html>

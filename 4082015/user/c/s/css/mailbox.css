@@ -1,0 +1,250 @@
+/*　色情報　
+ヘッダーの下線＆リンクの色：#3C3AAF
+テーブルの枠線：#66A3C2
+セルの濃い色：#87C0DC;
+セルの薄い色：#D3E7F6;
+*/
+/*　基本設定 */
+body{
+	font-family: "ＭＳ Ｐゴシック","Osaka−等幅";
+	font-size : 12px;
+	color:#555555;
+	padding: 0px;
+	margin: 0px;
+}
+table,tr,td{
+	font-family: "ＭＳ Ｐゴシック","Osaka−等幅";
+	font-size : 12px;
+	color:#555555;
+	letter-spacing: 0.2em;
+}
+br{ letter-spacing : normal; }
+img{
+	border: none;
+}
+
+A:LINK		{ color: #3C3AAF; text-decoration: none; }
+A:VISITED	{ color: #3C3AAF; text-decoration: none; }
+A:ACTIVE	{ color: #3C3AAF; text-decoration: none; }
+A:HOVER	{ color: #3C3AAF; text-decoration: underline; }
+
+/*　ヘッダー設定 */
+.headerTB{
+	border-bottom: 1px solid #606060;
+}
+.header-bottom{
+	background-color: #3C3AAF;
+}
+.banner{
+	margin-right: 10px;
+}
+/*　メニュー設定 */
+.menuTB{
+	border-bottom: 1px solid #EEEEEE;
+}
+.menu{
+	background: url('images/menu_bg2.gif') repeat-x;
+	padding-top: 8px;
+}
+.menu A:LINK		{ color: #555555; text-decoration: none; }
+.menu A:VISITED	{ color: #555555; text-decoration: none; }
+.menu A:ACTIVE	{ color: #FF9900; text-decoration: none; }
+.menu A:HOVER	{ color: #FF9900; text-decoration: underline; }
+
+.footerTB{
+	background-color: #66A3C2;
+}
+
+/*　コピーライト */
+.copyright{
+	font-family: "ＭＳ Ｐゴシック","Osaka−等幅";
+	font-size : 10px;
+	font-weight: bold;
+	color:#FFFFFF;
+	letter-spacing: 0.2em;
+}
+/*　メイン設定 */
+.mainTB{
+	width: 98%;
+}
+.navi-waku{
+	background-color: #66A3C2;
+}
+.naviTB{
+	border: 1px solid #FFFFFF;
+	padding: 3px 3px 3px 5px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.navi{
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: "ＭＳ Ｐゴシック","Osaka−等幅";
+	font-size : 12px;
+	letter-spacing: 0.2em;
+}
+
+/* 受信メールボックスでの設定 */
+.mailboxTB{
+	background-color: #66A3C2;
+}
+.title{
+	background-color: #87C0DC;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.title A:LINK		{ color: #FFFFFF; font-weight: bold; text-decoration: none; }
+.title A:VISITED	{ color: #FFFFFF; font-weight: bold; text-decoration: none; }
+.title A:ACTIVE	{ color: #FFFFFF; font-weight: bold; text-decoration: none; }
+.title A:HOVER	{ color: #FFFFFF;text-decoration: underline; }
+
+.midoku{
+	background-color: #D3E7F6;
+}
+.kidoku{
+	background-color: #FFFFFF;
+}
+
+
+/*---------------無料会員様ページ（決済コース）---------------*/
+#wrapper{
+	width: 840px;
+	height: auto;
+	margin-left: 90px;
+	margin-top: 25px;
+}
+
+#box_top{
+	width: 840px;
+	height: 10px;
+	background: url(http://c.macherie.tv/c/m/images/common/state/box_top.gif) no-repeat;
+}
+
+#box_bottom{
+	width: 840px;
+	height: 10px;
+	background: url(http://c.macherie.tv/c/m/images/common/state/box_bottom.gif) no-repeat;
+	margin-bottom: 10px;
+}
+
+#box_bg{
+	width: 840px;
+	height: 491px;
+	background: url(http://c.macherie.tv/c/m/images/common/state/box_bg.gif) repeat-y;
+}
+
+#contents{
+	width: 840px;
+	height: auto;
+	color: #505050;
+	font-size: 12px;
+}
+
+#contents .left_side{
+	width: 410px;
+	height: auto;
+	margin-left: 20px;
+	margin-top: 20px;
+	float: left;
+}
+
+#contents .left_side_b{
+	width: 435px;
+	height: auto;
+	margin-left: 6px;
+	margin-top: 18px;
+	float: left;
+}
+
+.model_posi{
+	margin-left: 30px;
+}
+
+#contents .line-y{
+	height: 510px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#contents .line-y_b{
+	height: 510px;
+	margin-left: 7px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#contents .right_side{
+	width: 360px;
+	height: auto;
+	margin-top: 10px;
+	padding-left: 22px;
+	float: left;
+}
+
+#contents .right_side_b{
+	width: 360px;
+	height: auto;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding-left: 12px;
+	float: left;
+}
+
+.right_uewaku{
+	width: 360px;
+	height: 5px;
+	background: url(http://c.macherie.tv/c/m/images/common/state/right_uewaku.gif) no-repeat;
+}
+
+.right_yokowaku{
+	width: 360px;
+	height: 460px;
+	background: url(http://c.macherie.tv/c/m/images/common/state/right_yokowaku.gif) repeat-y;
+}
+
+.right_sitawaku{
+	width: 360px;
+	height: 5px;
+	background: url(http://c.macherie.tv/c/m/images/common/state/right_sitawaku.gif) no-repeat;
+}
+
+.inside{
+	margin-left: 15px;
+}
+
+.sammary{
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding-left: 37px;
+	margin-bottom: 10px;
+}
+
+.icon_posi{
+	padding: 15px 0px 0px 35px;
+	margin-bottom: 20px;
+}
+
+.icon_posi_bank{
+	padding: 15px 0px 0px 35px;
+	margin-bottom: 10px;
+}
+
+.icon_posi_con{
+	padding: 15px 0px 0px 5px;
+	margin-bottom: 10px;
+}
+
+.sammary_two{
+	padding-left: 35px;
+	margin-bottom: 20px;
+}
+
+.btn_kounyu{
+	padding: 18px 0px 0px 63px;
+}
+
+.clearleft{
+	clear: left;
+}
+
+/*---------------無料会員様ページ（決済コース）ここまで---------------*/

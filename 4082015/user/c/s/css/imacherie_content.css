@@ -1,0 +1,339 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	iMacherie
+	BUILD:	2009/7/29
+	AUTHOR:	Y.yamamoto
+_______________________________________*/
+
+.contentbody *{
+	font-size:12px;
+	margin:0;
+	padding:0;
+	color:#444444;
+}
+
+.contentbody {
+	margin: 10px;
+	padding: 0;
+}
+
+.contentbody h1 {
+	color:#FF5000;
+	text-decoration:underline;
+	font-size:14px;
+}
+
+.contentbody img {
+	border:none;
+	margin:1em;
+}
+
+.contentbody hr {
+	background-color:#B4B4B4;
+	border:none;
+	margin:10px auto;
+	height:1px;
+}
+
+.contentbody a {
+	color:#FF5000;
+	text-decoration:none;
+}
+.contentbody a:hover {
+	color:#FF5000;
+	text-decoration: underline;
+}
+
+.contentbody p {
+	line-height:1.75em;
+}
+
+.contentbody p.r_text {
+	line-height:1.75em;
+	text-align:right;
+}
+
+.contentbody table{
+	border-collapse: collapse;
+/*	border:solid 1px #B4B4B4;*/
+	border-right:solid 1px #B4B4B4;
+	border-top:solid 1px #B4B4B4;
+	border-bottom:solid 1px #B4B4B4;
+	margin-bottom:5px;
+}
+
+.contentbody table.none{
+	width:100%;
+	text-align:center;
+}
+
+.contentbody table.none td{
+	padding:2em;
+}
+
+.contentbody table img{
+	margin:0;
+	vertical-align: -4px;
+}
+
+
+
+.contentbody td {
+	border:solid 1px #B4B4B4;
+	border-spacing:0;
+	padding:1px 3px 1px 3px;
+	width:100%;
+	clear:both;
+}
+
+.contentbody td img {
+	margin:0 2px 0 0;
+}
+
+
+.contentbody table th {
+/*	border:solid 1px #B4B4B4;*/
+	border-left:solid 0px #B4B4B4;
+	border-right:solid 1px #B4B4B4;
+	border-top:solid 1px #B4B4B4;
+	border-bottom:solid 1px #B4B4B4;
+	border-spacing:0;
+	width:80px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contentbody .rank1 {
+	background:transparent url(http://c.macherie.tv/c/m/images/common/iframe/ico_no1.gif) no-repeat scroll left center;
+	padding:2px 0.25em 0px 18px;
+}
+
+.contentbody .rank2 {
+	background:transparent url(http://c.macherie.tv/c/m/images/common/iframe/ico_no2.gif) no-repeat scroll left center;
+	padding:2px 0.25em 0px 18px;
+}
+
+.contentbody .rank3 {
+	background:transparent url(http://c.macherie.tv/c/m/images/common/iframe/ico_no3.gif) no-repeat scroll left center;
+	padding:2px 0.25em 0px 18px;
+}
+
+.contentbody .heart {
+	color:#EB0078;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.contentbody .imgright{
+	float: right;
+	display: block;
+	position:relative;
+}
+
+.contentbody .imgleft{
+	float: left;
+	display: block;
+	position:relative;
+}
+
+.contentbody .textbox{
+	margin-left:1em;
+	float: left;
+	display: block;
+	position:relative;
+}
+
+.contentbody .textleft{
+	float: left;
+	display: block;
+	position:relative;
+	padding-top:2px;
+}
+
+.contentbody .textright{
+	float: right;
+	display: block;
+	position:relative;
+	padding-top:2px;
+}
+
+.contentbody .orange{
+	color:#ff5000;
+}
+
+.contentbody .leftspace{
+	margin-left:1em;
+}
+
+.contentbody .red{
+	color:#ff0000;
+}
+
+.contentbody .text_b{
+	font-weight:bold;
+}
+
+.contentbody textarea {
+	width:95%;
+	_width:92%;/*-- IE6以下用 --*/
+	height:10em;
+	scrollbar-base-color: #b4b4b4;
+}
+
+.contentbody input {
+	width:5em;
+	/*margin-top:5px;*/
+	margin:5px 0.75em;
+}
+
+.contentbody input.heart_btn {
+	width:10em;
+	margin:5px 0.75em;
+}
+
+
+.contentbody h1{
+	width:100%;
+	height:36px;
+	background-image:url(http://c.macherie.tv/c/m/images/common/iframe/h1_bg.gif);
+	background-repeat:repeat-x;
+	color: #666666;
+	text-align: center;
+	font-weight:bold;
+	font-size:1.5em;
+	text-decoration:none;
+	padding-top:0px;
+	/padding-top:0px;/*-- IE7以下用 --*/
+	margin-bottom:1em;
+}
+
+.contentbody h2{
+	width:100%;
+	height:24px;
+	color: #666666;
+	text-align: center;
+	font-weight:bold;
+	font-size:1.2em;
+	text-decoration:none;
+	padding-top:0px;
+	/padding-top:0px;/*-- IE7以下用 --*/
+}
+
+/*---------------------------contents.html・theme.html用ここから---------------------------*/
+
+table.change{
+	border:none;
+}
+
+table.change tr{
+	height:80px;
+}
+
+table.change td {
+	padding:1px 3px 1px 3px;
+	clear:both;
+	border:none;
+	border-left:5px solid #666666;
+	border-bottom:10px solid #FFFFFF;
+	/border-bottom:none;/*-- IE7以下用 --*/
+	padding-left:0.5em;
+	text-align:left;
+	vertical-align: middle;
+	width:290px;
+}
+
+
+
+table.change th {
+	border:none;
+	vertical-align:middle;
+	text-align:center;
+	border-bottom:10px solid #FFFFFF;
+	/border-bottom:none;/*-- IE7以下用 --*/
+	width:75px;
+}
+
+table.change th img{
+	margin-right:1em;
+}
+
+table.change th.theme img{
+	width:200px;
+	height:70px;
+}
+
+/*---------------------------contents.html・theme.html用ここまで---------------------------*/
+
+
+
+/*---------------------------newmail.html用ここから---------------------------*/
+
+table.nmail{
+	border-collapse: collapse;
+	line-height:1.5em;
+	border: solid 1px #A6CEDB;
+	margin-top:5px;
+	width:100%;
+}
+
+table.nmail td.addressor{
+	background-color:#B9EFFF;
+	color:#555555;
+	text-align:left;
+	font-weight:normal;
+	padding:1px 3px;
+	white-space: nowrap;
+}
+
+
+table.nmail td{
+	background-color:#FFFFFF;
+	border: solid 1px #A6CEDB;
+	color:#3C3AAF;
+	text-align:left;
+	white-space: nowrap;
+	padding:1px 3px;
+
+}
+
+
+table.nmail td.addressor a:link{
+	font-weight:bold;
+	color:#555555;
+}
+
+table.nmail td.addressor a:visited{
+	font-weight:normal;
+	color:#555555;
+}
+
+table.nmail td.addressor a:hover{
+	text-decoration:underline;
+	color:#555555;
+}
+
+table.nmail td a:link{
+	font-weight:bold;
+	color:#3C3AAF;
+}
+
+table.nmail td a:visited{
+	font-weight:normal;
+	color:#3C3AAF;
+}
+
+table.nmail td a:hover{
+	text-decoration:underline;
+	color:#3C3AAF;
+}
+
+/*---------------------------newmail.html用ここまで---------------------------*/
+
+
+
+
+
+
+
+

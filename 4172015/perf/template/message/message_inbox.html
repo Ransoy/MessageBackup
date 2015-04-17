@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="Shift-JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS" />
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="/performer/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/margin.css" />
+<link rel="stylesheet" type="text/css" href="/performer/css/message.css" />
+<style>
+	.on {
+		background:none;
+	}
+</style>
+</head>
+
+<body id="message_page">
+
+<div id="wrapper">
+		%header%
+		%navi_contents%
+
+	<div id="Contens" class="clearfix" style="clear: both">
+
+		<div id="MainBlock">
+
+			<div class="cmnSection">
+
+                <div class="breadcrumbs cf">
+                    <ol>
+                        <li>メール</li>
+                    </ol>
+                    <!-- old version link -->
+                    <span class='ttl_right'>マシェリからのお知らせ  <a class="link_old_mailbox" href="../../performer/mail/mailbox_receive.php?midoku" target="_blank">%old_unread%件</a></span>
+                        
+                   <!--  <a class="link_old_mailbox newWindow" href="../../performer/mail/mailbox_receive.php?midoku">旧メールボックスへ ></a>
+                    <!-- old version link -->
+                </div><!-- // .breadcrumbs -->
+
+                <div class="cmnSection_inner">
+
+                    <div class="tab_menu cf">
+                        <ul>
+                            <li class="on">
+                                <a href="./inbox.php">メールボックス</a>
+                            </li>
+                            <li>
+                                <a href="./contact_list.php">連絡先</a>
+                            </li>
+                        </ul>
+
+                        <a href="#" class="switch_panel_menu" id="switch_panel_menu"><span></span></a>
+                        <div class="panel_menu" id="panel_menu">
+                            <ul>
+                                <li><a class="btn_message_list" href="./inbox_edit.php">メール削除</a></li>
+                                <li><a class="btn_contact_list" href="./contact_list_edit.php">連絡先編集</a></li>
+                                <li><a class="btn_block_list" href="./block_list_edit.php">拒否リスト</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="message_sort_menu cf" id="message_sort_menu">
+                        <ul>
+                            <li class="all %all%"><a href="javascript:void(0);">全て表示</a></li>
+                            <li class="unread %unread%"><a href="javascript:void(0);">未読のみ表示</a></li>
+                        </ul>
+                        <div class="message_search_area">
+	                        <form action="" method="get">
+                                <input type="text" id="keyword" placeholder="名前で検索..." name="keyword" value="%keyword%"/>
+                                <input type="hidden" id="tab"  name="tab" value="%tab%"/>
+            					<input type="hidden" id="page" name="page" value="%page%"/>
+                                <button class="btn_style" id="search_btn">検索</button>
+                             </form>
+                        </div>
+                    </div>
+
+                    <div class="message_list_wrap cf">
+	                    <div class="message_list cf">
+
+                            <!-- tmpl:ifdef %no_mail% -->
+                            <div class="ui_msg_area ui_msg_area--not_exist">
+                                <p class="msg">%no_mail%</p>
+                            </div>
+                            <!-- tmpl:endif -->
+
+							<table>
+								<!--  tmpl:loop %loop_admin_set% -->
+								<tr class="message_list_item">
+									<td class="col_left">
+										<div class="thumb">
+                                            <img src="/img/spacer.gif" style="background-image: url('%img%')" />
+										</div>
+									</td>
+									<td class="col_center b_link">
+                                        <p class="user_name">%name%%count%</p>
+                                        <p class="desc %sender%"><a href="./detail.php?is_admin=1&from=inbox&page=%from_page%">%body%</a></p>
+                                        <p class="posttime">%date%</p>
+                                        <p class="trun_message">...</p>
+									</td>
+								</tr>
+								<!-- tmpl:endloop -->
+								<!--  tmpl:loop %loop_set% -->
+								<tr class="message_list_item">
+									<td class="col_left ">
+										<a href="./detail.php?id=%hash%&from=inbox">
+										<div class="thumb">
+                                            <img src="/img/spacer.gif" style="background-image: url('%img%')" />
+										</div>
+										</a>
+									</td>
+									<td class="col_center b_link">
+                                        <p class="user_name">%name%%count%</p>
+                                        <p class="desc %sender%"><a href="./detail.php?id=%hash%&from=inbox&page=%from_page%">%body%</a></p>
+                                        <p class="posttime">%date%</p>
+                                        <p class="trun_message">...</p>
+									</td>
+								</tr>
+								<!-- tmpl:endloop -->
+							</table>
+
+                        </div><!-- // .message_list -->
+					</div><!-- // .message_list_wrap -->
+					<div class="message_pager border_top">
+							<!-- tmpl:ifdef %prev%  -->
+							<a class="prev %prev%" href="?page=%prev_val%">前へ</a>
+							<!-- tmpl:endif -->
+                            <ul>
+                            	<!-- tmpl:ifdef %first_page%  -->
+                            	<li>
+                            		<a href="?page=%first_page%%get_keyword%">%first_page%</a>
+								</li>
+								<!-- tmpl:endif -->
+								<!-- tmpl:ifdef %first_page_dot% -->
+                            	<li>
+                            		<span>%first_page_dot%</span>
+                            	</li>
+                            	<!-- tmpl:endif -->
+                            	<!-- tmpl:loop %pagination% -->
+		                          	<!-- tmpl:ifdef %current% -->
+		                          	<li class='current'>
+		                          		<span>%current%</span>
+	                          		</li>
+		                          	<!-- tmpl:endif -->
+		                          	<!-- tmpl:ifdef %page% -->
+		                          	<li>
+	                          			<a href="?page=%page%%get_keyword%">%page%</a>
+                          		 	</li>
+		                          	<!-- tmpl:endif -->
+		                        <!-- tmpl:endloop -->
+		                        <!-- tmpl:ifdef %last_page_dot% -->
+	                          		<li>
+                            			<span>%last_page_dot%</span>
+                            		</li>
+                            	<!-- tmpl:endif -->
+		                        <!-- tmpl:ifdef %last_page%  -->
+                            		<li>
+                            			<a href="?page=%last_page%%get_keyword%">%last_page%</a>
+                            		</li>
+                            	<!-- tmpl:endif -->
+                            </ul>
+                            <!-- tmpl:ifdef %next_val% -->
+                            <a class="next %next%" href="?page=%next_val%">次へ</a>
+                            <!-- tmpl:endif -->
+                        </div>
+				</div><!-- // .cmnSection_inner -->
+			</div><!-- // .cmnSection -->
+
+		</div><!-- // #MainBlock -->
+
+		<div id="UtilitiesBlock">
+			%utilities%
+		</div>
+
+	</div>
+		%footer%
+			<script type="text/javascript" src="/performer/js/message.js"></script>
+			<script type="text/javascript" src="/performer/js/jquery.biggerlink.js"></script>
+            <script type="text/javascript" src="/performer/js/jquery.leanModal.min.js"></script>
+			<script type="text/javascript">
+            $(function(){
+				// modal
+				var searched=%searched%;
+				var old_keyword = '%old_keyword%';
+				
+				$('.b_link').biggerlink();
+				$('a[rel=leanModal]').leanModal();
+
+				/**
+				tabs
+				*/
+				$('#message_sort_menu ul > li').click(function() {
+					keyword = $('#keyword').val();
+					if ( $(this).hasClass('all')) {
+						$(this).addClass('on');
+						$('.unread').removeClass('on');
+						$('#tab').val('all');
+					}
+					else {
+						$(this).addClass('on');
+						$('.all').removeClass('on');
+						$('#tab').val('unread');
+					}
+					$('#page').val(1);
+					/*if (searched == 0) {
+						$('#keyword').val('');
+					} else if (old_keyword != keyword) {
+						$('#keyword').val(old_keyword);
+					}*/
+					$('.message_search_area > form').submit();
+				});
+				
+				/**
+				search contact
+				 */
+				$('#search, #search_btn').click(function() {
+					$('#page').val(1);
+					$('.message_search_area > form').submit();
+				});
+
+				/**
+				page next / prev click
+				*/
+				$('.message_pager > a').click(function() {
+					if (searched == 0) {
+						$('#keyword').val('');
+					} else if (old_keyword != keyword) {
+						$('#keyword').val(old_keyword);
+					}
+					var currentPage = $('#page');
+						if ($(this).hasClass('prev')) {
+							currentPage.val(+currentPage.val() - 1);
+						} 
+						else if($(this).hasClass('next')) {
+							currentPage.val(+currentPage.val() + 1);
+						}
+					$('.message_search_area > form').submit();
+				});
+
+				/**
+				page number click
+				*/ 
+				$('.message_pager > ul > li > a').click(function() {
+					if (searched == 0) {
+						$('#keyword').val('');
+					} else if (old_keyword != keyword) {
+						$('#keyword').val(old_keyword);
+					}
+					var page = $(this).html();
+					$('#page').val(page);
+					$('.message_search_area > form').submit();
+				});
+				
+				$('.message_search_area > form > input#keyword').keydown(function(e){
+					if (e.keyCode == 13) {
+						$('#page').val(1);
+					}
+				}); 
+				
+				var inbox;
+				$('.message_list_item .col_center .desc').each(function() {
+					inbox = $(this);
+					if (inbox[0].scrollWidth > inbox.innerWidth()) {
+						inbox.siblings('.trun_message').show();
+					} else {
+						inbox.siblings('.trun_message').hide();
+					}			
+				});
+
+				$('.message_list_item .col_center .desc').find('img').load(function() {
+					inbox = $(this).parent().parent('.desc');
+					if (inbox[0].scrollWidth > inbox.innerWidth()) {
+						inbox.siblings('.trun_message').show();
+					} else {
+						inbox.siblings('.trun_message').hide();
+					}
+				});
+            });
+            </script>
+
+			<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-13149951-1']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			</script>
+
+<form action="https://secure.okbiz.okwave.jp/faqs/end_user_login" method="post" target="_blank" name="tofaq" accept-charset="UTF-8" onsubmit="return false;">
+
+  <input id="_username" name="$username" value="performer" type="hidden">
+  <input id="_password" name="$password" value="machelogin" type="hidden">
+  
+  <input id="_http_method" name="$http_method" value="post" type="hidden">
+  <input id="site_domain" name="site_domain" value="performer" type="hidden">
+
+</form>
+</body>
+</html>

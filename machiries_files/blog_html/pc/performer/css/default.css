@@ -1,0 +1,163 @@
+@charset "Shift_JIS";
+
+/*	Universal
+---------------------------------------*/
+*{
+	margin:0;
+	padding:0;
+	font-size:100%;
+}
+
+html{
+	overflow-y: scroll;
+	overflow-x: auto;
+}
+/*	Structure
+---------------------------------------*/
+body {
+	font-family:"ƒƒCƒŠƒI",Meiryo,"‚l‚r ‚oƒSƒVƒbƒN","ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro",Osaka,sans-serif;
+	font-size:75%;
+	text-align:center;
+	line-height:1.5;
+	background:#fff;
+	color:#333;
+}
+/*	Hypertext Module
+---------------------------------------*/
+a
+{
+	color:#003399;
+	text-decoration:none;
+}
+
+/*	Forms Module
+---------------------------------------*/
+form
+{
+	text-align:center;
+}
+input,
+textarea
+{
+	font-family:"ƒƒCƒŠƒI",Meiryo,"‚l‚r ‚oƒSƒVƒbƒN","ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro",Osaka,sans-serif;
+	padding: 0.1em 4px;
+}
+textarea
+{
+	padding: 0.4em 8px;
+}
+p input
+{
+	margin-left: 8px;
+}
+input.radio
+{
+	background-color:transparent;
+	border:none;
+	vertical-align:bottom;
+}
+input.submit
+{
+	font-family:"ƒƒCƒŠƒI",Meiryo,"‚l‚r ‚oƒSƒVƒbƒN","ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro",Osaka,sans-serif;
+	font-size:75%;
+	color: #6c737a;
+	border-width:1px;
+	border-style:solid;
+	border-color:#c2c2c2 #8f8f8f #8f8f8f #c2c2c2;
+	padding:2px 4px;
+	line-height:1.5;
+}
+input.submit:hover
+{
+	color: black;
+	background-color: white;
+}
+ul,ol
+{
+	list-style:none;
+}
+.attention
+{
+	color:red;
+	font-size:11px;
+}
+.check
+{
+	background:#eed8d8;
+}
+
+/*	Tables Module
+---------------------------------------*/
+table
+{
+
+	margin: 0.5em auto;
+	border-collapse:separate;
+}
+td,
+th
+{
+	line-height:1.5;
+	/* padding :10px 0; */
+	text-align:left;
+}
+th
+{
+	white-space:nowrap;
+}
+tr.even td
+{
+	background:#e6e6fd;
+}
+.submit{
+	text-align:center;
+}
+.submit input{
+	border:0px;
+}
+
+/*	ClearFix
+---------------------------------------*/
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height:0;
+    clear: both;
+}
+.clearfix
+{
+  min-height:1px;
+}
+* html .clearfix
+{
+  height:1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+
+/*	Image Module
+--------------------------------------*/
+img
+{
+	border:0;
+	vertical-align:bottom;
+}
+/*	error list
+--------------------------------------*/
+ol#attention
+{
+	padding:10px;
+	text-align:left;
+	background:#ffdddd;
+	border:1px solid #ccc;
+}
+ol#attention li
+{
+	padding:4px;
+}

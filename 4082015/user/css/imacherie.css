@@ -1,0 +1,361 @@
+
+td.top_left{
+	float: left;
+	height:205px;
+}
+td.top_right{
+	float:left;
+	text-align:right;
+	line-height:2em;
+	height:205px;
+}
+td.top_right A{
+	color:#003C78;
+}
+td.top_right iframe{
+	background-color:#FFFFFF;
+	border:1px solid #B4B4B4;
+	clear:both;
+	width:680px;
+	height:175px;
+}
+
+#top_a {
+	color:#323232;
+	background:url("../images/blue_tile_bg.gif") scroll repeat-x left top;
+	background-color:#AADCFA;
+	text-align:center;
+	width:100%;
+	height:225px;
+}
+
+table.profile{
+	margin:5px;
+}
+table.profile a{
+	color:#FA7800;
+}
+table.profile th{
+	background-color:#D0ECFF;
+	width: 84px;
+	height:23px;
+}
+table.profile td{
+	background-color:#FFFFFF;
+	width: 84px;
+}
+table#male_profile td{
+	background-color:#FFFFFF;
+	padding:0px;
+}
+
+td#profimg{
+	border:thin solid #B4B4B4;
+}
+td#profimg img{
+	border:thin solid black;
+	margin:6px 6px 0 6px;
+}
+td#profimg div{
+	margin: 4px auto 0 auto;
+}
+
+table.member{
+	border-collapse:collapse;
+	height:136px;
+	width:95px;
+	background-color:#AADCFA;
+}
+table.member th,table.member td{
+	border:1px solid #B4B4B4;
+}
+
+table#female_log{
+	border-collapse:collapse;
+}
+table#female_log th,table#female_log td{
+	border:1px solid #B4B4B4;
+}
+
+
+div#linkbar {
+	font-size: 14px;
+	font-weight: bold;
+	background:url("../images/orange_tile_bg.gif") scroll repeat left top;
+	height:30px;
+	text-align:center;
+}
+div#linkbar ul{
+	text-align:center;
+	margin: 0 auto;
+	width: 966px;
+}
+div#linkbar li{
+	float:left;
+	width:138px;
+}
+div#linkbar div{
+	background-color:white;
+	padding:2px 0;
+	height:17px;
+	border: 1px solid #FA7800;
+	margin:4px 2px 0 0;
+}
+div#linkbar div A{
+	margin-left:2px;
+	color:#505050;
+	text-decoration:none;
+}
+div#linkbar div a:hover {
+	color:#505050;
+	text-decoration:underline;
+}
+
+
+#tabs{
+	height:43px;
+	margin: 8px auto 2px auto;
+	padding: 0;
+	background:url("../images/tab_shadow_repeat_x.gif") repeat-x scroll left bottom;
+	min-width: 980px;
+}
+#tabs li{
+	margin-left: 8px;
+	padding: 0;
+	float:left;
+}
+#tabs div{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 auto;
+	padding:5px 10px;
+	text-align:center;
+	border:1px solid #21A9F3;
+	background-color:#AADCFA;
+	color:#003C78;
+}
+#tabs div.selected{
+	background-color:white;
+	border-bottom: 9px solid white;
+	color: #323232;
+}
+#tabs .howto{
+	float:right;
+	margin:10px 10px 0px 10px;
+}
+
+* html #tabs{
+	width:expression(document.body.clientWidth < 982? "980px" : document.body.clientWidth > 2262? "2260px" : "auto");
+}
+#page-wrap{
+	background: white;
+	min-width: 780px;
+	max-width: 1260px;
+	margin: 10px auto;
+	width:expression(document.body.clientWidth < 982? "980px" : document.body.clientWidth > 2262? "2260px" : "auto");
+}
+
+/* cococala */
+* html #wrap{
+	width:expression(document.body.clientWidth < 982? "980px" : document.body.clientWidth > 2262? "2260px" : "auto");
+}
+/* out_frame */
+#IMContainer{
+	width:100%;
+}
+* html #IMContainer{
+	width:expression(document.body.clientWidth < 982? "980px" : document.body.clientWidth > 2262? "2260px" : "auto");
+}
+
+/** cont_frame **/
+.IMBoxChild{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	background-color: #ffffff;
+}
+/** container **/
+.imContentsBox{
+	background-color: #ffffff;
+	margin: 0px 15px 15px 15px;
+	border-right: 2px solid #cccccc;
+}
+
+/** cont **/
+.imMainBox{
+	border: 1px solid #000000;
+	width: 100%;
+}
+
+/** dregber **/
+.imDragBar{
+	background-color: #aadcfa;
+	height: 20px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/** cont_title **/
+.imDragBar span{
+	font-family: "ＭＳ Ｐゴシック","Osaka";
+	font-size: 12px;
+	line-heigth: 20px;
+	padding: 3px;
+	float: left;
+}
+
+/** refresh_btn **/
+.icRefresh{
+	float: right;
+	cursor: pointer;
+	padding: 3px;
+}
+
+/** display_btn **/
+.icDisplay{
+	float: right;
+	cursor: pointer;
+	padding: 3px;
+}
+
+/** close_btn **/
+.icClose{
+	float: right;
+	cursor: pointer;
+	padding: 3px;
+}
+
+/** コンテンツ本体 **/
+.icBoxclass{
+	padding:3px;
+	width: 98%;
+	clear:both;
+}
+.icIfram {
+	width:100%;
+	height:100%;
+	border:0px;
+	frameborder:0px;
+	margin:0 auto;
+	padding:0px;
+}
+.icIframf {
+	width:100%;
+	height:100%;
+	border:1px;
+	margin:0 auto;
+	padding:0px;
+	position:relative;
+	z-index:2;
+}
+
+#rectangleDiv{
+	border:1px dotted red;
+	margin: 0px 15px 15px 15px;
+
+}
+
+/************************************************/
+/** 新しいコンテンツを追加大枠 **/
+.FeedDiv{
+	height:150px;
+}
+/** 新しいコンテンツを追加大枠 **/
+#addNewFeed{
+	float:right;
+	width:400px;
+	border:2px solid #0000ff;
+	padding:2px;
+	margin-right:2px;
+	margin-top:2px;
+}
+/** 新しいコンテンツを追加フォーム **/
+form{
+	display:inline;
+}
+
+/* coco */
+
+
+
+.module{
+	width:350px;
+	float:left;
+}
+.module_box{
+	padding: 1px 8px 0;
+	width:300px;
+	margin:20px;
+	position:relative;
+}
+.module div#title{
+	border :1px solid #AADCFF;
+	background-color:#AADCFF;
+	line-height:22px;
+	height:22px;
+	color:#003C78;
+	font-weight:bold;
+}
+
+.module div#title div.TabMenu{
+	margin: 4px 4px 4px auto;
+	float: right;
+}
+.module div#title div.TabMenu li{
+	float: left;
+}
+.module div#title span.titletitle{
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-left: 4px;
+
+}
+.module div#title div.TabMenu span{
+	float: right;
+	margin-left: 2px;
+}
+.module div#iframebody{
+	border:none;
+	width:300px;
+}
+.module div#iframebody iframe{
+	background-color:white;
+}
+.module div#iframebody iframe.mychatrankingtop3, .module div#iframebody iframe.mymailrankingtop3{
+	height:510px;
+}
+.module div#iframebody iframe.mychatranking, .module div#iframebody iframe.mymailranking{
+	height:320px;
+}
+.module div#iframebody iframe.chathistory{
+	height:370px;
+}
+.module div#iframebody iframe.ashiato{
+	height:370px;
+}
+.module div#iframebody iframe.favorites{
+	height:370px;
+}
+.module div#iframebody iframe.newgirls{
+	height:370px;
+}
+.module div#iframebody iframe.neargirls{
+	height:370px;
+}
+.module div#iframebody iframe.ohisa{
+	height:370px;
+}
+.module div#iframebody iframe.arearanking{
+	height:370px;
+}
+.module div.td{
+	cursor:move;
+	height:100%;
+	left:0;
+	top:0;
+	width:100px;
+	z-index:2;
+}
+

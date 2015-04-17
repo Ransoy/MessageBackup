@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=shift_jis" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<title>%nick_name% ルーム（大サイズ） | ライブチャットマシェリ / 芸能人も参加する超人気サイト</title>
+<link rel="home" href="/" title="ライブチャットマシェリ" />
+<link rel="stylesheet" type="text/css" href="/chat/style/default.css" />
+<link rel="stylesheet" type="text/css" href="/chat/style/big.css?t=1" />
+<link rel="stylesheet" type="text/css" href="/chat/style/overlay_chat.css?" />
+<link rel="stylesheet" type="text/css" href="/chat/style/customer_view.css" />
+<script type="text/javascript" src="/js/prototype.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript">
+var timer1_flag = 1;
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function MM_Windowsize(size) {
+  url = "shicho.php?id=%female_id%&world=%world%";
+  location.href = url+size;
+}
+
+function func_rand() {
+  url = "shicho.php?id=%female_id%&rand_id&world=%world%";
+  location.href = url;
+}
+
+function func_back() {
+  url = "shicho.php?id=%female_id%&back=%back_id%&world=%world%";
+  location.href = url;
+}
+
+function disp_chat_shot(url){
+	location.href = url;
+}
+
+function disp_chat_party(url){
+	location.href = url;
+}
+
+function disp_chat_peep(url){
+	location.href = url;
+}
+
+function fontsize() {
+	var name = "MshichoF";
+	var start = document.cookie.indexOf(name+"=");
+	var len = start+name.length+1;
+	var f_size = "";
+	if ((!start) && (name != document.cookie.substring(0,name.length))) f_size = "normal";
+	if (f_size == "") {
+		if (start == -1) f_size = "normal";
+	}
+	if (f_size == "") {
+		var end = document.cookie.indexOf(";",len);
+		if (end == -1) end = document.cookie.length;
+		f_size = document.cookie.substring(len,end);
+	}
+	if (f_size == "small") {
+		//小
+		document.getElementById('profile_small').style.fontSize='11px';
+		document.getElementById('gap_s').src='/chat/images2/screen_small1.gif';
+	} else if(f_size == "big") {
+		//大
+		document.getElementById('profile_small').style.fontSize='14px';
+		document.getElementById('gap_b').src='/chat/images2/screen_big1.gif';
+	} else {
+		//中
+		document.getElementById('profile_small').style.fontSize='12px';
+		document.getElementById('gap_n').src='/chat/images2/screen_normal1.gif';
+	}
+}
+window.onload = fontsize;
+</script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("jquery", "1.7");</script>
+<script type="text/javascript">
+window.onbeforeunload = function(e) {
+	window.document.chat.SetVariable("cutConnection", "execute");
+}
+
+$(function() {
+	$("#big-flash-screen").bind("contextmenu",function(){
+		$("body").unbind("contextmenu");
+	}).bind("mouseout",function(){
+		$("body").bind("contextmenu",function(){ return false; });
+	});
+});
+window.onload = function(){
+	$("body").bind("contextmenu",function(){ return false; });
+}
+</script>
+<!-- 非同期版をつかうこと -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-13149951-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<!--
+<body oncontextmenu="return false">
+-->
+<body>
+
+<!-- tmpl:ifdef %honnin_view% -->
+<div id="customer_view_bg">
+<!-- tmpl:endif -->
+
+<!-- 最も強調したいキーワードを含めて記述 -->
+<h1>ライブチャット　%nick_name%　ルーム</h1>
+
+<!-- /ここまで -->
+<!-- tmpl:ifdef %honnin_view% -->
+<!-- お客様視点 -->
+<div id="customer_view_textbg">
+<div class="customerview-contents">
+<div class="customerview-textarea">
+<img src="../performer/img/customer_view/customer_view-headtext.png" alt="お客様視点ページ説明" title="お客様視点ページ説明" />
+</div><!-- customerview-textarea -->
+<div class="customerview-btn">
+<img src="../performer/img/customer_view/customer_view-btn.png" onmouseover="this.src='../performer/img/customer_view/customer_view-btn_bg.png'" onmouseout="this.src='../performer/img/customer_view/customer_view-btn.png'" onClick="window.close(); return false;" alt="閉じる" title="閉じる" />
+</div><!-- customerview-btn -->
+</div><!-- customerview-contents -->
+</div>
+<!-- お客様視点 ここまで -->
+<!-- tmpl:endif -->
+
+<div id="big-menu">
+<ul>
+<li><img src="/chat/images2/logo_s.gif" alt="ライブチャット マシェリ" title="ライブチャット マシェリ" /></li>
+<li><img src="/chat/images2/macherie_top_s.gif" onmouseover="this.src='/chat/images2/macherie_top_s_over.gif'" onmouseout="this.src='/chat/images2/macherie_top_s.gif'" alt="Macherie.tvトップページ" title="Macherie.tvトップページ" onclick="window.open('../index.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" /></li>
+<li><img src="/chat/images2/new_member_s.gif" onmouseover="this.src='/chat/images2/new_member_over_s.gif'" onmouseout="this.src='/chat/images2/new_member_s.gif'" alt="新規会員登録" title="新規会員登録" onclick="window.open('https://www.macherie.tv/registrationfree.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" /></li>
+<li><img src="/chat/images2/point_purchase_s.gif" onmouseover="this.src='/chat/images2/point_purchase_s_over.gif'" onmouseout="this.src='/chat/images2/point_purchase_s.gif'" alt="ポイント購入" title="ポイント購入" onclick="window.open('../settlement/bank.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" /></li>
+<li><img src="/chat/images2/mymenu_s.gif" onmouseover="this.src='/chat/images2/mymenu_s_over.gif'" onmouseout="this.src='/chat/images2/mymenu_s.gif'" alt="マイメニュー" title="マイメニュー" onclick="window.open('../member.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" /></li>
+
+<li id="screen-area-b">
+<div id="screen-b-size">
+<ul>
+<li><img src="/chat/images2/screen_small2.gif" onmouseover="this.src='/chat/images2/screen_small1.gif'" onmouseout="this.src='/chat/images2/screen_small2.gif'" alt="画面サイズ（小）" title="画面サイズ（小）" onclick="MM_Windowsize('&small')" /></li>
+<li><img src="/chat/images2/screen_normal2.gif" onmouseover="this.src='/chat/images2/screen_normal1.gif'" onmouseout="this.src='/chat/images2/screen_normal2.gif'" alt="画面（中）" title="画面（中）" onclick="MM_Windowsize('&normal')" /></li>
+<li><img src="/chat/images2/screen_big1.gif" alt="画面サイズ（大）" title="画面サイズ（大）" /></li>
+</ul>
+</div>
+</li>
+
+<li id="font-area">
+<div id="font-b-size">
+<ul>
+<li>
+<img src="/chat/images2/screen_small2.gif" alt="文字サイズ（小）" title="文字サイズ（小）" id="gap_s"
+ onclick="document.getElementById('profile_small').style.fontSize='11px'; document.getElementById('gap_s').src='/chat/images2/screen_small1.gif'; document.getElementById('gap_n').src='/chat/images2/screen_normal2.gif'; document.getElementById('gap_b').src='/chat/images2/screen_big2.gif';
+ var expires = 60000 * 60*60*24*1000; var today = new Date(); var expires_date = new Date( today.getTime() + (expires) ); document.cookie = 'MshichoF=small;expires=' + expires_date.toGMTString() + ';path=/';" />
+</li>
+
+<li>
+<img src="/chat/images2/screen_normal2.gif" alt="文字サイズ（中）" title="文字サイズ（中）" id="gap_n"
+ onclick="document.getElementById('profile_small').style.fontSize='12px'; document.getElementById('gap_s').src='/chat/images2/screen_small2.gif'; document.getElementById('gap_n').src='/chat/images2/screen_normal1.gif'; document.getElementById('gap_b').src='/chat/images2/screen_big2.gif';
+ var expires = 60000 * 60*60*24*1000; var today = new Date(); var expires_date = new Date( today.getTime() + (expires) ); document.cookie = 'MshichoF=normal;expires=' + expires_date.toGMTString() + ';path=/';" />
+</li>
+
+<li>
+<img src="/chat/images2/screen_big2.gif" alt="文字サイズ（大）" title="文字サイズ（大）" id="gap_b"
+ onclick="document.getElementById('profile_small').style.fontSize='14px'; document.getElementById('gap_s').src='/chat/images2/screen_small2.gif'; document.getElementById('gap_n').src='/chat/images2/screen_normal2.gif'; document.getElementById('gap_b').src='/chat/images2/screen_big1.gif';
+ var expires = 60000 * 60*60*24*1000; var today = new Date(); var expires_date = new Date( today.getTime() + (expires) ); document.cookie = 'MshichoF=big;expires=' + expires_date.toGMTString() + ';path=/';" />
+</li>
+</ul>
+</div>
+</li>
+<!-- tmpl:ifdef %back_id% -->
+<li><img src="/chat/images2/come_back.gif" border="0" width="89" height="38" onmouseover="this.src='/chat/images2/come_back_over.gif'" onmouseout="this.src='/chat/images2/come_back.gif'" alt="前へ戻る" id="gap" onclick="func_back()" /></li>
+<!-- tmpl:endif -->
+<!-- tmpl:ifdef %back_id_non% -->
+<li><img src="/chat/images2/come_back.gif" border="0" width="89" height="38" id="gap" /></li>
+<!-- tmpl:endif -->
+<li><img src="/chat/images2/advance_normal.gif" onmouseover="this.src='/chat/images2/advance_over1.gif'" onmouseout="this.src='/chat/images2/advance_normal.gif'" alt="次へ" title="次へ" onclick="func_rand()" /></li>
+</ul>
+</div>
+
+
+
+<div id="big-main-screen">
+
+
+
+
+<div id="big-main-screen-w">
+
+<div id="big-flash-screen">
+<!-- tmpl:ifdef %event_disp% -->
+<img src="/chat/images2/mini.gif" id="event_disp_img">
+<!-- tmpl:endif -->
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="792" height="506" id="chat"  align="right">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="allowFullScreen" value="false" />
+<param name="movie" value="/chat/flash/shicho_big_%fcs_no%.swf%param%" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#781400" />
+<embed src="/chat/flash/shicho_big_%fcs_no%.swf%param%" quality="high" bgcolor="#781400" width="792" height="506" name="chat" align="right" allowScriptAccess="sameDomain" allowFullScreen="false" wmode="opaque" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</div>
+
+<div id="big-right-area">
+
+
+<div id="big-right-prof">
+
+<div id="right-prof-area">
+<div id="right-prof-a"><img src="/imgs/op/80x60/%girl_img%" alt="%nick_name%" title="%nick_name%" /></div>
+<div id="right-prof-b">%nick_name%</div>
+
+<div id="right-prof-c">
+<img src="/chat/images2/book.gif" alt="お気に入りに登録" title="お気に入りに登録" />
+<a href="../imacherie_favorite.php?sid=%female_id%" target="_blank">お気に入りに登録</a>
+</div>
+
+<div id="right-prof-d">
+<img src="/chat/images2/mail.gif" alt="メールを出す" title="メールを出す" />
+<a href="#" onclick="window.open('../webmail/write.php?sid=%female_id%','memberWebmail', 'titlebar=0,status=0,scrollbars=1,resizable=1');">メールを出す</a>
+</div>
+
+<div id="right-prof-e">
+<img src="/chat/images2/memo.gif" alt="メモを書く" title="メモを書く" />
+<a href="#" onclick="window.open('../memopad.php?sid=%female_id%','','width=450 height=250')">メモを書く</a>
+</div>
+
+<div id="profile_small">
+<div id="right-prof-f"><span class="r-f">年　齢</span> ：%age%</div>
+<div id="right-prof-g"><span class="r-f">地　域</span> ：%area%</div>
+<div id="right-prof-h"><span class="r-f">マイク</span> ：%mic%</div>
+<!-- tmpl:ifdef %no_blog_link_entry% -->
+<div id="right-prof-i"><span class="r-f">職　業</span> ：%job%</div>
+<!-- tmpl:endif -->
+<!-- tmpl:ifdef %blog_link_entry% -->
+<div ><span class="r-f" style="padding:0px 0px 0px 12px;">%blog_img%</span> %blog_link%</div>
+<!-- tmpl:endif -->
+</div>
+
+<div id="right-prof-j"><a href="#" onclick="window.open('../profile/profile.php?sid=%female_id%','Profile','width=714,height=536')">もっと見る >></a></div>
+</div>
+
+
+</div>
+
+
+<div id="big-bottom-info-tbl">
+<div id="big-bottom-info-bnr">
+<!-- tmpl:ifdef %premium_photo_entry% -->
+<div id="big-bottom-info-bnr-l"><img src="/chat/images2/bunner02_02.jpg" alt="プレミアムフォトギャラリーはコチラ" title="プレミアムフォトギャラリーはコチラ" onclick="window.open('/campaign/premium_photo/gallery.php?id=%premium_photo_entry%', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" /></div>
+<!-- tmpl:endif -->
+<!-- tmpl:ifdef %no_premium_photo_entry% -->
+<!--
+<div id="big-bottom-info-bnr-l"><img src="/chat/images2/free_regi.gif" alt="登録がまだな方は無料登録をして下さい！" title="登録がまだな方は無料登録をして下さい！" onclick="window.open('https://www.macherie.tv/registrationfree.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" /></div>
+-->
+<div id="big-bottom-info-bnr-l"><a href="http://bit.ly/1xoFXeJ" target="_blank"><img src="/img/banner_nativecamp_102x102.png" alt="無料モニター募集-NativeCamp" title="無料モニター募集-NativeCamp" width="102px" /></a></div>
+<!-- tmpl:endif -->
+<!-- tmpl:ifdef %no_premium_photo_entry_no_login% -->
+<!--
+<div id="big-bottom-info-bnr-l"><img src="/chat/images2/free_regi.gif" alt="登録がまだな方は無料登録をして下さい！" title="登録がまだな方は無料登録をして下さい！" onclick="window.open('https://www.macherie.tv/registrationfree.php', '_blank', 'menubar=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');" /></div>
+-->
+<div id="big-bottom-info-bnr-l"><a href="http://bit.ly/1xoFXeJ" target="_blank"><img src="/img/banner_nativecamp_102x102.png" alt="無料モニター募集-NativeCamp" title="無料モニター募集-NativeCamp" width="102px" /></a></div>
+<!-- tmpl:endif -->
+<div id="big-bottom-info-bnr-r"><img src="/chat/images2/banner_howto.gif" alt="チャット画面の説明" title="チャット画面の説明" onclick="window.open('/campaign/howtochat/howto.html', '_blank', 'menubar=no,toolbar=no,location=no,scrollbars=no,resizable=no,width=998,height=751');" /></div>
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<input type="hidden" id="f_hash" name="f_hash" value="%female_id%">
+<input type="hidden" id="machiawase_flg" name="machiawase_flg" value="%machiawase%">
+<input type="hidden" id="chat_mode" name="chat_mode" value="%chat_mode%">
+<input type="hidden" id="stat" name="stat" value="%stat%">
+<input type="hidden" id="screen_size" name="screen_size" value="%screen_size%">
+<input type="hidden" id="m_overlay_duration" name="m_overlay_duration" value="%m_overlay_duration%">
+
+<!-- tmpl:ifdef %honnin_view% -->
+</div><!-- customer_view_bg -->
+<!-- tmpl:endif -->
+<script type="text/javascript">
+  var Timer1;
+  var Timer2;
+  var m_overlay_timer = $('#m_overlay_duration').val();   
+
+  $(function(){	  
+	  $(window).load(function(){
+		  if($('#machiawase_flg').val() == 1) {
+			  $('#overlay_content').css('z-index', '13');
+			  $('#big-flash-screen').prepend("<div id='overlay_content'></div>");
+	      } 
+	      if($('#chat_mode').val() == 0 && $('#stat').val() != 2) {
+    		  chat_waiting('big-flash-screen');
+    		  Timer1 = setInterval("chat_waiting('big-flash-screen')",20000);
+    		  Timer2 = setInterval("performer_video()", 1000); 	
+	      } 	
+	  });
+  });
+</script>
+</body>
+</html>

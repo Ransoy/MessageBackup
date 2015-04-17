@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shift_JIS">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>%f_nick_name%　%area%｜ライブチャットMacherie</title>
+<meta name="description" content="%f_nick_name%">
+<meta name="keywords" content="%f_nick_name%,ライブチャット">
+<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<link rel="stylesheet" href="css/html5reset.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/menu_open.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script src="js/jquery-1.11.0.js"></script>
+
+<style type="text/css">
+#shicyo_msg{
+background-color:#BEBEBE;
+	color:#FFF;
+	/*position:absolute;*/
+	/*margin:-120px auto;*/
+	/*margin:-100px 2%;*/
+	/*width:300px;*/
+	width:100%;
+	/*border-radius: 10px;*/
+	/*-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;*/
+	text-align:center;
+	font-size:1.4rem;
+	/*line-height:150%;*/
+
+}
+#btn_type span{
+	qdisplay: block;
+	width: 90%;
+}
+#btn_type span{
+text-align:center;
+}
+
+a#shityo_btn{
+white-space: nowrap;
+font-size:1.4rem;
+}
+.btn a, .btn a:link, .btn a:visited{
+font-size:1.4rem;
+}
+
+/* add for flick >>> */
+.bd_shicho #flick_viewport{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	-webkit-transform: translateZ(0); /* Optional: When heavy at iOS6+ */
+}
+.bd_shicho #flick_container{
+	position: relative;
+	width: 303%;
+	/*visibility: hidden;*/
+	opacity: 0;
+}
+.bd_shicho #flick_container:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+.bd_shicho #flick_viewport .loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display :block;
+	margin-top: -5%;
+	margin-left: -5%;
+	width: 10%;
+	z-index: 1000;
+}
+.bd_shicho #flick_container{
+	display: table;
+	table-fixed: fixed;
+}
+.bd_shicho #flick_container >div{
+	display: table-cell;
+	position: relative;
+}
+.bd_shicho #flick_container >div img{
+	display: block;
+	margin: 0 auto;
+}
+@media only screen and (orientation:landscape){
+	.bd_shicho #flick_container > div img{
+		width: 60%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.bd_shicho #shicyo_msg .s_msg{
+		font-size: 1.2rem;
+		padding: 0.2rem 0;
+	}
+	.bd_shicho .fixed_footer_area{
+		display: none;
+	}
+}
+/* <<< */
+
+/* modify 201408 >>> */
+section.shicho_wrap{
+	padding-bottom: 5rem;
+}
+/* head area */
+.bd_shicho .head_area{
+	display: table;
+	width: 100%;
+	background: #3a383b;
+	color: #fff;
+}
+.bd_shicho .head_area > div{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 1rem 2%;
+}
+.bd_shicho .head_area > div.left{
+	text-align: left;
+}
+
+.bd_shicho .head_area > div.right{
+	text-align: right;
+}
+.bd_shicho .head_area .status{
+	background: #eee;
+	border: #fff solid 1px;
+	border-radius: 0.5rem;
+	padding: 0.2rem 0.7rem;;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+.bd_shicho .head_area .status.online{
+	background: #fb2702;
+}
+.bd_shicho .head_area h2{
+	font-weight: bold;
+	font-size: 1.6rem;
+	color: #fff;
+}
+.bd_shicho .head_area h2 .age{
+	margin-left: 1rem;
+}
+/* screen */
+.bd_shicho .screen{
+	border-bottom: #3a383b solid 1px;
+	margin-bottom: 1rem;
+}
+.bd_shicho .screen .status{
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	padding: 0.7rem 0.7rem 0.5rem;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	z-index: 1;
+}
+.bd_shicho .screen .status.live{
+	font-style: oblique;
+}
+.bd_shicho .screen .status.live:before{
+	display: inline;
+	content: '●';
+	color: #f25a42;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	margin-left: -0.2rem;
+}
+/* notice area */
+.bd_shicho .notice_area{
+	padding: 0.7rem 2%;
+	text-align: center;
+	background: #fffac7;
+	font-size: 1.0rem;
+	color: #000;
+	border-bottom: #3a383b solid 1px;
+}
+/* footer_controls */
+.bd_shicho .footer_controls{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.bd_shicho .footer_controls .left{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.bd_shicho .footer_controls .right{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.bd_shicho .footer_controls .center{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -1.5rem;
+}
+
+.bd_shicho .footer_controls .prev,
+.bd_shicho .footer_controls .next{
+	display: block;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	font-size: 1.4rem;
+	height: 3rem;
+	line-height: 3.5rem;
+}
+.bd_shicho .footer_controls .prev{
+	padding: 0 2rem 0 1rem;
+	border-top-right-radius: 3.5rem;
+}
+.bd_shicho .footer_controls .next{
+	padding: 0 1rem 0 2rem;
+	border-top-left-radius: 3.5rem;
+}
+.bd_shicho .footer_controls .switch_ui_panel{
+	display: block;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	border-radius: 100%;
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+}
+/* tab_menu */
+.bd_shicho .tab_menu{
+	width: 100%;
+	overflow: hidden;
+}
+.bd_shicho .tab_menu .tab_menu_inner{
+	margin: -1rem;
+}
+.bd_shicho .tab_menu ul{
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	border-spacing: 1rem;
+}
+.bd_shicho .tab_menu ul li{
+	display: table-cell;
+	text-align: center;
+	height: 5rem;
+	line-height: 5rem;
+	background: #eee;
+	border: #9b9c9e solid 1px;
+	border-bottom: none;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	cursor: pointer;
+}
+.bd_shicho .tab_menu ul li:first-child{
+	border-top-left-radius: 0;
+	border-left: none;
+}
+.bd_shicho .tab_menu ul li:last-child{
+	border-top-right-radius: 0;
+	border-right: none;
+}
+.bd_shicho .tab_menu ul li a{
+	display: block;
+	font-weight: bold;
+	color: #3a383b;
+}
+.bd_shicho .tab_menu ul li.on a{
+	background: #3a383b;
+	color: #fff;
+}
+.bd_shicho .tab_menu ul li.prof a:after{
+	display: block;
+	contents: url('../image/shicho/ic_tab_profile_off.png');
+}
+/* ui panel */
+.shicho_wrap .ui_panel{
+	display: none;
+} 
+/* tab contents */
+.shicho_wrap .tab_wrap{
+	background: #fff;
+	height: 100%;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding-bottom: 0;
+	border-top: #9b9c9e 1px solid;
+	border-bottom: #3a383b 1px solid;
+}
+.shicho_wrap .tab_wrap .tab{
+	padding: 1rem 0;
+}
+/* tab prof */
+.shicho_wrap .tab_wrap .tab.prof h4{
+	padding: 0.2rem 0.5rem;
+	text-align: center;
+	background: #9b9c9e;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+.shicho_wrap .tab_wrap .tab.prof .data{
+	padding: 5% 3%;
+	margin-bottom: 0;
+}
+.shicho_wrap .tab_wrap .tab.prof .btn_fav{
+	background: #f25a42;
+	margin: 0 10% 5%;
+}
+.shicho_wrap .tab_wrap .tab.prof .btn_fav:before{
+	display: inline;
+	content: '●';
+	margin-right: 0.5rem;
+}
+.shicho_wrap .tab_wrap .tab.prof .message .message_inner{
+	border: #3a383b solid 1px;
+	margin: 3.5% 3%;
+	padding: 0.5rem;
+}
+/* tab memo */
+.shicho_wrap .tab_wrap .tab.memo .memo_inner{
+	margin: 3.5% 3%;
+}
+/* main btn area */
+.shicho_wrap .main_btn_area{
+	padding: 1rem 0 0;
+}
+.shicho_wrap .btn_chat_wrap .btn_chat{
+	background: #f25a42;
+	margin: 0 10% 1rem;
+}
+.shicho_wrap .btn_chat_wrap .btn_chat small{
+	display: block;
+	text-align: center;
+	font-size: 1.0rem;
+	margin-top: 0.5rem;
+}
+.shicho_wrap .btn_chat_wrap .btn_chat:before{
+	display: inline;
+	content: '●';
+	margin-right: 0.5rem;
+}
+.shicho_wrap .btn_chat_wrap .notice{
+	text-align: center;
+	font-size: 1.0rem;
+}
+.shicho_wrap .btn_login_wrap .btn_login{
+	background: #50c0f5;
+	margin: 0 10% 2rem;
+}
+.shicho_wrap .btn_login_wrap .btn_login:before{
+	display: inline;
+	content: '●';
+	margin-right: 0.5rem;
+}
+.shicho_wrap .btn_login_wrap .btn_app_download{
+	background: #aaa;
+	margin: 0 10% 1rem;
+}
+.shicho_wrap .btn_login_wrap .btn_app_download small{
+	display: block;
+	text-align: center;
+	font-size: 1.0rem;
+	margin-bottom: 0.5rem;
+}
+/* <<< */
+</style>
+</head>
+
+<body class="bd_shicho">
+	<div id="main">
+		
+		%right_menu%
+		
+		<div class="contents">
+			<div class="contents_inner">
+				<section class="shicho_wrap">
+					
+					<div class="head_area cf">
+						<div class="left">
+							<span class="status online">Online</span>
+						</div>
+						<div class="right">
+							<h2><span class="name">%f_nick_name%</span><span class="age">%age%</span></h2>
+						</div>
+					</div><!-- // .head_area -->
+
+					<div class="notice_area">
+						<p>チャット中は高画質でスムーズな映像でお楽しみいただけます。</p>
+					</div>
+
+					<div class="screen" style="">
+						<div id="flick_viewport">
+							<div id="flick_container">
+								<div class="im_prev">
+									<!-- tmpl:ifdef %back_id% -->
+									<img style="background: url(./image/performer/dummy_prof_img_prev.jpg); background-position:center center; background-repeat:no-repeat; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover;" src="./image/skeleton.png">
+									<!-- tmpl:endif -->
+									<!-- tmpl:ifndef %back_id% -->
+									<img class="dummy" src="./image/skeleton.png">
+									<!-- tmpl:endif -->
+								</div>
+
+								<div class="im_current">
+									<span class="status live">LIVE</span>
+									<div id="canvas_width" style="display:none;"><!-- <div id="canvas_width"> -->
+										<div id="cv_m">
+											<canvas id="canvas_main" style="z-index:1;"></canvas>
+										</div>
+										<div id="cv_s" style="position:absolute;top:0;">
+											<canvas id="canvas_sub" style="z-index:100;"></canvas>
+										</div>
+									</div>
+									<div id="im_d"><!-- <div id="im_d" style="display:none;"> -->
+										<img style="background: url('./image/performer/dummy_prof_img_current.jpg'); background-position:center center; background-repeat:no-repeat; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover;" src="./image/skeleton.png">
+									</div>
+								</div>
+
+								<div class="im_next">
+									<img style="background: url(./image/performer/dummy_prof_img_next.jpg); background-position:center center; background-repeat:no-repeat; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover;" src="./image/skeleton.png">
+								</div>
+							</div>
+						</div>
+					</div><!-- // .screen -->
+
+					<div class="ui_panel" id="ui_panel">
+						<div class="tab_menu cf" id="tab_menu">
+							<div class="tab_menu_inner">
+								<ul>
+									<li class="prof %prof_on%" data-tab_id="tab_prof"><a href="#">プロフィール</a></li>
+									<li class="mail"><a href="mail_new_creation.php?sid=%f_hash%">メール</a></li>
+									<li class="memo %memo_on%" data-tab_id="tab_memo"><a href="#">メモ</a></li>
+									<li class="garelly %garelly_on%" data-tab_id="tab_garelly"><a href="#">ギャラリー</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="tab_wrap">
+							<div class="tab prof %prof_active%" id="tab_prof">
+								<div class="profile">
+									<h4>プロフィール詳細</h4>
+									<div class="profile_inner">
+										<div class="data cf">
+											<ul>
+												<li>
+													<span>身長：</span>%height%
+												</li>
+												<li>
+													<span>体型：</span>%type%
+												</li>
+												<li>
+													<span>職業：</span>%job%
+												</li>
+												<li>
+													<span>出没時間：</span>%appear_time%
+												</li>
+											</ul>
+											<ul>
+												<li>
+													<span>カップ：</span>%cup%
+												</li>
+												<li>
+													<span>血液：</span>%blood_type%
+												</li>
+												<li>
+													<span>マイク：</span>%mic%
+												</li>
+												<li>
+													<span>○○系：</span>%category%
+												</li>
+											</ul>
+										</div>
+										<div class="btn_wrap_center">
+											<ul>
+												<li><a class="btn btn_fav" href="#">お気に入りに追加する</a></li>
+											</ul>
+										</div>
+									</div>
+								</div><!-- // .profile -->
+								<div class="message">
+									<h4>メッセージ</h4>
+									<div class="message_inner">
+										<iframe width="100%" scrolling="no" frameborder="0" id="comment_position" marginheight="0" marginwidth="0" src="comment_c.php?id=%f_hash%" name="tab_menu"></iframe>
+									</div>
+								</div><!-- // .message -->
+							</div>
+							<div class="tab garelly %garelly_active%" id="tab_garelly">
+								<div class="garelly_inner">
+									<ul>
+										%garelly%
+									</ul>
+								</div>
+							</div>
+							<div class="tab memo %memo_active%" id="tab_memo">							
+								<div class="memo_inner">
+									<!-- tmpl:ifdef %login_disp% -->
+									<iframe src="memopad.php?id=%f_hash%" name="" width="100%" height="220" scrolling="no"></iframe>
+									<!-- tmpl:endif -->
+								</div>
+							</div>
+						</div><!-- // .tab_wrap -->
+					</div><!-- // .ui_panel -->
+
+					<div class="main_btn_area">
+						<!-- ▼未ログイン▼ -->
+						<div class="btn_wrap_center btn_login_wrap">
+							<ul>
+								<li><a class="btn btn_login" href="./login.php">ログイン</a></li>
+								<li><a class="btn btn_app_download" href="./app_download.php"><small>チャット入室にはアプリが必要です。</small>ダウンロードはこちら</a></li>
+							</ul>
+						</div>
+						<!-- ▲未ログイン▲ -->
+
+						<!-- ▼ログイン後 チャット履歴なし▼ -->
+						<div class="btn_wrap_center btn_chat_wrap">
+							<ul>
+								<li><a class="btn btn_chat" href="#">チャットスタート<small>チャットにはアプリが必要です。</small></a></li>
+							</ul>
+							<p class="notice">※アプリダウンロードページへ移動します。</p>
+						</div>
+						<!-- ▲ログイン後 チャット履歴なし▲ -->
+
+						<!-- ▼ログイン後 チャット履歴あり▼ -->
+						<div class="btn_wrap_center btn_chat_wrap">
+							<ul>
+								<li><a class="btn btn_chat" href="#">チャットスタート</a></li>
+							</ul>
+						</div>
+						<!-- ▲ログイン後 チャット履歴あり▲ -->
+					</div><!-- // .main_btn_area -->
+
+				</section><!-- // .shicho_wrap -->
+			</div>
+		</div>
+		<div class="footer_controls">
+			<ul>
+				<!-- tmpl:ifdef %back_id% -->
+				<li class="left"><a class="prev" href="javascript:void(0);" onclick="func_back()">前へ</a></li>
+				<!-- tmpl:endif -->
+				<!-- tmpl:ifndef %back_id% -->
+				<li class="left"><a class="prev" href="%ru%">戻る</a></li>
+				<!-- tmpl:endif -->
+				<li class="center"><a class="switch_ui_panel" id="switch_ui_panel" href="javascript:void(0);">X</a></li>
+				<li class="right"><a class="next" href="javascript:void(0);" onclick="func_rand()">次へ</a></li>
+			</ul>
+		</div><!-- // .footer_controls -->
+
+		<article>
+			<section id="menu_close_area">
+				<ul class="menu_close_button">
+					<a class="menu_close_box_bg_a" id="simple-menu-close" href="#sidr">
+						<li class="menu_close_box_bg"></li>
+					</a>
+				</ul>
+			</section>
+		</article>
+	</div>
+	<input type="hidden" id="prof_img" name="prof_img" value="%prof_img%">
+	<input type="hidden" id="f_hash" name="f_hash" value="%f_hash%">
+	<input type="hidden" id="cs" name="cs" value="%cs%">
+	<input type="hidden" id="sp" name="sp" value="%sp%">
+
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/flipsnap.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+var Timer1;
+var Timer2;
+
+var canvas_main;
+var ctx_main;
+var img_main;
+var p_img;
+var load_flg = 0;
+var re_w = 0;
+
+var s_msg = [];
+s_msg[0] = "オフラインです。";
+s_msg[1] = "";
+s_msg[2] = "ただいま２ショット中です";
+s_msg[3] = "無料視聴時間が終了しました。";
+
+function shichoInterim(){
+	
+	var hash = $('#f_hash').val();
+//	var t = $.cookie('sp');
+	
+//	if(t <= 0){
+//		clearInterval(Timer1);
+//		clearInterval(Timer2);
+//		load_flg = 0;
+//		p_img = $('#prof_img').val();
+//		$('#shicyo_msg').html('<font>' + s_msg[3] + '</font>');
+//		$('#shicyo_msg').css('display','block');
+//		thumbnailSet();
+//	}
+//	else{
+		
+		var h = Math.floor( Math.random() * 100000 );
+		
+		var shityo = $.ajax({
+			url: "./ajax/sp_shityo_stat_ajax.php?h="+h,
+			type : 'post',
+			data : {
+				'id':hash
+			}
+		});
+		$.when(shityo)
+		.done(function(response){
+			var res = jQuery.parseJSON(response);
+			if(res.result == 1){
+			}
+			else{
+				clearInterval(Timer1);
+				clearInterval(Timer2);
+				
+				load_flg = 0;
+				if(res.result != 99){
+					$('#shicyo_msg').html('<font>' + s_msg[ res.result ] + '</font>');
+					$('#shicyo_msg').css('display','block');
+				}
+				
+				//p_img = $('#prof_img').val();
+				
+				//$('#chat_start').css('display','none');
+				$('#btn_type').html(res.btn_type);
+				
+				//thumbnailSet();
+				
+				$('#cv_m').css('display','none');
+				$('#cv_s').css('display','none');
+				$('#im_d').css('display','block');
+				
+				return false;
+			}
+		});
+		
+//		t = t - 5;
+//		$.cookie('sp',t,{ path: '/sp/'});
+//	}
+	
+}
+
+var cn_w = "";
+var cn_h = "";
+function startShicho(){
+	
+	//$.cookie('sp',60,{ path: '/sp/'});
+	
+	canvas_main = document.getElementById('canvas_main');
+	
+	setCanvasSize(0);
+	
+	canvas_main.width = cn_w;
+	canvas_main.height = cn_h;
+	
+	if (!canvas_main || !canvas_main.getContext){
+		return false;
+	}
+	ctx_main = canvas_main.getContext('2d');
+	img_main = new Image();
+	
+	var cs = $('#cs').val();
+	var hash = $('#f_hash').val();
+	
+	if(cs != 1){
+		$('#shicyo_msg').html('<font>' + s_msg[ cs ] + '</font>');
+		//p_img = $('#prof_img').val();
+		$('#shicyo_msg').css('display','block');
+		//$('#chat_start').css('display','none');
+		//thumbnailSet();
+		
+		$('#cv_m').css('display','none');
+		$('#cv_s').css('display','none');
+		$('#im_d').css('display','block');
+		
+		
+		return false;
+	}
+	
+	//$('#chat_start').css('display','block');
+	p_img = 'http://%para%:80/' + hash + '/';
+	
+	Timer1 = setInterval("shichoInterim()",5000);
+	Timer2 = setInterval("thumbnailSet()",1000);
+}
+
+function thumbnailSet(){
+
+	if(load_flg == 1){
+		return;
+	}
+
+	load_flg = 1;
+
+	img_main.src = p_img + "?" + new Date().getTime();
+	
+	img_main.onload = function(){
+		ctx_main.drawImage(img_main, 0, 0, cn_w, cn_h);
+		load_flg = 0;
+	}
+	img_main.onerror = function(){
+	    load_flg = 0;
+	}
+}
+
+function func_rand() {
+  url = "shicho.php?id=%female_id%&rand_id&world=%world%%pg_ru%";
+  location.href = url;
+}
+
+function func_back() {
+  url = "shicho.php?id=%female_id%&back=%back_id%&world=%world%%pg_ru%";
+  location.href = url;
+}
+
+function chat_start(m){
+	
+	var a = $('#f_hash').val();
+	var sp = $('#sp').val();
+	var h = Math.floor( Math.random() * 100000 );
+	
+	
+	var start = $.ajax({
+		url : './ajax/sp_chat_in.php?h=' + h,
+		type : 'post',
+		data : {
+			'id':a,
+			'sp':sp,
+			'chat_mode':m
+		}
+	});
+	
+	$.when(start)
+		.done(function(response){
+			var data = jQuery.parseJSON(response);
+			
+			if(data.success == 'false'){
+				if(data.msgflg != ""){
+					$('#errmsg').html(data.msgflg);
+				}
+				return false;
+			}
+			
+			if(data.success == 'login'){
+				location.href = data.result;
+				return false;
+			}
+			
+			if(sp == 2){
+				launchApp(data.result);
+			}
+			else{
+				/*アンドロイド*/
+				var userAgent = window.navigator.userAgent.toLowerCase();
+				if (userAgent.indexOf('chrome') != -1) {
+					
+					location.href = "intent://#Intent;scheme="+data.result+";package=air.tv.macherie.macherie;end";
+					
+				}
+				else{
+					launchPlay(data.result);
+				}
+			}
+			
+			
+		});
+}
+
+function launchPlay(url){
+	var app_star = "https://play.google.com/store/apps/details?id=air.tv.macherie.macherie";
+	var iframe = document.createElement('iframe');
+	iframe.style.visibility = "hidden"
+	iframe.src = url;
+	document.body.appendChild(iframe);
+	var time = (new Date()).getTime();
+	setTimeout(function(){
+		var now = (new Date()).getTime();
+		document.body.removeChild(iframe);
+		if((now-time)>400) {
+			return;
+		}
+		document.location = app_star;
+}, 300);
+}
+
+function launchApp(url){
+	/*
+	document.location = url;
+	var time = (new Date()).getTime();
+	setTimeout(function(){
+		var now = (new Date()).getTime();
+		if((now-time)<400) {
+			document.location = './';
+		}
+	}, 300);
+	*/
+	
+	var iframe = document.createElement('iframe');
+	iframe.style.visibility = "hidden";
+	iframe.src = url;
+	document.body.appendChild(iframe);
+	var time = (new Date()).getTime();
+	setTimeout(function(){
+		var now = (new Date()).getTime();
+		document.body.removeChild(iframe);
+		if((now-time)>400) {
+			return;
+		}
+		document.location = 'https://itunes.apple.com/jp/app/livetalk/id894604342?mt=8';
+		
+	}, 300);
+	
+	
+}
+
+function addFavorite(){
+	
+	var a = $('#f_hash').val();
+	var h = Math.floor( Math.random() * 100000 );
+	
+	var favo = $.ajax({
+		url : './ajax/sp_favorite.php?h=' + h,
+		type : 'post',
+		data : {
+			'id':a 
+		}
+	});
+	
+	$.when(favo)
+	.done(function(response){
+		var data = jQuery.parseJSON(response);
+		
+		if(data.flg == 1){
+			$('#favo').attr('src','./image/icon/favorite_heart_on.png');
+		}
+		else if(data.flg == 2){
+			$('#favo').attr('src','./image/icon/favorite_heart_off.png');
+		}
+		
+		alert(data.msg);
+		return false;
+		
+	});
+}
+
+function setCanvasSize(r){
+	var container = document.getElementById("canvas_width");
+	
+	cn_w = container.offsetWidth;
+	cn_h = ( cn_w / 4 ) * 3 ;
+	
+	
+	if(re_w != cn_w){
+		$('.shicho_wrap .screen').css('height',cn_h);
+		
+		if(r == 1){
+			canvas_sub.width = cn_w;
+			canvas_sub.height = cn_h;
+			
+			canvas_main.width = cn_w;
+			canvas_main.height = cn_h;
+		}
+		re_w = cn_w;
+	}
+	
+}
+var canvas_sub;
+$(function(){
+	var isset_gallery = false;
+	
+	// プロフィールタブ切替
+	$('#tab_menu li').on('click', function(e){
+		$('#tab_menu li').removeClass('on');
+		$(this).addClass('on');
+		$('.tab_wrap > div').removeClass('active');
+		$('#' + $(this).data('tab_id')).addClass('active');
+		
+		// ギャラリータブ
+		if($(this).data('tab_id') == 'tab_garelly' && !isset_gallery){
+			$('#tab_garelly ul').bxSlider({});
+			isset_gallery = true;
+		}
+	});
+	
+	
+	canvas_sub = document.getElementById('canvas_sub');
+	if(!canvas_sub || !canvas_sub.getContext ){
+		return false;
+	}
+	
+	setCanvasSize(0);
+	
+	canvas_sub.width = cn_w;
+	canvas_sub.height = cn_h;
+	
+	var ctx_sub = canvas_sub.getContext('2d');
+	var img_sub = new Image();
+	img_sub.src = "image/spacer.gif";
+	img_sub.onload = function(){
+		ctx_sub.drawImage(img_sub, 0, 0,cn_w,cn_h);
+	}
+	
+	startShicho();
+	
+	$('#memo_login').on('click',function(){
+		 document.F2.submit();
+	});
+	
+	$('#memo_save').on('click',function(){
+		 document.F3.submit();
+	});
+	
+	window.onresize = function(){
+		setCanvasSize(1);
+	};
+	
+});
+
+$(function(){
+	// flick pager
+	flipsnap = Flipsnap('#flick_container');
+
+	// init position
+	flipsnap.moveToPoint(1, 0);
+	// show flick container
+	$('#flick_container').fadeTo(200, 1);
+
+	// prev item is not exist
+	if($('#flick_container .im_prev .dummy').size() > 0){
+		prev_empty_flag = 1;
+	}else{
+		prev_empty_flag = 0;
+	}
+
+	// flick event cancel
+	flipsnap.element.addEventListener('fstouchmove', function(ev) {
+		if(ev.direction === -1 && prev_empty_flag == 1){
+			ev.preventDefault();
+			flipsnap.moveToPoint(1, 0);
+		}
+	}, false);
+
+	// flick end event
+	flipsnap.element.addEventListener('fstouchend', function(ev) {
+		switch(ev.newPoint){
+			case 0:	
+				// prev page
+				if(ev.cancelled == false){
+					setTimeout(function(){
+						$('#flick_viewport').append('<img class="loader" src="./image/icon/loader.gif" />');
+						setTimeout(function(){
+							func_back();
+						}, 200);
+					
+					}, 600);
+				}
+				break;
+			case 2:
+				// next page		
+				setTimeout(function(){
+					$('#flick_viewport').append('<img class="loader" src="./image/icon/loader.gif" />');
+					setTimeout(function(){
+						func_rand();
+					}, 200);
+				}, 600);
+				break;
+		}
+	}, false);
+	// adjust for landscape or portrate
+	$(window).resize(function(){
+		flipsnap.refresh();
+	});
+});
+
+$(function(){
+	// switch ui panel
+	$('#switch_ui_panel').on('click', function(e){
+		e.preventDefault();
+		if($('#ui_panel').is(':visible')){
+			$('#ui_panel').slideUp(200);
+			$(this).removeClass('on');
+		}else{
+			$('#ui_panel').slideDown(200);
+			$(this).addClass('on');
+		}
+	});
+});
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-13149951-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript';
+ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-13149951-13', 'auto');
+ga('send', 'pageview');
+
+</script>
+</body>
+</html>

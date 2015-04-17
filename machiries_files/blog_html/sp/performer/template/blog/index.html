@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat">
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。">
+<link rel="stylesheet" type="text/css" href="../../css/html5reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/blog.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<body>
+<div class="page_wrap page_wrap--blog">
+	<header class="header" id="header">
+		<div class="d_table">
+        	<div class="d_cell t_left v_middle">
+        		<h1 class="header__logo"><a href="#">Macherie</a></h1>
+			</div>
+        	<div class="d_cell t_right v_middle">
+        		<a class="btn btn--logout" href="../login/index.html">ログアウト</a>
+        	</div>
+        </div>
+	</header>
+
+	<div class="pagebody cf">
+		<div class="pagebody_inner">
+
+            <div class="page_ttl_area cf">
+                <h2 class="page_ttl">マイブログ一覧</h2>
+            </div><!-- // .page_ttl_area -->
+
+            <div class="common_inner no_padding_top">
+
+                <div class="blog_menu_btns cf">
+                    <ul>
+                        <li><a class="btn btn--small" href="./create.html">新規投稿</a></li>
+                        <li class="dropdown_trigger" data-target="blog_notice_list"><a class="btn btn--small btn--notice" href="#">お知らせ<span class="badge">3</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="blog_notice_list dropdown_list" id="blog_notice_list">
+                    <ul>
+                        <!-- ▼お知らせない場合▼ -->
+                        <li><a href="#" class="disable">未読のお知らせはありません。</a></li>
+                        <!-- ▲お知らせない場合▲ -->
+                        <li><a href="./article_detail.html">「記事タイトル」に{ユーザー名}さんからコメントがつきました。</a></li>
+                        <li><a href="./article_detail.html">「記事タイトル」に{パフォーマー名}さんからコメントがつきました。</a></li>
+                        <li><a href="./article_detail.html">「記事タイトル」が公開停止になりました。</a></li>
+                        <li><a href="./article_detail.html">「記事タイトル」に{ユーザー名}さんからコメントがつきました。</a></li>
+                    </ul>
+                    <div class="blog_notice_list_pager cf">
+                        <a class="prev" href="#">前</a>
+                        <a class="next" href="#">次</a>
+                    </div>
+                </div>
+
+                <div class="blog_display_switch cf">
+                    <ul>
+                        <li class="blog_display_switch_menu myblog"><a class="on" href="./index.html">マイブログ</a></li>
+                        <li class="blog_display_switch_menu allblog"><a href="./article_list_others.html">みんなのブログ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="article_list cf">
+
+				<!-- ▼投稿がない場合▼ -->
+                <div class="ui_msg_area ui_msg_area--not_exist">
+                	<p class="msg">まだ投稿がありません。</p>
+                </div>
+                <!-- ▲投稿がない場合▲ -->
+
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <span class="status hide">公開停止中</span>
+                            <img src="../../img/blog/spacer.gif" style="background-image: url('../../img/blog/performer/sample.jpg')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.html">タイトルがはいります。タイトルがはいります。タイトルがはいります</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./edit.html">編集</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <img src="../../img/blog/spacer.gif" style="background-image: url('../../img/blog/performer/sample.jpg')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.html">タイトルがはいります。タイトルがはいります。タイトルがはいります</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./edit.html">編集</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <img src="../../img/blog/spacer.gif" style="background-image: url('../../img/blog/performer/sample.jpg')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.html">タイトルがはいります。タイトルがはいります。タイトルがはいります</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./edit.html">編集</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <img src="../../img/blog/spacer.gif" style="background-image: url('../../img/blog/performer/sample.jpg')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.html">タイトルがはいります。タイトルがはいります。タイトルがはいります</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./edit.html">編集</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <img src="../../img/blog/spacer.gif" style="background-image: url('../../img/blog/performer/sample.jpg')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.html">タイトルがはいります。タイトルがはいります。タイトルがはいります</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./edit.html">編集</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <img src="../../img/blog/spacer.gif" style="background-image: url('../../img/blog/performer/sample.jpg')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.html">タイトルがはいります。タイトルがはいります。タイトルがはいります</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./edit.html">編集</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <img src="../../img/blog/spacer.gif" style="background-image: url('../../img/blog/performer/sample.jpg')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.html">タイトルがはいります。タイトルがはいります。タイトルがはいります</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./edit.html">編集</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <img src="../../img/blog/spacer.gif" style="background-image: url('../../img/blog/performer/sample.jpg')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.html">タイトルがはいります。タイトルがはいります。タイトルがはいります</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./edit.html">編集</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .article_box -->
+
+                <div class="article_box">
+                    <div class="article b_link func_swipe">
+                        <div class="article_figure">
+                            <img src="../../img/blog/spacer.gif" style="background-image: url('../../img/blog/performer/sample.jpg')" />
+                        </div>
+                        <div class="article_data">
+                            <h4 class="ttl t_truncate"><a href="./article_detail.html">タイトルがはいります。タイトルがはいります。タイトルがはいります</a></h4>
+                            <p class="desc t_truncate">本文がはいります。本文がはいります。本文がはいります。本文がはいります。</p>
+                            <p class="posttime">2014-08-23 14:57</p>
+                            <div class="counter cf">
+                                <ul>
+                                    <li class="cnt_view"><span class="cnt_ttl">閲覧数</span><span class="cnt">0</span></li>
+                                    <li class="cnt_like"><span class="cnt_ttl">いいね</span><span class="cnt">0</span></li>
+                                    <li class="cnt_comment"><span class="cnt_ttl">コメント</span><span class="cnt">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui_functions ui_functions--slide cf">
+                        <ul>
+                            <li><a class="btn btn--small btn--blue btn--edit" href="./edit.html">編集</a></li>
+                        </ul>
+                    </div>
+                </div><!-- // .article_box -->
+
+            </div><!-- // .article_list -->
+
+            <div class="pager">
+            	<div class="cell--left">
+                	<a class="prev disable" href="#">前へ</a>
+				</div>
+            	<div class="cell--center">
+                    <ul>
+                        <li class="current"><span>01</span></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                        <li><span>…</span></li>
+                        <li><a href="#">105</a></li>
+                    </ul>
+                </div>
+                <div class="cell--right">
+                	<a class="next" href="#">次へ</a>
+ 				</div>
+            </div>
+
+		</div><!-- // .pagebody_inner -->
+	</div><!-- // .pagebody -->
+
+	<footer class="footer" id="footer">
+		<small class="footer__copyright">&copy; Macherie</small>
+	</fotter>
+</div><!-- ./page_wrap -->
+
+<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.biggerlink.js"></script>
+<script type="text/javascript" src="../../js/blog.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.b_link').biggerlink();
+	
+	// notice dropdown list
+	$('.dropdown_trigger').on('click', function(e){
+		e.preventDefault();
+		var dropdown_list = $('#' + $(this).attr('data-target'));
+		if(dropdown_list.is(':visible')){
+			dropdown_list.slideUp(200);
+		}else{
+			dropdown_list.slideDown(200);
+		}
+	});
+});
+</script>
+</body>
+</html>

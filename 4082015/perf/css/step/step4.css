@@ -1,0 +1,44 @@
+@charset "shift_jis";
+
+span.red{
+color:red;}
+
+span.purple{
+color:#B64259;}
+
+#titleText{
+text-align:center;
+margin:20px 0 0 0;
+color:#B93F58;
+font-size:15px;
+font-weight:bold;}
+
+table#bankInformation{
+width:500px;
+margin:15px auto 0 auto;
+border:1px #999999 solid;}
+
+table#bankInformation th{
+width:130px;
+background:#EFEFEF;
+font-weight:normal;
+text-align:center;
+border-bottom:1px #999999 solid;
+border-right:1px #999999 solid;}
+
+table#bankInformation td{
+width:360px;
+margin:0 auto;
+padding:17px 0 17px 10px;
+border-bottom:1px #999999 solid;
+line-height:1.7em;}
+
+#buttonArea{
+text-align:center;
+margin:20px 0 10px 0;}
+
+input#inputName,input#inputPhone,input#inputMobilePhone,input#inputMobilePhone,input#inputMailAddress,input#inputAddressNumber{
+width:150px;}
+
+input#inputAddress{
+width:300px;}

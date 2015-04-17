@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<title>【マシェリ】パフォーマ管理画面</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="会員登録数30万人突破記念3000円分の無料体験はフリーメールでも使用可能。日テレジェニックの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="./css/default.css" />
+<link rel="stylesheet" type="text/css" href="./css/common.css" />
+<link rel="stylesheet" type="text/css" href="./css/top.css" />
+<link rel="stylesheet" type="text/css" href="./css/beginner.css" />
+<link rel="stylesheet" type="text/css" href="./css/ranking.css" />
+<!-- ポップアップここから -->
+<script type="text/javascript" src="/performer/js/ranking/jquery.min.js"></script>
+<script type="text/javascript" src="/performer/js/ranking/ipop.js"></script>
+<script>
+$(function() {
+  $('#open').click(function() {$.ipop();});
+});
+</script>
+<!-- ポップアップここまで -->
+
+</head>
+
+<body id="index">
+
+<div id="wrapper">
+
+	%header%
+
+	%navi_contents%
+
+	<div id="Contens" class="clearfix" style="clear: both">
+
+		<div id="MainBlock" class="clearfix">
+
+			<!-- tmpl:ifdef %test_female_disp% -->
+			<div  class="cmnSection">
+				<div style="padding: 20px 20px;">
+
+					<img src="./images/notw.jpg" alt="重要なお知らせ" /><br />
+
+					<p style="font-size:13px;">
+						本日もログイン誠にありがとうございます。現在、お仕事ができない状態になっております。<br />
+						お仕事上の環境トラブルや、サポートスタッフによる確認事項がある等、様々な理由が考えられます。<br />
+						お手数ですが、次回〔2ショットで接続〕時にサポートスタッフが入室させていただきます。<br />
+						また、お電話にて対応も可能ですので、ご希望の際はフリーダイヤル（0120-50-2581）までお電話頂けましたら幸いです。<br />
+						お仕事の再開が問題ないと判断させていただいた時点で、再開可能となりますのでよろしくお願いいたします。<br />
+					</p>
+				</div>
+			</div>
+			<!-- tmpl:endif -->
+
+			<!-- tmpl:ifdef %flv1_19% -->
+			<div id="Beginner3step" class="cmnSection">
+				<h2 class="clearfix">
+					<span class="title">★ 初心者の方へ - チャットレディ初心者 講座 ★</span>
+					<span id="open_btn" class="btn">OPEN</span>
+					<span id="close_btn" class="btn">CLOSE</span>
+				</h2>
+
+				<div class="set_size">
+
+					<div id="contain">
+
+						<div class="beginner_m1 common_bg" id="page1">
+							<div class="area1 common" onclick="pageChange(2)">
+								待機開始後、お客様の画面にあなたが表示され、お客様からのアクセス待ちになります。早速【2ショット接続】から待機を開始しましょう！<br />
+								<a href="#">&gt;&gt;待機の始め方-1</a>
+							</div>
+							<div class="area2 common" onclick="pageChange(4)">
+								お仕事に慣れて頂くまでに、初心者の方には様々な特典をお付けしております。是非報酬獲得にお役立てください。<br />
+								<a href="#">&gt;&gt;新人期間のメリット</a>
+							</div>
+							<div class="area3 common" onclick="pageChange(5)">
+							報酬は5000円以上から清算が可能です。可能金額(5000円)ならいつでも清算が可能です。【詳細閲覧/精算】より清算しよう！<br />
+							<a href="#">&gt;&gt;お支払いについて</a>
+							</div>
+							<div class="area4 common" onclick="pageChange(6)">
+							未経験で始める方も多いでしょう。効率的に稼ぐにはどうしたらいいのでしょうか？売れている方はこうして稼いでいる！！<br />
+							<a href="#">&gt;&gt;稼げるアドバイス</a>
+							</div>
+							<a href="#" onclick="pageChange(2)"><img src="images/firstPageRight/startbtn_01.jpg" onmouseover="this.src='images/firstPageRight/startbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/startbtn_01.jpg'" width="165" height="30" alt="open" class="button" alt="ガイドをスタート" /></a>
+						</div>
+
+						<div class="beginner_m2 common_bg" id="page2">
+							<div class="area1">
+								管理画面の左メニューに<br />ある【2ショット接続】<br />ボタンをクリック！<br />
+								※モバイル同時待機未設<br />定の方は<a href="#" onclick="pageChange(3)">待機の始め方-2</a><br />へお進みください。
+							</div>
+							<div class="area2">
+								モバイル同時待機を設定した方は、赤い「はい」ボタンを押しモバイル同時待機をします。
+							</div>
+							<div class="area3">
+								Flash Playerの設定アラートが表示されたら、「許可」をクリックしてください。いよいよ待機が始まります。
+							</div>
+
+							<a href="#" onclick="pageChange(1)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(3)"><img src="images/firstPageRight/forwardbtn_01.jpg" onmouseover="this.src='images/firstPageRight/forwardbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/forwardbtn_01.jpg'" width="40" height="40" alt="次へ" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								&gt;待機の始め方-1&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(3)">&gt;待機の始め方-2</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(4)">&gt;新人期間のメリット</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(5)">&gt;お支払いについて</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(6)">&gt;稼げるアドバイス</a>
+							</div>
+						</div>
+
+						<div class="beginner_m3 common_bg" id="page3">
+							<div class="area1">
+								待機が始まりましたら、待機中コメントを画面内に書きましょう。記入したら右の「更新」ボタンを押してコメントを表示します。
+							</div>
+
+							<div class="area2">
+								待機をする際には、飲食喫煙・寝そべり待機・携帯いじりなどは印象を悪くします。油断して寝っころがっていると、お客様があなたのroomを覗いた時「だらしない子だな」とスルーされてしまいます。せっかくのチャンスを逃さない様、いつでもお客様を向かい入れられる態度で待機しましょう！
+							</div>
+
+							<a href="#" onclick="pageChange(2)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(4)"><img src="images/firstPageRight/forwardbtn_01.jpg" onmouseover="this.src='images/firstPageRight/forwardbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/forwardbtn_01.jpg'" width="40" height="40" alt="次へ" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(2)">&gt;待機の始め方-1</a>&nbsp;&nbsp;
+								&gt;待機の始め方-2&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(4)">&gt;新人期間のメリット</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(5)">&gt;お支払いについて</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(6)">&gt;稼げるアドバイス</a>
+							</div>
+						</div>
+
+						<div class="beginner_m4 common_bg" id="page4">
+							<div class="area1">
+								500pt獲得または30日の間デビューマークが表示されます。デビューマークが付いているパフォーマーさんとの<strong>チャット開始後10分間は半額</strong>なので、お客様からのアクセス率が高い期間です！！非常に多くの会員様とお話する機会がありますので、ぜひこちらを活用して仲の良い会員様獲得にお役立てください！
+							</div>
+
+							<div class="area2">
+								1週間で1000pt獲得（通常1分＝1pt）されますと、最大1万円プレゼント♪1週間で獲得できなくても、10日以内で【3,000円】 2週間以内で【1,000円】と、十分にボーナスのチャンスがあります♪是非獲得目指して頑張ってください！！
+							</div>
+
+							<a href="#" onclick="pageChange(3)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(5)"><img src="images/firstPageRight/forwardbtn_01.jpg" onmouseover="this.src='images/firstPageRight/forwardbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/forwardbtn_01.jpg'" width="40" height="40" alt="次へ" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(2)">&gt;待機の始め方-1</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(3)">&gt;待機の始め方-2</a>&nbsp;&nbsp;
+								&gt;新人期間のメリット&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(5)">&gt;お支払いについて</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(6)">&gt;稼げるアドバイス</a>
+							</div>
+						</div>
+
+						<div class="beginner_m5 common_bg" id="page5">
+							<div class="area1">
+								報酬は5000円以上から清算が可能です。可能金額(5000円)ならいつでも清算が可能です。左メニューの【詳細閲覧/精算】より清算しよう！毎月末その月の報酬は翌月５日に自動精算されます。
+							</div>
+
+							<div class="area2">
+								銀行営業日（土日祝を除く）の11：00AMまでに精算<br />した報酬は、銀行により振込み日が異なります。<br />
+
+								<strong>ジャパンネット銀行・楽天銀行⇒当日の15：00</strong><br />
+								<strong>その他銀行⇒翌銀行営業日（土日祝を除く）の15：00</strong><br />
+								※途中精算一発検索より振込み予定日の確認が可能。
+							</div>
+
+							<div class="area3">
+								その他必要に応じて途中精算を行いたい際には、獲得報酬一覧下部にご登録時のパスワードを入力して精算を行って下さい。
+							</div>
+
+							<a href="#" onclick="pageChange(4)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(6)"><img src="images/firstPageRight/forwardbtn_01.jpg" onmouseover="this.src='images/firstPageRight/forwardbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/forwardbtn_01.jpg'" width="40" height="40" alt="次へ" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(2)">&gt;待機の始め方-1</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(3)">&gt;待機の始め方-2</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(4)">&gt;新人期間のメリット</a>&nbsp;&nbsp;
+								&gt;お支払いについて&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(6)">&gt;稼げるアドバイス</a>
+							</div>
+						</div>
+
+						<div class="beginner_m6 common_bg" id="page6">
+							<div class="area1">
+								大きめのサイズの写真を載せましょう。
+								<b>→[プロフィール編集 > フォトギャラリーの変更]</b>
+							</div>
+
+							<div class="area2">
+								お礼、挨拶ができる人はお客様から見て好印象です。女性から誘われて嬉しくないお客様はいませんので、お誘いメールも積極的に送るといいでしょう。<br />
+								<b>→[チャット履歴 > メール送信]</b>
+							</div>
+
+							<div class="area3">
+								内容は自由ですが、趣味や好きな事などを詳しく掘り下げた内容を書くと良いでしょう。情報量が多ければ、あなたがどういう人なのかお客様に伝わりやすくなります。会話の糸口を作る意味でも、できるだけ詳しく書き、定期的に更新すると良いでしょう。<br />
+								<b>→[プロフィール編集 > お客様に一言]</b>
+							</div>
+
+							<a href="#" onclick="pageChange(5)"><img src="images/firstPageRight/backbtn_01.jpg" onmouseover="this.src='images/firstPageRight/backbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/backbtn_01.jpg'" width="40" height="40" alt="前へ" class="pre_btn" /></a>
+							<a href="#" onclick="pageChange(1)"><img src="images/firstPageRight/topbtn_01.jpg" onmouseover="this.src='images/firstPageRight/topbtn_02.jpg'" onmouseout="this.src='images/firstPageRight/topbtn_01.jpg'" width="40" height="40" alt="TOP" class="next_btn" /></a>
+
+							<div class="bottom_link">
+								<a href="#" onclick="pageChange(1)">&gt;スタートガイドトップ</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(2)">&gt;待機の始め方-1</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(3)">&gt;待機の始め方-2</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(4)">&gt;新人期間のメリット</a>&nbsp;&nbsp;
+								<a href="#" onclick="pageChange(5)">&gt;お支払いについて</a>&nbsp;&nbsp;
+								&gt;稼げるアドバイス
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- tmpl:endif -->
+
+			<div id="centerBlock">
+
+				<!-- tmpl:ifdef %select_bonus% -->
+					<div id="selectBonus">
+						<a href="./campaign/select_bonus/" target="_blank"><img src="images/pafo_select_bonus.jpg" /></a>
+					</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %taiki_bonus% -->
+				<div id="standbyBonus">
+					<a href="./campaign/taiki_bonus/" target="_blank"><img src="%banner_img%" alt="ボーナス" /></a>
+					<span>あと%min%分のログイン時間（待機＋%point%分チャット）で%bonus%円ゲット！</span>
+				</div>
+				<!-- tmpl:endif -->
+
+				<div id="multipleInformation" class="cmnSection">
+
+					<ul class="clearfix">
+						<li class="ivent"><a href="#tabNews">イベント情報</a></li>
+						<!-- tmpl:ifdef %non_dairiten% -->
+						<li class="PersonInCharge"><a href="#tabDirector">担当からの一言</a></li>
+						<li class="CampaignOther"><a href="#tabCampaign">キャンペーンその他のお知らせ</a></li>
+						<!-- tmpl:endif -->
+						<!-- <li class="variety"><a href="#tabVariety">芸能人出演情報/その他</a></li> -->
+					</ul>
+
+					<div id="tabNews">
+						<iframe id="femaleNews" src="./news.php" frameborder="0" width="100%" height="640px" scrolling="yes"></iframe>
+					</div>
+
+					<!-- tmpl:ifdef %non_dairiten% -->
+					<div id="tabDirector">
+						<div id="director" class="clearfix">
+							<dl class="main">
+								<dt>メイン担当者</dt>
+								<dd>
+									<img src="%img_main%" width="120" height="90" /><br />
+									<strong>%disp_name_main%</strong><br />
+									<p>%time_main%</p>
+									<a href="../cs_support/index.php" target="_blank">（メール送信）</a>
+								</dd>
+							</dl>
+							<dl class="sub">
+								<dt>サブ担当者</dt>
+								<dd>
+									<img src="%img_sub%" width="120" height="90" /><br />
+									<strong>%disp_name_sub%</strong><br />
+									<p>%time_sub%</p>
+									<a href="../cs_support/index.php" target="_blank">メール</a>
+								</dd>
+							</dl>
+						</div>
+
+						<div id="directorComment">
+							<iframe class="autoHeight" src="./staff_name.php?sid=%hash_main%" frameborder="0" width="100%" scrolling="no"></iframe>
+						</div>
+
+					</div>
+					<div id="tabCampaign">
+						<iframe src="./campaign_news.html" frameborder="0" width="100%" height="490px" scrolling="no"></iframe>
+					</div>
+					<!-- tmpl:endif -->
+					<!--
+					<div id="tabVariety">
+						<iframe class="autoHeight" src="./news_variety_test.html" frameborder="0" width="100%" scrolling="no"></iframe>
+					</div>
+					-->
+				</div>
+
+				<div class="cmnSection" id="campaign_news">
+					<h2 class="clearfix">
+						<span class="title">キャンペーンその他のお知らせ</span>
+					</h2>
+					<iframe src="./campaign_news.html" frameborder="0" width="100%" height="490px" scrolling="no"></iframe>
+				</div>
+
+
+			</div>
+
+			<div id="rightBlock">
+
+				<div id="ranking">
+
+					<!-- 履歴ボタン　ここから -->
+					<a href="javascript:void(0)" id="open">
+						<div class="ranking_pafo_btn_history"></div>
+					</a>
+					<!-- 履歴ボタン　ここまで -->
+
+					<div class="ranking_dent_white">
+						<div class="ranking_bg_top">
+							<div class="ranking_bg_mid">
+								<div class="rank_area">
+									<div class="rank_icon_red"></div>
+									<p class="rank_text">本日<span>100位以下</span>です</p>
+								</div>
+								<div class="rank_area">
+									<div class="rank_icon_blue"></div>
+									<p class="rank_text">今週<span>100位以下</span>です</p>
+								</div>
+								<div class="rank_area_last">
+									<div class="rank_icon_green"></div>
+									<p class="rank_text">今月<span>100位以下</span>です</p>
+								</div>
+							</div><!-- ranking_bg_mid -->
+							<div class="ranking_bg_bot"></div><!-- ranking_bg_bot -->
+						</div><!-- ranking_bg_top -->
+					</div><!-- ranking_dent_white -->
+
+					<div class="ranking_dent_white_two">
+						<div class="ranking_bg_top">
+							<div class="ranking_bg_mid">
+								<div class="rank_area_two">
+									<p class="rank_text_center">今日の順位を１つあげるのに後</p>
+								</div>
+								<div class="rank_area_last">
+									<p class="rank_text_center"><span>100分</span>のチャットが必要です</p>
+								</div>
+							</div><!-- ranking_bg_mid -->
+							<div class="ranking_bg_bot"></div><!-- ranking_bg_bot -->
+						</div><!-- ranking_bg_top -->
+					</div><!-- ranking_dent_white_two -->
+
+					<div class="ranking_dent_white_two">
+						<div class="ranking_bg_top">
+							<div class="ranking_bg_mid">
+								<div class="rank_area_number_one">
+									<div class="rank_icon_crown"></div>
+									<p class="rank_text_number_one">現在<span>１位</span>です！</p>
+									<div class="rank_icon_crown_two clearfix"></div>
+								</div>
+								<div class="rank_area_cong">
+									<p class="rank_text_cong">Congratulation♪</p>
+								</div>
+							</div><!-- ranking_bg_mid -->
+							<div class="ranking_bg_bot"></div><!-- ranking_bg_bot -->
+						</div><!-- ranking_bg_top -->
+					</div><!-- ranking_dent_white_two -->
+
+				</div><!-- ranking -->
+
+
+
+				<!-- tmpl:ifdef %debut_special% -->
+
+				<table  border="0" cellspacing="1" style="background-color:#ffffff">
+				<tr>
+					<td bgcolor="#ffffff" style="padding: 4px 1px 4px 1px; text-align:center;font-size:12px;">
+
+						<a href="/performer/campaign/debut_mark/" target="_blank"><img src="/images/operator/debut_btn2.jpg" onmouseover="this.src='/images/operator/debut_btn2_on.jpg';" onmouseout="this.src='/images/operator/debut_btn2.jpg'"></a>
+					</td>
+				</tr>
+				</table>
+
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %reward_up% -->
+				<!-- 報酬アップカウンター -->
+				<div id="CrearPoint" class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">めざせ%crear_point%Ptで報酬アップ</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/flv_1000.php" frameborder="0" width="100%" height="180" scrolling="no"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %taiki_bonus% -->
+				<!-- シークレットボーナス申告 -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">スペシャルボーナス</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/taiki_bonus.php" height="248" width="100%" scrolling="no" frameborder="0" id="iframe_taikibonus"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %special_week_counter% -->
+				<!-- スペシャルウィークカウンター -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">ｽﾍﾟｼｬﾙWEEK獲得ﾎﾟｲﾝﾄ</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/special_week.php" height="107" width="100%" scrolling="no" frameborder="0" id="iframe_special_week"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %macheriecoin% -->
+				<!-- マシェ男ボーナステスト -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">マシェ男くんボーナス</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/macheriecoin.php" height="248" width="100%" scrolling="no" frameborder="0" id="iframe_macheriecoin"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %secret_bonus% -->
+				<!-- シークレット７０円・応募フォーム -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">シークレット７０円・応募フォーム</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/secretbonusm.php" height="248" width="100%" scrolling="no" frameborder="0" id="iframe_secretbonusm"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %secret_bonus_tukawanai% -->
+				<!-- 旧シークレットボーナス申告 -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">シークレットボーナス申告</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/secret_bonus.php" height="107" width="100%" scrolling="no" frameborder="0" id="iframe_secret_bonus"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %gc% -->
+				<!-- ギャラリー＆コメント ボーナス -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">2点プロフ充実で300円ボーナス</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/gc.php" height="110" width="100%" scrolling="no" frameborder="0"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %newgirls_bonus% -->
+				<!-- 新人特別ボーナス 面接済ｸA群週間 -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">新人応援・特別ボーナス</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/newgirls_bonus.php" height="140" width="100%" scrolling="no" frameborder="0" id="iframe_newgirls_bonus"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %stepup_bonus% -->
+				<!-- ステップアップボーナス -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">ステップアップボーナス</span>
+					</h2>
+					<div>
+						<iframe src="../stepup/" height="242" width="100%" scrolling="no" frameborder="0" id="iframe_stepup"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %present_point% -->
+				<!-- お客様優待券 -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">お客様・優待権</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/present_point.php" height="320" width="100%" scrolling="no" frameborder="0" id="iframe_present_point"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %xmas_img_kako% -->
+				<!-- クリスマス優待券 -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">クリスマス優待券</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/xmas_img_kako.php" height="320" width="100%" scrolling="no" frameborder="0" id="iframe_xmas_img_kako"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %jewelry_bonus3% -->
+				<!-- ジュエリーボーナス第三部用 -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">ジュエリーボーナス</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/jewelry_bonus3.php" height="242" width="100%" scrolling="no" frameborder="0" id="iframe_jewelry_bonus3"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %jewelry_bonus2% -->
+				<!-- ジュエリーボーナス第二部用 -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">ジュエリーボーナス</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/jewelry_bonus2.php" height="242" width="100%" scrolling="no" frameborder="0" id="iframe_jewelry_bonus2"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %jewelry_bonus% -->
+				<!-- ジュエリーボーナス第一部用 -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">ジュエリーボーナス</span>
+					</h2>
+					<div>
+						<iframe src="./right_topico/jewelry_bonus.php" height="242" width="100%" scrolling="no" frameborder="0" id="iframe_jewelry_bonus"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+				<!-- tmpl:ifdef %objective% -->
+				<!-- 目標報酬 -->
+				<div class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">目標報酬</span>
+					</h2>
+					<div>
+						<iframe src="../summer_fes/check.php" height="220" width="100%" scrolling="no" frameborder="0"></iframe>
+					</div>
+				</div>
+				<!-- tmpl:endif -->
+
+
+				<div id="TopicSection" class="cmnSection">
+					<h2 class="clearfix">
+						<span class="title">更新トピックス</span>
+					</h2>
+
+					<dl>
+						<!-- tmpl:loop %loop_faq% -->
+						<dd>
+							<ul>
+								<a href="/performer/manual/faq/index.php?M=detail&qid=%qid%" target="_blank" >
+								<li class="Question">【%title%】</li>
+								<li class="Anwer">%question%</li>
+								</a>
+							</ul>
+						</dd>
+						<!-- tmpl:endloop -->
+						<dd style="text-align:center;padding:20px 0;">
+							<a href="./manual/faq/">＞＞　よくある質問　＜＜ </a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="UtilitiesBlock">
+
+			%utilities%
+
+		</div>
+
+	</div>
+
+	%footer%
+
+</body>
+</html>

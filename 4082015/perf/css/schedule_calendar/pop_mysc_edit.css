@@ -1,0 +1,154 @@
+/****************
+* ƒ|ƒbƒvƒAƒbƒv ƒoƒ‰ƒGƒeƒB@•ÒW@‚±‚±‚©‚ç
+********************************/
+
+.popup-mysc_edit {
+	padding: 0;
+	background: url(/performer/images/schedule_calendar/popup/my_edit_bg.png) no-repeat;
+	width: 514px;
+	height: 344px;
+	position: absolute;
+	display: none;
+	z-index: 9999;
+}
+
+.popup-mysc_edit-title {
+	cursor: move;
+	width: 414px;
+	height: 38px;
+    position:relative;
+}
+
+.popup-mysc_edit-title_text {
+    position:absolute;
+	top: 12px;
+	left: 17px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:12pt;
+}
+
+.popup-mysc_edit-title_day {
+    position:absolute;
+	top: 19px;
+	left: 423px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:7pt;
+}
+
+.popup-mysc_edit-title_close {
+	cursor: pointer;
+    position:absolute;
+	top: 13px;
+	right: 15px;
+}
+
+.popup-mysc_edit-title_textarea {
+    position:absolute;
+	top: 50px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_edit-title_textarea_colon {
+    position:absolute;
+	top: 50px;
+	left: 71px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_edit-title_textarea_time {
+	width: 407px;
+    position:absolute;
+	top: 47px;
+	left: 81px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_edit-title_comentarea {
+    position:absolute;
+	top: 77px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_edit-title_comentarea_colon {
+    position:absolute;
+	top: 77px;
+	left: 71px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_edit-title_comentarea_time {
+	width: 407px;
+	height:215px;
+    position:absolute;
+	top: 77px;
+	left: 81px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_edit-title_detailslink {
+    position:absolute;
+	bottom: 20px;
+	left: 20px;
+	text-align: left;
+	font-family:'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	font-size:9pt;
+}
+
+.popup-mysc_edit-title_overwritebt {
+    position:absolute;
+	bottom: 12px;
+	left: 92px;
+	text-align: left;
+}
+
+.popup-mysc_edit-title_cancellbt {
+    position:absolute;
+	bottom: 12px;
+	left: 207px;
+	text-align: left;
+}
+
+.popup-mysc_edit-title_delbt {
+    position:absolute;
+	bottom: 12px;
+	right: 36px;
+	text-align: right;
+}
+
+input.edit_title {
+	height: 20px;
+	width: 400px;
+}
+
+textarea.edit_text {
+	height: 205px;
+	width: 389px;
+	max-height:205px;
+	max-width:389px;
+
+}
+
+
+
+
+
+
+
+
+

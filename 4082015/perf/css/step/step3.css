@@ -1,0 +1,59 @@
+@charset "shift_jis";
+
+span.red{
+color:red;}
+
+span.purple{
+color:#B64259;}
+
+#titleText{
+text-align:center;
+margin:20px 0 0 0;}
+
+table#bankInformation{
+width:500px;
+margin:15px auto 0 auto;
+border:1px #999999 solid;}
+
+table#bankInformation th{
+width:130px;
+background:#EFEFEF;
+font-weight:normal;
+text-align:center;
+border-bottom:1px #999999 solid;
+border-right:1px #999999 solid;}
+
+table#bankInformation td{
+width:360px;
+margin:0 auto;
+padding:17px 0 17px 10px;
+border-bottom:1px #999999 solid;
+line-height:1.7em;}
+
+input.radioButton{
+position:relative;
+top:2px;}
+
+#aboutYubin{
+width:480px;
+margin:20px auto 20px auto;
+line-height:1.7em;}
+
+#noticeAreaTotal{
+width:500px;
+margin:0 auto;}
+
+#noticeArea{
+width:488px;
+border-left:1px #CA6F81 solid;
+border-right:1px #CA6F81 solid;
+padding:0 0 0 10px;
+line-height:1.7em;}
+
+#noticeArea strong{
+color:#B64259;
+font-size:15px;}
+
+#buttonArea{
+text-align:center;
+margin:20px 0 10px 0;}

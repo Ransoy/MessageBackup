@@ -1,0 +1,228 @@
+@charset "Shift_JIS";
+
+/*	Payment
+---------------------------------------*/
+#payment .message div
+{
+	margin:10px;
+	padding:15px;
+	color:red;
+	background:#f9e8eb;
+	border:1px solid #ccc;
+}
+#payment h2
+{
+	margin-bottom:10px;
+}
+
+#payment #linkArea
+{
+	padding:0 10px 10px;
+	margin-bottom:10px;
+}
+#payment #menu
+{
+	padding:0 10px;
+	text-align:right;
+}
+#payment #MainBlock form
+{
+	padding:0 10px 30px;
+	text-align:center;
+}
+#payment h3
+{
+	background:#666;
+	color:#fff;
+	font-size:120%;
+	text-indent:0.5em;
+	text-align:left;
+	line-height:1.8;
+	margin-bottom:12px;
+	letter-spacing:1px;
+}
+#payment h4
+{
+	font-weight:normal;
+}
+
+#payment form p
+{
+	text-align:left;
+	padding:10px;
+	background:#f3f3f3;
+	border:1px solid #ccc;
+	margin-bottom:20px;
+}
+#payment form p span
+{
+	color:#d50242;
+	font-weight:bold;
+}
+#payment form table
+{
+	margin:0 auto 20px;
+}
+
+/* Payment form
+---------------------------*/
+#payment form th,
+#payment form td
+{
+	padding:10px 5px;
+}
+#payment form td
+{
+	vertical-align:top;
+}
+
+#payment table th
+{
+	text-align:center;
+	background:#d5e9ba;
+	font-weight:normal;
+}
+
+#payment table td input#tel{width:200px;}
+#payment table td input#handy{width:300px;}
+#payment table td input#mail{width:300px;}
+#payment table td input#zip{width:200px;}
+#payment table td input#address{width:500px;}
+
+
+#payment .pointInformation
+{
+	border-collapse:collapse;
+	border-top:1px solid #547626;
+	border-left:1px solid #547626;
+	width:550px;
+}
+#payment .pointInformation td,
+#payment .pointInformation th
+{
+	border-right:1px solid #547626;
+	border-bottom:1px solid #547626;
+}
+#payment .pointInformation th.definition
+{
+	background:#a9ca7c;
+}
+#payment .pointInformation td
+{
+	text-align:right;
+}
+#payment form td table
+{
+	margin:0;
+}
+#payment form td table td
+{
+	padding:0;
+}
+#payment form td.style13
+{
+	background:#fcf8a5;
+}
+
+#payment form td table td span.style12
+{
+	font-weight:bold;
+	font-size:14px;
+}
+#payment form td table td span.style12 a
+{
+	text-decoration:underline;
+}
+
+#payment form td table td .style11
+{
+	color:red;
+}
+#payment table#calendar
+{
+	background:#70973b;
+}
+#payment table#calendar th
+{
+	background:#70973b;
+	color:#fff;
+}
+#payment table.access
+{
+	background:#70973b;
+}
+
+
+/* Payment Pager
+---------------------------*/
+.pager
+{
+	padding:15px;
+	text-align:center;
+}
+.pager span
+{
+	border:1px solid #ccc;
+	padding:1px 4px;
+}
+.pager a
+{
+	border:1px solid #ccc;
+	background:#efefef;
+	padding:1px 4px;
+}
+/* pay_ebank
+----------------------------*/
+#pay_ebank dl
+{
+	width:560px;
+	margin:20px auto;
+	border:0;
+	background:transparent;
+}
+#pay_ebank dt
+{
+	width:122px;
+	float:left;
+}
+#pay_ebank dd
+{
+	width:428px;
+	float:right;
+}
+/* attention
+----------------------------*/
+#attention
+{
+	text-align:left;
+	border:1px solid #ccc;
+	background:#f3f3f3;
+	padding:10px;
+	margin-bottom:20px;
+}
+#attention dt
+{
+	font-weight:bold;
+	margin-bottom:4px;
+}
+#attention dd
+{
+	padding-left:1em;
+	margin-bottom:2em;
+}
+/* announcement
+----------------------------*/
+#payment div .announcement1
+{
+	float: left;
+	width: 55%;
+	text-align:left;
+}
+#payment div .announcement2
+{
+	background:#f3f3f3;
+	border:1px solid #ccc;
+	margin-left: 55%;
+	height:36px;
+	text-align:center;
+}

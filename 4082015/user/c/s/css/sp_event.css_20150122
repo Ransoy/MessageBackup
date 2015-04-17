@@ -1,0 +1,16 @@
+@charset "Shift_JIS";
+
+#snake_bunner_area{
+	height:80px;
+	background:url(/c/m/images/top/hebi_1_3000yen_b_bg.jpg);
+	background-repeat:repeat-x;	
+}
+
+.snake_bunner{
+	height:80px;
+	background:url(/c/m/images/top/hebi_1_3000yen_b.jpg) no-repeat;
+}
+
+.snake_bunner:hover {
+    background: url('/c/m/images/top/hebi_1_3000yen_b_ov.jpg') no-repeat;
+}

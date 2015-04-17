@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<title>ライブチャットマシェリ/芸能人も参加する超人気サイト</title>
+<meta name="keywords" content="ライブチャット,マシェリ,ビデオチャット,macherie,チャット,ちゃっと,chat" />
+<meta name="description" content="ライブチャット無料体験実施中！ミスFLASHの選抜や数多くのグラビアアイドル、お笑い芸人が多数出演し、TV放映されたことでも有名。なんといっても女性登録数日本一とは刺激的だ。"  />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<!-- tmpl:ifdef %canonical_header% -->
+<link rel="canonical" href="http://www.macherie.tv" />
+<!-- tmpl:endif -->
+<link rel="shortcut icon" href="http://c.macherie.tv/c/m/images/favicon.ico" />
+<link href="/c/s/css/import.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/blog.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/header.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/top_btn.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/c/s/css/gw_login.css" rel="stylesheet" type="text/css" media="all" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.timer.js"></script>
+<script type="text/javascript" src="/js/jquery_cookie.js"></script>
+
+<!--<script type="text/javascript" src="/c/s/js/mc_top-notmin.js?2012022806"></script>-->
+<!-- <script type="text/javascript" src="/c/s/js/mc_top-notmin.js"></script> -->
+<script type="text/javascript" src="/c/s/js/mc_top-notminSP.js?v=5"></script>
+
+<link href="/c/s/css/scroll.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/c/s/js/scroll.js"></script>
+<script type="text/javascript" src="/c/s/js/jquery.biggerlink.js"></script>
+<script type="text/javascript">
+
+var aTime = "%aTime%";
+
+$(function() {
+
+	// idリスト数
+	var list_cnt = $("div#newface_id_list_cnt").html();
+	var cc = new Number( list_cnt );
+
+	//
+	// 1ページ目を読み込んだ後で表示される処理
+	//
+
+	// もっと見るボタンの設定
+	// もしも、マシェリっ子の人数が20人以下だと、ボタンを押せなくする
+	if( cc <= 20 ){
+		btnDebutMoreFin();
+	}else{
+		btnDebutMoreInitial(aTime);
+	}
+
+	// ページの読み込みが終わってから、もっと見るボタンが表示状態になる
+	$("li#btn_debut_more").css( "display", "inline" );
+
+	// 画像プリロード（先読み）
+	preLoadImages("http://c.macherie.tv/c/m/images/roombar/btn_debut_more_fin.png");
+});
+
+</script>
+
+</head>
+<body  oncontextmenu="return false">
+<div id="wrap">
+<!-- tmpl:ifdef %sp_disp% -->
+<div align="center">
+  <img src="/images/head/sumaho_link_banner2.png" width="100%" id="sp_flg" alt="banner"  />
+</div>
+<!-- tmpl:endif -->
+
+%head_menu%
+<div id="liquid">
+<div id="conBlock">
+<object width="100%" height="200px" data="images/top/flash.swf?%rndnum%" type="application/x-shockwave-flash">
+<param value="images/top/flash.swf?%rndnum%" name="movie" />
+<param name="quality" value="high" />
+</object>
+%banner_disp_login_area%
+
+<!-- tmpl:ifdef %muryo_banner% -->
+<!--
+<div id="bunner_area">
+	<a href="https://www.macherie.tv/registrationfree.php"><img src="http://c.macherie.tv/c/m/images/top/3000banner.gif" alt="無料登録バナーエリア"></a>
+</div>
+-->
+<!-- tmpl:endif -->
+
+%variety_msg%
+
+<div id="marquee">
+	<iframe src="./marquee.php" title="マシェリトピック" width="625" height="41" scrolling="no" frameborder="0" style="border:0;">IFRAME対応のブラウザをご利用下さいませ。</iframe>
+</div>
+
+%variety_area%
+
+<div id="girlsBlock">
+<!--event-->
+%room_event%
+
+<!--party-->
+%room_party%
+
+<!--first-->
+%room_first%
+
+<!--second-->
+%room_second%
+
+<!--newface-->
+<!--
+<li class="left"><img src="http://c.macherie.tv/c/m/images/common/tag/tag_newface.gif" alt="採れたてマシェリっ子" width="320" height="41" /></li>
+<li class="right"><img src="http://c.macherie.tv/c/m/images/common/tag/tag_newface_desc.gif" alt="デビューマークのパフォーマーは10分半額" width="256" height="41" /></li>
+-->
+<div id="tpos" name="#tpos" ><!-- アンカーリンク --></div>
+<ul id="newFaceArea" class="selectArea box">
+<li class="left"><img src="http://c.macherie.tv/c/m/images/roombar/title_debut.png" alt="採れたてマシェリっ子" width="222" height="41" /></li>
+<a href="http://www.macherie.tv/campaign/debut_mark/" target="blank"> <li class="right btn_debut_detail"></li></a>
+<li class="right btn_reload_debut"></li>
+<li class="right"><img src="http://c.macherie.tv/c/m/images/roombar/debut_thismark_10free.png" alt="デビューマークのパフォーマーは10分半額" width="228" height="41" style="margin:0px 5px 0px 0px;" /></li>
+</ul>
+<div id="newFace" class="girlsView">
+%room_newface%
+</div>
+<!-- もっと見るボタン -->
+<ul style="float:left;" >
+<li id="btn_debut_more" style="display:none;"><img src="http://c.macherie.tv/c/m/images/roombar/btn_debut_more.png" alt="more debut" /></li>
+</ul>
+
+<div id="newface_id_list_cnt" style="display:none;">%room_newface_list_cnt%</div>	<!-- idリスト  -->
+<div id="newface_current_page" style="display:none;">1</div> <!-- 現在のページ数 -->
+
+<div class="blogListWrap">
+	<ul id="blogArea" class="selectArea box">
+		<li class="left"><img src="/c/m/images/blog/blog_list.png" alt="ブログ一覧" width="635" height="38" /></li>
+	</ul>
+</div>
+<!-- blog list -->
+<div class="blog_contents_wrap cf clear">
+
+	<div class="blog_contents_inner">
+
+		<div class="tab_contents">
+			<div class="article_list article_list--row_1 cf">
+				<!-- tmpl:loop %blog_loop% -->
+				<div class="article_box">
+					<div class="article b_link">
+						<div class="article_figure">
+							<a href="./blog/article_detail.php?id=%blog_id%" >
+								<img src="./images/blog/spacer.gif" style="background-image: url(%blog_img%)" />
+							</a>
+
+						</div>
+						<div class="article_data">
+							<h4 class="ttl"><a href="./blog/article_detail.php?id=%blog_id%">%blog_title%</a></h4>
+							<p class="desc t_truncate"><a href="./blog/article_detail.php?id=%blog_id%">%blog_body%</a></p>
+							<p class="posttime">
+								<!-- tmpl:ifdef %blog_is_new% -->
+								<span class="ic_new_post">NEW</span>
+								<!-- tmpl:endif -->
+								%blog_cre_date%
+							</p>
+						</div>
+					</div>
+					<div class="performer_info b_link cf ">
+						<div class="performer_figure">
+							<a href="javascript:void(0)"  onclick="cO('%hash%')"  >
+								<img src="./images/blog/spacer.gif"  style="background-image: url(%blog_performer_img%)" />
+							</a>
+						</div>
+						<div class="performer_data">
+							<span class="status %blog_performer_status%">%blog_performer_status_lbl%</span>
+							<p class="performer_name"><a href="javascript:void(0)" onclick="cO('%hash%')" >%blog_performer_name%</a></p>
+						</div>
+					</div>
+				</div><!-- // .article_box -->
+				<!-- tmpl:endloop -->
+
+			</div><!-- // .article_list -->
+		</div><!-- // .tab_contents -->
+		<div class="btn_wrap border_top cf">
+			<ul>
+				<li><a class="btn_style btn_style--large btn_style--coral" href="./blog/">みんなのブログ一覧へ</a></li>
+</ul>
+		</div>
+
+	</div><!-- // .blog_contents_inner -->
+</div><!-- // .blog_contents_wrap -->
+<!-- // blog list -->
+
+<ul id="newsArea" class="selectArea box">
+<li class="left"><img src="http://c.macherie.tv/c/m/images/common/tag/tag_news.gif" alt="マシェリニュース" width="349" height="41" /></li>
+</ul>
+<iframe id="nBiframe" src="news.php" title="マシェリニュース" scrolling="yes">IFRAME対応ブラウザでご利用ください。</iframe>
+<img src="http://c.macherie.tv/c/m/images/common/top/ie_lock.gif" id="ieLock" alt="ielock" />
+</div>
+</div>
+</div>
+
+<!-- left/right -->
+<div id="leftBlock" class="sideB">
+%left_menu%
+</div>
+<div id="rightBlock" class="sideB">
+%right_menu%
+</div>
+
+
+<!-- footer -->
+%foot_menu%
+</div> <!-- //end of #wrap  -->
+
+<!-- tmpl:ifdef %news_view_flg% -->
+<div id="news_frame" style="display:none;">
+%news_area%
+</div>
+<!-- tmpl:endif -->
+
+<!-- 非同期版をつかうこと -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-13149951-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+$(function(){
+	$('.b_link').biggerlink();
+	$('#sp_flg').on('click',function(){
+		$.cookie('sp','',{path: "/",expires: -1});
+		location.href = "/sp/";
+		return;
+	});
+});
+</script>
+
+</body>
+</html>

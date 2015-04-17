@@ -1,0 +1,1028 @@
+@charset "Shift_JIS";
+/*_____________________________________
+
+	SITE:	Macherie
+	BUILD:	2007/4/11
+	AUTHOR:	S.takaya
+_______________________________________*/
+
+/*	Layout
+---------------------------------------*/
+#pan{
+	clear:both;
+	line-height:18px;
+	background:url(/c/s/images/common/header/pan.gif);
+	color:#fff;
+	padding-left:5px;
+	letter-spacing:1px;
+	font-size:10px;
+}
+#pan strong{
+	font-weight:normal;
+}
+#pan a{
+	color:#fff;
+}
+#topRegist{
+	height:52px;
+	background:url(../../images/face/center_banner_bg.gif) repeat-x;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#liquid{
+	width:100%;
+	padding-bottom:20px;
+	float:left;
+}
+*+html #liquid{
+	height:1%;
+}
+#conBlock{
+	margin:0 185px;
+	text-align:left;
+}
+#gBLock{
+	margin:0 185px;
+	text-align:center;
+}
+#leftBlock{
+	float:left;
+	width:185px;
+	margin-left:-100%;
+	padding-bottom:10px;
+}
+#rightBlock{
+	float:left;
+	margin-left:-185px;
+	width:185px;
+	padding-bottom:10px;
+}
+#footer{
+	clear:both;
+	padding:8px 0;
+	letter-spacing:1px;
+	color:#fff;
+	font-size:10px;
+	width:100%;
+	background:#002a66;
+	line-height:14px;
+	text-align:center;
+}
+#footer a{
+	color:#fff;
+}
+#footer p a:hover{
+	border-bottom:1px solid #fff;
+}
+address{
+	font-size:10px;
+	font-style:normal;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	line-height:17px;
+	background:#333;
+	color:#fff;
+	text-align:center;
+}
+address a{
+	color:#fff;
+}
+* html body #wrap{
+	border-right:800px solid #ddd;
+	float:left;
+	position:relative;
+	margin-right:-800px;
+}
+*+html #conBlock,
+*+html #gBLock{
+	height:1%;
+}
+* html body #conBlock,
+* html body #gBLock{
+	width:100%;
+	height:1%;
+}
+* html img#ieLock{
+	width:652px;
+	height:1px;
+}
+/*	Genral
+----------------------------------------*/
+.block{
+}
+#leftBlock .block{
+	margin:5px 5px 0 10px;
+}
+#rightBlock .block{
+	margin:5px 10px 0 5px;
+}
+.clear{
+	clear:both;
+}
+.rImg{
+	float:right;
+}
+.lImg{
+	float:left;
+}
+.attention{
+	color:red;
+	font-size:10px;
+}
+.f10{
+	font-size:10px;
+}
+#ieLock{
+	width:630px;
+	height:1px;
+	clear:both;
+}
+.box{
+	width:100%;
+}
+.box li.left{
+	float:left;
+}
+.box li.right{
+	float:right;
+}
+#marquee{
+	height:41px;
+	background:url(http://c.macherie.tv/c/m/images/common/top/marquee.gif);
+
+}
+
+#bunner_area{
+	height:53px;
+	background:url(http://c.macherie.tv/c/m/images/common/top/3000banner_bg.gif);
+	background-repeat:repeat-x;
+}
+
+
+/*新規登録1000円分無料体験バナー*/
+
+#bunner_area_1000{
+	height:53px;
+	background:url(http://c.macherie.tv/c/m/images/common/top/1000banner_bg.gif);
+	background-repeat:repeat-x;
+}
+
+#bunner_area_1000 a{
+	height: 53px;
+	width: 420px;
+	display: block;
+	background:url(http://c.macherie.tv/c/m/images/common/top/1000banner.gif) no-repeat left top;
+}
+
+#bunner_area_1000 a:hover{
+	height: 53px;
+	width: 420px;
+	display: block;
+	background:url(http://c.macherie.tv/c/m/images/common/top/1000banner.gif) no-repeat left bottom;
+}
+
+/*新規登録1000円分無料体験バナーここまで*/
+
+
+
+#bunner_area_sr{
+	height:53px;
+	background:url(http://c.macherie.tv/c/m/images/common/top/3000banner_bg_sr.gif);
+	background-repeat:repeat-x;
+}
+
+/*	Index
+----------------------------------------*/
+.selectArea{
+	clear:both;
+	background:url(http://c.macherie.tv/c/m/images/common/tag/tag_bg.gif) repeat-x #000;
+	height:41px;
+}
+
+/*アイドルパフォ用*/
+.select_idol_Area{
+	clear:both;
+	background:url(http://c.macherie.tv/c/m/images/common/tag/tag_idol_bg.gif) repeat-x #000;
+	height:41px;
+}
+
+.mobileArea{
+	clear:both;
+	background:url(http://c.macherie.tv/c/m/images/common/tag/tag_mobile_bg.gif) repeat-x #000;
+	height:41px;
+}
+.spArea{
+	clear:both;
+	background:url(http://c.macherie.tv/c/m/images/common/special/special_bg.gif) repeat-x #000;
+	height:41px;
+}
+.nishiArea{
+	clear:both;
+	background:url(../../images/nishi/special_bg.gif) repeat-x #ddd555;
+	height:41px;
+}
+
+
+.fitoneArea{
+	clear:both;
+	background:url(../../images/fitone/special_bg.gif) repeat-x #ffdad6;
+	height:41px;
+}
+.radio_kikuchiArea{
+	clear:both;
+	background:url(../../images/radio_kikuchi/special_bg.gif) repeat-x #F4DBF2;
+	height:41px;
+}
+.renai_knowhow_Area{
+	clear:both;
+	background:url(../../images/renai_knowhow/special_bg.gif) repeat-x #F4DBF2;
+	height:41px;
+}
+
+.renai_knowhow_2ndsp_Area{
+	clear:both;
+	background:url(../../images/renai_knowhow_second/sp/special_bg.gif) repeat-x #F4DBF2;
+	height:41px;
+}
+
+.renai_knowhow_2nd_Area{
+	clear:both;
+	background:url(../../images/renai_knowhow_second/special_bg.gif) #ffffff;
+	height:41px;
+}
+
+.renai_knowhow_sp_Area{
+	clear:both;
+	background:url(../../images/renai_knowhow_sp/special_bg.gif) #ffffff;
+	height:41px;
+}
+
+
+
+.nishiView{
+	width:100%;
+	padding-top:2px;
+	height:1%;
+	clear:both;
+	background: #d20000;
+}
+
+.fitoneView{
+	width:100%;
+	padding-top:2px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+	background:url(../../images/fitone/special_bg2.gif) repeat-x #ffdad6;
+}
+.radio_kikuchiView{
+	width:100%;
+	padding-top:2px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+	background:url(../../images/radio_kikuchi/special_bg2.gif) repeat-x #F4DBF2;
+}
+.renai_knowhow_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+	background:url(../../images/renai_knowhow/special_bg2.gif) repeat-x #F4DBF2;
+}
+
+.renai_knowhow_2nd_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+	background:url(../../images/renai_knowhow_second/special_bg2.gif) #ffffff;
+}
+
+.renai_knowhow_2nd_View img {
+	margin: 10px;
+}
+
+.renai_knowhow_sp_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+	background:url(../../images/renai_knowhow_sp/special_bg2.gif) #ffffff;
+}
+
+.renai_knowhow_sp_View img {
+	margin: 10px;
+}
+
+.renai_knowhow_2ndsp_View{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+	background:url(../../images/renai_knowhow_second/sp/special_bg2.gif) repeat-x #F4DBF2;
+}
+
+
+
+
+
+/*  東スポ用ココから  */
+.tospo_View,.tospo_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.tospo_View{
+	background:url(../../images/tospo/line_bg.gif) #009fe8;
+}
+
+.tospo_ph1{
+	background:url(../../images/tospo/ph1_bg.gif) #f4f6eb;
+	padding: 5px 0px 0 1px;
+}
+
+.tospo_ph1 a{
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+/*  東スポ用ココまで  */
+
+
+
+
+/*  アフィリア用ココから  */
+.afilia_View,.yc11_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.afilia_ph1{
+	/*background:url(../../images/afilia/special_bg.gif);*/
+	background-color: #fff;
+	padding: 4px 0px 0 1px;
+}
+
+.afilia_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.afilia_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/afilia/header_bg.gif) repeat-x ;
+}
+
+.afilia_footer{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/afilia/footer_bg.gif) repeat-x ;
+}
+
+/*  アフィリア用ココまで  */
+
+
+/*  GGirls用ココから  */
+.ggirls_View,.yc11_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.ggirls_ph1{
+	/*background:url(../../images/afilia/special_bg.gif);*/
+	background-color: #E0FFFF;
+	padding: 4px 0px 0 1px;
+}
+
+.ggirls_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.ggirls_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/ggirls/header_bg.gif) repeat-x ;
+}
+
+.ggirls_footer{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/ggirls/footer_bg.gif) repeat-x ;
+}
+
+/*  GGirls用ココまで  */
+
+
+/*  ミスフラ2012用ココから  */
+.flash2012_View,.flash2012_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+	background-color: #e8e8ea;
+}
+
+
+.flash2012_ph1{
+	/*background:url(../../images/flash2012/special_bg.gif);*/
+	padding: 4px 0px 0 1px;
+}
+
+.flash2012_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.flash2012_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/flash2012/header_bg.gif) repeat-x ;
+}
+
+.flash2012_footer{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/flash2012/footer_bg.gif) repeat-x ;
+}
+
+/*  ミスフラ2012用ココまで  */
+
+/*  yc11ch用ココから  */
+.yc11ch_View,.yc11_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.yc11ch_ph1{
+	padding: 4px 0px 0 1px;
+}
+
+.yc11ch_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.yc11ch_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/yc11ch/header_bg.gif) repeat-x ;
+}
+
+.yc11ch_footer{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/yc11ch/footer_bg.gif) repeat-x ;
+}
+
+/*  yc11ch用ココまで  */
+
+/*  三田用ココから  */
+.unit_View,.unit_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.unit_ph1{
+	background-color: #FFF;
+	padding: 4px 0px 0 1px;
+}
+
+.unit_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.unit_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/unit/header_bg.gif) repeat-x ;
+}
+
+
+/*  三田用ココまで  */
+
+/*  カンムリ用ココから  */
+.kanmuri_View,.kanmuri_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.kanmuri_ph1{
+	background-color: #FFF;
+	padding: 4px 0px 0 1px;
+}
+
+.kanmuri_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.kanmuri_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/kanmuri/header_bg.gif) repeat-x ;
+}
+
+
+/*  カンムリ用ココまで  */
+
+
+/*  傾奇エンジェルスch用ココから  */
+.kabukich_View,.kabukich_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.kabukich_ph1{
+	padding: 4px 0px 0 1px;
+}
+
+.kabukich_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.kabukich_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/kabukich/header_bg.gif) repeat-x ;
+}
+
+.kabukich_footer{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/kabukich/footer_bg.gif) repeat-x ;
+}
+
+/*  傾奇エンジェルスch用ココまで  */
+
+
+/*  ミスFlash2012ch用ココから  */
+.flash2012ch_View,.flash2012ch_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.flash2012ch_ph1{
+	background-color: #FFF;
+	padding: 4px 0px 0 1px;
+}
+
+.flash2012ch_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.flash2012ch_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/flash2012ch/header_bg.gif) repeat-x ;
+}
+
+
+/*  ミスFlash2012ch用ココまで  */
+
+
+/*  日テレジェニック2012用ココから  */
+.ntj12_View,.ntj12_ph1{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:1%;
+	clear:both;
+}
+
+
+.ntj12_ph1{
+	background-color: #FFF;
+	padding: 4px 0px 0 1px;
+}
+
+.ntj12_ph1 a{
+	margin-bottom:4px;
+	display: inline-block;
+}
+
+.ntj12_header{
+	width:100%;
+	padding-top:0px;
+	margin-left: 0px;
+	margin: 0px;
+	height:46px;
+	clear:both;
+	background:url(../../images/ntj12/header_bg.gif) repeat-x ;
+}
+
+
+/*  日テレジェニック2012用ココまで  */
+
+
+
+#newFaceArea{
+	background:url(http://c.macherie.tv/c/m/images/common/tag/tag_newface_bg.gif) repeat-x;
+}
+
+/*2011-07-22??*/
+#newFaceArea2{
+	background:url(http://c.macherie.tv/c/m/images/common/tag/tag_newface2_bg.gif) repeat-x;
+}
+
+#newsArea{
+	background:url(http://c.macherie.tv/c/m/images/common/tag/tag_news_bg.gif) repeat-x;
+}
+.selectArea select{
+	width:160px;
+}
+.select{
+	margin-top:10px;
+	border:1px solid #000;
+}
+.selectArea form select option{
+	line-height:20px;
+}
+a.update{
+	text-decoration:none;
+}
+.girlsView{
+	width:100%;
+	padding-top:2px;
+	height:1%;
+	clear:both;
+}
+.girlsView ul{
+	list-style:none;
+}
+.girlsView p{
+	display:block;
+	padding:50px 10px;
+}
+#nBiframe{
+	clear:both;
+	width:100%;
+	height:200px;
+	border:0;
+}
+#nBleft{
+	position:relative;
+	width:200px;
+	list-style:none;
+}
+#nBottom{
+	clear:both;
+	background:#ccc;
+}
+#nBottom p{
+	margin:3px;
+	padding:3px;
+	border:1px solid #666;
+	background:#f7f7f7;
+	line-height:25px;
+}
+/*	LeftBlock
+----------------------------------------*/
+div#login table{
+	width:164px;
+	margin:0 2px;
+}
+div#login table th{
+	text-align:left;
+	font-size:10px;
+}
+div#login table th em{
+	color:#ff9900;
+	font-style:normal;
+	letter-spacing:1px;
+}
+div#login table td p{
+	text-align:right;
+	font-size:10px;
+}
+div#login table td input.imgSubmit{
+	border:0;
+}
+div#login{
+	background:#fff;
+}
+div#login input.login{
+	width:110px;
+}
+div#loginBorder{
+	border:1px solid #787878;
+	border-top:0px;
+	padding:4px 0;
+}
+#menu li{
+	width:170px;
+	height:29px;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+#menu li a{
+	display:block;
+	width:170px;
+	height:31px;
+}
+ul#menu li#mTitle{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_top.gif); height:24px;}
+#menu1 a{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_top_top.gif);}
+#menu2 a{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_registration.gif);}
+#menu3 a{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_about.gif);}
+#menu4 a{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_beginner.gif);}
+#menu5 a{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_price.gif);}
+#menu6 a{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_serch.gif);}
+#menu7 a{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_member.gif);}
+#menu8 a{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_support.gif);}
+#menu9 a{background:url(http://c.macherie.tv/c/m/images/common/menu/btn_world.gif);}
+#menu li a:hover{background-position:0px -29px;}
+
+#iconHelp li.title{
+	padding:0;
+}
+
+/*	leftBlock
+----------------------------------------*/
+#leftBlock dl{
+	background:url(http://c.macherie.tv/c/m/images/common/menu2/side_bottom.gif) no-repeat bottom;
+	padding-bottom:2px;
+}
+#leftBlock dl dt{
+	font-weight:bold;
+	line-height:20px;
+}
+#leftBlock dl dt,
+#leftBlock dl dd{
+	background:url(http://c.macherie.tv/c/m/images/common/menu2/bg_iconhelp.gif);
+	padding:2px 6px;
+	font-weight:normal;
+}
+#leftBlock dl dd a{
+	color:#333;
+}
+
+/*	RightBlock
+----------------------------------------*/
+#rightBlock dl{
+	background:url(http://c.macherie.tv/c/m/images/common/menu2/side_bottom.gif) no-repeat bottom;
+	padding-bottom:2px;
+}
+#rightBlock dl dt{
+	font-weight:bold;
+	line-height:20px;
+}
+#rightBlock dl dt,
+#rightBlock dl dd{
+	background:url(http://c.macherie.tv/c/m/images/common/menu2/bg_iconhelp.gif);
+	padding:2px 6px;
+	font-weight:normal;
+}
+#rightBlock dl dd a{
+	color:#333;
+}
+/*	PR
+----------------------------------------*/
+#rightBlock dl#sidePR dt,
+#rightBlock dl#sidePR dd{
+	padding:2px 8px;
+	font-size:10px;
+	line-height:1.5em;
+}
+/*	GirlsBlock
+----------------------------------------*/
+
+ul.tab{
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 213px;
+	height: 40px;
+	font-size: 10px;
+}
+
+ul.tab li{
+	margin: 10px 0;
+	display: block;
+	height: 40px;
+	float: left;
+}
+
+ul.tab li a{
+	height: 40px;
+	display: block;
+}
+
+ul.tab li a.pafo{
+	width:107px;
+	background: url(../images/common/tag/pafo_idol_tab.png) no-repeat bottom left;
+}
+
+ul.tab li.active a.pafo{
+	width:107px;
+	background: url(../images/common/tag/pafo_idol_tab.png) no-repeat top left;
+}
+
+ul.tab li a.idol{
+	width:106px;
+	background: url(../images/common/tag/pafo_idol_tab.png) no-repeat bottom right;
+}
+
+ul.tab li.active a.idol{
+	width:106px;
+	background: url(../images/common/tag/pafo_idol_tab.png) no-repeat top right;
+}
+
+
+.gB{
+	margin:1px 0 0 1px;
+    position:relative;
+    width:125px;
+    height:144px;
+    overflow:hidden;
+    float:left;
+}
+.on{background: url(/c/images/common/g/onbg.gif) top left no-repeat;}
+.pon{background: url(/c/images/common/g/onbg.gif) top left no-repeat;}
+.ch{background: url(/c/images/common/g/2bg.gif) top left no-repeat;}
+.pc{background: url(/c/images/common/g/pbg.gif) top left no-repeat;}
+.off{background: url(/c/images/common/g/offbg.gif) top left no-repeat;}
+.cm{background: url(/c/images/common/g/wbg.gif) top left no-repeat;}
+.idol_on{background: url(/c/images/common/g/idol_on_bg.gif) top left no-repeat;}
+.idol_oa{background: url(/c/images/common/g/idol_oa_bg.gif) top left no-repeat;}
+
+.tag{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:120px;
+    height:27px;
+    overflow:hidden;
+    text-align:left;
+}
+.pic{
+    position:relative;
+    top:0px;
+    left:1px;
+    width:120px;
+    height:90px;
+    text-align:center;
+    overflow: hidden;
+    background:center center no-repeat;
+}
+.name{
+    position:relative;
+    top:4px;
+    left:5px;
+    width:118px;
+    overflow: hidden;
+	text-align:left;
+	line-height:17px;
+}
+.mail{
+    position:relative;
+    top:-18px;
+    left:80px;
+    width:34px;
+    height:17px;
+    text-align:right;
+}
+.name a{color:#333333; text-decoration: none;}
+.name a:hover {text-decoration: underline;}
+
+
+#idol .mail img,#idol .mail a{
+	margin: 0 0 0 -2px;
+	padding: 0;
+	width: 17px;
+	height: 17px;
+	text-align: right;
+}
+
+
+/*	Footer
+---------------------------*/
+#footer ul li{
+	float:left;
+	padding:0 4px 5px;
+	list-style:none;
+}
+#footer img{
+	float:left;
+	margin:0 5px;
+}
+#footText{
+	text-align:left;
+	width:430px;
+	float:left;
+}
+#link{
+	clear:both;
+}
+#fTop{
+	width:850px;
+	margin:0 auto;
+}

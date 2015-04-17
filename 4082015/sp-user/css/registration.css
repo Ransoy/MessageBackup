@@ -1,0 +1,119 @@
+@charset "Shift_JIS";
+/* overwrite */
+.bd_registrationfree .registrationfree_wrap {
+	padding: 10px 0;
+	margin: 0;
+}
+.bd_registrationfree .registrationfree_wrap .frm_btn {
+	background: #ffffff;
+}
+.footer_open_login h3 {
+	padding: 0 0 2% 0;
+	margin: 0;
+	text-align: inherit;
+}
+.registrationfree_wrap .btn a, .btn a:link, .btn a:visited {
+	font-size: 1.6rem;
+}
+
+/* add CSS */
+.bd_registrationfree .contents {
+	background: #f5f5f5;
+}
+.bd_registrationfree .registrationfree_wrap h2.ttl {
+	padding: 0 0 0 2%;
+}
+.registrationfree_wrap .img_step {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+.reg_contents_box {
+	padding: 5%;
+	margin: 5% 2% 0;
+	background: #ffffff;
+	box-shadow: rgba(0, 0, 0, .15) 0 0 2px;
+	position: relative;
+}
+
+.triangle {
+	margin-top: 0;
+}
+.triangle1 {
+	margin-bottom: 12px;
+}
+
+
+
+/*.triangle1:before {
+	content: url(../image/registration/triangle.png);
+	position: absolute;
+	top: -4.7%;
+	left: 7.8%;
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+
+}
+.triangle2:before {
+	content: url(../image/registration/triangle.png);
+	position: absolute;
+	top: -5%;
+	left: 45.8%;
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+
+}
+.triangle3:before {
+	content: url(../image/registration/triangle.png);
+	position: absolute;
+	top: -4.8%;
+	left: 83.8%;
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+}
+
+
+@media screen and (min-width: 480px) {
+	.triangle1:before {
+		top: -3.1%;
+	}
+
+	.triangle2:before {
+		top: -3.9%;
+	}
+
+	.triangle3:before {
+		top: -3.4%;
+	}
+}*/
+
+.bd_registrationfree div.warning {
+	padding: 0 5%;
+}
+.footer_open_login {
+	border: none;
+}
+.footer_open_login ul {
+	margin: 15px 2%;
+}
+.top_button_wrap {
+	padding: 0 10%;
+}
+.top_button_wrap .btn {
+	margin: 0;
+}
+.bd_registrationfree .registrationfree_wrap .next_button_wrap {
+	padding: 3% 17% 0;
+}
+.app_link_wrap {
+	margin: 8% 0;
+}
+.text_bold {
+	font-weight: bold;
+}
+.triangle3 dl {
+	margin: 0 0 15px 0;
+}

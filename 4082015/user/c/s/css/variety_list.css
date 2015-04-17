@@ -1,0 +1,131 @@
+@charset "Shift_JIS";
+
+/*------------------------------------------------------*/
+/* variety list
+/*------------------------------------------------------*/
+.vt_event_list{
+	font-family: "ƒƒCƒŠƒI", Meiryo, "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	/*margin-top: 10px;*/
+}
+.vt_event_list .vt_event_item{
+	margin-bottom: 5px;
+}
+.vt_event_list .vt_event_item .vt_event_head{
+	height: 45px;
+	background-repeat: repeat-x;
+	background-position: 0 0;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list{
+	padding: 5px 0;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list ul{
+	margin-right: -4px;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_pf_item{
+	width: 122px;
+	height: 144px;
+	float: left;
+	border: #464646 solid 1px;
+	border-radius: 4px 4px 0 0;
+	margin: 0 4px 4px 0;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_pf_item .vt_pf_thumb{
+	display: inline-block;
+	width: 122px;
+	height: 122px;
+	border-radius: 4px 4px 0 0;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_pf_item .vt_pf_name{
+	display: block;
+	width: 112px;
+	padding: 0 5px;
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	border-top: 1px solid #464646;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge{
+	float: left;
+	width: 184px;
+	height: 146px;
+	text-align: center;
+	background: #eee;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge .vt_charge_inner{
+	position: relative;
+	height: 100px;
+	margin: 5px;
+	padding: 22px 10px 10px;
+	border: dashed 2px #ffd037;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge .vt_charge_type{
+	display: table;
+	width: 100%;
+	height: 50px;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge .vt_charge_type span{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 21px;
+	line-height: 1.2;
+	color: #fff;
+	text-shadow: black 1px 1px 0px, black -1px 1px 0px, black 1px -1px 0px, black -1px -1px 0px;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge .vt_link_charge{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	margin: auto;
+	display: block;
+	width: 150px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #fff;
+	background: #333;
+	box-shadow: 2px 2px 1px 0 rgba(255,255,255,0.2) inset;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge .vt_link_charge:before{
+	content: '';
+	display: inline-block;
+	border: 5px solid transparent;
+	border-left-color: #fff;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge .vt_link_charge:hover{
+	background: #505050;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge .vt_link_charge:hover:before{
+	margin-left: 1px;
+	margin-right: -1px;
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge--type_1{
+	background: #fb201c;
+	background: -webkit-linear-gradient(#fb201c, #d1110d);
+	background: -o-linear-gradient(#fb201c, #d1110d);
+	background: -moz-linear-gradient(#fb201c, #d1110d);
+	background: linear-gradient(#fb201c, #d1110d);
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge--type_2{
+	background: #3ad588;
+	background: -webkit-linear-gradient(#3ad588, #2aae6c);
+	background: -o-linear-gradient(#3ad588, #2aae6c);
+	background: -moz-linear-gradient(#3ad588, #2aae6c);
+	background: linear-gradient(#3ad588, #2aae6c);
+}
+.vt_event_list .vt_event_item .vt_event_body .vt_pf_list li.vt_charge--type_3{
+	background: #02bde8;
+	background: -webkit-linear-gradient(#02bde8, #049dc0);
+	background: -o-linear-gradient(#02bde8, #049dc0);
+	background: -moz-linear-gradient(#02bde8, #049dc0);
+	background: linear-gradient(#02bde8, #049dc0);
+}
